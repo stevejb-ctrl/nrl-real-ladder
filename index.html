@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0b0e" />
+<title>Real NRL Ladder · Ranked by win %</title>
+<meta name="description" content="The NRL ladder, recalculated by win percentage so byes don't inflate the standings." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0b0e;
+    --bg-soft:   #101218;
+    --line:      rgba(240, 234, 218, 0.09);
+    --line-strong: rgba(240, 234, 218, 0.18);
+    --ink:       #f1ecde;          /* warm cream */
+    --ink-mute:  #8b8e9a;
+    --ink-soft:  #c5c2b6;
+    --accent:    #e3322a;          /* NRL red, the only hot color on the page */
+    --accent-dim:#7e1e1a;
+    --gold:      #c8a85a;
+    --good:      #58c08b;
+    --bad:       #d65a52;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv11','ss01';
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+  /* ───── MAST ───── */
+  .mast {
+    padding-top: 32px;
+    border-top: 1px solid var(--line-strong);
+    margin-top: 28px;
+  }
+  .mast-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+  }
+  .mast-meta .right { text-align: right; }
+  .mast-meta .left b { color: var(--ink); font-weight: 700; }
+
+  h1.title {
+    font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: clamp(56px, 11vw, 132px);
+    letter-spacing: 0.005em;
+    line-height: 0.86;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  h1.title .real { color: var(--accent); }
+  h1.title .small { display: block; font-size: 0.36em; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 6px; }
+
+  .dek {
+    max-width: 600px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0 0 28px;
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+  }
+  .dek em { font-style: italic; color: var(--ink); }
+
+  /* ───── INSIGHT CALLOUT (auto-generated commentary) ───── */
+  .insight {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    margin: 24px 0 36px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .insight .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+  .insight .body { font-size: 17px; line-height: 1.55; color: var(--ink); }
+  .insight .body b { color: var(--ink); font-weight: 700; }
+  .insight .body .up { color: var(--good); font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 0.92em; }
+  .insight .body .down { color: var(--bad); font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 0.92em; }
+  .insight .body p { margin: 0 0 8px; }
+  .insight .body p:last-child { margin: 0; }
+
+  /* ───── TABLE ───── */
+  .colhead, .row {
+    display: grid;
+    grid-template-columns: 38px 1fr 240px 32px 32px 32px 56px 56px;
+    gap: 14px;
+    align-items: center;
+  }
+  .colhead {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding: 0 4px 10px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .colhead .num { text-align: right; }
+
+  .ladder { padding-top: 4px; }
+  .row {
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--line);
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise 0.4s cubic-bezier(.2,.7,.2,1) forwards;
+    position: relative;
+  }
+  .row.top1 { background: linear-gradient(90deg, rgba(227,50,42,0.06), transparent 60%); }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+
+  .pos {
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+    line-height: 1;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .row.top1 .pos { color: var(--accent); }
+  .row.dim .pos { color: var(--ink-mute); }
+
+  .team {
+    display: flex; align-items: center; gap: 12px;
+    min-width: 0;
+  }
+  .swatch {
+    width: 4px;
+    height: 26px;
+    flex: 0 0 auto;
+    background: var(--accent-team, #444);
+    border-radius: 1px;
+  }
+  .name {
+    min-width: 0;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .name .nick { color: var(--ink-mute); font-weight: 500; margin-left: 8px; }
+  .row.top1 .name { color: var(--ink); }
+
+  /* win % bar — thin, hard-edged, single colour, no gradient */
+  .winbar {
+    height: 10px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .winbar .fill {
+    position: absolute; inset: 0 auto 0 0;
+    width: 0;
+    background: var(--accent-team);
+    transition: width 0.7s cubic-bezier(.2,.7,.2,1);
+  }
+  .pctcell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  .pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+  .row.dim .pct { color: var(--ink-soft); }
+
+  .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: right;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .num.diff.pos-diff { color: var(--good); }
+  .num.diff.neg-diff { color: var(--bad); }
+
+  .move {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+  .move.up { color: var(--good); }
+  .move.down { color: var(--bad); }
+  .move.flat { color: var(--ink-mute); font-weight: 500; }
+
+  /* finals line */
+  .finals {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .finals .rule { flex: 1; height: 1px; background: var(--gold); opacity: 0.55; }
+
+  /* ───── BENCHMARKS (now at the bottom) ───── */
+  .benchmarks { margin-top: 56px; }
+  .section-head {
+    display: flex; align-items: baseline; gap: 14px;
+    border-top: 1px solid var(--line-strong);
+    padding-top: 18px;
+    margin-bottom: 24px;
+  }
+  .section-head h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--ink);
+  }
+  .section-head .sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .bench-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .bench {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+  }
+  .bench .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 6px;
+  }
+  .bench .figure {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: 0.005em;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .bench .figure .pct-sign { color: var(--ink-mute); font-size: 0.55em; vertical-align: 0.18em; margin-left: 2px; }
+  .bench.gold .figure { color: var(--gold); }
+  .bench.red .figure { color: var(--accent); }
+  .bench .cap {
+    margin-top: 10px;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 36ch;
+  }
+  .bench .live {
+    margin-top: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .bench .live .teams { color: var(--ink-mute); font-weight: 500; }
+
+  /* ───── FOOT ───── */
+  .foot {
+    border-top: 1px solid var(--line);
+    margin-top: 56px;
+    padding: 22px 0 56px;
+    color: var(--ink-mute);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .foot strong { color: var(--ink-soft); font-weight: 600; }
+  .foot a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+  .foot a:hover { text-decoration-color: var(--accent); }
+
+  /* ───── RESPONSIVE ───── */
+  @media (max-width: 760px) {
+    .colhead, .row {
+      grid-template-columns: 28px 1fr 80px 56px;
+      gap: 10px;
+    }
+    .colhead .winh, .colhead .wh, .colhead .lh, .colhead .bh, .colhead .dh { display: none; }
+    .colhead { grid-template-columns: 28px 1fr 80px 56px; }
+    .winbar, .num.desktop, .pctcell .pct { /* keep pct */ }
+    .num.desktop { display: none; }
+    .winbar { height: 8px; }
+    .pctcell { grid-column: 3; }
+    .move { grid-column: 4; }
+    .stats-line {
+      grid-column: 2 / -1;
+      display: flex;
+      gap: 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-mute);
+      margin-top: 6px;
+      letter-spacing: 0.04em;
+    }
+    .stats-line span b { color: var(--ink-soft); font-weight: 700; }
+    .stats-line .diff.pos-diff b { color: var(--good); }
+    .stats-line .diff.neg-diff b { color: var(--bad); }
+    .name { font-size: 14px; }
+    .name .nick { display: none; }
+    .pos { font-size: 20px; }
+    .bench-grid { grid-template-columns: 1fr; gap: 20px; }
+    .bench .figure { font-size: 52px; }
+    .insight { grid-template-columns: 1fr; gap: 10px; }
+    .insight .body { font-size: 15px; }
+  }
+  @media (min-width: 761px) {
+    .stats-line { display: none; }
+  }
+
+  .err {
+    padding: 18px;
+    border: 1px solid var(--accent-dim);
+    background: rgba(227, 50, 42, 0.08);
+    color: #f4c1bd;
+    font-size: 14px;
+    margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <div class="mast-meta">
+      <span class="left" id="round-tag">Round — · —</span>
+      <span class="right" id="updated">Updated —</span>
+    </div>
+    <h1 class="title">
+      <span class="real">Real</span> NRL<br>Ladder<span class="small">Honest maths · winning rate, not bye-points</span>
+    </h1>
+    <p class="dek">The NRL ladder gives <em>2 points for a bye</em>. Here's what it would say if it didn't.</p>
+  </header>
+
+  <section class="insight" id="insight" hidden>
+    <div class="kicker">Round read</div>
+    <div class="body" id="insight-body"></div>
+  </section>
+
+  <div class="colhead" aria-hidden="true">
+    <span></span>
+    <span>Team</span>
+    <span class="winh">Win %</span>
+    <span class="num wh">W</span>
+    <span class="num lh">L</span>
+    <span class="num bh">B</span>
+    <span class="num dh">DIFF</span>
+    <span class="num">±</span>
+  </div>
+
+  <main id="ladder" class="ladder" aria-live="polite"></main>
+
+  <section class="benchmarks">
+    <div class="section-head">
+      <h2>Benchmarks</h2>
+      <span class="sub">Five-season history · 2021–2025</span>
+    </div>
+    <div class="bench-grid">
+      <div class="bench gold">
+        <div class="label">Minor premier mark</div>
+        <div class="figure">80<span class="pct-sign">.8%</span></div>
+        <div class="cap">Average final win % of the team that finished top of the regular season over the last five years.</div>
+        <div class="live" id="live-mp">—</div>
+      </div>
+      <div class="bench red">
+        <div class="label">Finals cut</div>
+        <div class="figure">51<span class="pct-sign">.7%</span></div>
+        <div class="cap">Average final win % of 8th place over the last five years. Below this, history says you don't see September.</div>
+        <div class="live" id="live-8">—</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <strong>Method.</strong> Win % = (wins + 0.5 × draws) ÷ games played. Byes are listed but never counted as games. Ties are broken by points differential.
+    <br>
+    <strong>Source.</strong> <a href="https://www.nrl.com/ladder/">nrl.com/ladder</a>, refreshed every six hours via GitHub Actions.
+  </footer>
+</div>
+
+<script>
+const BENCHMARKS = {
+  // (wins + 0.5*draws) / played from the final regular-season ladder each year.
+  // Minor premier: 2021 Storm 21-3, 2022 Panthers 20-4, 2023 Panthers 18-6,
+  //                2024 Storm 19-5, 2025 Raiders 19-5  → avg 80.83%
+  // 8th place:     2021 Titans 10-14, 2022 Raiders 14-10, 2023 Raiders 13-11,
+  //                2024 Knights 12-12, 2025 Roosters 13-11  → avg 51.67%
+  minorPremier: 0.8083,
+  eighth:       0.5167,
+};
+
+const winPct = (t) => t.played > 0 ? (t.wins + 0.5 * t.draws) / t.played : 0;
+const fmtPct = (n) => (n * 100).toFixed(1) + '%';
+const wpName = (t) => t.shortName;
+
+function buildInsight(sortedNew, originalByOfficial) {
+  const moversIn = []; // moved INTO top 8
+  const moversOut = []; // moved OUT of top 8
+  let biggestUp = null, biggestDown = null;
+
+  sortedNew.forEach((t, i) => {
+    const newPos = i + 1;
+    const delta = t.officialPosition - newPos; // +ve = up
+    const wasTop8 = t.officialPosition <= 8;
+    const isTop8 = newPos <= 8;
+    if (!wasTop8 && isTop8) moversIn.push(t);
+    if (wasTop8 && !isTop8) moversOut.push(t);
+    if (!biggestUp || delta > (biggestUp.delta ?? -Infinity)) biggestUp = { t, delta };
+    if (!biggestDown || delta < (biggestDown.delta ?? Infinity)) biggestDown = { t, delta };
+  });
+
+  const lines = [];
+  if (moversIn.length || moversOut.length) {
+    const inNames = moversIn.map(t => `<b>${wpName(t)}</b>`).join(' and ');
+    const outNames = moversOut.map(t => `<b>${wpName(t)}</b>`).join(' and ');
+    if (moversIn.length && moversOut.length) {
+      lines.push(`If finals started this weekend on win % alone, ${inNames} would be in. ${outNames} would be out — currently propped up by a bye, not by a result.`);
+    } else if (moversIn.length) {
+      lines.push(`On win %, ${inNames} would be inside the top eight. The official ladder still has them out — chalk it up to byes, not form.`);
+    } else if (moversOut.length) {
+      lines.push(`On win %, ${outNames} would drop out of the top eight despite their points total. They've banked bye points the chasing teams haven't.`);
+    }
+  }
+  if (biggestUp && biggestUp.delta > 0) {
+    lines.push(`Biggest jump: <b>${wpName(biggestUp.t)}</b> <span class="up">+${biggestUp.delta}</span>.`);
+  }
+  if (biggestDown && biggestDown.delta < 0) {
+    const last = lines.pop() ?? '';
+    const tail = `Biggest drop: <b>${wpName(biggestDown.t)}</b> <span class="down">${biggestDown.delta}</span>.`;
+    lines.push(last ? `${last} ${tail}` : tail);
+  }
+
+  return lines.map(l => `<p>${l}</p>`).join('');
+}
+
+function listAbove(teams, threshold) {
+  return teams.filter(t => winPct(t) >= threshold);
+}
+
+function render(data) {
+  document.getElementById('round-tag').innerHTML = `Round <b>${data.round}</b> · ${data.season}`;
+  const u = new Date(data.fetchedAt);
+  document.getElementById('updated').textContent =
+    `Updated ${u.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}`;
+
+  const sorted = [...data.teams].sort((a, b) => {
+    const w = winPct(b) - winPct(a);
+    if (Math.abs(w) > 1e-9) return w;
+    return b.pointsDiff - a.pointsDiff;
+  });
+
+  // insight
+  const insightHtml = buildInsight(sorted, data.teams);
+  if (insightHtml) {
+    document.getElementById('insight').hidden = false;
+    document.getElementById('insight-body').innerHTML = insightHtml;
+  }
+
+  // benchmarks live
+  const aboveMP = listAbove(sorted, BENCHMARKS.minorPremier);
+  const above8 = listAbove(sorted, BENCHMARKS.eighth);
+  const fmtList = (arr) => arr.length === 0 ? '—'
+    : arr.length <= 3 ? arr.map(wpName).join(', ')
+    : `${arr.slice(0, 3).map(wpName).join(', ')} +${arr.length - 3} more`;
+  document.getElementById('live-mp').innerHTML =
+    `${aboveMP.length} team${aboveMP.length === 1 ? '' : 's'} above the line · <span class="teams">${fmtList(aboveMP)}</span>`;
+  document.getElementById('live-8').innerHTML =
+    `${above8.length} team${above8.length === 1 ? '' : 's'} on a finals pace · <span class="teams">${fmtList(above8)}</span>`;
+
+  // rows
+  const root = document.getElementById('ladder');
+  root.innerHTML = '';
+
+  sorted.forEach((t, i) => {
+    const newPos = i + 1;
+    const delta = t.officialPosition - newPos;
+    const wp = winPct(t);
+
+    const row = document.createElement('div');
+    row.className = 'row' + (newPos === 1 ? ' top1' : '') + (newPos > 8 ? ' dim' : '');
+    row.style.setProperty('--accent-team', t.primary);
+    row.style.animationDelay = (35 * i) + 'ms';
+
+    let move, moveCls;
+    if (delta > 0) { move = `+${delta}`; moveCls = 'move up'; }
+    else if (delta < 0) { move = `${delta}`; moveCls = 'move down'; }
+    else { move = '·'; moveCls = 'move flat'; }
+
+    const diffSign = t.pointsDiff > 0 ? '+' : '';
+    const diffCls = t.pointsDiff > 0 ? 'pos-diff' : t.pointsDiff < 0 ? 'neg-diff' : '';
+
+    row.innerHTML = `
+      <span class="pos">${String(newPos).padStart(2, '0')}</span>
+      <div class="team">
+        <span class="swatch" style="background:${t.primary}"></span>
+        <span class="name">${t.shortName}<span class="nick"> · #${t.officialPosition} official</span></span>
+      </div>
+      <div class="pctcell">
+        <div class="winbar"><div class="fill" data-target="${(wp * 100).toFixed(2)}"></div></div>
+        <div class="pct">${fmtPct(wp)}</div>
+      </div>
+      <span class="num desktop">${t.wins}</span>
+      <span class="num desktop">${t.losses}</span>
+      <span class="num desktop">${t.byes}</span>
+      <span class="num diff ${diffCls} desktop">${diffSign}${t.pointsDiff}</span>
+      <span class="${moveCls}">${move}</span>
+      <div class="stats-line">
+        <span>W <b>${t.wins}</b></span>
+        <span>L <b>${t.losses}</b></span>
+        ${t.draws ? `<span>D <b>${t.draws}</b></span>` : ''}
+        <span>B <b>${t.byes}</b></span>
+        <span class="diff ${diffCls}">DIFF <b>${diffSign}${t.pointsDiff}</b></span>
+      </div>
+    `;
+    root.appendChild(row);
+
+    if (newPos === 8) {
+      const div = document.createElement('div');
+      div.className = 'finals';
+      div.innerHTML = '<span class="rule"></span><span>Finals line · top 8</span><span class="rule"></span>';
+      root.appendChild(div);
+    }
+  });
+
+  requestAnimationFrame(() => {
+    document.querySelectorAll('.winbar .fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  });
+}
+
+function showError(msg) {
+  document.getElementById('ladder').innerHTML = `<div class="err">${msg}</div>`;
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data/ladder.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    console.error(e);
+    showError(`Couldn't load ladder data (${e.message}). If you opened this from a file:// URL, run <code>npx serve .</code> or <code>python -m http.server 8000</code> in this folder.`);
+  }
+}
+load();
+</script>
+</body>
+</html>
