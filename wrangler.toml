@@ -1,0 +1,5 @@
+name = "nrl-real-ladder"
+compatibility_date = "2026-05-01"
+
+[assets]
+directory = "./"
