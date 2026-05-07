@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "round": 9,
+  "round": 10,
   "competitionId": 111,
-  "fetchedAt": "2026-05-07T09:45:52.511Z",
+  "fetchedAt": "2026-05-07T18:01:01.299Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -35,11 +35,11 @@
       "wins": 7,
       "losses": 2,
       "draws": 0,
-      "byes": 0,
+      "byes": 1,
       "pointsFor": 278,
       "pointsAgainst": 170,
       "pointsDiff": 108,
-      "compPoints": 14,
+      "compPoints": 16,
       "streak": "4W",
       "officialPosition": 2
     },
@@ -158,6 +158,25 @@
       "officialPosition": 8
     },
     {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "played": 9,
+      "wins": 4,
+      "losses": 5,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 228,
+      "pointsAgainst": 207,
+      "pointsDiff": 21,
+      "compPoints": 10,
+      "streak": "2W",
+      "officialPosition": 9
+    },
+    {
       "slug": "broncos",
       "shortName": "Broncos",
       "fullName": "Brisbane Broncos",
@@ -174,7 +193,7 @@
       "pointsDiff": 1,
       "compPoints": 10,
       "streak": "1L",
-      "officialPosition": 9
+      "officialPosition": 10
     },
     {
       "slug": "knights",
@@ -193,45 +212,7 @@
       "pointsDiff": -30,
       "compPoints": 10,
       "streak": "1W",
-      "officialPosition": 10
-    },
-    {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "played": 8,
-      "wins": 3,
-      "losses": 5,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 184,
-      "pointsAgainst": 195,
-      "pointsDiff": -11,
-      "compPoints": 8,
-      "streak": "1W",
       "officialPosition": 11
-    },
-    {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "played": 8,
-      "wins": 3,
-      "losses": 5,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 145,
-      "pointsAgainst": 194,
-      "pointsDiff": -49,
-      "compPoints": 8,
-      "streak": "3L",
-      "officialPosition": 12
     },
     {
       "slug": "raiders",
@@ -250,6 +231,25 @@
       "pointsDiff": -66,
       "compPoints": 8,
       "streak": "1W",
+      "officialPosition": 12
+    },
+    {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "played": 9,
+      "wins": 3,
+      "losses": 6,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 157,
+      "pointsAgainst": 238,
+      "pointsDiff": -81,
+      "compPoints": 8,
+      "streak": "4L",
       "officialPosition": 13
     },
     {
