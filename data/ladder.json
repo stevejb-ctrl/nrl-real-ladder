@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 10,
   "competitionId": 111,
-  "fetchedAt": "2026-05-09T20:09:52.361Z",
+  "fetchedAt": "2026-05-10T07:48:44.532Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -107,16 +107,16 @@
       "initials": "WT",
       "primary": "#F37021",
       "secondary": "#000000",
-      "played": 8,
+      "played": 9,
       "wins": 5,
-      "losses": 3,
+      "losses": 4,
       "draws": 0,
       "byes": 1,
-      "pointsFor": 219,
-      "pointsAgainst": 179,
-      "pointsDiff": 40,
+      "pointsFor": 235,
+      "pointsAgainst": 223,
+      "pointsDiff": 12,
       "compPoints": 12,
-      "streak": "1L",
+      "streak": "2L",
       "officialPosition": 6
     },
     {
@@ -272,6 +272,25 @@
       "officialPosition": 14
     },
     {
+      "slug": "storm",
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "initials": "MS",
+      "primary": "#552E91",
+      "secondary": "#FFC72C",
+      "played": 10,
+      "wins": 3,
+      "losses": 7,
+      "draws": 0,
+      "byes": 0,
+      "pointsFor": 242,
+      "pointsAgainst": 276,
+      "pointsDiff": -34,
+      "compPoints": 6,
+      "streak": "1W",
+      "officialPosition": 15
+    },
+    {
       "slug": "titans",
       "shortName": "Titans",
       "fullName": "Gold Coast Titans",
@@ -288,25 +307,6 @@
       "pointsDiff": -62,
       "compPoints": 6,
       "streak": "3L",
-      "officialPosition": 15
-    },
-    {
-      "slug": "storm",
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "initials": "MS",
-      "primary": "#552E91",
-      "secondary": "#FFC72C",
-      "played": 9,
-      "wins": 2,
-      "losses": 7,
-      "draws": 0,
-      "byes": 0,
-      "pointsFor": 198,
-      "pointsAgainst": 260,
-      "pointsDiff": -62,
-      "compPoints": 4,
-      "streak": "5L",
       "officialPosition": 16
     },
     {
