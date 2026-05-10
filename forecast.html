@@ -279,18 +279,43 @@
   /* responsive */
   @media (max-width: 880px) {
     .colhead, .row {
-      grid-template-columns: 26px 1fr 58px 60px 140px;
+      grid-template-columns: 26px minmax(0, 1fr) 50px 120px;
       gap: 10px;
     }
-    .colhead .now-h, .colhead .top4-h, .colhead .minor-h, .colhead .spoon-h { display: none; }
-    .row .now, .row .top4, .row .minor, .row .spoon { display: none; }
+    .colhead .now-h,
+    .colhead .proj-h,
+    .colhead .top4-h,
+    .colhead .minor-h,
+    .colhead .spoon-h { display: none; }
+    .row .now,
+    .row .proj,
+    .row .top4,
+    .row .minor,
+    .row .spoon { display: none; }
+    .name .nick { display: none; }
     .spread { height: 18px; }
     .name { font-size: 13px; }
     .pos { font-size: 18px; }
-    .proj { font-size: 12px; }
     .pct { font-size: 11px; }
     .insight { grid-template-columns: 1fr; gap: 10px; }
     .insight .body { font-size: 15px; }
+  }
+
+  /* tighter for narrow phones */
+  @media (max-width: 420px) {
+    .wrap { padding: 0 14px; }
+    .colhead, .row {
+      grid-template-columns: 22px minmax(0, 1fr) 42px 96px;
+      gap: 8px;
+    }
+    .row { padding: 12px 2px; }
+    .swatch { width: 3px; height: 22px; }
+    .team { gap: 8px; }
+    .name { font-size: 12px; }
+    .pos { font-size: 16px; }
+    .pct { font-size: 10px; }
+    .spread { height: 16px; }
+    h1.title { font-size: clamp(44px, 14vw, 88px); }
   }
 
   .err {
@@ -330,7 +355,7 @@
     <span></span>
     <span>Team</span>
     <span class="num now-h">Now</span>
-    <span class="num">Projected wins</span>
+    <span class="num proj-h">Projected wins</span>
     <span class="num">Finals</span>
     <span class="num top4-h">Top 4</span>
     <span class="num minor-h">Minor</span>
