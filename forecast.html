@@ -38,9 +38,8 @@
 
   /* mast */
   .mast {
-    padding-top: 32px;
-    border-top: 1px solid var(--line-strong);
-    margin-top: 28px;
+    padding-top: 28px;
+    margin-top: 0;
   }
   .mast-meta {
     display: flex;
@@ -55,24 +54,41 @@
   }
   .mast-meta .right { text-align: right; }
   .mast-meta b { color: var(--ink); font-weight: 700; }
-  .nav {
+
+  /* top nav — proper site header, sits above the mast */
+  .topnav {
     display: flex;
-    justify-content: space-between;
+    gap: 32px;
+    padding: 26px 0 0;
     align-items: baseline;
-    margin-bottom: 12px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.18em;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .topnav a {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-  }
-  .nav a {
-    color: var(--ink-soft);
+    color: var(--ink-mute);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 2px;
-    transition: border-color .15s;
+    position: relative;
+    padding-bottom: 12px;
+    transition: color .15s;
   }
-  .nav a:hover { border-bottom-color: var(--accent); color: var(--ink); }
+  .topnav a:hover { color: var(--ink-soft); }
+  .topnav a.active { color: var(--ink); }
+  .topnav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: var(--accent);
+  }
+  @media (max-width: 480px) {
+    .topnav { gap: 20px; padding-top: 18px; }
+    .topnav a { font-size: 17px; padding-bottom: 10px; }
+  }
 
   h1.title {
     font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
@@ -331,11 +347,12 @@
 <body>
 <div class="wrap">
 
+  <nav class="topnav">
+    <a href="./index.html">Real ladder</a>
+    <a href="./forecast.html" class="active">Season forecast</a>
+  </nav>
+
   <header class="mast">
-    <nav class="nav">
-      <a href="./index.html">← Real ladder</a>
-      <span style="color: var(--ink-mute);">Forecast</span>
-    </nav>
     <div class="mast-meta">
       <span id="round-tag">Loading…</span>
       <span class="right" id="generated">—</span>
