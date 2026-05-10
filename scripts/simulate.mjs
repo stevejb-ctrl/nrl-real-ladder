@@ -15,9 +15,28 @@ const OUT_PATH = resolve(REPO_ROOT, 'data', 'forecast.json');
 
 const N_SIMS = 10_000;
 const FORM_WEIGHT = 0.30;            // weight on last-5 form vs season-long win%
-const HFA = 0.10;                    // home-field advantage in skill units (~+60 Elo)
-const MIN_WIN_PROB = 0.05;           // floor / ceiling so 0% teams don't get truly 0
+const PRIOR_GAMES = 8;               // Bayesian prior: pretend each team has N "ghost games" at 50%.
+                                     // A 9-1 team becomes (9+4)/(10+8) = 72%, not 90%. Reflects that
+                                     // observed records after 10 games are noisy estimates of true skill.
+const FORM_PRIOR_GAMES = 1;          // Lighter prior on the 5-game form sample (Laplace smoothing).
+const SKILL_SCALE = 4;               // Logistic spread on skill diff. ≈Elo 175-scale.
+const HFA_LOGIT = 0.25;              // ~56% home win rate in an evenly matched game.
+const MIN_WIN_PROB = 0.05;           // floor/ceiling so 0% teams don't get truly 0
 const MAX_WIN_PROB = 0.95;
+
+// Bayesian-regress an observed (wins, draws, played) toward 50% with a prior strength of `prior` games.
+function regressWp(wins, draws, played, prior) {
+  const w = wins + 0.5 * draws;
+  return (w + 0.5 * prior) / (played + prior);
+}
+
+// Parse "4 - 1" → { wins, losses }; null on failure.
+function parseFormPair(s) {
+  if (!s || typeof s !== 'string') return null;
+  const m = s.match(/^\s*(\d+)\s*-\s*(\d+)\s*$/);
+  if (!m) return null;
+  return { wins: +m[1], losses: +m[2] };
+}
 
 const ladder = JSON.parse(readFileSync(LADDER_PATH, 'utf8'));
 const draw = JSON.parse(readFileSync(DRAW_PATH, 'utf8'));
@@ -26,23 +45,24 @@ const N_TEAMS = ladder.teams.length;
 const FINALS_CUTOFF = 8;
 const TOP_4 = 4;
 
-// "4 - 1" → 0.8.  "0 - 5" → 0.  Empty / malformed → null (caller falls back).
-function parseForm(s) {
-  if (!s || typeof s !== 'string') return null;
-  const m = s.match(/^\s*(\d+)\s*-\s*(\d+)\s*$/);
-  if (!m) return null;
-  const w = +m[1], l = +m[2];
-  const total = w + l;
-  if (total === 0) return null;
-  return w / total;
-}
-
 // Build immutable per-team baseline.
 const baseline = {};
 for (const t of ladder.teams) {
-  const seasonWp = t.played > 0 ? (t.wins + 0.5 * t.draws) / t.played : 0.5;
-  const formWp = parseForm(t.form) ?? seasonWp;
-  const skill = (1 - FORM_WEIGHT) * seasonWp + FORM_WEIGHT * formWp;
+  // Raw observed (kept for display purposes only).
+  const rawSeasonWp = t.played > 0 ? (t.wins + 0.5 * t.draws) / t.played : 0.5;
+
+  // Regressed estimates — the model uses these.
+  const regressedSeasonWp = regressWp(t.wins, t.draws, t.played, PRIOR_GAMES);
+
+  const formPair = parseFormPair(t.form);
+  const rawFormWp = formPair && (formPair.wins + formPair.losses) > 0
+    ? formPair.wins / (formPair.wins + formPair.losses)
+    : null;
+  const regressedFormWp = formPair
+    ? regressWp(formPair.wins, 0, formPair.wins + formPair.losses, FORM_PRIOR_GAMES)
+    : regressedSeasonWp;
+
+  const skill = (1 - FORM_WEIGHT) * regressedSeasonWp + FORM_WEIGHT * regressedFormWp;
   baseline[t.slug] = {
     slug: t.slug,
     shortName: t.shortName,
@@ -54,8 +74,10 @@ for (const t of ladder.teams) {
     played: t.played,
     pointsDiff: t.pointsDiff,
     skill,
-    seasonWp,
-    formWp,
+    rawSeasonWp,
+    rawFormWp,
+    regressedSeasonWp,
+    regressedFormWp,
     officialPosition: t.officialPosition,
   };
 }
@@ -69,11 +91,10 @@ function clamp(p) {
 function homeWinProb(homeSlug, awaySlug) {
   const sH = baseline[homeSlug].skill;
   const sA = baseline[awaySlug].skill;
-  // Logistic on skill difference + home advantage.
-  // Multiply skill diff by 6 to spread the curve — without scaling, even a 0.4
-  // skill gap (a huge gap in this model) only gives ~60% win prob. Calibrating
-  // against current bookmaker odds for the upcoming round suggests ~6× is right.
-  const z = 6 * (sH - sA) + HFA * 6;
+  // Logistic on skill difference + home advantage logit.
+  // SKILL_SCALE = 4 spreads the curve so a 30-pt skill gap gives ~76% win prob,
+  // a 10-pt gap gives ~60%. HFA_LOGIT = 0.25 gives ~56% home in evenly matched.
+  const z = SKILL_SCALE * (sH - sA) + HFA_LOGIT;
   return clamp(1 / (1 + Math.exp(-z)));
 }
 
@@ -151,8 +172,10 @@ for (const slug of slugs) {
     currentLosses: baseline[slug].losses,
     currentDraws: baseline[slug].draws,
     currentPlayed: baseline[slug].played,
-    seasonWp: +baseline[slug].seasonWp.toFixed(4),
-    formWp: +baseline[slug].formWp.toFixed(4),
+    rawSeasonWp: +baseline[slug].rawSeasonWp.toFixed(4),
+    regressedSeasonWp: +baseline[slug].regressedSeasonWp.toFixed(4),
+    rawFormWp: baseline[slug].rawFormWp != null ? +baseline[slug].rawFormWp.toFixed(4) : null,
+    regressedFormWp: +baseline[slug].regressedFormWp.toFixed(4),
     skill: +baseline[slug].skill.toFixed(4),
     finalsPct: +finals.toFixed(4),
     top4Pct: +top4.toFixed(4),
@@ -180,9 +203,9 @@ const out = {
   drawFetchedAt: draw.fetchedAt,
   remainingMatches: matches.length,
   nSims: N_SIMS,
-  modelVersion: '1.0',
-  modelDescription: '70% season win%, 30% last-5-game form (parsed from ladder.form), home advantage 0.10 in skill units, logistic spread ×6 (≈Elo 400-scale), 10,000 sims',
-  weights: { formWeight: FORM_WEIGHT, hfa: HFA },
+  modelVersion: '1.1',
+  modelDescription: 'Bayesian-regressed skill = 0.7 × regressed season win% + 0.3 × regressed last-5 form. Each team gets 8 ghost games at 50% as a prior, so a 9-1 record is treated as ~72% true skill, not 90%. P(home wins) = sigmoid(4 × (skill_home − skill_away) + 0.25). 10,000 sims.',
+  weights: { formWeight: FORM_WEIGHT, priorGames: PRIOR_GAMES, formPriorGames: FORM_PRIOR_GAMES, skillScale: SKILL_SCALE, hfaLogit: HFA_LOGIT },
   durationMs: dur,
   teams,
 };

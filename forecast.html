@@ -172,6 +172,7 @@
   .team { display: flex; align-items: center; gap: 12px; min-width: 0; }
   .swatch { width: 4px; height: 26px; flex: 0 0 auto; background: var(--accent-team, #444); border-radius: 1px; }
   .name { min-width: 0; font-weight: 600; font-size: 15px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .name .nick { color: var(--ink-mute); font-weight: 500; font-size: 0.78em; }
 
   .now {
     font-family: 'JetBrains Mono', monospace;
@@ -341,7 +342,8 @@
 
   <section class="method">
     <h2>How it works</h2>
-    <p>For each team, we compute a <strong>skill rating</strong> that is 70% season win % (the long-run signal) and 30% last-five-game win % (the short-run signal). We then pit the home and away skills against each other in a logistic with a small home-ground bonus: <code>P(home wins) = sigmoid(6 × (skill_home − skill_away) + 0.6)</code>. Apply that to every remaining fixture, simulate the season 10,000 times, and tally where each team finishes.</p>
+    <p>For each team, we compute a <strong>skill rating</strong> that is 70% regressed season win % (the long-run signal) and 30% regressed last-five-game form (the short-run signal). We then pit the home and away skills against each other in a logistic with a small home-ground bonus: <code>P(home wins) = sigmoid(4 × (skill_home − skill_away) + 0.25)</code>. Apply that to every remaining fixture, simulate the season 10,000 times, and tally where each team finishes.</p>
+    <p><strong>"Regressed"</strong> matters. After 10 games a 9-1 record is noisy evidence — it could just as easily come from a 75% true-skill team on a hot run as from a genuine 90% team. We pretend each team has eight extra "ghost games" at 50% on top of their actual record, which pulls extreme records back toward the middle. So 9-1 is treated as ~72% true skill, and 0-9 as ~24% (not 0%). This stops the model from being absurdly confident about teams whose sample size is only 10 games.</p>
     <p>Tie-breakers in the simulated end-of-season ladder use each team's <em>current</em> points differential (we don't simulate score margins). Probabilities are reported to one decimal place; confidence intervals are 10th–90th percentile across the 10,000 runs.</p>
     <p class="caveat"><strong>Treat as entertainment.</strong> The model sees no injuries, no suspensions, no weather, no Origin disruption, no refereeing variance, no roster changes, no coaching changes mid-season. A team's skill rating is frozen at today's value across all 10,000 simulated rounds. The point isn't to be right — it's to make the shape of the run home legible.</p>
   </section>
@@ -403,7 +405,7 @@ function buildInsight(teams, meta) {
   return lines.map(l => `<p>${l}</p>`).join('');
 }
 
-function renderRow(t, nPos) {
+function renderRow(t, nPos, rank) {
   const row = document.createElement('div');
   const isLock = t.finalsPct >= 0.95;
   const isGone = t.finalsPct <= 0.05;
@@ -430,10 +432,10 @@ function renderRow(t, nPos) {
   const spoonCls = t.woodenSpoonPct >= 0.50 ? ' spoon-hot' : t.woodenSpoonPct <= 0.05 ? ' zero' : '';
 
   row.innerHTML = `
-    <span class="pos">${t.officialPosition}</span>
+    <span class="pos">${rank}</span>
     <div class="team">
       <span class="swatch" style="background:${t.primary}"></span>
-      <span class="name">${t.shortName}</span>
+      <span class="name">${t.shortName}<span class="nick"> · #${t.officialPosition} official</span></span>
     </div>
     <span class="now">${t.currentWins}-${t.currentLosses}${t.currentDraws ? '-' + t.currentDraws : ''}</span>
     <span class="proj">${t.projectedWins.median}<span class="range">${t.projectedWins.p10}–${t.projectedWins.p90}</span></span>
@@ -468,13 +470,18 @@ function render(forecast) {
     document.getElementById('insight-body').innerHTML = insightHtml;
   }
 
-  // Sort rows by finals% desc, tiebreak by minor%
-  arr.sort((a, b) => (b.finalsPct - a.finalsPct) || (b.minorPremPct - a.minorPremPct) || (b.top4Pct - a.top4Pct));
+  // Sort rows so the list reads top-to-bottom as the model's predicted final ladder:
+  // primary = projected median position (lower is better), tiebreak by mean projected wins, then finals%.
+  arr.sort((a, b) =>
+    (a.projectedPosition.median - b.projectedPosition.median) ||
+    (b.projectedWins.mean - a.projectedWins.mean) ||
+    (b.finalsPct - a.finalsPct)
+  );
 
   const root = document.getElementById('ladder');
   root.innerHTML = '';
   arr.forEach((t, i) => {
-    const row = renderRow(t, nPos);
+    const row = renderRow(t, nPos, i + 1);
     row.style.animationDelay = (35 * i) + 'ms';
     root.appendChild(row);
   });
