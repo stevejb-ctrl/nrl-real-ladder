@@ -64,6 +64,7 @@ async function main() {
       pointsDiff: s['points difference'] ?? 0,
       compPoints: s.points ?? 0,
       streak: s.streak ?? '',
+      form: s.form ?? '',
       officialPosition: idx + 1,
     };
   });

@@ -25,15 +25,21 @@ jobs:
       - name: Fetch latest ladder
         run: node scripts/fetch-ladder.mjs
 
-      - name: Commit if ladder changed
+      - name: Fetch remaining draw
+        run: node scripts/fetch-draw.mjs
+
+      - name: Run Monte Carlo simulation
+        run: node scripts/simulate.mjs
+
+      - name: Commit if data changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/ladder.json
+          git add data/ladder.json data/draw.json data/forecast.json
           if git diff --cached --quiet; then
-            echo "No ladder changes to commit."
+            echo "No data changes to commit."
           else
-            git commit -m "Refresh ladder ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git commit -m "Refresh data ($(date -u +%Y-%m-%dT%H:%MZ))"
             git push
           fi
 

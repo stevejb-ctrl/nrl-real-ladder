@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0b0e" />
+<title>NRL Season Forecast · Monte Carlo</title>
+<meta name="description" content="10,000 Monte Carlo simulations of every remaining NRL match, projecting where each team finishes the season." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0b0e;
+    --bg-soft:   #101218;
+    --line:      rgba(240, 234, 218, 0.09);
+    --line-strong: rgba(240, 234, 218, 0.18);
+    --ink:       #f1ecde;
+    --ink-mute:  #8b8e9a;
+    --ink-soft:  #c5c2b6;
+    --accent:    #e3322a;
+    --accent-dim:#7e1e1a;
+    --gold:      #c8a85a;
+    --good:      #58c08b;
+    --bad:       #d65a52;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* mast */
+  .mast {
+    padding-top: 32px;
+    border-top: 1px solid var(--line-strong);
+    margin-top: 28px;
+  }
+  .mast-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+  }
+  .mast-meta .right { text-align: right; }
+  .mast-meta b { color: var(--ink); font-weight: 700; }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color .15s;
+  }
+  .nav a:hover { border-bottom-color: var(--accent); color: var(--ink); }
+
+  h1.title {
+    font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: clamp(56px, 11vw, 132px);
+    letter-spacing: 0.005em;
+    line-height: 0.86;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  h1.title .accent { color: var(--accent); }
+  h1.title .small { display: block; font-size: 0.32em; color: var(--ink-soft); letter-spacing: 0.04em; margin-top: 6px; }
+
+  .dek {
+    max-width: 620px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0 0 28px;
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+  }
+  .dek em { font-style: italic; color: var(--ink); }
+
+  /* insight */
+  .insight {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    margin: 24px 0 36px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .insight .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+  .insight .body { font-size: 17px; line-height: 1.55; color: var(--ink); }
+  .insight .body b { color: var(--ink); font-weight: 700; }
+  .insight .body p { margin: 0 0 8px; }
+  .insight .body p:last-child { margin: 0; }
+  .insight .body .num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 0.92em; }
+  .insight .body .gold { color: var(--gold); }
+  .insight .body .red  { color: var(--accent); }
+  .insight .body .good { color: var(--good); }
+  .insight .body .bad  { color: var(--bad); }
+
+  /* table */
+  .colhead, .row {
+    display: grid;
+    grid-template-columns: 32px 1.4fr 70px 90px 60px 56px 56px 56px 200px;
+    gap: 14px;
+    align-items: center;
+  }
+  .colhead {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    padding: 0 4px 10px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .colhead .num { text-align: right; }
+  .colhead .spread-h { text-align: left; padding-left: 4px; }
+
+  .ladder { padding-top: 4px; }
+  .row {
+    padding: 14px 4px;
+    border-bottom: 1px solid var(--line);
+    opacity: 0;
+    transform: translateY(6px);
+    animation: rise 0.4s cubic-bezier(.2,.7,.2,1) forwards;
+    position: relative;
+  }
+  .row.lock { background: linear-gradient(90deg, rgba(200,168,90,0.05), transparent 60%); }
+  .row.gone { opacity: 0.85; }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  .row.gone { animation-fill-mode: forwards; }
+
+  .pos {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+    text-align: center;
+  }
+  .row.gone .pos { color: var(--ink-mute); }
+
+  .team { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .swatch { width: 4px; height: 26px; flex: 0 0 auto; background: var(--accent-team, #444); border-radius: 1px; }
+  .name { min-width: 0; font-weight: 600; font-size: 15px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  .now {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .proj {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-align: right;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.25;
+  }
+  .proj .range { display: block; font-size: 10px; color: var(--ink-mute); margin-top: 2px; }
+
+  .pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: right;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+  .pct.lock { color: var(--gold); }
+  .pct.zero { color: var(--ink-mute); font-weight: 500; }
+  .pct.spoon-hot { color: var(--bad); }
+
+  /* distribution heatmap */
+  .spread {
+    display: grid;
+    grid-template-columns: repeat(var(--n-pos, 17), 1fr);
+    gap: 1px;
+    height: 22px;
+    position: relative;
+  }
+  .spread .cell {
+    background: rgba(241, 236, 222, var(--p, 0));
+    position: relative;
+  }
+  .spread .cell.finals { box-shadow: inset 0 -2px 0 0 rgba(200, 168, 90, 0.55); }
+  .spread .cell.spoon { box-shadow: inset 0 -2px 0 0 rgba(214, 90, 82, 0.55); }
+  .spread .cell.minor { box-shadow: inset 0 -2px 0 0 var(--accent); }
+  .spread .divider {
+    position: absolute;
+    top: 0; bottom: 0;
+    border-right: 1px dashed var(--gold);
+    opacity: 0.55;
+    pointer-events: none;
+  }
+
+  /* methodology */
+  .method {
+    margin-top: 56px;
+    border-top: 1px solid var(--line-strong);
+    padding-top: 18px;
+  }
+  .method h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+  .method p {
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.65;
+    max-width: 64ch;
+    margin: 0 0 10px;
+  }
+  .method strong { color: var(--ink); }
+  .method code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: rgba(255,255,255,0.06);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--ink);
+  }
+  .method .caveat {
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+    color: var(--ink);
+  }
+
+  /* foot */
+  .foot {
+    border-top: 1px solid var(--line);
+    margin-top: 36px;
+    padding: 22px 0 56px;
+    color: var(--ink-mute);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .foot a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+  .foot a:hover { text-decoration-color: var(--accent); }
+  .foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  /* responsive */
+  @media (max-width: 880px) {
+    .colhead, .row {
+      grid-template-columns: 26px 1fr 58px 60px 140px;
+      gap: 10px;
+    }
+    .colhead .now-h, .colhead .top4-h, .colhead .minor-h, .colhead .spoon-h { display: none; }
+    .row .now, .row .top4, .row .minor, .row .spoon { display: none; }
+    .spread { height: 18px; }
+    .name { font-size: 13px; }
+    .pos { font-size: 18px; }
+    .proj { font-size: 12px; }
+    .pct { font-size: 11px; }
+    .insight { grid-template-columns: 1fr; gap: 10px; }
+    .insight .body { font-size: 15px; }
+  }
+
+  .err {
+    padding: 18px;
+    border: 1px solid var(--accent-dim);
+    background: rgba(227, 50, 42, 0.08);
+    color: #f4c1bd;
+    font-size: 14px;
+    margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mast">
+    <nav class="nav">
+      <a href="./index.html">← Real ladder</a>
+      <span style="color: var(--ink-mute);">Forecast</span>
+    </nav>
+    <div class="mast-meta">
+      <span id="round-tag">Loading…</span>
+      <span class="right" id="generated">—</span>
+    </div>
+    <h1 class="title">
+      Season<br><span class="accent">Forecast</span><span class="small" id="sims-tag">10,000 simulations · run-home only</span>
+    </h1>
+    <p class="dek">Where does each team actually <em>finish</em>? Every remaining match simulated 10,000 times, weighted by season form and a small home-field edge. Probabilities, not certainties.</p>
+  </header>
+
+  <section class="insight" id="insight" hidden>
+    <div class="kicker">Forecast read</div>
+    <div class="body" id="insight-body"></div>
+  </section>
+
+  <div class="colhead" aria-hidden="true">
+    <span></span>
+    <span>Team</span>
+    <span class="num now-h">Now</span>
+    <span class="num">Projected wins</span>
+    <span class="num">Finals</span>
+    <span class="num top4-h">Top 4</span>
+    <span class="num minor-h">Minor</span>
+    <span class="num spoon-h">Spoon</span>
+    <span class="spread-h">Position spread</span>
+  </div>
+
+  <main id="ladder" class="ladder" aria-live="polite"></main>
+
+  <section class="method">
+    <h2>How it works</h2>
+    <p>For each team, we compute a <strong>skill rating</strong> that is 70% season win % (the long-run signal) and 30% last-five-game win % (the short-run signal). We then pit the home and away skills against each other in a logistic with a small home-ground bonus: <code>P(home wins) = sigmoid(6 × (skill_home − skill_away) + 0.6)</code>. Apply that to every remaining fixture, simulate the season 10,000 times, and tally where each team finishes.</p>
+    <p>Tie-breakers in the simulated end-of-season ladder use each team's <em>current</em> points differential (we don't simulate score margins). Probabilities are reported to one decimal place; confidence intervals are 10th–90th percentile across the 10,000 runs.</p>
+    <p class="caveat"><strong>Treat as entertainment.</strong> The model sees no injuries, no suspensions, no weather, no Origin disruption, no refereeing variance, no roster changes, no coaching changes mid-season. A team's skill rating is frozen at today's value across all 10,000 simulated rounds. The point isn't to be right — it's to make the shape of the run home legible.</p>
+  </section>
+
+  <footer class="foot">
+    <strong>Data.</strong> <a href="https://www.nrl.com/draw/">nrl.com/draw</a> for fixtures, <a href="https://www.nrl.com/ladder/">nrl.com/ladder</a> for current standings. Refreshed every six hours via GitHub Actions; simulation runs server-side on every refresh.
+  </footer>
+</div>
+
+<script>
+const winPct = (t) => t.currentPlayed > 0 ? (t.currentWins + 0.5 * t.currentDraws) / t.currentPlayed : 0;
+const fmtPct = (n) => (n * 100 < 0.05 ? '0.0' : (n * 100).toFixed(1)) + '%';
+
+function buildInsight(teams, meta) {
+  const arr = Object.values(teams);
+  const sortedFinals = [...arr].sort((a, b) => b.finalsPct - a.finalsPct);
+  const sortedMinor = [...arr].sort((a, b) => b.minorPremPct - a.minorPremPct);
+  const sortedSpoon = [...arr].sort((a, b) => b.woodenSpoonPct - a.woodenSpoonPct);
+
+  const topMinor = sortedMinor[0];
+  const topSpoon = sortedSpoon[0];
+
+  // Closest to finals line: highest entropy near 50%
+  const onTheBubble = arr
+    .filter(t => t.finalsPct >= 0.20 && t.finalsPct <= 0.80)
+    .sort((a, b) => Math.abs(0.5 - a.finalsPct) - Math.abs(0.5 - b.finalsPct));
+
+  const lines = [];
+
+  // Lead with the minor-premier story
+  if (topMinor.minorPremPct >= 0.30) {
+    lines.push(`<b>${topMinor.shortName}</b> are the runaway minor-premier favourite — <span class="num gold">${fmtPct(topMinor.minorPremPct)}</span> chance of finishing top.`);
+  } else if (topMinor.minorPremPct >= 0.10) {
+    const second = sortedMinor[1];
+    lines.push(`The minor premiership is a fight between <b>${topMinor.shortName}</b> (<span class="num gold">${fmtPct(topMinor.minorPremPct)}</span>) and <b>${second.shortName}</b> (<span class="num">${fmtPct(second.minorPremPct)}</span>).`);
+  }
+
+  // Wooden-spoon lock
+  if (topSpoon.woodenSpoonPct >= 0.50) {
+    lines.push(`Wooden spoon all but locked: <b>${topSpoon.shortName}</b> at <span class="num bad">${fmtPct(topSpoon.woodenSpoonPct)}</span>.`);
+  }
+
+  // Bubble teams
+  if (onTheBubble.length > 0) {
+    const t = onTheBubble[0];
+    lines.push(`On the bubble: <b>${t.shortName}</b> at <span class="num">${fmtPct(t.finalsPct)}</span> to make finals — projected to win <span class="num">${t.projectedWins.median}</span> games (range <span class="num">${t.projectedWins.p10}–${t.projectedWins.p90}</span>).`);
+  }
+
+  // Sneak in the top-4 race story if it's a tight one
+  const top4Field = arr.filter(t => t.top4Pct >= 0.10 && t.top4Pct <= 0.90);
+  if (top4Field.length >= 4 && lines.length < 3) {
+    const sorted = top4Field.sort((a, b) => b.top4Pct - a.top4Pct);
+    const onTheLine = sorted.find(t => t.top4Pct >= 0.30 && t.top4Pct <= 0.70);
+    if (onTheLine) {
+      lines.push(`Double-chance race wide open: <b>${onTheLine.shortName}</b> sit at <span class="num">${fmtPct(onTheLine.top4Pct)}</span> for a top-4 finish.`);
+    }
+  }
+
+  return lines.map(l => `<p>${l}</p>`).join('');
+}
+
+function renderRow(t, nPos) {
+  const row = document.createElement('div');
+  const isLock = t.finalsPct >= 0.95;
+  const isGone = t.finalsPct <= 0.05;
+  row.className = 'row' + (isLock ? ' lock' : '') + (isGone ? ' gone' : '');
+  row.style.setProperty('--accent-team', t.primary);
+
+  // distribution cells
+  let maxP = 0;
+  for (const p of t.distribution) if (p > maxP) maxP = p;
+  const cells = t.distribution.map((p, i) => {
+    const pos = i + 1;
+    const norm = maxP > 0 ? Math.min(1, p / maxP) : 0;
+    const alpha = norm > 0 ? Math.max(0.04, 0.08 + norm * 0.85) : 0;
+    const cls = ['cell'];
+    if (pos === 1) cls.push('minor');
+    else if (pos <= 8) cls.push('finals');
+    else if (pos === nPos) cls.push('spoon');
+    return `<span class="${cls.join(' ')}" style="--p:${alpha.toFixed(3)}" title="P=${(p * 100).toFixed(1)}% finishing #${pos}"></span>`;
+  }).join('');
+
+  const finalsCls = t.finalsPct >= 0.95 ? ' lock' : t.finalsPct <= 0.05 ? ' zero' : '';
+  const top4Cls = t.top4Pct >= 0.95 ? ' lock' : t.top4Pct <= 0.05 ? ' zero' : '';
+  const minorCls = t.minorPremPct >= 0.50 ? ' lock' : t.minorPremPct <= 0.05 ? ' zero' : '';
+  const spoonCls = t.woodenSpoonPct >= 0.50 ? ' spoon-hot' : t.woodenSpoonPct <= 0.05 ? ' zero' : '';
+
+  row.innerHTML = `
+    <span class="pos">${t.officialPosition}</span>
+    <div class="team">
+      <span class="swatch" style="background:${t.primary}"></span>
+      <span class="name">${t.shortName}</span>
+    </div>
+    <span class="now">${t.currentWins}-${t.currentLosses}${t.currentDraws ? '-' + t.currentDraws : ''}</span>
+    <span class="proj">${t.projectedWins.median}<span class="range">${t.projectedWins.p10}–${t.projectedWins.p90}</span></span>
+    <span class="pct${finalsCls}">${fmtPct(t.finalsPct)}</span>
+    <span class="pct top4${top4Cls}">${fmtPct(t.top4Pct)}</span>
+    <span class="pct minor${minorCls}">${fmtPct(t.minorPremPct)}</span>
+    <span class="pct spoon${spoonCls}">${fmtPct(t.woodenSpoonPct)}</span>
+    <div class="spread" style="--n-pos:${nPos}"><span class="divider" style="left: calc(8 * (100% / ${nPos}))"></span>${cells}</div>
+  `;
+  return row;
+}
+
+function render(forecast) {
+  const teams = forecast.teams;
+  const arr = Object.entries(teams).map(([slug, t]) => ({ slug, ...t }));
+  const nPos = arr.length;
+
+  document.getElementById('round-tag').innerHTML =
+    `Round <b>${forecast.ladderRound}</b> · <b>${forecast.remainingMatches}</b> matches to go`;
+
+  const u = new Date(forecast.generatedAt);
+  document.getElementById('generated').textContent =
+    `Generated ${u.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}`;
+
+  document.getElementById('sims-tag').textContent =
+    `${forecast.nSims.toLocaleString()} simulations · run-home only`;
+
+  // Insight
+  const insightHtml = buildInsight(teams, forecast);
+  if (insightHtml) {
+    document.getElementById('insight').hidden = false;
+    document.getElementById('insight-body').innerHTML = insightHtml;
+  }
+
+  // Sort rows by finals% desc, tiebreak by minor%
+  arr.sort((a, b) => (b.finalsPct - a.finalsPct) || (b.minorPremPct - a.minorPremPct) || (b.top4Pct - a.top4Pct));
+
+  const root = document.getElementById('ladder');
+  root.innerHTML = '';
+  arr.forEach((t, i) => {
+    const row = renderRow(t, nPos);
+    row.style.animationDelay = (35 * i) + 'ms';
+    root.appendChild(row);
+  });
+}
+
+function showError(msg) {
+  document.getElementById('ladder').innerHTML = `<div class="err">${msg}</div>`;
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data/forecast.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    console.error(e);
+    showError(`Couldn't load forecast (${e.message}). Run <code>node scripts/simulate.mjs</code> in this folder, or check the network.`);
+  }
+}
+load();
+</script>
+</body>
+</html>

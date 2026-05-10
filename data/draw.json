@@ -1,0 +1,1543 @@
+{
+  "season": 2026,
+  "competitionId": 111,
+  "fromRound": 10,
+  "toRound": 27,
+  "fetchedAt": "2026-05-10T11:14:15.309Z",
+  "matches": [
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "sharks",
+      "away": "bulldogs",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-15T08:00:00Z",
+      "homeOdds": 1.48,
+      "awayOdds": 2.67
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "rabbitohs",
+      "away": "dolphins",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-15T10:05:00Z",
+      "homeOdds": 1.7,
+      "awayOdds": 2.16
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "wests-tigers",
+      "away": "sea-eagles",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T05:00:00Z",
+      "homeOdds": 3.28,
+      "awayOdds": 1.34
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "roosters",
+      "away": "cowboys",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T07:30:00Z",
+      "homeOdds": 1.24,
+      "awayOdds": 4.2
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "eels",
+      "away": "storm",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T09:45:00Z",
+      "homeOdds": 2.66,
+      "awayOdds": 1.48
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "titans",
+      "away": "knights",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T04:00:00Z",
+      "homeOdds": 3.5,
+      "awayOdds": 1.31
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "warriors",
+      "away": "broncos",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T06:05:00Z",
+      "homeOdds": 1.71,
+      "awayOdds": 2.14
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "home": "panthers",
+      "away": "dragons",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T08:25:00Z",
+      "homeOdds": 1.04,
+      "awayOdds": 10.5
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "home": "raiders",
+      "away": "dolphins",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-05-21T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "home": "bulldogs",
+      "away": "storm",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-22T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "home": "dragons",
+      "away": "warriors",
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-05-23T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "home": "sea-eagles",
+      "away": "titans",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-23T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "home": "cowboys",
+      "away": "rabbitohs",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-05-24T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "sharks",
+      "away": "sea-eagles",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-29T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "knights",
+      "away": "eels",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-05-30T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "wests-tigers",
+      "away": "bulldogs",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-30T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "storm",
+      "away": "roosters",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-05-30T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "broncos",
+      "away": "dragons",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-31T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "raiders",
+      "away": "cowboys",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-05-31T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "home": "panthers",
+      "away": "warriors",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-31T08:15:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "sea-eagles",
+      "away": "rabbitohs",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-04T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "storm",
+      "away": "knights",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-06-05T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "raiders",
+      "away": "roosters",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-06-05T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "cowboys",
+      "away": "dolphins",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-06-06T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "broncos",
+      "away": "titans",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-06T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "wests-tigers",
+      "away": "panthers",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-07T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "sharks",
+      "away": "dragons",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-07T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "home": "bulldogs",
+      "away": "eels",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-08T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "home": "rabbitohs",
+      "away": "broncos",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-11T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "home": "dolphins",
+      "away": "roosters",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-12T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "home": "warriors",
+      "away": "sharks",
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-06-13T07:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "home": "eels",
+      "away": "raiders",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-13T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "home": "wests-tigers",
+      "away": "titans",
+      "venue": "Leichhardt Oval",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-14T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "knights",
+      "away": "dragons",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-06-19T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "wests-tigers",
+      "away": "dolphins",
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-20T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "titans",
+      "away": "panthers",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-06-20T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "bulldogs",
+      "away": "sea-eagles",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-20T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "warriors",
+      "away": "cowboys",
+      "venue": "One NZ Stadium",
+      "venueCity": "Christchurch",
+      "kickOff": "2026-06-21T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "storm",
+      "away": "raiders",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-06-21T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "home": "roosters",
+      "away": "sharks",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-21T08:15:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "eels",
+      "away": "rabbitohs",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-25T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "titans",
+      "away": "bulldogs",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-06-26T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "broncos",
+      "away": "roosters",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-26T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "dolphins",
+      "away": "warriors",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-27T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "cowboys",
+      "away": "panthers",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-06-27T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "sea-eagles",
+      "away": "storm",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-27T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "raiders",
+      "away": "dragons",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-06-28T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "home": "knights",
+      "away": "wests-tigers",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-06-28T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "home": "panthers",
+      "away": "rabbitohs",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-03T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "home": "dragons",
+      "away": "wests-tigers",
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-07-04T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "home": "broncos",
+      "away": "sharks",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-07-04T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "home": "eels",
+      "away": "sea-eagles",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-05T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "home": "knights",
+      "away": "dolphins",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-07-05T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "wests-tigers",
+      "away": "warriors",
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-10T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "dolphins",
+      "away": "sharks",
+      "venue": "Kayo Stadium",
+      "venueCity": "Redcliffe",
+      "kickOff": "2026-07-11T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "bulldogs",
+      "away": "raiders",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-11T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "roosters",
+      "away": "eels",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-11T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "rabbitohs",
+      "away": "knights",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-12T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "sea-eagles",
+      "away": "cowboys",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-12T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "home": "storm",
+      "away": "titans",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-07-12T08:15:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "panthers",
+      "away": "broncos",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-16T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "sharks",
+      "away": "knights",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-17T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "roosters",
+      "away": "storm",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-17T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "raiders",
+      "away": "rabbitohs",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-07-18T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "warriors",
+      "away": "dragons",
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-07-18T07:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "bulldogs",
+      "away": "wests-tigers",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-18T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "titans",
+      "away": "sea-eagles",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-07-19T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "home": "dolphins",
+      "away": "cowboys",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-07-19T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "eels",
+      "away": "panthers",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-23T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "knights",
+      "away": "roosters",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-07-24T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "rabbitohs",
+      "away": "storm",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-24T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "raiders",
+      "away": "wests-tigers",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-07-25T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "bulldogs",
+      "away": "warriors",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-25T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "cowboys",
+      "away": "broncos",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-07-25T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "dragons",
+      "away": "titans",
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-07-26T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "home": "sea-eagles",
+      "away": "sharks",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-26T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "cowboys",
+      "away": "roosters",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-07-30T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "dragons",
+      "away": "dolphins",
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-07-31T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "storm",
+      "away": "bulldogs",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-07-31T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "titans",
+      "away": "warriors",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-01T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "panthers",
+      "away": "raiders",
+      "venue": "Glen Willow Oval",
+      "venueCity": "Mudgee",
+      "kickOff": "2026-08-01T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "broncos",
+      "away": "knights",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-01T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "sharks",
+      "away": "rabbitohs",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-02T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "home": "wests-tigers",
+      "away": "eels",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-02T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "titans",
+      "away": "cowboys",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-06T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "warriors",
+      "away": "panthers",
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-08-07T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "roosters",
+      "away": "bulldogs",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-07T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "storm",
+      "away": "sea-eagles",
+      "venue": "HBF Park",
+      "venueCity": "Perth",
+      "kickOff": "2026-08-08T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "dolphins",
+      "away": "broncos",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-08T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "rabbitohs",
+      "away": "eels",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-08T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "raiders",
+      "away": "knights",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-08-09T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "home": "dragons",
+      "away": "sharks",
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-08-09T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "panthers",
+      "away": "roosters",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-13T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "sea-eagles",
+      "away": "dolphins",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-14T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "bulldogs",
+      "away": "rabbitohs",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-14T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "sharks",
+      "away": "raiders",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-15T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "eels",
+      "away": "cowboys",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-15T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "broncos",
+      "away": "warriors",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-15T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "knights",
+      "away": "titans",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-08-16T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "home": "wests-tigers",
+      "away": "dragons",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-16T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "storm",
+      "away": "panthers",
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-08-20T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "raiders",
+      "away": "broncos",
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-08-21T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "dolphins",
+      "away": "eels",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-21T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "knights",
+      "away": "sea-eagles",
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-08-22T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "rabbitohs",
+      "away": "warriors",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-22T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "dragons",
+      "away": "bulldogs",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-22T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "titans",
+      "away": "sharks",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-23T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "home": "roosters",
+      "away": "wests-tigers",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-23T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "broncos",
+      "away": "storm",
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-27T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "sea-eagles",
+      "away": "dragons",
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-28T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "panthers",
+      "away": "bulldogs",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-28T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "titans",
+      "away": "rabbitohs",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-29T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "roosters",
+      "away": "dolphins",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-29T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "cowboys",
+      "away": "wests-tigers",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-08-29T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "warriors",
+      "away": "knights",
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-08-30T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "home": "eels",
+      "away": "sharks",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-30T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "bulldogs",
+      "away": "broncos",
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-09-03T09:50:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "titans",
+      "away": "dolphins",
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-09-04T08:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "rabbitohs",
+      "away": "roosters",
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-09-04T10:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "warriors",
+      "away": "sea-eagles",
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-09-05T05:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "cowboys",
+      "away": "raiders",
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-09-05T07:30:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "sharks",
+      "away": "storm",
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-09-05T09:35:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "dragons",
+      "away": "eels",
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-09-06T04:00:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "home": "panthers",
+      "away": "wests-tigers",
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-09-06T06:05:00Z",
+      "homeOdds": null,
+      "awayOdds": null
+    }
+  ],
+  "byes": [
+    {
+      "round": 10,
+      "team": "warriors"
+    },
+    {
+      "round": 11,
+      "team": "raiders"
+    },
+    {
+      "round": 12,
+      "team": "broncos"
+    },
+    {
+      "round": 12,
+      "team": "eels"
+    },
+    {
+      "round": 12,
+      "team": "knights"
+    },
+    {
+      "round": 12,
+      "team": "panthers"
+    },
+    {
+      "round": 12,
+      "team": "roosters"
+    },
+    {
+      "round": 12,
+      "team": "sharks"
+    },
+    {
+      "round": 12,
+      "team": "wests-tigers"
+    },
+    {
+      "round": 13,
+      "team": "dolphins"
+    },
+    {
+      "round": 13,
+      "team": "rabbitohs"
+    },
+    {
+      "round": 13,
+      "team": "titans"
+    },
+    {
+      "round": 14,
+      "team": "warriors"
+    },
+    {
+      "round": 15,
+      "team": "bulldogs"
+    },
+    {
+      "round": 15,
+      "team": "cowboys"
+    },
+    {
+      "round": 15,
+      "team": "dragons"
+    },
+    {
+      "round": 15,
+      "team": "knights"
+    },
+    {
+      "round": 15,
+      "team": "panthers"
+    },
+    {
+      "round": 15,
+      "team": "sea-eagles"
+    },
+    {
+      "round": 15,
+      "team": "storm"
+    },
+    {
+      "round": 16,
+      "team": "broncos"
+    },
+    {
+      "round": 16,
+      "team": "eels"
+    },
+    {
+      "round": 16,
+      "team": "rabbitohs"
+    },
+    {
+      "round": 17,
+      "team": "sharks"
+    },
+    {
+      "round": 18,
+      "team": "bulldogs"
+    },
+    {
+      "round": 18,
+      "team": "cowboys"
+    },
+    {
+      "round": 18,
+      "team": "raiders"
+    },
+    {
+      "round": 18,
+      "team": "roosters"
+    },
+    {
+      "round": 18,
+      "team": "storm"
+    },
+    {
+      "round": 18,
+      "team": "titans"
+    },
+    {
+      "round": 18,
+      "team": "warriors"
+    },
+    {
+      "round": 19,
+      "team": "broncos"
+    },
+    {
+      "round": 19,
+      "team": "dragons"
+    },
+    {
+      "round": 19,
+      "team": "panthers"
+    },
+    {
+      "round": 20,
+      "team": "eels"
+    },
+    {
+      "round": 21,
+      "team": "dolphins"
+    },
+    {
+      "round": 22,
+      "team": "sea-eagles"
+    },
+    {
+      "round": 23,
+      "team": "wests-tigers"
+    },
+    {
+      "round": 24,
+      "team": "storm"
+    },
+    {
+      "round": 25,
+      "team": "cowboys"
+    },
+    {
+      "round": 26,
+      "team": "raiders"
+    },
+    {
+      "round": 27,
+      "team": "knights"
+    }
+  ]
+}

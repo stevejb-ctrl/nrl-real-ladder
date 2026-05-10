@@ -56,6 +56,24 @@
   }
   .mast-meta .right { text-align: right; }
   .mast-meta .left b { color: var(--ink); font-weight: 700; }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .nav a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color .15s;
+  }
+  .nav a:hover { border-bottom-color: var(--accent); color: var(--ink); }
 
   h1.title {
     font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
@@ -371,6 +389,10 @@
 <div class="wrap">
 
   <header class="mast">
+    <nav class="nav">
+      <span style="color: var(--ink-mute);">Real ladder</span>
+      <a href="./forecast.html">Season forecast →</a>
+    </nav>
     <div class="mast-meta">
       <span class="left" id="round-tag">Round — · —</span>
       <span class="right" id="updated">Updated —</span>
