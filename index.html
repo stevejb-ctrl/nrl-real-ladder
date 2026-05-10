@@ -445,17 +445,17 @@ const wpName = (t) => t.shortName;
 function buildInsight(sortedNew, originalByOfficial) {
   const moversIn = []; // moved INTO top 8
   const moversOut = []; // moved OUT of top 8
-  let biggestUp = null, biggestDown = null;
+  let mostUnder = null, mostOver = null;
 
   sortedNew.forEach((t, i) => {
     const newPos = i + 1;
-    const delta = t.officialPosition - newPos; // +ve = up
+    const delta = t.officialPosition - newPos; // +ve = jumped up vs official = under-ranked officially
     const wasTop8 = t.officialPosition <= 8;
     const isTop8 = newPos <= 8;
     if (!wasTop8 && isTop8) moversIn.push(t);
     if (wasTop8 && !isTop8) moversOut.push(t);
-    if (!biggestUp || delta > (biggestUp.delta ?? -Infinity)) biggestUp = { t, delta };
-    if (!biggestDown || delta < (biggestDown.delta ?? Infinity)) biggestDown = { t, delta };
+    if (!mostUnder || delta > mostUnder.delta) mostUnder = { t, delta, newPos };
+    if (!mostOver || delta < mostOver.delta) mostOver = { t, delta, newPos };
   });
 
   const lines = [];
@@ -470,13 +470,11 @@ function buildInsight(sortedNew, originalByOfficial) {
       lines.push(`On win %, ${outNames} would drop out of the top eight despite their points total. They've banked bye points the chasing teams haven't.`);
     }
   }
-  if (biggestUp && biggestUp.delta > 0) {
-    lines.push(`Biggest jump: <b>${wpName(biggestUp.t)}</b> <span class="up">+${biggestUp.delta}</span>.`);
+  if (mostUnder && mostUnder.delta > 0) {
+    lines.push(`Most under-ranked: <b>${wpName(mostUnder.t)}</b> <span class="up">#${mostUnder.t.officialPosition} official → #${mostUnder.newPos} real</span>.`);
   }
-  if (biggestDown && biggestDown.delta < 0) {
-    const last = lines.pop() ?? '';
-    const tail = `Biggest drop: <b>${wpName(biggestDown.t)}</b> <span class="down">${biggestDown.delta}</span>.`;
-    lines.push(last ? `${last} ${tail}` : tail);
+  if (mostOver && mostOver.delta < 0) {
+    lines.push(`Most over-ranked: <b>${wpName(mostOver.t)}</b> <span class="down">#${mostOver.t.officialPosition} official → #${mostOver.newPos} real</span>.`);
   }
 
   return lines.map(l => `<p>${l}</p>`).join('');
