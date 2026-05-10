@@ -14,7 +14,8 @@ const DRAW_PATH = resolve(REPO_ROOT, 'data', 'draw.json');
 const OUT_PATH = resolve(REPO_ROOT, 'data', 'forecast.json');
 
 const N_SIMS = 10_000;
-const FORM_WEIGHT = 0.30;            // weight on last-5 form vs season-long win%
+const FORM_WEIGHT = 0.40;            // weight on rolling last-5 form vs season-long win%
+const FORM_WINDOW = 5;               // rolling-form window size
 const PRIOR_GAMES = 8;               // Bayesian prior: pretend each team has N "ghost games" at 50%.
                                      // A 9-1 team becomes (9+4)/(10+8) = 72%, not 90%. Reflects that
                                      // observed records after 10 games are noisy estimates of true skill.
@@ -38,6 +39,27 @@ function parseFormPair(s) {
   return { wins: +m[1], losses: +m[2] };
 }
 
+// Build a rolling-form queue from a "4 - 1" string. Returns an array of 0/1
+// (loss/win) up to FORM_WINDOW long. Order within the queue doesn't matter —
+// we only ever count its sum — but keeping it as a FIFO lets us shift/push
+// cleanly as the simulation progresses.
+function initFormQueue(formStr) {
+  const pair = parseFormPair(formStr);
+  if (!pair) return [];
+  const q = [];
+  for (let i = 0; i < pair.wins && q.length < FORM_WINDOW; i++) q.push(1);
+  for (let i = 0; i < pair.losses && q.length < FORM_WINDOW; i++) q.push(0);
+  return q;
+}
+
+// Regressed win rate from a rolling-form queue (with Laplace smoothing).
+function formWpFromQueue(q) {
+  if (!q || q.length === 0) return null;
+  let wins = 0;
+  for (const x of q) wins += x;
+  return (wins + 0.5 * FORM_PRIOR_GAMES) / (q.length + FORM_PRIOR_GAMES);
+}
+
 const ladder = JSON.parse(readFileSync(LADDER_PATH, 'utf8'));
 const draw = JSON.parse(readFileSync(DRAW_PATH, 'utf8'));
 
@@ -45,24 +67,29 @@ const N_TEAMS = ladder.teams.length;
 const FINALS_CUTOFF = 8;
 const TOP_4 = 4;
 
-// Build immutable per-team baseline.
+// Build immutable per-team baseline. Season win-rate is frozen across the sim
+// (it's the "long-run skill" signal); form is dynamic and re-derived per match
+// from a rolling FIFO of the last FORM_WINDOW results.
 const baseline = {};
 for (const t of ladder.teams) {
   // Raw observed (kept for display purposes only).
   const rawSeasonWp = t.played > 0 ? (t.wins + 0.5 * t.draws) / t.played : 0.5;
 
-  // Regressed estimates — the model uses these.
+  // Frozen, regressed season-long win rate.
   const regressedSeasonWp = regressWp(t.wins, t.draws, t.played, PRIOR_GAMES);
 
+  // Starting form queue + its current regressed win rate (display only).
+  const initialFormQueue = initFormQueue(t.form);
   const formPair = parseFormPair(t.form);
   const rawFormWp = formPair && (formPair.wins + formPair.losses) > 0
     ? formPair.wins / (formPair.wins + formPair.losses)
     : null;
-  const regressedFormWp = formPair
-    ? regressWp(formPair.wins, 0, formPair.wins + formPair.losses, FORM_PRIOR_GAMES)
-    : regressedSeasonWp;
+  const regressedFormWp = formWpFromQueue(initialFormQueue) ?? regressedSeasonWp;
 
-  const skill = (1 - FORM_WEIGHT) * regressedSeasonWp + FORM_WEIGHT * regressedFormWp;
+  // Starting skill, displayed in the forecast output but not actually used at
+  // runtime — the simulator computes skill fresh per match.
+  const startSkill = (1 - FORM_WEIGHT) * regressedSeasonWp + FORM_WEIGHT * regressedFormWp;
+
   baseline[t.slug] = {
     slug: t.slug,
     shortName: t.shortName,
@@ -73,11 +100,12 @@ for (const t of ladder.teams) {
     draws: t.draws,
     played: t.played,
     pointsDiff: t.pointsDiff,
-    skill,
+    skill: startSkill,
     rawSeasonWp,
     rawFormWp,
     regressedSeasonWp,
     regressedFormWp,
+    initialFormQueue,
     officialPosition: t.officialPosition,
   };
 }
@@ -88,9 +116,17 @@ function clamp(p) {
   return p;
 }
 
-function homeWinProb(homeSlug, awaySlug) {
-  const sH = baseline[homeSlug].skill;
-  const sA = baseline[awaySlug].skill;
+// Compute a team's current skill given its sim-time state (which carries the
+// rolling form queue). Season component is constant; form component swings.
+function currentSkill(slug, state) {
+  const seasonWp = baseline[slug].regressedSeasonWp;
+  const formWp = formWpFromQueue(state.formQueue) ?? seasonWp;
+  return (1 - FORM_WEIGHT) * seasonWp + FORM_WEIGHT * formWp;
+}
+
+function homeWinProb(homeSlug, awaySlug, sim) {
+  const sH = currentSkill(homeSlug, sim[homeSlug]);
+  const sA = currentSkill(awaySlug, sim[awaySlug]);
   // Logistic on skill difference + home advantage logit.
   // SKILL_SCALE = 4 spreads the curve so a 30-pt skill gap gives ~76% win prob,
   // a 10-pt gap gives ~60%. HFA_LOGIT = 0.25 gives ~56% home in evenly matched.
@@ -107,17 +143,26 @@ const slugs = Object.keys(baseline);
 
 const t0 = Date.now();
 for (let s = 0; s < N_SIMS; s++) {
-  // Per-sim state — just wins/losses/played per team. We don't track
-  // diff per-sim; we use frozen current pointsDiff as the tie-breaker.
+  // Per-sim state — wins/losses/played + rolling form queue per team. Each
+  // queue is a *fresh copy* of the baseline so this sim's outcomes don't
+  // bleed into the next.
   const sim = {};
   for (const slug of slugs) {
     const b = baseline[slug];
-    sim[slug] = { wins: b.wins, losses: b.losses, draws: b.draws, played: b.played };
+    sim[slug] = {
+      wins: b.wins,
+      losses: b.losses,
+      draws: b.draws,
+      played: b.played,
+      formQueue: b.initialFormQueue.slice(),
+    };
   }
 
   for (const m of matches) {
-    const pHome = homeWinProb(m.home, m.away);
-    if (Math.random() < pHome) {
+    const pHome = homeWinProb(m.home, m.away, sim);
+    const homeWins = Math.random() < pHome;
+
+    if (homeWins) {
       sim[m.home].wins++;
       sim[m.away].losses++;
     } else {
@@ -126,6 +171,15 @@ for (let s = 0; s < N_SIMS; s++) {
     }
     sim[m.home].played++;
     sim[m.away].played++;
+
+    // Roll the form windows. Oldest result falls out; this game's result
+    // joins from the right. Both teams update simultaneously.
+    const homeQ = sim[m.home].formQueue;
+    const awayQ = sim[m.away].formQueue;
+    if (homeQ.length >= FORM_WINDOW) homeQ.shift();
+    if (awayQ.length >= FORM_WINDOW) awayQ.shift();
+    homeQ.push(homeWins ? 1 : 0);
+    awayQ.push(homeWins ? 0 : 1);
   }
 
   // Final ladder for this sim — sort by win% desc, then frozen current pointsDiff.
@@ -203,9 +257,9 @@ const out = {
   drawFetchedAt: draw.fetchedAt,
   remainingMatches: matches.length,
   nSims: N_SIMS,
-  modelVersion: '1.1',
-  modelDescription: 'Bayesian-regressed skill = 0.7 × regressed season win% + 0.3 × regressed last-5 form. Each team gets 8 ghost games at 50% as a prior, so a 9-1 record is treated as ~72% true skill, not 90%. P(home wins) = sigmoid(4 × (skill_home − skill_away) + 0.25). 10,000 sims.',
-  weights: { formWeight: FORM_WEIGHT, priorGames: PRIOR_GAMES, formPriorGames: FORM_PRIOR_GAMES, skillScale: SKILL_SCALE, hfaLogit: HFA_LOGIT },
+  modelVersion: '1.2',
+  modelDescription: 'Bayesian-regressed skill = 0.6 × regressed season win% + 0.4 × rolling regressed last-5 form. Each team gets 8 ghost games at 50% as a prior on the season component. The form component is a 5-game rolling window that updates after every simulated match — a team that wins their next 5 simulated games gets hotter; a team that loses 5 gets colder. P(home wins) = sigmoid(4 × (skill_home − skill_away) + 0.25). 10,000 sims.',
+  weights: { formWeight: FORM_WEIGHT, formWindow: FORM_WINDOW, priorGames: PRIOR_GAMES, formPriorGames: FORM_PRIOR_GAMES, skillScale: SKILL_SCALE, hfaLogit: HFA_LOGIT },
   durationMs: dur,
   teams,
 };
