@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 10,
+  "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-10T20:31:54.037Z",
+  "fetchedAt": "2026-05-11T11:48:32.667Z",
   "matches": [
     {
       "round": 11,
@@ -1371,10 +1371,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 10,
-      "team": "warriors"
-    },
     {
       "round": 11,
       "team": "raiders"
