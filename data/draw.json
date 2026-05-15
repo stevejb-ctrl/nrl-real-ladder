@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-15T10:00:39.323Z",
+  "fetchedAt": "2026-05-15T17:16:54.723Z",
   "matches": [
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "rabbitohs",
-      "away": "dolphins",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-15T10:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 11,
       "roundTitle": "Round 11",
