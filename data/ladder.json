@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 11,
   "competitionId": 111,
-  "fetchedAt": "2026-05-15T21:39:06.777Z",
+  "fetchedAt": "2026-05-16T07:32:01.477Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -66,6 +66,26 @@
       "officialPosition": 3
     },
     {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
+      "played": 10,
+      "wins": 6,
+      "losses": 4,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 305,
+      "pointsAgainst": 198,
+      "pointsDiff": 107,
+      "compPoints": 14,
+      "streak": "2W",
+      "form": "4 - 1",
+      "officialPosition": 4
+    },
+    {
       "slug": "rabbitohs",
       "shortName": "Rabbitohs",
       "fullName": "South Sydney Rabbitohs",
@@ -83,26 +103,6 @@
       "compPoints": 14,
       "streak": "1L",
       "form": "3 - 2",
-      "officialPosition": 4
-    },
-    {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "played": 9,
-      "wins": 5,
-      "losses": 4,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 259,
-      "pointsAgainst": 180,
-      "pointsDiff": 79,
-      "compPoints": 12,
-      "streak": "1W",
-      "form": "4 - 1",
       "officialPosition": 5
     },
     {
@@ -146,26 +146,6 @@
       "officialPosition": 7
     },
     {
-      "slug": "wests-tigers",
-      "shortName": "Tigers",
-      "fullName": "Wests Tigers",
-      "initials": "WT",
-      "primary": "#F37021",
-      "secondary": "#000000",
-      "played": 9,
-      "wins": 5,
-      "losses": 4,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 235,
-      "pointsAgainst": 223,
-      "pointsDiff": 12,
-      "compPoints": 12,
-      "streak": "2L",
-      "form": "2 - 3",
-      "officialPosition": 8
-    },
-    {
       "slug": "cowboys",
       "shortName": "Cowboys",
       "fullName": "North Queensland Cowboys",
@@ -183,7 +163,7 @@
       "compPoints": 12,
       "streak": "1L",
       "form": "3 - 2",
-      "officialPosition": 9
+      "officialPosition": 8
     },
     {
       "slug": "knights",
@@ -203,6 +183,26 @@
       "compPoints": 12,
       "streak": "2W",
       "form": "2 - 3",
+      "officialPosition": 9
+    },
+    {
+      "slug": "wests-tigers",
+      "shortName": "Tigers",
+      "fullName": "Wests Tigers",
+      "initials": "WT",
+      "primary": "#F37021",
+      "secondary": "#000000",
+      "played": 10,
+      "wins": 5,
+      "losses": 5,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 253,
+      "pointsAgainst": 269,
+      "pointsDiff": -16,
+      "compPoints": 12,
+      "streak": "3L",
+      "form": "1 - 4",
       "officialPosition": 10
     },
     {
@@ -242,7 +242,7 @@
       "pointsDiff": -78,
       "compPoints": 10,
       "streak": "1L",
-      "form": "2 - 2",
+      "form": "3 - 2",
       "officialPosition": 12
     },
     {

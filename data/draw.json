@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-15T21:39:10.909Z",
+  "fetchedAt": "2026-05-16T07:32:06.316Z",
   "matches": [
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "wests-tigers",
-      "away": "sea-eagles",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-16T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 11,
       "roundTitle": "Round 11",
