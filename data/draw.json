@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-16T07:32:06.316Z",
+  "fetchedAt": "2026-05-16T15:38:39.593Z",
   "matches": [
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "roosters",
-      "away": "cowboys",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-16T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "eels",
-      "away": "storm",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-16T09:45:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 11,
       "roundTitle": "Round 11",
