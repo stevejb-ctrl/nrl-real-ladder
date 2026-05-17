@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 11,
   "competitionId": 111,
-  "fetchedAt": "2026-05-17T13:20:01.998Z",
+  "fetchedAt": "2026-05-17T19:09:12.959Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -226,26 +226,6 @@
       "officialPosition": 11
     },
     {
-      "slug": "raiders",
-      "shortName": "Raiders",
-      "fullName": "Canberra Raiders",
-      "initials": "CR",
-      "primary": "#9DCB3B",
-      "secondary": "#1B1F23",
-      "played": 10,
-      "wins": 4,
-      "losses": 6,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 201,
-      "pointsAgainst": 279,
-      "pointsDiff": -78,
-      "compPoints": 10,
-      "streak": "1L",
-      "form": "2 - 2",
-      "officialPosition": 12
-    },
-    {
       "slug": "storm",
       "shortName": "Storm",
       "fullName": "Melbourne Storm",
@@ -263,6 +243,26 @@
       "compPoints": 8,
       "streak": "2W",
       "form": "2 - 3",
+      "officialPosition": 12
+    },
+    {
+      "slug": "raiders",
+      "shortName": "Raiders",
+      "fullName": "Canberra Raiders",
+      "initials": "CR",
+      "primary": "#9DCB3B",
+      "secondary": "#1B1F23",
+      "played": 10,
+      "wins": 4,
+      "losses": 6,
+      "draws": 0,
+      "byes": 0,
+      "pointsFor": 201,
+      "pointsAgainst": 279,
+      "pointsDiff": -78,
+      "compPoints": 8,
+      "streak": "1L",
+      "form": "3 - 2",
       "officialPosition": 13
     },
     {
