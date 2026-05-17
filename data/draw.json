@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-17T08:21:18.997Z",
+  "fetchedAt": "2026-05-17T10:23:29.562Z",
   "matches": [
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "panthers",
-      "away": "dragons",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-17T08:25:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 12,
       "roundTitle": "Round 12",
