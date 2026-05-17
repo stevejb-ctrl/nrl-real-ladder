@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 11,
   "toRound": 27,
-  "fetchedAt": "2026-05-17T03:26:26.954Z",
+  "fetchedAt": "2026-05-17T06:51:30.310Z",
   "matches": [
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "titans",
-      "away": "knights",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-17T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 11,
-      "roundTitle": "Round 11",
-      "home": "warriors",
-      "away": "broncos",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-05-17T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 11,
       "roundTitle": "Round 11",

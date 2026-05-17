@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 11,
   "competitionId": 111,
-  "fetchedAt": "2026-05-17T03:26:20.460Z",
+  "fetchedAt": "2026-05-17T06:51:22.619Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -106,6 +106,26 @@
       "officialPosition": 5
     },
     {
+      "slug": "knights",
+      "shortName": "Knights",
+      "fullName": "Newcastle Knights",
+      "initials": "NK",
+      "primary": "#EE3524",
+      "secondary": "#003A70",
+      "played": 11,
+      "wins": 7,
+      "losses": 4,
+      "draws": 0,
+      "byes": 0,
+      "pointsFor": 312,
+      "pointsAgainst": 284,
+      "pointsDiff": 28,
+      "compPoints": 14,
+      "streak": "3W",
+      "form": "3 - 2",
+      "officialPosition": 6
+    },
+    {
       "slug": "cowboys",
       "shortName": "Cowboys",
       "fullName": "North Queensland Cowboys",
@@ -123,7 +143,7 @@
       "compPoints": 14,
       "streak": "1W",
       "form": "3 - 2",
-      "officialPosition": 6
+      "officialPosition": 7
     },
     {
       "slug": "dolphins",
@@ -143,7 +163,7 @@
       "compPoints": 12,
       "streak": "3W",
       "form": "3 - 2",
-      "officialPosition": 7
+      "officialPosition": 8
     },
     {
       "slug": "sharks",
@@ -163,26 +183,6 @@
       "compPoints": 12,
       "streak": "1W",
       "form": "2 - 2",
-      "officialPosition": 8
-    },
-    {
-      "slug": "knights",
-      "shortName": "Knights",
-      "fullName": "Newcastle Knights",
-      "initials": "NK",
-      "primary": "#EE3524",
-      "secondary": "#003A70",
-      "played": 10,
-      "wins": 6,
-      "losses": 4,
-      "draws": 0,
-      "byes": 0,
-      "pointsFor": 276,
-      "pointsAgainst": 272,
-      "pointsDiff": 4,
-      "compPoints": 12,
-      "streak": "2W",
-      "form": "2 - 3",
       "officialPosition": 9
     },
     {
@@ -312,17 +312,17 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "played": 9,
+      "played": 10,
       "wins": 2,
-      "losses": 7,
+      "losses": 8,
       "draws": 0,
       "byes": 1,
-      "pointsFor": 170,
-      "pointsAgainst": 232,
-      "pointsDiff": -62,
+      "pointsFor": 182,
+      "pointsAgainst": 268,
+      "pointsDiff": -86,
       "compPoints": 6,
-      "streak": "3L",
-      "form": "1 - 3",
+      "streak": "4L",
+      "form": "0 - 4",
       "officialPosition": 16
     },
     {
