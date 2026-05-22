@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 12,
   "competitionId": 111,
-  "fetchedAt": "2026-05-22T09:22:48.479Z",
+  "fetchedAt": "2026-05-22T14:38:24.609Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -246,6 +246,26 @@
       "officialPosition": 12
     },
     {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "played": 11,
+      "wins": 4,
+      "losses": 7,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 203,
+      "pointsAgainst": 296,
+      "pointsDiff": -93,
+      "compPoints": 10,
+      "streak": "1W",
+      "form": "1 - 4",
+      "officialPosition": 13
+    },
+    {
       "slug": "eels",
       "shortName": "Eels",
       "fullName": "Parramatta Eels",
@@ -263,7 +283,7 @@
       "compPoints": 10,
       "streak": "1L",
       "form": "2 - 3",
-      "officialPosition": 13
+      "officialPosition": 14
     },
     {
       "slug": "storm",
@@ -272,37 +292,17 @@
       "initials": "MS",
       "primary": "#552E91",
       "secondary": "#FFC72C",
-      "played": 11,
+      "played": 12,
       "wins": 4,
-      "losses": 7,
+      "losses": 8,
       "draws": 0,
       "byes": 0,
-      "pointsFor": 276,
-      "pointsAgainst": 284,
-      "pointsDiff": -8,
+      "pointsFor": 296,
+      "pointsAgainst": 314,
+      "pointsDiff": -18,
       "compPoints": 8,
-      "streak": "2W",
+      "streak": "1L",
       "form": "2 - 3",
-      "officialPosition": 14
-    },
-    {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "played": 10,
-      "wins": 3,
-      "losses": 7,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 173,
-      "pointsAgainst": 276,
-      "pointsDiff": -103,
-      "compPoints": 8,
-      "streak": "5L",
-      "form": "0 - 5",
       "officialPosition": 15
     },
     {
