@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 12,
   "toRound": 27,
-  "fetchedAt": "2026-05-23T08:20:08.234Z",
+  "fetchedAt": "2026-05-23T13:24:38.314Z",
   "matches": [
-    {
-      "round": 12,
-      "roundTitle": "Round 12",
-      "home": "sea-eagles",
-      "away": "titans",
-      "venue": "4 Pines Park",
-      "venueCity": "Sydney",
-      "kickOff": "2026-05-23T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 12,
       "roundTitle": "Round 12",
