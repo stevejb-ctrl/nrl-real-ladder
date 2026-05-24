@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 12,
   "competitionId": 111,
-  "fetchedAt": "2026-05-24T08:28:53.084Z",
+  "fetchedAt": "2026-05-24T13:25:36.908Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -21,8 +21,8 @@
       "pointsAgainst": 146,
       "pointsDiff": 203,
       "compPoints": 22,
-      "streak": "5W",
-      "form": "5 - 0",
+      "streak": "4W",
+      "form": "4 - 0",
       "officialPosition": 1
     },
     {
@@ -62,7 +62,7 @@
       "pointsDiff": 61,
       "compPoints": 18,
       "streak": "1L",
-      "form": "4 - 1",
+      "form": "3 - 1",
       "officialPosition": 3
     },
     {
@@ -102,8 +102,28 @@
       "pointsDiff": 28,
       "compPoints": 16,
       "streak": "3W",
-      "form": "3 - 2",
+      "form": "3 - 1",
       "officialPosition": 5
+    },
+    {
+      "slug": "cowboys",
+      "shortName": "Cowboys",
+      "fullName": "North Queensland Cowboys",
+      "initials": "NQ",
+      "primary": "#002B5C",
+      "secondary": "#FFD600",
+      "played": 12,
+      "wins": 8,
+      "losses": 4,
+      "draws": 0,
+      "byes": 0,
+      "pointsFor": 317,
+      "pointsAgainst": 290,
+      "pointsDiff": 27,
+      "compPoints": 16,
+      "streak": "2W",
+      "form": "4 - 1",
+      "officialPosition": 6
     },
     {
       "slug": "rabbitohs",
@@ -112,18 +132,18 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "played": 10,
+      "played": 11,
       "wins": 6,
-      "losses": 4,
+      "losses": 5,
       "draws": 0,
       "byes": 1,
-      "pointsFor": 306,
-      "pointsAgainst": 236,
-      "pointsDiff": 70,
+      "pointsFor": 324,
+      "pointsAgainst": 266,
+      "pointsDiff": 58,
       "compPoints": 14,
-      "streak": "1L",
-      "form": "3 - 2",
-      "officialPosition": 6
+      "streak": "2L",
+      "form": "2 - 3",
+      "officialPosition": 7
     },
     {
       "slug": "dolphins",
@@ -143,7 +163,7 @@
       "compPoints": 14,
       "streak": "4W",
       "form": "4 - 1",
-      "officialPosition": 7
+      "officialPosition": 8
     },
     {
       "slug": "sharks",
@@ -163,26 +183,6 @@
       "compPoints": 14,
       "streak": "1W",
       "form": "2 - 2",
-      "officialPosition": 8
-    },
-    {
-      "slug": "cowboys",
-      "shortName": "Cowboys",
-      "fullName": "North Queensland Cowboys",
-      "initials": "NQ",
-      "primary": "#002B5C",
-      "secondary": "#FFD600",
-      "played": 11,
-      "wins": 7,
-      "losses": 4,
-      "draws": 0,
-      "byes": 0,
-      "pointsFor": 287,
-      "pointsAgainst": 272,
-      "pointsDiff": 15,
-      "compPoints": 14,
-      "streak": "1W",
-      "form": "3 - 2",
       "officialPosition": 9
     },
     {
@@ -202,7 +202,7 @@
       "pointsDiff": -16,
       "compPoints": 14,
       "streak": "3L",
-      "form": "1 - 4",
+      "form": "1 - 3",
       "officialPosition": 10
     },
     {
@@ -222,7 +222,7 @@
       "pointsDiff": -57,
       "compPoints": 12,
       "streak": "3L",
-      "form": "2 - 3",
+      "form": "1 - 3",
       "officialPosition": 11
     },
     {
@@ -282,7 +282,7 @@
       "pointsDiff": -144,
       "compPoints": 10,
       "streak": "1L",
-      "form": "2 - 3",
+      "form": "1 - 3",
       "officialPosition": 14
     },
     {
