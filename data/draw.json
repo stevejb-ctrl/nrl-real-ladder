@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 12,
+  "fromRound": 13,
   "toRound": 27,
-  "fetchedAt": "2026-05-24T13:25:43.325Z",
+  "fetchedAt": "2026-05-24T19:16:50.373Z",
   "matches": [
     {
       "round": 13,
@@ -1228,34 +1228,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 12,
-      "team": "broncos"
-    },
-    {
-      "round": 12,
-      "team": "eels"
-    },
-    {
-      "round": 12,
-      "team": "knights"
-    },
-    {
-      "round": 12,
-      "team": "panthers"
-    },
-    {
-      "round": 12,
-      "team": "roosters"
-    },
-    {
-      "round": 12,
-      "team": "sharks"
-    },
-    {
-      "round": 12,
-      "team": "wests-tigers"
-    },
     {
       "round": 13,
       "team": "dolphins"
