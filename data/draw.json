@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 12,
   "toRound": 27,
-  "fetchedAt": "2026-05-24T03:35:30.873Z",
+  "fetchedAt": "2026-05-24T08:28:58.698Z",
   "matches": [
-    {
-      "round": 12,
-      "roundTitle": "Round 12",
-      "home": "cowboys",
-      "away": "rabbitohs",
-      "venue": "Queensland Country Bank Stadium",
-      "venueCity": "Townsville",
-      "kickOff": "2026-05-24T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 13,
       "roundTitle": "Round 13",
