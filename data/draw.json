@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 13,
   "toRound": 27,
-  "fetchedAt": "2026-05-29T09:54:15.838Z",
+  "fetchedAt": "2026-05-29T15:30:47.036Z",
   "matches": [
-    {
-      "round": 13,
-      "roundTitle": "Round 13",
-      "home": "sharks",
-      "away": "sea-eagles",
-      "venue": "Ocean Protect Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-05-29T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 13,
       "roundTitle": "Round 13",
