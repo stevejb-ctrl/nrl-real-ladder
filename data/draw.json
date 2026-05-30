@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 13,
   "toRound": 27,
-  "fetchedAt": "2026-05-30T03:24:07.496Z",
+  "fetchedAt": "2026-05-30T08:27:58.101Z",
   "matches": [
-    {
-      "round": 13,
-      "roundTitle": "Round 13",
-      "home": "knights",
-      "away": "eels",
-      "venue": "McDonald Jones Stadium",
-      "venueCity": "Newcastle",
-      "kickOff": "2026-05-30T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 13,
-      "roundTitle": "Round 13",
-      "home": "wests-tigers",
-      "away": "bulldogs",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-05-30T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 13,
       "roundTitle": "Round 13",
