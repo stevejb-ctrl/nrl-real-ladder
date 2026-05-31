@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 13,
+  "fromRound": 14,
   "toRound": 27,
-  "fetchedAt": "2026-05-31T13:44:31.698Z",
+  "fetchedAt": "2026-05-31T19:17:03.870Z",
   "matches": [
     {
       "round": 14,
@@ -1151,18 +1151,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 13,
-      "team": "dolphins"
-    },
-    {
-      "round": 13,
-      "team": "rabbitohs"
-    },
-    {
-      "round": 13,
-      "team": "titans"
-    },
     {
       "round": 14,
       "team": "warriors"
