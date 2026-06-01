@@ -22,6 +22,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
       - name: Fetch latest ladder
         run: node scripts/fetch-ladder.mjs
 
@@ -31,17 +34,23 @@ jobs:
       - name: Fetch completed results
         run: node scripts/fetch-results.mjs
 
+      - name: Fetch closing odds
+        run: node scripts/fetch-odds.mjs
+
       - name: Run Monte Carlo simulation
         run: node scripts/simulate.mjs
 
       - name: Compute strength grid
         run: node scripts/compute-strength-grid.mjs
 
+      - name: Compute beating odds
+        run: node scripts/compute-beating-odds.mjs
+
       - name: Commit if data changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/ladder.json data/draw.json data/results.json data/forecast.json data/strength-grid.json
+          git add data/ladder.json data/draw.json data/results.json data/forecast.json data/strength-grid.json data/odds.json data/beating-odds.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

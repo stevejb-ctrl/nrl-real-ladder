@@ -3,11 +3,13 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 14,
-  "fetchedAt": "2026-06-01T11:35:58.154Z",
+  "fetchedAt": "2026-06-01T11:44:07.470Z",
   "matches": [
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-01",
+      "kickOff": "2026-03-01T02:15:00Z",
       "home": "knights",
       "away": "cowboys",
       "homeScore": 28,
@@ -20,6 +22,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-01",
+      "kickOff": "2026-03-01T04:30:00Z",
       "home": "bulldogs",
       "away": "dragons",
       "homeScore": 15,
@@ -32,6 +36,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-05",
+      "kickOff": "2026-03-05T09:00:00Z",
       "home": "storm",
       "away": "eels",
       "homeScore": 52,
@@ -44,6 +50,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-06",
+      "kickOff": "2026-03-06T07:00:00Z",
       "home": "warriors",
       "away": "roosters",
       "homeScore": 42,
@@ -56,6 +64,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-06",
+      "kickOff": "2026-03-06T09:00:00Z",
       "home": "broncos",
       "away": "panthers",
       "homeScore": 0,
@@ -68,6 +78,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-07",
+      "kickOff": "2026-03-07T06:30:00Z",
       "home": "sharks",
       "away": "titans",
       "homeScore": 50,
@@ -80,6 +92,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-07",
+      "kickOff": "2026-03-07T08:35:00Z",
       "home": "sea-eagles",
       "away": "raiders",
       "homeScore": 28,
@@ -92,6 +106,8 @@
     {
       "round": 1,
       "roundTitle": "Round 1",
+      "date": "2026-03-08",
+      "kickOff": "2026-03-08T05:05:00Z",
       "home": "dolphins",
       "away": "rabbitohs",
       "homeScore": 30,
@@ -104,6 +120,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-12",
+      "kickOff": "2026-03-12T09:00:00Z",
       "home": "broncos",
       "away": "eels",
       "homeScore": 32,
@@ -116,6 +134,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-13",
+      "kickOff": "2026-03-13T07:00:00Z",
       "home": "warriors",
       "away": "raiders",
       "homeScore": 40,
@@ -128,6 +148,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-13",
+      "kickOff": "2026-03-13T09:00:00Z",
       "home": "roosters",
       "away": "rabbitohs",
       "homeScore": 26,
@@ -140,6 +162,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-14",
+      "kickOff": "2026-03-14T04:00:00Z",
       "home": "wests-tigers",
       "away": "cowboys",
       "homeScore": 44,
@@ -152,6 +176,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-14",
+      "kickOff": "2026-03-14T06:30:00Z",
       "home": "dragons",
       "away": "storm",
       "homeScore": 20,
@@ -164,6 +190,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-14",
+      "kickOff": "2026-03-14T08:35:00Z",
       "home": "panthers",
       "away": "sharks",
       "homeScore": 26,
@@ -176,6 +204,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-15",
+      "kickOff": "2026-03-15T05:05:00Z",
       "home": "sea-eagles",
       "away": "knights",
       "homeScore": 16,
@@ -188,6 +218,8 @@
     {
       "round": 2,
       "roundTitle": "Round 2",
+      "date": "2026-03-15",
+      "kickOff": "2026-03-15T07:15:00Z",
       "home": "dolphins",
       "away": "titans",
       "homeScore": 18,
@@ -200,6 +232,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-19",
+      "kickOff": "2026-03-19T09:00:00Z",
       "home": "raiders",
       "away": "bulldogs",
       "homeScore": 10,
@@ -212,6 +246,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-20",
+      "kickOff": "2026-03-20T07:00:00Z",
       "home": "roosters",
       "away": "panthers",
       "homeScore": 4,
@@ -224,6 +260,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-20",
+      "kickOff": "2026-03-20T09:00:00Z",
       "home": "storm",
       "away": "broncos",
       "homeScore": 14,
@@ -236,6 +274,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-21",
+      "kickOff": "2026-03-21T04:00:00Z",
       "home": "knights",
       "away": "warriors",
       "homeScore": 12,
@@ -248,6 +288,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-21",
+      "kickOff": "2026-03-21T06:30:00Z",
       "home": "sharks",
       "away": "dolphins",
       "homeScore": 10,
@@ -260,6 +302,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-21",
+      "kickOff": "2026-03-21T08:35:00Z",
       "home": "rabbitohs",
       "away": "wests-tigers",
       "homeScore": 20,
@@ -272,6 +316,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-22",
+      "kickOff": "2026-03-22T05:05:00Z",
       "home": "eels",
       "away": "dragons",
       "homeScore": 30,
@@ -284,6 +330,8 @@
     {
       "round": 3,
       "roundTitle": "Round 3",
+      "date": "2026-03-22",
+      "kickOff": "2026-03-22T07:15:00Z",
       "home": "cowboys",
       "away": "titans",
       "homeScore": 30,
@@ -296,6 +344,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-26",
+      "kickOff": "2026-03-26T09:00:00Z",
       "home": "sea-eagles",
       "away": "roosters",
       "homeScore": 16,
@@ -308,6 +358,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-27",
+      "kickOff": "2026-03-27T07:00:00Z",
       "home": "warriors",
       "away": "wests-tigers",
       "homeScore": 14,
@@ -320,6 +372,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-27",
+      "kickOff": "2026-03-27T09:00:00Z",
       "home": "broncos",
       "away": "dolphins",
       "homeScore": 26,
@@ -332,6 +386,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-28",
+      "kickOff": "2026-03-28T04:00:00Z",
       "home": "bulldogs",
       "away": "knights",
       "homeScore": 16,
@@ -344,6 +400,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-28",
+      "kickOff": "2026-03-28T06:30:00Z",
       "home": "panthers",
       "away": "eels",
       "homeScore": 48,
@@ -356,6 +414,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-28",
+      "kickOff": "2026-03-28T08:35:00Z",
       "home": "cowboys",
       "away": "storm",
       "homeScore": 28,
@@ -368,6 +428,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-29",
+      "kickOff": "2026-03-29T05:05:00Z",
       "home": "raiders",
       "away": "sharks",
       "homeScore": 22,
@@ -380,6 +442,8 @@
     {
       "round": 4,
       "roundTitle": "Round 4",
+      "date": "2026-03-29",
+      "kickOff": "2026-03-29T07:15:00Z",
       "home": "titans",
       "away": "dragons",
       "homeScore": 22,
@@ -392,6 +456,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-02",
+      "kickOff": "2026-04-02T09:00:00Z",
       "home": "dolphins",
       "away": "sea-eagles",
       "homeScore": 18,
@@ -404,6 +470,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-03",
+      "kickOff": "2026-04-03T05:05:00Z",
       "home": "rabbitohs",
       "away": "bulldogs",
       "homeScore": 32,
@@ -416,6 +484,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-03",
+      "kickOff": "2026-04-03T09:00:00Z",
       "home": "panthers",
       "away": "storm",
       "homeScore": 50,
@@ -428,6 +498,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-04",
+      "kickOff": "2026-04-04T06:30:00Z",
       "home": "dragons",
       "away": "cowboys",
       "homeScore": 0,
@@ -440,6 +512,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-04",
+      "kickOff": "2026-04-04T08:35:00Z",
       "home": "titans",
       "away": "broncos",
       "homeScore": 12,
@@ -452,6 +526,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-05",
+      "kickOff": "2026-04-05T04:00:00Z",
       "home": "sharks",
       "away": "warriors",
       "homeScore": 36,
@@ -464,6 +540,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-05",
+      "kickOff": "2026-04-05T06:05:00Z",
       "home": "knights",
       "away": "raiders",
       "homeScore": 32,
@@ -476,6 +554,8 @@
     {
       "round": 5,
       "roundTitle": "Round 5",
+      "date": "2026-04-06",
+      "kickOff": "2026-04-06T06:05:00Z",
       "home": "eels",
       "away": "wests-tigers",
       "homeScore": 20,
@@ -488,6 +568,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-09",
+      "kickOff": "2026-04-09T09:50:00Z",
       "home": "bulldogs",
       "away": "panthers",
       "homeScore": 32,
@@ -500,6 +582,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-10",
+      "kickOff": "2026-04-10T08:00:00Z",
       "home": "dragons",
       "away": "sea-eagles",
       "homeScore": 18,
@@ -512,6 +596,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-10",
+      "kickOff": "2026-04-10T10:00:00Z",
       "home": "broncos",
       "away": "cowboys",
       "homeScore": 31,
@@ -524,6 +610,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-11",
+      "kickOff": "2026-04-11T05:00:00Z",
       "home": "rabbitohs",
       "away": "raiders",
       "homeScore": 34,
@@ -536,6 +624,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-11",
+      "kickOff": "2026-04-11T07:30:00Z",
       "home": "sharks",
       "away": "roosters",
       "homeScore": 22,
@@ -548,6 +638,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-11",
+      "kickOff": "2026-04-11T09:35:00Z",
       "home": "storm",
       "away": "warriors",
       "homeScore": 14,
@@ -560,6 +652,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-12",
+      "kickOff": "2026-04-12T04:00:00Z",
       "home": "eels",
       "away": "titans",
       "homeScore": 10,
@@ -572,6 +666,8 @@
     {
       "round": 6,
       "roundTitle": "Round 6",
+      "date": "2026-04-12",
+      "kickOff": "2026-04-12T06:05:00Z",
       "home": "wests-tigers",
       "away": "knights",
       "homeScore": 42,
@@ -584,6 +680,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-16",
+      "kickOff": "2026-04-16T09:50:00Z",
       "home": "cowboys",
       "away": "sea-eagles",
       "homeScore": 6,
@@ -596,6 +694,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-17",
+      "kickOff": "2026-04-17T08:00:00Z",
       "home": "raiders",
       "away": "storm",
       "homeScore": 26,
@@ -608,6 +708,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-17",
+      "kickOff": "2026-04-17T10:00:00Z",
       "home": "dolphins",
       "away": "panthers",
       "homeScore": 22,
@@ -620,6 +722,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-18",
+      "kickOff": "2026-04-18T05:00:00Z",
       "home": "warriors",
       "away": "titans",
       "homeScore": 28,
@@ -632,6 +736,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-18",
+      "kickOff": "2026-04-18T07:30:00Z",
       "home": "rabbitohs",
       "away": "dragons",
       "homeScore": 30,
@@ -644,6 +750,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-18",
+      "kickOff": "2026-04-18T09:35:00Z",
       "home": "wests-tigers",
       "away": "broncos",
       "homeScore": 20,
@@ -656,6 +764,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-19",
+      "kickOff": "2026-04-19T04:00:00Z",
       "home": "roosters",
       "away": "knights",
       "homeScore": 38,
@@ -668,6 +778,8 @@
     {
       "round": 7,
       "roundTitle": "Round 7",
+      "date": "2026-04-19",
+      "kickOff": "2026-04-19T06:05:00Z",
       "home": "eels",
       "away": "bulldogs",
       "homeScore": 38,
@@ -680,6 +792,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-23",
+      "kickOff": "2026-04-23T09:50:00Z",
       "home": "wests-tigers",
       "away": "raiders",
       "homeScore": 33,
@@ -692,6 +806,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-24",
+      "kickOff": "2026-04-24T08:00:00Z",
       "home": "cowboys",
       "away": "sharks",
       "homeScore": 46,
@@ -704,6 +820,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-24",
+      "kickOff": "2026-04-24T10:00:00Z",
       "home": "broncos",
       "away": "bulldogs",
       "homeScore": 32,
@@ -716,6 +834,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-25",
+      "kickOff": "2026-04-25T06:00:00Z",
       "home": "dragons",
       "away": "roosters",
       "homeScore": 16,
@@ -728,6 +848,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-25",
+      "kickOff": "2026-04-25T08:05:00Z",
       "home": "warriors",
       "away": "dolphins",
       "homeScore": 20,
@@ -740,6 +862,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-25",
+      "kickOff": "2026-04-25T10:10:00Z",
       "home": "storm",
       "away": "rabbitohs",
       "homeScore": 6,
@@ -752,6 +876,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-26",
+      "kickOff": "2026-04-26T04:00:00Z",
       "home": "knights",
       "away": "panthers",
       "homeScore": 12,
@@ -764,6 +890,8 @@
     {
       "round": 8,
       "roundTitle": "Round 8",
+      "date": "2026-04-26",
+      "kickOff": "2026-04-26T06:05:00Z",
       "home": "sea-eagles",
       "away": "eels",
       "homeScore": 33,
@@ -776,6 +904,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-01",
+      "kickOff": "2026-05-01T08:00:00Z",
       "home": "bulldogs",
       "away": "cowboys",
       "homeScore": 12,
@@ -788,6 +918,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-01",
+      "kickOff": "2026-05-01T10:00:00Z",
       "home": "dolphins",
       "away": "storm",
       "homeScore": 28,
@@ -800,6 +932,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-02",
+      "kickOff": "2026-05-02T05:00:00Z",
       "home": "titans",
       "away": "raiders",
       "homeScore": 12,
@@ -812,6 +946,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-02",
+      "kickOff": "2026-05-02T07:30:00Z",
       "home": "eels",
       "away": "warriors",
       "homeScore": 14,
@@ -824,6 +960,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-02",
+      "kickOff": "2026-05-02T09:35:00Z",
       "home": "roosters",
       "away": "broncos",
       "homeScore": 38,
@@ -836,6 +974,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-03",
+      "kickOff": "2026-05-03T04:00:00Z",
       "home": "knights",
       "away": "rabbitohs",
       "homeScore": 42,
@@ -848,6 +988,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-03",
+      "kickOff": "2026-05-03T06:05:00Z",
       "home": "sharks",
       "away": "wests-tigers",
       "homeScore": 52,
@@ -860,6 +1002,8 @@
     {
       "round": 9,
       "roundTitle": "Round 9",
+      "date": "2026-05-03",
+      "kickOff": "2026-05-03T08:15:00Z",
       "home": "panthers",
       "away": "sea-eagles",
       "homeScore": 18,
@@ -872,6 +1016,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-07",
+      "kickOff": "2026-05-07T09:50:00Z",
       "home": "dolphins",
       "away": "bulldogs",
       "homeScore": 44,
@@ -884,6 +1030,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-08",
+      "kickOff": "2026-05-08T08:00:00Z",
       "home": "roosters",
       "away": "titans",
       "homeScore": 28,
@@ -896,6 +1044,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-08",
+      "kickOff": "2026-05-08T10:00:00Z",
       "home": "cowboys",
       "away": "eels",
       "homeScore": 30,
@@ -908,6 +1058,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-09",
+      "kickOff": "2026-05-09T05:00:00Z",
       "home": "dragons",
       "away": "knights",
       "homeScore": 10,
@@ -920,6 +1072,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-09",
+      "kickOff": "2026-05-09T07:30:00Z",
       "home": "rabbitohs",
       "away": "sharks",
       "homeScore": 36,
@@ -932,6 +1086,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-09",
+      "kickOff": "2026-05-09T09:35:00Z",
       "home": "sea-eagles",
       "away": "broncos",
       "homeScore": 32,
@@ -944,6 +1100,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-10",
+      "kickOff": "2026-05-10T04:00:00Z",
       "home": "storm",
       "away": "wests-tigers",
       "homeScore": 44,
@@ -956,6 +1114,8 @@
     {
       "round": 10,
       "roundTitle": "Round 10",
+      "date": "2026-05-10",
+      "kickOff": "2026-05-10T06:05:00Z",
       "home": "raiders",
       "away": "panthers",
       "homeScore": 18,
@@ -968,6 +1128,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-15",
+      "kickOff": "2026-05-15T08:00:00Z",
       "home": "sharks",
       "away": "bulldogs",
       "homeScore": 38,
@@ -980,6 +1142,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-15",
+      "kickOff": "2026-05-15T10:05:00Z",
       "home": "rabbitohs",
       "away": "dolphins",
       "homeScore": 10,
@@ -992,6 +1156,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-16",
+      "kickOff": "2026-05-16T05:00:00Z",
       "home": "wests-tigers",
       "away": "sea-eagles",
       "homeScore": 18,
@@ -1004,6 +1170,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-16",
+      "kickOff": "2026-05-16T07:30:00Z",
       "home": "roosters",
       "away": "cowboys",
       "homeScore": 12,
@@ -1016,6 +1184,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-16",
+      "kickOff": "2026-05-16T09:45:00Z",
       "home": "eels",
       "away": "storm",
       "homeScore": 8,
@@ -1028,6 +1198,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-17",
+      "kickOff": "2026-05-17T04:00:00Z",
       "home": "titans",
       "away": "knights",
       "homeScore": 12,
@@ -1040,6 +1212,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-17",
+      "kickOff": "2026-05-17T06:05:00Z",
       "home": "warriors",
       "away": "broncos",
       "homeScore": 42,
@@ -1052,6 +1226,8 @@
     {
       "round": 11,
       "roundTitle": "Round 11",
+      "date": "2026-05-17",
+      "kickOff": "2026-05-17T08:25:00Z",
       "home": "panthers",
       "away": "dragons",
       "homeScore": 28,
@@ -1064,6 +1240,8 @@
     {
       "round": 12,
       "roundTitle": "Round 12",
+      "date": "2026-05-21",
+      "kickOff": "2026-05-21T09:50:00Z",
       "home": "raiders",
       "away": "dolphins",
       "homeScore": 22,
@@ -1076,6 +1254,8 @@
     {
       "round": 12,
       "roundTitle": "Round 12",
+      "date": "2026-05-22",
+      "kickOff": "2026-05-22T10:00:00Z",
       "home": "bulldogs",
       "away": "storm",
       "homeScore": 30,
@@ -1088,6 +1268,8 @@
     {
       "round": 12,
       "roundTitle": "Round 12",
+      "date": "2026-05-23",
+      "kickOff": "2026-05-23T07:30:00Z",
       "home": "dragons",
       "away": "warriors",
       "homeScore": 12,
@@ -1100,6 +1282,8 @@
     {
       "round": 12,
       "roundTitle": "Round 12",
+      "date": "2026-05-23",
+      "kickOff": "2026-05-23T09:35:00Z",
       "home": "sea-eagles",
       "away": "titans",
       "homeScore": 12,
@@ -1112,6 +1296,8 @@
     {
       "round": 12,
       "roundTitle": "Round 12",
+      "date": "2026-05-24",
+      "kickOff": "2026-05-24T06:05:00Z",
       "home": "cowboys",
       "away": "rabbitohs",
       "homeScore": 30,
@@ -1124,6 +1310,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-29",
+      "kickOff": "2026-05-29T10:00:00Z",
       "home": "sharks",
       "away": "sea-eagles",
       "homeScore": 28,
@@ -1136,6 +1324,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-30",
+      "kickOff": "2026-05-30T05:00:00Z",
       "home": "knights",
       "away": "eels",
       "homeScore": 28,
@@ -1148,6 +1338,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-30",
+      "kickOff": "2026-05-30T07:30:00Z",
       "home": "wests-tigers",
       "away": "bulldogs",
       "homeScore": 22,
@@ -1160,6 +1352,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-30",
+      "kickOff": "2026-05-30T09:35:00Z",
       "home": "storm",
       "away": "roosters",
       "homeScore": 18,
@@ -1172,6 +1366,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-31",
+      "kickOff": "2026-05-31T04:00:00Z",
       "home": "broncos",
       "away": "dragons",
       "homeScore": 26,
@@ -1184,6 +1380,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-31",
+      "kickOff": "2026-05-31T06:05:00Z",
       "home": "raiders",
       "away": "cowboys",
       "homeScore": 26,
@@ -1196,6 +1394,8 @@
     {
       "round": 13,
       "roundTitle": "Round 13",
+      "date": "2026-05-31",
+      "kickOff": "2026-05-31T08:15:00Z",
       "home": "panthers",
       "away": "warriors",
       "homeScore": 20,

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0b0e" />
+<title>Beating the Odds · NRL 2026</title>
+<meta name="description" content="Cumulative units and wins above market expectation, every NRL team, every round." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0b0e;
+    --bg-soft:   #101218;
+    --line:      rgba(240, 234, 218, 0.09);
+    --line-strong: rgba(240, 234, 218, 0.18);
+    --ink:       #f1ecde;
+    --ink-mute:  #8b8e9a;
+    --ink-soft:  #c5c2b6;
+    --accent:    #e3322a;
+    --accent-dim:#7e1e1a;
+    --gold:      #c8a85a;
+    --good:      #58c08b;
+    --bad:       #d65a52;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  .topnav {
+    display: flex; gap: 32px; padding: 26px 0 0;
+    align-items: baseline;
+    border-bottom: 1px solid var(--line-strong);
+    flex-wrap: wrap;
+  }
+  .topnav a {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-weight: 400; font-size: 22px; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--ink-mute);
+    text-decoration: none; position: relative;
+    padding-bottom: 12px; transition: color .15s;
+  }
+  .topnav a:hover { color: var(--ink-soft); }
+  .topnav a.active { color: var(--ink); }
+  .topnav a.active::after {
+    content: ''; position: absolute; left: 0; right: 0; bottom: -1px;
+    height: 3px; background: var(--accent);
+  }
+  @media (max-width: 560px) {
+    .topnav { gap: 18px; padding-top: 18px; }
+    .topnav a { font-size: 16px; padding-bottom: 10px; }
+  }
+
+  .mast { padding-top: 28px; }
+  .mast-meta {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-mute); margin-bottom: 14px;
+  }
+  .mast-meta b { color: var(--ink); font-weight: 700; }
+  .mast-meta .right { text-align: right; }
+
+  h1.title {
+    font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: clamp(48px, 9vw, 108px);
+    letter-spacing: 0.005em; line-height: 0.88; margin: 0 0 14px;
+    text-transform: uppercase; color: var(--ink);
+  }
+  h1.title .accent { color: var(--accent); }
+  h1.title .small {
+    display: block; font-size: 0.32em; color: var(--ink-soft);
+    letter-spacing: 0.04em; margin-top: 6px;
+  }
+  .dek {
+    max-width: 640px; color: var(--ink-soft); font-size: 16px;
+    margin: 0 0 28px; border-left: 2px solid var(--accent); padding-left: 14px;
+  }
+  .dek em { font-style: italic; color: var(--ink); }
+
+  .insight {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0; margin: 24px 0 32px;
+    display: grid; grid-template-columns: 110px 1fr; gap: 22px; align-items: start;
+  }
+  .insight .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--accent); padding-top: 4px;
+  }
+  .insight .body { font-size: 17px; line-height: 1.55; color: var(--ink); }
+  .insight .body b { color: var(--ink); font-weight: 700; }
+  .insight .body p { margin: 0 0 8px; }
+  .insight .body p:last-child { margin: 0; }
+  .insight .body .num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 0.92em; }
+  .insight .body .good { color: var(--good); }
+  .insight .body .bad  { color: var(--bad); }
+  @media (max-width: 640px) { .insight { grid-template-columns: 1fr; gap: 10px; } .insight .body { font-size: 15px; } }
+
+  /* chart cards */
+  .chart-card {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    padding: 14px 8px 4px;
+    margin-bottom: 28px;
+  }
+  .chart-head {
+    display: flex; align-items: baseline; gap: 14px;
+    padding: 6px 16px 14px;
+  }
+  .chart-head h2 {
+    font-family: 'Anton', sans-serif; font-weight: 400;
+    font-size: 26px; text-transform: uppercase;
+    margin: 0; color: var(--ink); letter-spacing: 0.02em;
+  }
+  .chart-head .sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .chart-wrap { width: 100%; overflow-x: auto; overflow-y: hidden; }
+  .chart-svg { display: block; width: 100%; height: auto; min-width: 560px; }
+
+  /* shared chart styles */
+  .grid-line { stroke: var(--line); stroke-width: 1; }
+  .grid-line.mid { stroke: var(--line-strong); stroke-width: 1.4; stroke-dasharray: 4 4; }
+  .axis-line { stroke: var(--line-strong); stroke-width: 1.2; }
+  .tick-text {
+    fill: var(--ink-mute); font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 500;
+  }
+  .axis-label {
+    fill: var(--ink); font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; font-weight: 700;
+    letter-spacing: 0.18em; text-transform: uppercase;
+  }
+
+  /* line chart */
+  .units-line {
+    fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    opacity: 0.85; transition: opacity .15s, stroke-width .15s;
+  }
+  .units-line:hover, .units-line.active { opacity: 1; stroke-width: 3.5; }
+  .units-dot {
+    stroke: var(--bg); stroke-width: 1.5;
+  }
+  .units-dot.hit { fill: transparent; stroke: none; }
+  .marker-image { pointer-events: none; }
+  .marker-halo { fill: rgba(255,255,255,0.88); pointer-events: none; }
+
+  /* bar chart */
+  .bar { transition: opacity .15s; }
+  .bar:hover { opacity: 0.85; }
+  .bar-label {
+    fill: var(--ink); font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums;
+    dominant-baseline: central;
+  }
+
+  /* methodology */
+  .method {
+    margin-top: 24px;
+    border-top: 1px solid var(--line-strong);
+    padding-top: 18px;
+  }
+  .method h2 {
+    font-family: 'Anton', sans-serif; font-weight: 400;
+    font-size: 28px; text-transform: uppercase; margin: 0 0 14px;
+    color: var(--ink);
+  }
+  .method p {
+    color: var(--ink-soft); font-size: 14px; line-height: 1.65;
+    max-width: 64ch; margin: 0 0 10px;
+  }
+  .method strong { color: var(--ink); }
+  .method code {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    background: rgba(255,255,255,0.06); padding: 1px 5px; border-radius: 3px;
+    color: var(--ink);
+  }
+
+  .foot {
+    border-top: 1px solid var(--line); margin-top: 36px;
+    padding: 22px 0 56px; color: var(--ink-mute);
+    font-size: 12px; line-height: 1.7;
+  }
+  .foot a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+  .foot a:hover { text-decoration-color: var(--accent); }
+  .foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  .err {
+    padding: 18px; border: 1px solid var(--accent-dim);
+    background: rgba(227, 50, 42, 0.08); color: #f4c1bd;
+    font-size: 14px; margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="topnav">
+    <a href="./index.html">Real ladder</a>
+    <a href="./forecast.html">Season forecast</a>
+    <a href="./strength.html">Strength grid</a>
+    <a href="./odds.html" class="active">Beating the odds</a>
+  </nav>
+
+  <header class="mast">
+    <div class="mast-meta">
+      <span id="round-tag">Loading…</span>
+      <span class="right" id="generated">—</span>
+    </div>
+    <h1 class="title">
+      Beating<br><span class="accent">the Odds</span><span class="small" id="subtitle">Cumulative units · wins above expected</span>
+    </h1>
+    <p class="dek">Who's <em>actually</em> outperforming the market? Bet 1 unit on every team, every week, at the closing price. Add it up. The teams above the line have been beating their odds; the teams below have been losing your shirt.</p>
+  </header>
+
+  <section class="insight" id="insight" hidden>
+    <div class="kicker">Market read</div>
+    <div class="body" id="insight-body"></div>
+  </section>
+
+  <section class="chart-card">
+    <div class="chart-head">
+      <h2>Cumulative units</h2>
+      <span class="sub" id="units-sub">+1 unit bet on each team, every round</span>
+    </div>
+    <div class="chart-wrap">
+      <svg id="chart-units" class="chart-svg" viewBox="0 0 920 520" role="img" aria-label="Cumulative units per team across the season"></svg>
+    </div>
+  </section>
+
+  <section class="chart-card">
+    <div class="chart-head">
+      <h2>Wins above expected</h2>
+      <span class="sub">Actual W minus implied W from closing odds</span>
+    </div>
+    <div class="chart-wrap">
+      <svg id="chart-wae" class="chart-svg" viewBox="0 0 920 640" role="img" aria-label="Wins above expected per team"></svg>
+    </div>
+  </section>
+
+  <section class="method">
+    <h2>How it works</h2>
+    <p><strong>Closing odds</strong> are the last published head-to-head prices before kick-off, pulled from <a href="https://www.aussportsbetting.com/data/" target="_blank" rel="noopener">aussportsbetting.com</a>'s free historical NRL dataset (Pinnacle until April 2018, bet365 until April 2024, BlueBet since). Used under their personal-use Terms.</p>
+    <p><strong>Cumulative units.</strong> For every game a team played, add the closing-odds return: a win pays out <code>(decimal odds − 1)</code> units, a loss loses 1 unit, a draw is a push (0). Sum across the season and you have each team's running total. Favourites need to actually <em>cover</em> their short price to bank units; underdogs need to spring upsets.</p>
+    <p><strong>Wins above expected.</strong> For each game, the closing odds imply a win probability — after stripping the bookmaker's overround so the home/draw/away probabilities sum to 1. Sum those across the season and you get the market's expected-wins number. Subtract actual wins. Positive = the market under-rated the team, negative = the market over-rated them.</p>
+    <p><strong>The top-8 / bottom-9 split is irrelevant here.</strong> A wooden-spoon team can have positive units and a minor-premier can have negative ones — it depends on how the market priced them, not how many points they finished with.</p>
+  </section>
+
+  <footer class="foot">
+    <strong>Source.</strong> Match results from <a href="https://www.nrl.com/draw/">nrl.com/draw</a>, closing odds from <a href="https://www.aussportsbetting.com/data/">aussportsbetting.com</a>. Refreshed every six hours via GitHub Actions.
+    <br>
+    <strong>Note.</strong> Lines are gambling lines; this page is not financial or wagering advice.
+  </footer>
+</div>
+
+<script>
+const fmtUnits = (n) => (n >= 0 ? '+' : '') + n.toFixed(2) + 'u';
+const fmtWae = (n) => (n >= 0 ? '+' : '') + n.toFixed(2);
+const NS = 'http://www.w3.org/2000/svg';
+const el = (tag, attrs = {}, text) => {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) if (attrs[k] != null) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  return e;
+};
+
+function buildInsight(teams, lastRound) {
+  const list = Object.values(teams).filter(t => t.games_with_odds > 0);
+  if (!list.length) return '';
+
+  const byUnits = [...list].sort((a, b) => b.units_total - a.units_total);
+  const byWae = [...list].sort((a, b) => b.wins_above_expected - a.wins_above_expected);
+
+  const lines = [];
+  const lead = byUnits[0];
+  lines.push(`Through Round ${lastRound}, a 1-unit bet on <b>${lead.shortName}</b> every game is up <span class="num good">${fmtUnits(lead.units_total)}</span>. They've been the most profitable team to back at the closing line.`);
+
+  const worst = byUnits[byUnits.length - 1];
+  if (worst.units_total < -2) {
+    lines.push(`At the other end, <b>${worst.shortName}</b> would have cost you <span class="num bad">${fmtUnits(worst.units_total)}</span> — the market keeps pricing them shorter than they've delivered.`);
+  }
+
+  const overperformer = byWae[0];
+  if (overperformer.wins_above_expected >= 1.5) {
+    lines.push(`Most under-rated by the bookies: <b>${overperformer.shortName}</b> have won <span class="num">${overperformer.actual_wins}</span> games against an expected <span class="num">${overperformer.expected_wins.toFixed(1)}</span> — <span class="num good">${fmtWae(overperformer.wins_above_expected)}</span> wins above the line.`);
+  }
+  const underperformer = byWae[byWae.length - 1];
+  if (underperformer.wins_above_expected <= -1.5) {
+    lines.push(`Most over-rated: <b>${underperformer.shortName}</b> sit <span class="num bad">${fmtWae(underperformer.wins_above_expected)}</span> below their expected wins.`);
+  }
+
+  return lines.map(l => `<p>${l}</p>`).join('');
+}
+
+// ─── LINE CHART: cumulative units ────────────────────────────────────────
+function renderUnitsChart(data) {
+  const svg = document.getElementById('chart-units');
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+  const VBW = 920, VBH = 520;
+  const plot = { x0: 56, y0: 28, w: VBW - 56 - 110, h: VBH - 28 - 56 };
+
+  // Data range
+  const teams = Object.values(data.teams).filter(t => t.games_with_odds > 0);
+  const lastRound = data.lastRound;
+  let yMin = 0, yMax = 0;
+  for (const t of teams) for (const p of t.units_series) {
+    if (p.cumulative < yMin) yMin = p.cumulative;
+    if (p.cumulative > yMax) yMax = p.cumulative;
+  }
+  // Pad and snap to whole units
+  yMin = Math.floor(yMin) - 1;
+  yMax = Math.ceil(yMax) + 1;
+
+  const xFor = (r) => plot.x0 + (lastRound > 1 ? (r - 1) / (lastRound - 1) : 0.5) * plot.w;
+  const yFor = (u) => plot.y0 + (1 - (u - yMin) / (yMax - yMin)) * plot.h;
+
+  // Y gridlines/ticks every integer; bold zero line
+  for (let u = yMin; u <= yMax; u++) {
+    const y = yFor(u);
+    svg.appendChild(el('line', {
+      x1: plot.x0, x2: plot.x0 + plot.w, y1: y, y2: y,
+      class: u === 0 ? 'grid-line mid' : 'grid-line',
+    }));
+    if (u % 2 === 0 || Math.abs(yMax - yMin) <= 8) {
+      svg.appendChild(el('text', {
+        x: plot.x0 - 8, y: y + 4, class: 'tick-text', 'text-anchor': 'end',
+      }, (u >= 0 ? '+' : '') + u));
+    }
+  }
+  // X gridlines per round
+  for (let r = 1; r <= lastRound; r++) {
+    const x = xFor(r);
+    svg.appendChild(el('line', {
+      x1: x, x2: x, y1: plot.y0, y2: plot.y0 + plot.h, class: 'grid-line',
+    }));
+    if (r === 1 || r === lastRound || r % 2 === 0) {
+      svg.appendChild(el('text', {
+        x, y: plot.y0 + plot.h + 18, class: 'tick-text', 'text-anchor': 'middle',
+      }, 'R' + r));
+    }
+  }
+
+  // Axis labels
+  svg.appendChild(el('text', {
+    x: plot.x0 + plot.w / 2, y: plot.y0 + plot.h + 42,
+    class: 'axis-label', 'text-anchor': 'middle',
+  }, 'Round'));
+  svg.appendChild(el('text', {
+    x: -(plot.y0 + plot.h / 2), y: 16,
+    class: 'axis-label', 'text-anchor': 'middle', transform: 'rotate(-90)',
+  }, 'Cumulative units'));
+
+  // Plot frame
+  svg.appendChild(el('rect', {
+    x: plot.x0, y: plot.y0, width: plot.w, height: plot.h,
+    fill: 'none', class: 'axis-line',
+  }));
+
+  // Render lines in ascending order of final units so the highest-flying teams
+  // are drawn last and sit on top.
+  const orderedTeams = [...teams].sort((a, b) => a.units_total - b.units_total);
+
+  // Draw lines + per-point hit areas
+  for (const t of orderedTeams) {
+    const pts = t.units_series.map(p => `${xFor(p.round)},${yFor(p.cumulative)}`).join(' ');
+    const path = el('polyline', {
+      points: pts, class: 'units-line',
+      stroke: t.primary, fill: 'none',
+      'data-slug': t.slug,
+    });
+    svg.appendChild(path);
+
+    // hit-circles with tooltips per data point
+    for (let i = 0; i < t.units_series.length; i++) {
+      const p = t.units_series[i];
+      const game = t.games.find(g => g.round === p.round);
+      const cx = xFor(p.round), cy = yFor(p.cumulative);
+      // visible dot only for actual playing rounds (where the cumulative changed)
+      const prev = i > 0 ? t.units_series[i - 1].cumulative : 0;
+      const isPlayed = !!game || (i === 0 && p.cumulative !== 0);
+      if (isPlayed) {
+        svg.appendChild(el('circle', {
+          cx, cy, r: 3, class: 'units-dot', fill: t.primary,
+        }));
+      }
+      // larger invisible hit area for tooltips
+      const hit = el('circle', { cx, cy, r: 10, class: 'units-dot hit' });
+      const tipLines = [`${t.shortName} · Round ${p.round}`, `Cumulative: ${fmtUnits(p.cumulative)}`];
+      if (game) {
+        tipLines.push(`${game.outcome === 'W' ? 'Beat' : game.outcome === 'L' ? 'Lost to' : 'Drew with'} ${game.opponent} ${game.score} (${game.side})`);
+        tipLines.push(`Closing odds: $${game.closeOdds.toFixed(2)} · this game ${fmtUnits(game.units)}`);
+      } else {
+        tipLines.push('Bye');
+      }
+      hit.appendChild(el('title', {}, tipLines.join(' · ')));
+      svg.appendChild(hit);
+    }
+  }
+
+  // Logo at the end of each line. Place to the right of the last point.
+  const LOGO_SIZE = 32;
+  // Stack-aware vertical placement: if two lines end at almost the same y,
+  // nudge the lower-ranked (lower units) team's logo downward so they don't
+  // collide. Simple O(n²) — fine for 17 teams.
+  const placed = []; // { y, slug }
+  const sortedDesc = [...teams].sort((a, b) => b.units_total - a.units_total);
+  for (const t of sortedDesc) {
+    const last = t.units_series[t.units_series.length - 1];
+    const cx = xFor(last.round) + 16;
+    let cy = yFor(last.cumulative);
+    while (placed.some(p => Math.abs(p.y - cy) < LOGO_SIZE - 4)) cy += 4;
+    placed.push({ y: cy, slug: t.slug });
+
+    const g = el('g', { class: 'marker', transform: `translate(${cx},${cy})` });
+    g.appendChild(el('title', {}, `${t.shortName} · ${fmtUnits(t.units_total)} (${t.actual_wins}W ${t.actual_losses}L${t.actual_draws ? ' ' + t.actual_draws + 'D' : ''} from ${t.games_with_odds} games)`));
+    g.appendChild(el('circle', { r: LOGO_SIZE / 2 + 3, class: 'marker-halo' }));
+    if (t.logo) {
+      g.appendChild(el('image', {
+        class: 'marker-image', href: t.logo,
+        x: -LOGO_SIZE / 2, y: -LOGO_SIZE / 2, width: LOGO_SIZE, height: LOGO_SIZE,
+        preserveAspectRatio: 'xMidYMid meet',
+      }));
+    } else {
+      g.appendChild(el('circle', { r: LOGO_SIZE / 2 - 2, fill: t.primary }));
+    }
+    svg.appendChild(g);
+  }
+}
+
+// ─── BAR CHART: wins above expected ──────────────────────────────────────
+function renderWaeChart(data) {
+  const svg = document.getElementById('chart-wae');
+  while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+  const VBW = 920, VBH = 640;
+  const plot = { x0: 70, y0: 28, w: VBW - 70 - 90, h: VBH - 28 - 56 };
+
+  const teams = Object.values(data.teams).filter(t => t.games_with_odds > 0)
+    .sort((a, b) => b.wins_above_expected - a.wins_above_expected);
+
+  // X-range: symmetric around zero
+  const absMax = Math.max(0.5, ...teams.map(t => Math.abs(t.wins_above_expected))) + 0.5;
+  const xMin = -absMax, xMax = absMax;
+  const xFor = (v) => plot.x0 + (v - xMin) / (xMax - xMin) * plot.w;
+
+  // Row geometry
+  const rowH = plot.h / teams.length;
+  const barH = Math.min(28, rowH - 6);
+
+  // Gridlines
+  for (let v = Math.ceil(xMin); v <= Math.floor(xMax); v++) {
+    const x = xFor(v);
+    svg.appendChild(el('line', {
+      x1: x, x2: x, y1: plot.y0, y2: plot.y0 + plot.h,
+      class: v === 0 ? 'grid-line mid' : 'grid-line',
+    }));
+    svg.appendChild(el('text', {
+      x, y: plot.y0 + plot.h + 18, class: 'tick-text', 'text-anchor': 'middle',
+    }, (v > 0 ? '+' : '') + v));
+  }
+  // X-axis label
+  svg.appendChild(el('text', {
+    x: plot.x0 + plot.w / 2, y: plot.y0 + plot.h + 42,
+    class: 'axis-label', 'text-anchor': 'middle',
+  }, 'Wins above expected (closing odds)'));
+
+  const x0 = xFor(0);
+  const LOGO_SIZE = 28;
+
+  for (let i = 0; i < teams.length; i++) {
+    const t = teams[i];
+    const cy = plot.y0 + (i + 0.5) * rowH;
+    const v = t.wins_above_expected;
+    const xV = xFor(v);
+    const barX = Math.min(x0, xV);
+    const barW = Math.abs(xV - x0);
+
+    // Bar
+    const bar = el('rect', {
+      x: barX, y: cy - barH / 2, width: barW, height: barH,
+      class: 'bar', fill: t.primary, opacity: 0.92,
+    });
+    bar.appendChild(el('title', {}, `${t.shortName} · ${fmtWae(v)} wins above expected · ${t.actual_wins}W from expected ${t.expected_wins.toFixed(2)} across ${t.games_with_odds} games`));
+    svg.appendChild(bar);
+
+    // Logo at the END of the bar (right end for positive, left end for negative)
+    const logoX = v >= 0 ? xV + LOGO_SIZE / 2 + 6 : xV - LOGO_SIZE / 2 - 6;
+    const g = el('g', { class: 'marker', transform: `translate(${logoX},${cy})` });
+    g.appendChild(el('title', {}, `${t.shortName}`));
+    g.appendChild(el('circle', { r: LOGO_SIZE / 2 + 2, class: 'marker-halo' }));
+    if (t.logo) {
+      g.appendChild(el('image', {
+        class: 'marker-image', href: t.logo,
+        x: -LOGO_SIZE / 2, y: -LOGO_SIZE / 2, width: LOGO_SIZE, height: LOGO_SIZE,
+        preserveAspectRatio: 'xMidYMid meet',
+      }));
+    } else {
+      g.appendChild(el('circle', { r: LOGO_SIZE / 2 - 2, fill: t.primary }));
+    }
+    svg.appendChild(g);
+
+    // Numeric label just inside the bar (or just outside if bar is too short)
+    const labelInsideOk = barW > 36;
+    const labelX = labelInsideOk
+      ? (v >= 0 ? xV - 6 : xV + 6)
+      : (v >= 0 ? xV + LOGO_SIZE + 12 : xV - LOGO_SIZE - 12);
+    const anchor = labelInsideOk
+      ? (v >= 0 ? 'end' : 'start')
+      : (v >= 0 ? 'start' : 'end');
+    const fill = labelInsideOk ? '#fff' : 'var(--ink)';
+    svg.appendChild(el('text', {
+      x: labelX, y: cy, class: 'bar-label',
+      'text-anchor': anchor, fill,
+    }, fmtWae(v)));
+  }
+}
+
+function render(data) {
+  document.getElementById('round-tag').innerHTML =
+    `Round <b>${data.ladderRound}</b> · ${data.season}`;
+  const u = new Date(data.generatedAt);
+  document.getElementById('generated').textContent =
+    `Generated ${u.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}`;
+  document.title = `Beating the Odds · Rd ${data.ladderRound}, ${data.season}`;
+  document.getElementById('subtitle').textContent =
+    `Cumulative units & wins above expected · NRL ${data.season}, Round ${data.ladderRound}`;
+  document.getElementById('units-sub').textContent =
+    `+1 unit on every team, every round · ${data.matchesWithOddsAndResult} games priced`;
+
+  const insightHtml = buildInsight(data.teams, data.lastRound);
+  if (insightHtml) {
+    document.getElementById('insight').hidden = false;
+    document.getElementById('insight-body').innerHTML = insightHtml;
+  }
+
+  renderUnitsChart(data);
+  renderWaeChart(data);
+}
+
+function showError(msg) {
+  document.querySelector('main')?.remove();
+  const c = document.createElement('div');
+  c.className = 'err';
+  c.innerHTML = msg;
+  document.querySelector('.wrap').appendChild(c);
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data/beating-odds.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    render(await res.json());
+  } catch (e) {
+    console.error(e);
+    showError(`Couldn't load beating-odds data (${e.message}). Run <code>node scripts/fetch-odds.mjs && node scripts/compute-beating-odds.mjs</code> in this folder.`);
+  }
+}
+load();
+</script>
+</body>
+</html>
