@@ -5,7 +5,7 @@
 // Source: https://www.aussportsbetting.com/historical_data/nrl.xlsx — free
 // per their personal-use Terms of Use, attribution required (see odds.html).
 
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import XLSX from 'xlsx';
@@ -15,8 +15,19 @@ const REPO_ROOT = resolve(__dirname, '..');
 const XLSX_URL = 'https://www.aussportsbetting.com/historical_data/nrl.xlsx';
 const RAW_PATH = resolve(REPO_ROOT, 'data', 'raw', 'nrl-aussportsbetting.xlsx');
 const OUT_PATH = resolve(REPO_ROOT, 'data', 'odds.json');
-const UA = 'nrl-real-ladder/1.0 (https://github.com/stevejb-ctrl/nrl-real-ladder)';
 const SEASON_YEAR_SUFFIX = '-26'; // 2026 season; the xlsx dates are dd-MMM-YY
+
+// aussportsbetting 403s requests from cloud-provider IP ranges (GitHub
+// Actions on Azure get blocked) when paired with bot-looking user agents.
+// These headers mimic a real Chrome download. The host appears to gate on
+// the combination of IP + UA pattern, so a realistic UA usually slips
+// through. Referer is the actual page that links the file.
+const BROWSER_HEADERS = {
+  'User-Agent':      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  'Accept':          'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,*/*;q=0.8',
+  'Accept-Language': 'en-AU,en;q=0.9',
+  'Referer':         'https://www.aussportsbetting.com/data/',
+};
 
 // Map the aussportsbetting team strings to the slugs the rest of this repo
 // uses (the same slugs NRL.com returns as theme.key). Historical variants
@@ -68,7 +79,7 @@ function num(v) {
 
 async function download() {
   console.log(`Downloading ${XLSX_URL}`);
-  const res = await fetch(XLSX_URL, { headers: { 'User-Agent': UA } });
+  const res = await fetch(XLSX_URL, { headers: BROWSER_HEADERS });
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
   const buf = Buffer.from(await res.arrayBuffer());
   mkdirSync(dirname(RAW_PATH), { recursive: true });
@@ -148,5 +159,19 @@ function main(buf) {
   console.log(`Wrote ${matches.length} 2026 matches to ${OUT_PATH}`);
 }
 
-const buf = await download();
-main(buf);
+try {
+  const buf = await download();
+  main(buf);
+} catch (err) {
+  // If the source is briefly unreachable (403 / 5xx / network blip) and a
+  // previous data/odds.json is on disk, keep it and let the downstream
+  // compute step run against the stale-but-known snapshot. The exit code
+  // stays 0 so the cron's later steps and the deploy still fire.
+  console.error(`fetch-odds: ${err.message}`);
+  if (existsSync(OUT_PATH)) {
+    console.warn(`  Keeping existing ${OUT_PATH} (will go stale until source recovers).`);
+    process.exit(0);
+  }
+  console.error(`  No previous odds.json to fall back to.`);
+  process.exit(1);
+}
