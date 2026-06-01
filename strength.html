@@ -36,9 +36,15 @@
   }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 
-  /* top nav — proper site header, sits above the mast */
+  /* ============================================================
+     SHARED SITE HEADER — keep this block byte-for-byte identical
+     across index.html / forecast.html / strength.html / odds.html.
+     Mobile uses abbreviated labels (.short) so all four links sit
+     on one row at 375px.
+     ============================================================ */
   .topnav {
     display: flex;
+    flex-wrap: nowrap;
     gap: 32px;
     padding: 26px 0 0;
     align-items: baseline;
@@ -55,6 +61,8 @@
     position: relative;
     padding-bottom: 12px;
     transition: color .15s;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
   .topnav a:hover { color: var(--ink-soft); }
   .topnav a.active { color: var(--ink); }
@@ -66,9 +74,12 @@
     height: 3px;
     background: var(--accent);
   }
-  @media (max-width: 480px) {
-    .topnav { gap: 20px; padding-top: 18px; }
+  .topnav a .short { display: none; }
+  @media (max-width: 600px) {
+    .topnav { gap: 18px; padding-top: 18px; }
     .topnav a { font-size: 17px; padding-bottom: 10px; }
+    .topnav a .full { display: none; }
+    .topnav a .short { display: inline; }
   }
 
   /* mast */
@@ -308,11 +319,12 @@
 <body>
 <div class="wrap">
 
+  <!-- SHARED SITE HEADER — keep markup in sync across all four pages. -->
   <nav class="topnav">
-    <a href="./index.html">Real ladder</a>
-    <a href="./forecast.html">Season forecast</a>
-    <a href="./strength.html" class="active">Strength grid</a>
-    <a href="./odds.html">Beating the odds</a>
+    <a href="./index.html"><span class="full">Real ladder</span><span class="short">Ladder</span></a>
+    <a href="./forecast.html"><span class="full">Season forecast</span><span class="short">Forecast</span></a>
+    <a href="./strength.html" class="active"><span class="full">Strength grid</span><span class="short">Strength</span></a>
+    <a href="./odds.html"><span class="full">Beating the odds</span><span class="short">Odds</span></a>
   </nav>
 
   <header class="mast">
