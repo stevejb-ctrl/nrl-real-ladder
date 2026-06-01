@@ -335,7 +335,9 @@ function renderUnitsChart(data) {
   while (svg.firstChild) svg.removeChild(svg.firstChild);
 
   const VBW = 920, VBH = 520;
-  const plot = { x0: 56, y0: 28, w: VBW - 56 - 110, h: VBH - 28 - 56 };
+  // Right margin is generous so horizontally-staggered end-of-line logos
+  // have room (up to 4 tiers of staggering at 30 SVG units apart).
+  const plot = { x0: 56, y0: 28, w: VBW - 56 - 150, h: VBH - 28 - 56 };
 
   // Data range
   const teams = Object.values(data.teams).filter(t => t.games_with_odds > 0);
@@ -435,20 +437,32 @@ function renderUnitsChart(data) {
     }
   }
 
-  // Logo at the end of each line. Place to the right of the last point.
-  const LOGO_SIZE = 32;
-  // Stack-aware vertical placement: if two lines end at almost the same y,
-  // nudge the lower-ranked (lower units) team's logo downward so they don't
-  // collide. Simple O(n²) — fine for 17 teams.
-  const placed = []; // { y, slug }
-  const sortedDesc = [...teams].sort((a, b) => b.units_total - a.units_total);
-  for (const t of sortedDesc) {
-    const last = t.units_series[t.units_series.length - 1];
-    const cx = xFor(last.round) + 16;
-    let cy = yFor(last.cumulative);
-    while (placed.some(p => Math.abs(p.y - cy) < LOGO_SIZE - 4)) cy += 4;
-    placed.push({ y: cy, slug: t.slug });
+  // Logo at the end of each line, kept at the team's true y position. If
+  // a logo would overlap one already placed, stagger horizontally to the
+  // next tier (further right) rather than nudging downward — vertical
+  // nudging breaks the chart's primary signal, which is "which team
+  // finished where in units". Best-ranked teams get first claim on tier 0
+  // (right at the end of their line); colliders cascade to tier 1, 2, …
+  const LOGO_SIZE = 26;
+  const TIER_STEP = 30;
+  const tierBaseX = xFor(lastRound) + 16;
 
+  const placedByTier = []; // placedByTier[t] = [y, y, …]
+  const placement = {};   // slug → { x, y }
+
+  for (const t of [...teams].sort((a, b) => b.units_total - a.units_total)) {
+    const last = t.units_series[t.units_series.length - 1];
+    const cy = yFor(last.cumulative);
+    let tier = 0;
+    while (placedByTier[tier]?.some(y => Math.abs(y - cy) < LOGO_SIZE)) tier++;
+    (placedByTier[tier] ??= []).push(cy);
+    placement[t.slug] = { x: tierBaseX + tier * TIER_STEP, y: cy };
+  }
+
+  // Render in ASCENDING units order so the best-performing teams sit on
+  // top of any partial overlap.
+  for (const t of [...teams].sort((a, b) => a.units_total - b.units_total)) {
+    const { x: cx, y: cy } = placement[t.slug];
     const g = el('g', { class: 'marker', transform: `translate(${cx},${cy})` });
     g.appendChild(el('title', {}, `${t.shortName} · ${fmtUnits(t.units_total)} (${t.actual_wins}W ${t.actual_losses}L${t.actual_draws ? ' ' + t.actual_draws + 'D' : ''} from ${t.games_with_odds} games)`));
     g.appendChild(el('circle', { r: LOGO_SIZE / 2 + 3, class: 'marker-halo' }));
