@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-01T11:33:46.744Z",
+  "generatedAt": "2026-06-01T11:35:13.167Z",
   "season": 2026,
   "round": 13,
   "ladderFetchedAt": "2026-06-01T11:33:33.309Z",
@@ -38,6 +38,7 @@
       "officialPosition": 1,
       "realPosition": 1,
       "pool": "top",
+      "logo": "assets/logos/panthers.svg",
       "vsTop": {
         "wins": 5,
         "draws": 0,
@@ -63,6 +64,7 @@
       "officialPosition": 2,
       "realPosition": 2,
       "pool": "top",
+      "logo": "assets/logos/warriors.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
@@ -88,6 +90,7 @@
       "officialPosition": 4,
       "realPosition": 3,
       "pool": "top",
+      "logo": "assets/logos/knights.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
@@ -113,6 +116,7 @@
       "officialPosition": 3,
       "realPosition": 4,
       "pool": "top",
+      "logo": "assets/logos/roosters.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
@@ -138,6 +142,7 @@
       "officialPosition": 9,
       "realPosition": 5,
       "pool": "top",
+      "logo": "assets/logos/cowboys.svg",
       "vsTop": {
         "wins": 2,
         "draws": 0,
@@ -163,6 +168,7 @@
       "officialPosition": 5,
       "realPosition": 6,
       "pool": "top",
+      "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
         "wins": 2,
         "draws": 0,
@@ -188,6 +194,7 @@
       "officialPosition": 6,
       "realPosition": 7,
       "pool": "top",
+      "logo": "assets/logos/rabbitohs.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -213,6 +220,7 @@
       "officialPosition": 7,
       "realPosition": 8,
       "pool": "top",
+      "logo": "assets/logos/dolphins.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -238,6 +246,7 @@
       "officialPosition": 8,
       "realPosition": 9,
       "pool": "bottom",
+      "logo": "assets/logos/sharks.svg",
       "vsTop": {
         "wins": 2,
         "draws": 0,
@@ -263,6 +272,7 @@
       "officialPosition": 10,
       "realPosition": 10,
       "pool": "bottom",
+      "logo": "assets/logos/wests-tigers.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
@@ -288,6 +298,7 @@
       "officialPosition": 11,
       "realPosition": 11,
       "pool": "bottom",
+      "logo": "assets/logos/broncos.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -313,6 +324,7 @@
       "officialPosition": 12,
       "realPosition": 12,
       "pool": "bottom",
+      "logo": "assets/logos/raiders.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
@@ -338,6 +350,7 @@
       "officialPosition": 13,
       "realPosition": 13,
       "pool": "bottom",
+      "logo": "assets/logos/storm.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -363,6 +376,7 @@
       "officialPosition": 14,
       "realPosition": 14,
       "pool": "bottom",
+      "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -388,6 +402,7 @@
       "officialPosition": 15,
       "realPosition": 15,
       "pool": "bottom",
+      "logo": "assets/logos/eels.svg",
       "vsTop": {
         "wins": 1,
         "draws": 0,
@@ -413,6 +428,7 @@
       "officialPosition": 16,
       "realPosition": 16,
       "pool": "bottom",
+      "logo": "assets/logos/titans.svg",
       "vsTop": {
         "wins": 0,
         "draws": 0,
@@ -438,6 +454,7 @@
       "officialPosition": 17,
       "realPosition": 17,
       "pool": "bottom",
+      "logo": "assets/logos/dragons.svg",
       "vsTop": {
         "wins": 0,
         "draws": 0,
