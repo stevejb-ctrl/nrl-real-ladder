@@ -54,9 +54,14 @@ async function main() {
       else if (awayScore > homeScore) winner = awayKey;
       else winner = null;
 
+      const kickOff = f.clock?.kickOffTimeLong ?? null;
+      const date = kickOff ? kickOff.slice(0, 10) : null; // YYYY-MM-DD
+
       matches.push({
         round: r,
         roundTitle: f.roundTitle ?? `Round ${r}`,
+        date,
+        kickOff,
         home: homeKey,
         away: awayKey,
         homeScore,

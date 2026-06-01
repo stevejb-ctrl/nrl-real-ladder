@@ -1,0 +1,20 @@
+{
+  "name": "nrl-real-ladder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NRL ladder re-ranked by win %, with a Monte Carlo forecast, a strength grid, and a closing-odds tracker.",
+  "scripts": {
+    "fetch:ladder":  "node scripts/fetch-ladder.mjs",
+    "fetch:draw":    "node scripts/fetch-draw.mjs",
+    "fetch:results": "node scripts/fetch-results.mjs",
+    "fetch:odds":    "node scripts/fetch-odds.mjs",
+    "fetch:logos":   "node scripts/fetch-logos.mjs",
+    "simulate":      "node scripts/simulate.mjs",
+    "compute:grid":  "node scripts/compute-strength-grid.mjs",
+    "compute:odds":  "node scripts/compute-beating-odds.mjs"
+  },
+  "dependencies": {
+    "xlsx": "0.18.5"
+  }
+}
