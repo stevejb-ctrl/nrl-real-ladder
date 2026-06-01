@@ -28,14 +28,20 @@ jobs:
       - name: Fetch remaining draw
         run: node scripts/fetch-draw.mjs
 
+      - name: Fetch completed results
+        run: node scripts/fetch-results.mjs
+
       - name: Run Monte Carlo simulation
         run: node scripts/simulate.mjs
+
+      - name: Compute strength grid
+        run: node scripts/compute-strength-grid.mjs
 
       - name: Commit if data changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/ladder.json data/draw.json data/forecast.json
+          git add data/ladder.json data/draw.json data/results.json data/forecast.json data/strength-grid.json
           if git diff --cached --quiet; then
             echo "No data changes to commit."
           else

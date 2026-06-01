@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0a0b0e" />
+<title>NRL Strength Grid · Win % vs Top 8 and Bottom 9</title>
+<meta name="description" content="Every NRL team plotted on two axes: their win rate against the top 8 vs their win rate against the bottom 9." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #0a0b0e;
+    --bg-soft:   #101218;
+    --line:      rgba(240, 234, 218, 0.09);
+    --line-strong: rgba(240, 234, 218, 0.18);
+    --ink:       #f1ecde;
+    --ink-mute:  #8b8e9a;
+    --ink-soft:  #c5c2b6;
+    --accent:    #e3322a;
+    --accent-dim:#7e1e1a;
+    --gold:      #c8a85a;
+    --good:      #58c08b;
+    --bad:       #d65a52;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* top nav — proper site header, sits above the mast */
+  .topnav {
+    display: flex;
+    gap: 32px;
+    padding: 26px 0 0;
+    align-items: baseline;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .topnav a {
+    font-family: 'Anton', 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 12px;
+    transition: color .15s;
+  }
+  .topnav a:hover { color: var(--ink-soft); }
+  .topnav a.active { color: var(--ink); }
+  .topnav a.active::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0;
+    bottom: -1px;
+    height: 3px;
+    background: var(--accent);
+  }
+  @media (max-width: 480px) {
+    .topnav { gap: 20px; padding-top: 18px; }
+    .topnav a { font-size: 17px; padding-bottom: 10px; }
+  }
+
+  /* mast */
+  .mast { padding-top: 28px; }
+  .mast-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 14px;
+  }
+  .mast-meta b { color: var(--ink); font-weight: 700; }
+  .mast-meta .right { text-align: right; }
+
+  h1.title {
+    font-family: 'Anton', 'Bebas Neue', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: clamp(48px, 9vw, 108px);
+    letter-spacing: 0.005em;
+    line-height: 0.88;
+    margin: 0 0 14px;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  h1.title .accent { color: var(--accent); }
+  h1.title .small {
+    display: block;
+    font-size: 0.32em;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    margin-top: 6px;
+  }
+
+  .dek {
+    max-width: 640px;
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin: 0 0 28px;
+    border-left: 2px solid var(--accent);
+    padding-left: 14px;
+  }
+  .dek em { font-style: italic; color: var(--ink); }
+
+  /* insight callout */
+  .insight {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 18px 0;
+    margin: 24px 0 32px;
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 22px;
+    align-items: start;
+  }
+  .insight .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+  .insight .body { font-size: 17px; line-height: 1.55; color: var(--ink); }
+  .insight .body b { color: var(--ink); font-weight: 700; }
+  .insight .body p { margin: 0 0 8px; }
+  .insight .body p:last-child { margin: 0; }
+  .insight .body .num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 0.92em; }
+  .insight .body .good { color: var(--good); }
+  .insight .body .bad  { color: var(--bad); }
+
+  /* chart */
+  .chart-card {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    padding: 14px 8px 4px;
+    margin-bottom: 28px;
+  }
+  .chart-wrap {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .chart-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 480px;
+    max-width: none;
+  }
+  /* chart styles */
+  .grid-line { stroke: var(--line); stroke-width: 1; }
+  .grid-line.mid { stroke: var(--line-strong); stroke-width: 1.4; stroke-dasharray: 4 4; }
+  .axis-line { stroke: var(--line-strong); stroke-width: 1.2; }
+  .tick-text {
+    fill: var(--ink-mute);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .axis-label {
+    fill: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .quad-label {
+    fill: var(--ink-mute);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-anchor: middle;
+    pointer-events: none;
+  }
+  .quad-label .accent-text { fill: var(--ink-soft); }
+
+  .marker { cursor: default; }
+  .marker .disc { stroke: rgba(255,255,255,0.65); stroke-width: 1.5; }
+  .marker .ring { fill: none; stroke: var(--ink); stroke-width: 1; opacity: 0; transition: opacity .15s; }
+  .marker .label {
+    fill: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-anchor: middle;
+    dominant-baseline: central;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+  .marker:hover .ring { opacity: 0.55; }
+
+  /* caption / legend */
+  .legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 8px 0 36px;
+  }
+  .legend .pool {
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+  .legend .pool h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  .legend .pool h3 b { color: var(--ink); font-weight: 700; }
+  .legend .pool .names {
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .legend .pool .names .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 2px 8px 2px 0;
+    font-family: 'Inter', sans-serif;
+  }
+  .legend .pool .names .swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  @media (max-width: 640px) {
+    .legend { grid-template-columns: 1fr; gap: 14px; }
+  }
+
+  /* methodology + foot */
+  .method {
+    margin-top: 24px;
+    border-top: 1px solid var(--line-strong);
+    padding-top: 18px;
+  }
+  .method h2 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    color: var(--ink);
+  }
+  .method p {
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.65;
+    max-width: 64ch;
+    margin: 0 0 10px;
+  }
+  .method strong { color: var(--ink); }
+  .method code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    background: rgba(255,255,255,0.06);
+    padding: 1px 5px;
+    border-radius: 3px;
+    color: var(--ink);
+  }
+
+  .foot {
+    border-top: 1px solid var(--line);
+    margin-top: 36px;
+    padding: 22px 0 56px;
+    color: var(--ink-mute);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .foot a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--line-strong); }
+  .foot a:hover { text-decoration-color: var(--accent); }
+  .foot strong { color: var(--ink-soft); font-weight: 600; }
+
+  .err {
+    padding: 18px;
+    border: 1px solid var(--accent-dim);
+    background: rgba(227, 50, 42, 0.08);
+    color: #f4c1bd;
+    font-size: 14px;
+    margin: 24px 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav class="topnav">
+    <a href="./index.html">Real ladder</a>
+    <a href="./forecast.html">Season forecast</a>
+    <a href="./strength.html" class="active">Strength grid</a>
+  </nav>
+
+  <header class="mast">
+    <div class="mast-meta">
+      <span id="round-tag">Loading…</span>
+      <span class="right" id="generated">—</span>
+    </div>
+    <h1 class="title">
+      Strength<br><span class="accent">Grid</span><span class="small" id="subtitle">Win % vs the top 8 vs win % vs the bottom 9</span>
+    </h1>
+    <p class="dek">Two questions, plotted at once: how does each team go against the <em>best</em>, and how do they go against the <em>rest</em>? The four quadrants split the comp into flat-track bullies, big-game specialists, the gone, and the genuine.</p>
+  </header>
+
+  <section class="insight" id="insight" hidden>
+    <div class="kicker">Grid read</div>
+    <div class="body" id="insight-body"></div>
+  </section>
+
+  <section class="chart-card">
+    <div class="chart-wrap">
+      <svg id="chart" class="chart-svg" viewBox="0 0 760 760" role="img" aria-label="Scatter plot of NRL teams by win rate vs top 8 (x) and bottom 9 (y)"></svg>
+    </div>
+  </section>
+
+  <section class="legend">
+    <div class="pool">
+      <h3>Strong opposition · <b>Top 8</b></h3>
+      <div class="names" id="legend-top">—</div>
+    </div>
+    <div class="pool">
+      <h3>Weak opposition · <b>Bottom 9</b></h3>
+      <div class="names" id="legend-bottom">—</div>
+    </div>
+  </section>
+
+  <section class="method">
+    <h2>How it works</h2>
+    <p>The <strong>x-axis</strong> is each team's win rate against the current top 8 of the official ladder. The <strong>y-axis</strong> is each team's win rate against the bottom 9. Wins use the site convention — <code>(wins + 0.5 × draws) ÷ played</code> — so a draw is half a win. Byes aren't matches and don't count.</p>
+    <p>The strong/weak split is anchored to <strong>this site's real ladder</strong>, not the official NRL one. Top 8 = positions 1-8 on the win-% ladder. Bottom 9 = positions 9-17. A top-8 team's "vs top 8" pool is naturally the other seven top-8 teams (they don't play themselves).</p>
+    <p>The dashed lines at <strong>50%</strong> split the chart into four reads. <strong>Top-right</strong> beats everyone. <strong>Top-left</strong> is the flat-track-bully zone — beats the bottom but folds against the top. <strong>Bottom-right</strong> is the big-game specialist — knocks off the top but drops winnable games. <strong>Bottom-left</strong> is the spoon zone.</p>
+    <p><strong>Markers are interim:</strong> NRL club logos aren't bundled with this repo yet, so each team is plotted as a coloured disc with its initials in club colours. Hover or tap a team to see the exact splits.</p>
+  </section>
+
+  <footer class="foot">
+    <strong>Data.</strong> <a href="https://www.nrl.com/draw/">nrl.com/draw</a> for completed fixtures, <a href="https://www.nrl.com/ladder/">nrl.com/ladder</a> for the top-8 split. Refreshed every six hours via GitHub Actions.
+  </footer>
+</div>
+
+<script>
+const fmtPct = (n) => (n == null ? 'n/a' : (n * 100).toFixed(1) + '%');
+
+// Project a (0..1, 0..1) data point into the plot's pixel coordinates.
+// The plot lives inside the SVG at [plotX0, plotX0+plotW] × [plotY0, plotY0+plotH].
+// Y is inverted (SVG y grows downward, our data axis grows upward).
+function makeProjector(plot) {
+  return (x, y) => ({
+    px: plot.x0 + x * plot.w,
+    py: plot.y0 + (1 - y) * plot.h,
+  });
+}
+
+function buildInsight(teams) {
+  const plotted = teams.filter(t => t.vsTop.winPct != null && t.vsBottom.winPct != null);
+  if (plotted.length === 0) return '';
+
+  const bestVsTop = [...plotted].sort((a, b) => b.vsTop.winPct - a.vsTop.winPct)[0];
+  const flatTrack = [...plotted]
+    .filter(t => t.vsTop.winPct < 0.5 && t.vsBottom.winPct >= 0.5)
+    .sort((a, b) => (b.vsBottom.winPct - b.vsTop.winPct) - (a.vsBottom.winPct - a.vsTop.winPct))[0];
+  const specialist = [...plotted]
+    .filter(t => t.vsTop.winPct >= 0.5 && t.vsBottom.winPct < 0.5)
+    .sort((a, b) => (b.vsTop.winPct - b.vsBottom.winPct) - (a.vsTop.winPct - a.vsBottom.winPct))[0];
+  const goneTeams = plotted.filter(t => t.vsTop.winPct < 0.3 && t.vsBottom.winPct < 0.5);
+
+  const lines = [];
+
+  if (bestVsTop.vsTop.winPct >= 0.7) {
+    lines.push(`<b>${bestVsTop.shortName}</b> are smashing the top 8 — <span class="num good">${fmtPct(bestVsTop.vsTop.winPct)}</span> against the teams that matter (${bestVsTop.vsTop.wins}-${bestVsTop.vsTop.losses}${bestVsTop.vsTop.draws ? '-' + bestVsTop.vsTop.draws : ''} from ${bestVsTop.vsTop.played}).`);
+  }
+  if (flatTrack) {
+    lines.push(`Flat-track bully watch: <b>${flatTrack.shortName}</b> sit at <span class="num">${fmtPct(flatTrack.vsBottom.winPct)}</span> against the bottom 9 but only <span class="num bad">${fmtPct(flatTrack.vsTop.winPct)}</span> against the top — record looks better than the resume.`);
+  }
+  if (specialist) {
+    lines.push(`Big-game specialist: <b>${specialist.shortName}</b> are <span class="num good">${fmtPct(specialist.vsTop.winPct)}</span> against the top 8 yet just <span class="num bad">${fmtPct(specialist.vsBottom.winPct)}</span> against the bottom 9 — the losses are coming in winnable games.`);
+  }
+  if (goneTeams.length >= 2) {
+    lines.push(`Bottom-left zone (struggling against everyone): <b>${goneTeams.map(t => t.shortName).join('</b>, <b>')}</b>.`);
+  } else if (goneTeams.length === 1) {
+    lines.push(`Bottom-left zone (struggling against everyone): <b>${goneTeams[0].shortName}</b>.`);
+  }
+
+  return lines.map(l => `<p>${l}</p>`).join('');
+}
+
+function render(data) {
+  // Header
+  document.getElementById('round-tag').innerHTML =
+    `Round <b>${data.round}</b> · ${data.season}`;
+  const u = new Date(data.generatedAt);
+  document.getElementById('generated').textContent =
+    `Generated ${u.toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}`;
+  document.title = `Strength Grid · Rd ${data.round}, ${data.season}`;
+  document.getElementById('subtitle').textContent =
+    `Win % vs Top 8 and Bottom 9 NRL Teams · Rd ${data.round}, ${data.season}`;
+
+  // Legend lists
+  const teamsBySlug = Object.fromEntries(data.teams.map(t => [t.slug, t]));
+  const renderChips = (slugs) => slugs.map(s => {
+    const t = teamsBySlug[s];
+    return `<span class="chip"><span class="swatch" style="background:${t.primary}"></span>${t.shortName}</span>`;
+  }).join('');
+  document.getElementById('legend-top').innerHTML = renderChips(data.topSlugs);
+  document.getElementById('legend-bottom').innerHTML = renderChips(data.bottomSlugs);
+
+  // Insight
+  const insightHtml = buildInsight(data.teams);
+  if (insightHtml) {
+    document.getElementById('insight').hidden = false;
+    document.getElementById('insight-body').innerHTML = insightHtml;
+  }
+
+  // Chart geometry. viewBox is 760 × 760; reserve room for axis labels.
+  const VB = 760;
+  const plot = { x0: 70, y0: 56, w: VB - 70 - 28, h: VB - 56 - 80 };
+  const project = makeProjector(plot);
+
+  const svg = document.getElementById('chart');
+  const NS = 'http://www.w3.org/2000/svg';
+  const el = (tag, attrs = {}, children = '') => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (children) e.innerHTML = children;
+    return e;
+  };
+
+  // Plot frame
+  svg.appendChild(el('rect', {
+    x: plot.x0, y: plot.y0, width: plot.w, height: plot.h,
+    fill: 'rgba(255,255,255,0.012)', stroke: 'none',
+  }));
+
+  // Gridlines + ticks (every 0.1; tick labels every 0.2)
+  for (let i = 0; i <= 10; i++) {
+    const v = i / 10;
+    // vertical (x = v)
+    const x = plot.x0 + v * plot.w;
+    svg.appendChild(el('line', {
+      x1: x, x2: x, y1: plot.y0, y2: plot.y0 + plot.h,
+      class: i === 5 ? 'grid-line mid' : 'grid-line',
+    }));
+    // horizontal (y = v)
+    const y = plot.y0 + (1 - v) * plot.h;
+    svg.appendChild(el('line', {
+      x1: plot.x0, x2: plot.x0 + plot.w, y1: y, y2: y,
+      class: i === 5 ? 'grid-line mid' : 'grid-line',
+    }));
+    // x-axis tick labels
+    if (i % 2 === 0) {
+      svg.appendChild(el('text', {
+        x: x, y: plot.y0 + plot.h + 22,
+        class: 'tick-text', 'text-anchor': 'middle',
+      }, `${i * 10}%`));
+      svg.appendChild(el('text', {
+        x: plot.x0 - 12, y: y + 4,
+        class: 'tick-text', 'text-anchor': 'end',
+      }, `${i * 10}%`));
+    }
+  }
+
+  // Plot border (drawn last so it sits above gridlines)
+  svg.appendChild(el('rect', {
+    x: plot.x0, y: plot.y0, width: plot.w, height: plot.h,
+    fill: 'none', class: 'axis-line',
+  }));
+
+  // Axis labels
+  svg.appendChild(el('text', {
+    x: plot.x0 + plot.w / 2,
+    y: plot.y0 + plot.h + 56,
+    class: 'axis-label',
+    'text-anchor': 'middle',
+  }, 'Win % vs Top 8 (strong)'));
+  svg.appendChild(el('text', {
+    x: -(plot.y0 + plot.h / 2),
+    y: 24,
+    class: 'axis-label',
+    'text-anchor': 'middle',
+    transform: 'rotate(-90)',
+  }, 'Win % vs Bottom 9 (weak)'));
+
+  // Quadrant labels (centered inside each quadrant)
+  const quadX = { left: plot.x0 + plot.w * 0.25, right: plot.x0 + plot.w * 0.75 };
+  const quadY = { top: plot.y0 + plot.h * 0.10, bottom: plot.y0 + plot.h * 0.92 };
+  // top-right
+  svg.appendChild(el('text', {
+    x: quadX.right, y: quadY.top, class: 'quad-label',
+  }, 'Good vs Good and Bad opposition'));
+  // top-left (two lines stacked)
+  const tl = el('text', { x: quadX.left, y: quadY.top, class: 'quad-label' });
+  tl.appendChild(el('tspan', { x: quadX.left, dy: '0' }, 'Bad vs Good opposition'));
+  tl.appendChild(el('tspan', { x: quadX.left, dy: '1.3em' }, 'Good vs Bad opposition'));
+  svg.appendChild(tl);
+  // bottom-right (two lines stacked)
+  const br = el('text', { x: quadX.right, y: quadY.bottom - 16, class: 'quad-label' });
+  br.appendChild(el('tspan', { x: quadX.right, dy: '0' }, 'Good vs Good opposition'));
+  br.appendChild(el('tspan', { x: quadX.right, dy: '1.3em' }, 'Bad vs Bad opposition'));
+  svg.appendChild(br);
+  // bottom-left
+  svg.appendChild(el('text', {
+    x: quadX.left, y: quadY.bottom, class: 'quad-label',
+  }, 'Bad vs Good and Bad opposition'));
+
+  // Team markers
+  const omitted = [];
+  for (const t of data.teams) {
+    if (t.vsTop.winPct == null || t.vsBottom.winPct == null) {
+      omitted.push(t);
+      continue;
+    }
+    const { px, py } = project(t.vsTop.winPct, t.vsBottom.winPct);
+
+    const g = el('g', { class: 'marker', transform: `translate(${px},${py})` });
+    const r = 19;
+    g.appendChild(el('circle', { r: r + 6, class: 'ring' }));
+    g.appendChild(el('circle', { r, class: 'disc', fill: t.primary }));
+    g.appendChild(el('text', { class: 'label' }, t.initials));
+    // Native tooltip on hover (and accessible label).
+    const title = el('title', {},
+      `${t.shortName} · vs top 8: ${fmtPct(t.vsTop.winPct)} (${t.vsTop.wins}-${t.vsTop.losses}${t.vsTop.draws ? '-' + t.vsTop.draws : ''}, ${t.vsTop.played} games) · vs bottom 9: ${fmtPct(t.vsBottom.winPct)} (${t.vsBottom.wins}-${t.vsBottom.losses}${t.vsBottom.draws ? '-' + t.vsBottom.draws : ''}, ${t.vsBottom.played} games)`
+    );
+    g.appendChild(title);
+    svg.appendChild(g);
+  }
+
+  if (omitted.length) {
+    const note = document.createElement('p');
+    note.style.fontSize = '13px';
+    note.style.color = 'var(--ink-mute)';
+    note.style.marginTop = '8px';
+    note.textContent = `Not plotted — no completed games against one or both pools yet: ${omitted.map(t => t.shortName).join(', ')}.`;
+    document.querySelector('.chart-card').appendChild(note);
+  }
+}
+
+function showError(msg) {
+  const chart = document.getElementById('chart');
+  chart.outerHTML = `<div class="err">${msg}</div>`;
+}
+
+async function load() {
+  try {
+    const res = await fetch('./data/strength-grid.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    render(data);
+  } catch (e) {
+    console.error(e);
+    showError(`Couldn't load strength-grid data (${e.message}). Run <code>node scripts/fetch-results.mjs && node scripts/compute-strength-grid.mjs</code> in this folder, or check the network.`);
+  }
+}
+load();
+</script>
+</body>
+</html>
