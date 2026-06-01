@@ -9,15 +9,28 @@
 // Win-rate uses the site convention: (wins + 0.5 × draws) ÷ played.
 // A team's own self-game is naturally never in its own count.
 
-import { readFileSync, writeFileSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'node:fs';
+import { resolve, dirname, extname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, '..');
 const LADDER_PATH = resolve(REPO_ROOT, 'data', 'ladder.json');
 const RESULTS_PATH = resolve(REPO_ROOT, 'data', 'results.json');
+const LOGOS_DIR = resolve(REPO_ROOT, 'assets', 'logos');
 const OUT_PATH = resolve(REPO_ROOT, 'data', 'strength-grid.json');
+
+// Build a slug → relative logo path map by walking assets/logos. Whatever
+// extension the file is (svg, png, jpg), the file's basename without
+// extension is the team slug. Page falls back to a coloured disc when a
+// team's slug has no file here.
+const logoBySlug = existsSync(LOGOS_DIR)
+  ? Object.fromEntries(
+      readdirSync(LOGOS_DIR)
+        .filter(f => /\.(svg|png|jpe?g|webp)$/i.test(f))
+        .map(f => [basename(f, extname(f)), `assets/logos/${f}`])
+    )
+  : {};
 
 const TOP_CUTOFF = 8;
 
@@ -98,6 +111,7 @@ const teams = realLadder.map(t => {
     officialPosition: t.officialPosition,
     realPosition: t.realPosition,
     pool: topSlugs.has(t.slug) ? 'top' : 'bottom',
+    logo: logoBySlug[t.slug] ?? null,
     vsTop: { ...tt.vsTop, winPct: wp(tt.vsTop) },
     vsBottom: { ...tt.vsBottom, winPct: wp(tt.vsBottom) },
   };
