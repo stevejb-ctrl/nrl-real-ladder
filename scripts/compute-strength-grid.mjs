@@ -24,12 +24,21 @@ const TOP_CUTOFF = 8;
 const ladder = JSON.parse(readFileSync(LADDER_PATH, 'utf8'));
 const results = JSON.parse(readFileSync(RESULTS_PATH, 'utf8'));
 
-// Top 8 / bottom 9 split based on the official ladder (the cron is the source
-// of truth — we deliberately don't recompute the real-ladder rank here so the
-// grid story stays anchored to the ladder Steve's readers see at nrl.com).
-const sortedByOfficial = [...ladder.teams].sort((a, b) => a.officialPosition - b.officialPosition);
-const topSlugs = new Set(sortedByOfficial.slice(0, TOP_CUTOFF).map(t => t.slug));
-const bottomSlugs = new Set(sortedByOfficial.slice(TOP_CUTOFF).map(t => t.slug));
+// Top 8 / bottom 9 split based on THIS SITE'S real ladder — (W + 0.5D) / P
+// desc with pointsDiff as tiebreak, mirroring the sort in index.html. This is
+// the whole point of the chart: read strength against the same teams the site
+// elsewhere calls finals-bound, not the bye-inflated official top 8.
+function realWp(t) {
+  return t.played > 0 ? (t.wins + 0.5 * t.draws) / t.played : 0;
+}
+const realLadder = [...ladder.teams].sort((a, b) => {
+  const w = realWp(b) - realWp(a);
+  if (Math.abs(w) > 1e-9) return w;
+  return b.pointsDiff - a.pointsDiff;
+});
+realLadder.forEach((t, i) => { t.realPosition = i + 1; });
+const topSlugs = new Set(realLadder.slice(0, TOP_CUTOFF).map(t => t.slug));
+const bottomSlugs = new Set(realLadder.slice(TOP_CUTOFF).map(t => t.slug));
 
 // Per-team tallies against each pool.
 const tally = {};
@@ -75,7 +84,9 @@ function wp(bucket) {
 }
 
 // Project the result with display metadata baked in so the page stays dumb.
-const teams = sortedByOfficial.map(t => {
+// Iterate in real-ladder order so the page can lean on the array order if it
+// ever wants to (currently it doesn't, but it's cheap insurance).
+const teams = realLadder.map(t => {
   const tt = tally[t.slug];
   return {
     slug: t.slug,
@@ -85,6 +96,7 @@ const teams = sortedByOfficial.map(t => {
     primary: t.primary,
     secondary: t.secondary,
     officialPosition: t.officialPosition,
+    realPosition: t.realPosition,
     pool: topSlugs.has(t.slug) ? 'top' : 'bottom',
     vsTop: { ...tt.vsTop, winPct: wp(tt.vsTop) },
     vsBottom: { ...tt.vsBottom, winPct: wp(tt.vsBottom) },
@@ -111,8 +123,18 @@ const out = {
 
 writeFileSync(OUT_PATH, JSON.stringify(out, null, 2) + '\n', 'utf8');
 console.log(`Wrote ${teams.length} teams (omitted: ${omitted.length}) → ${OUT_PATH}`);
-console.log(`  Top 8: ${[...topSlugs].join(', ')}`);
-console.log(`  Bot 9: ${[...bottomSlugs].join(', ')}`);
+console.log(`  Top 8 (real ladder): ${[...topSlugs].join(', ')}`);
+console.log(`  Bot 9 (real ladder): ${[...bottomSlugs].join(', ')}`);
+// Show pool flips vs the official ladder so they're visible in the cron log.
+const officialTop = ladder.teams.filter(t => t.officialPosition <= TOP_CUTOFF).map(t => t.slug);
+const officialTopSet = new Set(officialTop);
+const promoted = [...topSlugs].filter(s => !officialTopSet.has(s));
+const demoted = officialTop.filter(s => !topSlugs.has(s));
+if (promoted.length || demoted.length) {
+  console.log(`  Pool flips vs official: +${promoted.join(',') || '∅'}  −${demoted.join(',') || '∅'}`);
+} else {
+  console.log(`  Pool flips vs official: none`);
+}
 for (const t of teams) {
   const xs = t.vsTop.winPct === null ? 'n/a' : `${(t.vsTop.winPct * 100).toFixed(1)}%`;
   const ys = t.vsBottom.winPct === null ? 'n/a' : `${(t.vsBottom.winPct * 100).toFixed(1)}%`;
