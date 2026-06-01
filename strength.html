@@ -552,8 +552,58 @@ function render(data) {
   const LOGO_SIZE = 50;          // SVG units; viewBox is 760×760 so this is ~6.6% of width
   const HALO_R = LOGO_SIZE / 2 + 4;
 
+  // Pixel-exact ties (e.g. two teams both 20% / 42.9%) used to fully eclipse
+  // each other — the higher-z marker hid the one underneath. Group teams
+  // that land on (effectively) the same point and arrange them in a tight
+  // pattern around the true position: vertical pair for two, ring for
+  // three or more. Singletons stay exactly where the data puts them.
+  const CLUSTER_TOL = 6;         // SVG units — treat as "same point" if closer than this
+  const rawPositions = new Map();
   for (const t of toPlot) {
-    const { px, py } = project(t.vsTop.winPct, t.vsBottom.winPct);
+    rawPositions.set(t.slug, project(t.vsTop.winPct, t.vsBottom.winPct));
+  }
+  // Greedy proximity clustering. With 17 teams the O(N²) cost is trivial.
+  const clusters = [];
+  for (const t of toPlot) {
+    const p = rawPositions.get(t.slug);
+    const c = clusters.find(cl =>
+      Math.hypot(cl.cx - p.px, cl.cy - p.py) < CLUSTER_TOL
+    );
+    if (c) {
+      c.members.push(t);
+      c.cx = (c.cx * (c.members.length - 1) + p.px) / c.members.length;
+      c.cy = (c.cy * (c.members.length - 1) + p.py) / c.members.length;
+    } else {
+      clusters.push({ cx: p.px, cy: p.py, members: [t] });
+    }
+  }
+  const finalPos = new Map(); // slug → { x, y }
+  for (const c of clusters) {
+    if (c.members.length === 1) {
+      finalPos.set(c.members[0].slug, { x: c.cx, y: c.cy });
+      continue;
+    }
+    // Order members so the higher-ranked team gets the visually "first"
+    // slot (top of a pair, top of a ring).
+    const ordered = [...c.members].sort((a, b) => a.realPosition - b.realPosition);
+    if (ordered.length === 2) {
+      const offset = 18;
+      finalPos.set(ordered[0].slug, { x: c.cx, y: c.cy - offset });
+      finalPos.set(ordered[1].slug, { x: c.cx, y: c.cy + offset });
+    } else {
+      const radius = ordered.length === 3 ? 22 : 26;
+      ordered.forEach((t, i) => {
+        const angle = (2 * Math.PI * i / ordered.length) - Math.PI / 2;
+        finalPos.set(t.slug, {
+          x: c.cx + radius * Math.cos(angle),
+          y: c.cy + radius * Math.sin(angle),
+        });
+      });
+    }
+  }
+
+  for (const t of toPlot) {
+    const { x: px, y: py } = finalPos.get(t.slug);
 
     const g = el('g', { class: 'marker', transform: `translate(${px},${py})` });
     g.appendChild(el('circle', { r: HALO_R + 5, class: 'ring' }));
