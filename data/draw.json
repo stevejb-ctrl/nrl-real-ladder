@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 15,
   "toRound": 27,
-  "fetchedAt": "2026-06-13T08:57:41.971Z",
+  "fetchedAt": "2026-06-13T13:59:25.799Z",
   "matches": [
-    {
-      "round": 15,
-      "roundTitle": "Round 15",
-      "home": "eels",
-      "away": "raiders",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-06-13T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 15,
       "roundTitle": "Round 15",

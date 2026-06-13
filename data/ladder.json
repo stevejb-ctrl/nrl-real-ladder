@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 15,
   "competitionId": 111,
-  "fetchedAt": "2026-06-13T08:57:37.432Z",
+  "fetchedAt": "2026-06-13T13:59:20.991Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -21,8 +21,8 @@
       "pointsAgainst": 164,
       "pointsDiff": 273,
       "compPoints": 28,
-      "streak": "4W",
-      "form": "4 - 0",
+      "streak": "3W",
+      "form": "3 - 0",
       "officialPosition": 1
     },
     {
@@ -32,17 +32,17 @@
       "initials": "NZ",
       "primary": "#1D5E36",
       "secondary": "#000000",
-      "played": 12,
+      "played": 13,
       "wins": 9,
-      "losses": 3,
+      "losses": 4,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 368,
-      "pointsAgainst": 214,
-      "pointsDiff": 154,
+      "pointsFor": 376,
+      "pointsAgainst": 224,
+      "pointsDiff": 152,
       "compPoints": 22,
-      "streak": "1L",
-      "form": "2 - 1",
+      "streak": "2L",
+      "form": "2 - 2",
       "officialPosition": 2
     },
     {
@@ -62,7 +62,7 @@
       "pointsDiff": 117,
       "compPoints": 20,
       "streak": "1W",
-      "form": "4 - 1",
+      "form": "3 - 1",
       "officialPosition": 3
     },
     {
@@ -86,6 +86,26 @@
       "officialPosition": 4
     },
     {
+      "slug": "sharks",
+      "shortName": "Sharks",
+      "fullName": "Cronulla-Sutherland Sharks",
+      "initials": "CS",
+      "primary": "#00A6CE",
+      "secondary": "#000000",
+      "played": 13,
+      "wins": 8,
+      "losses": 5,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 366,
+      "pointsAgainst": 302,
+      "pointsDiff": 64,
+      "compPoints": 20,
+      "streak": "4W",
+      "form": "4 - 0",
+      "officialPosition": 5
+    },
+    {
       "slug": "roosters",
       "shortName": "Roosters",
       "fullName": "Sydney Roosters",
@@ -103,7 +123,7 @@
       "compPoints": 20,
       "streak": "1L",
       "form": "1 - 3",
-      "officialPosition": 5
+      "officialPosition": 6
     },
     {
       "slug": "knights",
@@ -122,8 +142,8 @@
       "pointsDiff": 32,
       "compPoints": 20,
       "streak": "1L",
-      "form": "3 - 1",
-      "officialPosition": 6
+      "form": "2 - 1",
+      "officialPosition": 7
     },
     {
       "slug": "rabbitohs",
@@ -143,26 +163,6 @@
       "compPoints": 18,
       "streak": "1W",
       "form": "1 - 3",
-      "officialPosition": 7
-    },
-    {
-      "slug": "sharks",
-      "shortName": "Sharks",
-      "fullName": "Cronulla-Sutherland Sharks",
-      "initials": "CS",
-      "primary": "#00A6CE",
-      "secondary": "#000000",
-      "played": 12,
-      "wins": 7,
-      "losses": 5,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 356,
-      "pointsAgainst": 294,
-      "pointsDiff": 62,
-      "compPoints": 18,
-      "streak": "3W",
-      "form": "3 - 1",
       "officialPosition": 8
     },
     {
@@ -182,7 +182,7 @@
       "pointsDiff": -13,
       "compPoints": 18,
       "streak": "2L",
-      "form": "2 - 3",
+      "form": "2 - 2",
       "officialPosition": 9
     },
     {
@@ -222,7 +222,7 @@
       "pointsDiff": -2,
       "compPoints": 14,
       "streak": "2W",
-      "form": "4 - 1",
+      "form": "3 - 1",
       "officialPosition": 11
     },
     {
@@ -242,7 +242,7 @@
       "pointsDiff": -97,
       "compPoints": 14,
       "streak": "1W",
-      "form": "2 - 3",
+      "form": "2 - 2",
       "officialPosition": 12
     },
     {
@@ -252,16 +252,16 @@
       "initials": "CR",
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
-      "played": 13,
+      "played": 14,
       "wins": 5,
-      "losses": 8,
+      "losses": 9,
       "draws": 0,
       "byes": 1,
-      "pointsFor": 249,
-      "pointsAgainst": 347,
-      "pointsDiff": -98,
+      "pointsFor": 261,
+      "pointsAgainst": 362,
+      "pointsDiff": -101,
       "compPoints": 12,
-      "streak": "1L",
+      "streak": "2L",
       "form": "1 - 3",
       "officialPosition": 13
     },
@@ -286,6 +286,26 @@
       "officialPosition": 14
     },
     {
+      "slug": "eels",
+      "shortName": "Eels",
+      "fullName": "Parramatta Eels",
+      "initials": "PE",
+      "primary": "#006EB5",
+      "secondary": "#FFCC00",
+      "played": 14,
+      "wins": 5,
+      "losses": 9,
+      "draws": 0,
+      "byes": 1,
+      "pointsFor": 284,
+      "pointsAgainst": 433,
+      "pointsDiff": -149,
+      "compPoints": 12,
+      "streak": "1W",
+      "form": "1 - 3",
+      "officialPosition": 15
+    },
+    {
       "slug": "titans",
       "shortName": "Titans",
       "fullName": "Gold Coast Titans",
@@ -302,26 +322,6 @@
       "pointsDiff": -83,
       "compPoints": 10,
       "streak": "1W",
-      "form": "1 - 3",
-      "officialPosition": 15
-    },
-    {
-      "slug": "eels",
-      "shortName": "Eels",
-      "fullName": "Parramatta Eels",
-      "initials": "PE",
-      "primary": "#006EB5",
-      "secondary": "#FFCC00",
-      "played": 13,
-      "wins": 4,
-      "losses": 9,
-      "draws": 0,
-      "byes": 1,
-      "pointsFor": 269,
-      "pointsAgainst": 421,
-      "pointsDiff": -152,
-      "compPoints": 10,
-      "streak": "3L",
       "form": "1 - 3",
       "officialPosition": 16
     },
@@ -342,7 +342,7 @@
       "pointsDiff": -243,
       "compPoints": 6,
       "streak": "1L",
-      "form": "1 - 4",
+      "form": "1 - 3",
       "officialPosition": 17
     }
   ]

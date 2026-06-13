@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-13T08:57:46.907Z",
+  "generatedAt": "2026-06-13T13:59:32.227Z",
   "season": 2026,
   "round": 15,
-  "ladderFetchedAt": "2026-06-13T08:57:37.432Z",
-  "resultsFetchedAt": "2026-06-13T08:57:46.023Z",
-  "matchesConsidered": 110,
+  "ladderFetchedAt": "2026-06-13T13:59:20.991Z",
+  "resultsFetchedAt": "2026-06-13T13:59:31.042Z",
+  "matchesConsidered": 112,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
     "sea-eagles",
     "dolphins",
+    "sharks",
     "roosters",
     "knights",
-    "sharks",
     "cowboys"
   ],
   "bottomSlugs": [
@@ -68,9 +68,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 2,
-        "played": 5,
-        "winPct": 0.6
+        "losses": 3,
+        "played": 6,
+        "winPct": 0.5
       },
       "vsBottom": {
         "wins": 6,
@@ -133,14 +133,40 @@
       }
     },
     {
+      "slug": "sharks",
+      "shortName": "Sharks",
+      "fullName": "Cronulla-Sutherland Sharks",
+      "initials": "CS",
+      "primary": "#00A6CE",
+      "secondary": "#000000",
+      "officialPosition": 5,
+      "realPosition": 5,
+      "pool": "top",
+      "logo": "assets/logos/sharks.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 4,
+        "played": 7,
+        "winPct": 0.42857142857142855
+      },
+      "vsBottom": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 1,
+        "played": 6,
+        "winPct": 0.8333333333333334
+      }
+    },
+    {
       "slug": "roosters",
       "shortName": "Roosters",
       "fullName": "Sydney Roosters",
       "initials": "SR",
       "primary": "#06316F",
       "secondary": "#E2231B",
-      "officialPosition": 5,
-      "realPosition": 5,
+      "officialPosition": 6,
+      "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
@@ -165,8 +191,8 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 6,
-      "realPosition": 6,
+      "officialPosition": 7,
+      "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
@@ -182,32 +208,6 @@
         "losses": 2,
         "played": 8,
         "winPct": 0.75
-      }
-    },
-    {
-      "slug": "sharks",
-      "shortName": "Sharks",
-      "fullName": "Cronulla-Sutherland Sharks",
-      "initials": "CS",
-      "primary": "#00A6CE",
-      "secondary": "#000000",
-      "officialPosition": 8,
-      "realPosition": 7,
-      "pool": "top",
-      "logo": "assets/logos/sharks.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 1,
-        "played": 6,
-        "winPct": 0.8333333333333334
       }
     },
     {
@@ -243,7 +243,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 7,
+      "officialPosition": 8,
       "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/rabbitohs.svg",
@@ -361,9 +361,9 @@
       "vsBottom": {
         "wins": 3,
         "draws": 0,
-        "losses": 2,
-        "played": 5,
-        "winPct": 0.6
+        "losses": 3,
+        "played": 6,
+        "winPct": 0.5
       }
     },
     {
@@ -399,7 +399,7 @@
       "initials": "PE",
       "primary": "#006EB5",
       "secondary": "#FFCC00",
-      "officialPosition": 16,
+      "officialPosition": 15,
       "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
@@ -411,11 +411,11 @@
         "winPct": 0.2
       },
       "vsBottom": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 5,
-        "played": 8,
-        "winPct": 0.375
+        "played": 9,
+        "winPct": 0.4444444444444444
       }
     },
     {
@@ -425,7 +425,7 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "officialPosition": 15,
+      "officialPosition": 16,
       "realPosition": 16,
       "pool": "bottom",
       "logo": "assets/logos/titans.svg",
