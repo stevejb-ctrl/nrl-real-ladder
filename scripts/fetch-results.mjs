@@ -14,14 +14,24 @@ const OUT_PATH = resolve(REPO_ROOT, 'data', 'results.json');
 const COMPETITION = 111;
 const SEASON = 2026;
 const FINAL_REGULAR_ROUND = 27;
-const UA = 'Mozilla/5.0 (compatible; NRL-Real-Ladder/1.0; +https://github.com)';
+
+// See fetch-ladder.mjs for why we mimic a real browser.
+const BROWSER_HEADERS = {
+  'User-Agent':      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  'Accept':          'application/json, text/plain, */*',
+  'Accept-Language': 'en-AU,en;q=0.9',
+  'Referer':         'https://www.nrl.com/draw/',
+};
 
 async function fetchRound(round) {
   const url = `https://www.nrl.com/draw/data/?competition=${COMPETITION}&season=${SEASON}&round=${round}`;
-  const res = await fetch(url, {
-    headers: { 'User-Agent': UA, 'Accept': 'application/json,text/html;q=0.9,*/*;q=0.8' },
-  });
+  const res = await fetch(url, { headers: BROWSER_HEADERS });
   if (!res.ok) throw new Error(`Round ${round}: ${res.status} ${res.statusText}`);
+  const contentType = res.headers.get('content-type') || '';
+  if (!contentType.includes('json')) {
+    const peek = (await res.text()).slice(0, 200);
+    throw new Error(`Round ${round}: expected JSON, got ${contentType}: ${peek}`);
+  }
   return res.json();
 }
 

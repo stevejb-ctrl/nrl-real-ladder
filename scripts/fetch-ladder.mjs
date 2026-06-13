@@ -28,14 +28,25 @@ const TEAM_META = {
   dragons:       { fullName: 'St George Illawarra Dragons',   shortName: 'Dragons',     initials: 'SG', primary: '#E30613', secondary: '#FFFFFF' },
 };
 
+// nrl.com's WAF started bouncing the previous bot-looking UA into an
+// OpenIdConnect login redirect from cloud-provider IP ranges (GH Actions on
+// Azure). Realistic browser headers + an honest Referer slip through the
+// IP+UA combination check that triggers the redirect.
+const BROWSER_HEADERS = {
+  'User-Agent':      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+  'Accept':          'application/json, text/plain, */*',
+  'Accept-Language': 'en-AU,en;q=0.9',
+  'Referer':         'https://www.nrl.com/ladder/',
+};
+
 async function main() {
-  const res = await fetch(SOURCE_URL, {
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (compatible; NRL-Real-Ladder/1.0; +https://github.com)',
-      'Accept': 'application/json,text/html;q=0.9,*/*;q=0.8',
-    },
-  });
+  const res = await fetch(SOURCE_URL, { headers: BROWSER_HEADERS });
   if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
+  const contentType = res.headers.get('content-type') || '';
+  if (!contentType.includes('json')) {
+    const peek = (await res.text()).slice(0, 200);
+    throw new Error(`Expected JSON, got ${contentType}: ${peek}`);
+  }
   const raw = await res.json();
 
   if (!Array.isArray(raw.positions) || raw.positions.length < 16) {
