@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 15,
   "toRound": 27,
-  "fetchedAt": "2026-06-13T05:52:55.654Z",
+  "fetchedAt": "2026-06-13T08:57:41.971Z",
   "matches": [
-    {
-      "round": 15,
-      "roundTitle": "Round 15",
-      "home": "warriors",
-      "away": "sharks",
-      "venue": "Go Media Stadium",
-      "venueCity": "Auckland",
-      "kickOff": "2026-06-13T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 15,
       "roundTitle": "Round 15",
