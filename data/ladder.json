@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 15,
   "competitionId": 111,
-  "fetchedAt": "2026-06-13T19:24:57.412Z",
+  "fetchedAt": "2026-06-14T04:03:28.083Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -21,8 +21,8 @@
       "pointsAgainst": 164,
       "pointsDiff": 273,
       "compPoints": 28,
-      "streak": "3W",
-      "form": "3 - 0",
+      "streak": "4W",
+      "form": "4 - 0",
       "officialPosition": 1
     },
     {
@@ -62,7 +62,7 @@
       "pointsDiff": 117,
       "compPoints": 20,
       "streak": "1W",
-      "form": "3 - 1",
+      "form": "4 - 1",
       "officialPosition": 3
     },
     {
@@ -142,7 +142,7 @@
       "pointsDiff": 32,
       "compPoints": 20,
       "streak": "1L",
-      "form": "2 - 1",
+      "form": "3 - 1",
       "officialPosition": 7
     },
     {
@@ -182,7 +182,7 @@
       "pointsDiff": -13,
       "compPoints": 18,
       "streak": "2L",
-      "form": "2 - 2",
+      "form": "2 - 3",
       "officialPosition": 9
     },
     {
@@ -222,7 +222,7 @@
       "pointsDiff": -2,
       "compPoints": 14,
       "streak": "2W",
-      "form": "3 - 1",
+      "form": "4 - 1",
       "officialPosition": 11
     },
     {
@@ -242,7 +242,7 @@
       "pointsDiff": -97,
       "compPoints": 14,
       "streak": "1W",
-      "form": "2 - 2",
+      "form": "2 - 3",
       "officialPosition": 12
     },
     {
@@ -342,7 +342,7 @@
       "pointsDiff": -243,
       "compPoints": 6,
       "streak": "1L",
-      "form": "1 - 3",
+      "form": "1 - 4",
       "officialPosition": 17
     }
   ]
