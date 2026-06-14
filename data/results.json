@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 15,
-  "fetchedAt": "2026-06-14T04:03:39.153Z",
+  "fetchedAt": "2026-06-14T09:33:48.128Z",
   "matches": [
     {
       "round": 1,
@@ -1571,6 +1571,20 @@
       "winner": "eels",
       "draw": false,
       "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "date": "2026-06-14",
+      "kickOff": "2026-06-14T06:05:00Z",
+      "home": "wests-tigers",
+      "away": "titans",
+      "homeScore": 36,
+      "awayScore": 28,
+      "winner": "wests-tigers",
+      "draw": false,
+      "venue": "Leichhardt Oval",
       "venueCity": "Sydney"
     }
   ]

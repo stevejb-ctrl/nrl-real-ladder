@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 15,
   "toRound": 27,
-  "fetchedAt": "2026-06-14T04:03:33.008Z",
+  "fetchedAt": "2026-06-14T09:33:44.351Z",
   "matches": [
-    {
-      "round": 15,
-      "roundTitle": "Round 15",
-      "home": "wests-tigers",
-      "away": "titans",
-      "venue": "Leichhardt Oval",
-      "venueCity": "Sydney",
-      "kickOff": "2026-06-14T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 16,
       "roundTitle": "Round 16",
