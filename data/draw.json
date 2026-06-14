@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 15,
+  "fromRound": 16,
   "toRound": 27,
-  "fetchedAt": "2026-06-14T14:01:58.645Z",
+  "fetchedAt": "2026-06-14T19:26:21.632Z",
   "matches": [
     {
       "round": 16,
@@ -1008,34 +1008,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 15,
-      "team": "bulldogs"
-    },
-    {
-      "round": 15,
-      "team": "cowboys"
-    },
-    {
-      "round": 15,
-      "team": "dragons"
-    },
-    {
-      "round": 15,
-      "team": "knights"
-    },
-    {
-      "round": 15,
-      "team": "panthers"
-    },
-    {
-      "round": 15,
-      "team": "sea-eagles"
-    },
-    {
-      "round": 15,
-      "team": "storm"
-    },
     {
       "round": 16,
       "team": "broncos"
