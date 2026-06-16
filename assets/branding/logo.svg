@@ -1,0 +1,9 @@
+<svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Real NRL Ladder">
+  <rect width="480" height="220" fill="#0a0b0e"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+     font-weight="900" font-size="84" letter-spacing="0.005em">
+    <text x="32" y="92"><tspan fill="#e3322a">REAL</tspan><tspan fill="#f1ecde"> NRL</tspan></text>
+    <text x="32" y="176" fill="#f1ecde">LADDER</text>
+  </g>
+  <rect x="32" y="102" width="140" height="5" fill="#e3322a"/>
+</svg>
