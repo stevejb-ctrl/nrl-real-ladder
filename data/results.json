@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 16,
-  "fetchedAt": "2026-06-19T10:25:42.329Z",
+  "fetchedAt": "2026-06-19T15:15:41.912Z",
   "matches": [
     {
       "round": 1,
@@ -1586,6 +1586,20 @@
       "draw": false,
       "venue": "Leichhardt Oval",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "date": "2026-06-19",
+      "kickOff": "2026-06-19T10:00:00Z",
+      "home": "knights",
+      "away": "dragons",
+      "homeScore": 22,
+      "awayScore": 20,
+      "winner": "knights",
+      "draw": false,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle"
     }
   ]
 }
