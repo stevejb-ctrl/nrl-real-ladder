@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 16,
   "toRound": 27,
-  "fetchedAt": "2026-06-19T04:17:15.241Z",
+  "fetchedAt": "2026-06-19T10:25:37.116Z",
   "matches": [
-    {
-      "round": 16,
-      "roundTitle": "Round 16",
-      "home": "knights",
-      "away": "dragons",
-      "venue": "McDonald Jones Stadium",
-      "venueCity": "Newcastle",
-      "kickOff": "2026-06-19T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 16,
       "roundTitle": "Round 16",
