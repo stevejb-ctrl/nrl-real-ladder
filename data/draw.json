@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 16,
   "toRound": 27,
-  "fetchedAt": "2026-06-20T08:55:46.495Z",
+  "fetchedAt": "2026-06-20T14:03:07.228Z",
   "matches": [
-    {
-      "round": 16,
-      "roundTitle": "Round 16",
-      "home": "bulldogs",
-      "away": "sea-eagles",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-06-20T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 16,
       "roundTitle": "Round 16",

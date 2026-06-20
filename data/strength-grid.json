@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-20T08:55:54.712Z",
+  "generatedAt": "2026-06-20T14:03:11.421Z",
   "season": 2026,
   "round": 16,
-  "ladderFetchedAt": "2026-06-20T08:55:42.367Z",
-  "resultsFetchedAt": "2026-06-20T08:55:53.965Z",
-  "matchesConsidered": 115,
+  "ladderFetchedAt": "2026-06-20T14:03:01.987Z",
+  "resultsFetchedAt": "2026-06-20T14:03:10.589Z",
+  "matchesConsidered": 117,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
     "dolphins",
     "knights",
-    "sea-eagles",
     "sharks",
     "roosters",
+    "sea-eagles",
     "cowboys"
   ],
   "bottomSlugs": [
@@ -49,9 +49,9 @@
       "vsBottom": {
         "wins": 6,
         "draws": 0,
-        "losses": 1,
-        "played": 7,
-        "winPct": 0.8571428571428571
+        "losses": 2,
+        "played": 8,
+        "winPct": 0.75
       }
     },
     {
@@ -133,32 +133,6 @@
       }
     },
     {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "officialPosition": 5,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/sea-eagles.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 1,
-        "played": 7,
-        "winPct": 0.8571428571428571
-      }
-    },
-    {
       "slug": "sharks",
       "shortName": "Sharks",
       "fullName": "Cronulla-Sutherland Sharks",
@@ -166,7 +140,7 @@
       "primary": "#00A6CE",
       "secondary": "#000000",
       "officialPosition": 7,
-      "realPosition": 6,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
@@ -192,7 +166,7 @@
       "primary": "#06316F",
       "secondary": "#E2231B",
       "officialPosition": 8,
-      "realPosition": 7,
+      "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
@@ -208,6 +182,32 @@
         "losses": 1,
         "played": 6,
         "winPct": 0.8333333333333334
+      }
+    },
+    {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
+      "officialPosition": 5,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/sea-eagles.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 4,
+        "played": 6,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "played": 8,
+        "winPct": 0.75
       }
     },
     {
@@ -295,7 +295,7 @@
       "initials": "MS",
       "primary": "#552E91",
       "secondary": "#FFC72C",
-      "officialPosition": 11,
+      "officialPosition": 12,
       "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
@@ -321,16 +321,16 @@
       "initials": "CB",
       "primary": "#00529B",
       "secondary": "#FFFFFF",
-      "officialPosition": 12,
+      "officialPosition": 11,
       "realPosition": 12,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 4,
-        "played": 5,
-        "winPct": 0.2
+        "played": 6,
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
         "wins": 4,
@@ -347,7 +347,7 @@
       "initials": "CR",
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
-      "officialPosition": 15,
+      "officialPosition": 16,
       "realPosition": 13,
       "pool": "bottom",
       "logo": "assets/logos/raiders.svg",
@@ -425,16 +425,16 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "officialPosition": 16,
+      "officialPosition": 15,
       "realPosition": 16,
       "pool": "bottom",
       "logo": "assets/logos/titans.svg",
       "vsTop": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "losses": 7,
-        "played": 7,
-        "winPct": 0
+        "played": 8,
+        "winPct": 0.125
       },
       "vsBottom": {
         "wins": 3,

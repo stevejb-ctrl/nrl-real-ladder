@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 16,
-  "fetchedAt": "2026-06-20T08:55:53.965Z",
+  "fetchedAt": "2026-06-20T14:03:10.589Z",
   "matches": [
     {
       "round": 1,
@@ -1613,6 +1613,34 @@
       "winner": "dolphins",
       "draw": false,
       "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "date": "2026-06-20",
+      "kickOff": "2026-06-20T07:30:00Z",
+      "home": "titans",
+      "away": "panthers",
+      "homeScore": 19,
+      "awayScore": 18,
+      "winner": "titans",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "date": "2026-06-20",
+      "kickOff": "2026-06-20T09:35:00Z",
+      "home": "bulldogs",
+      "away": "sea-eagles",
+      "homeScore": 13,
+      "awayScore": 12,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "Accor Stadium",
       "venueCity": "Sydney"
     }
   ]
