@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 16,
   "toRound": 27,
-  "fetchedAt": "2026-06-20T03:38:49.501Z",
+  "fetchedAt": "2026-06-20T08:55:46.495Z",
   "matches": [
-    {
-      "round": 16,
-      "roundTitle": "Round 16",
-      "home": "wests-tigers",
-      "away": "dolphins",
-      "venue": "Campbelltown Sports Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-06-20T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 16,
-      "roundTitle": "Round 16",
-      "home": "titans",
-      "away": "panthers",
-      "venue": "Cbus Super Stadium",
-      "venueCity": "Gold Coast",
-      "kickOff": "2026-06-20T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 16,
       "roundTitle": "Round 16",

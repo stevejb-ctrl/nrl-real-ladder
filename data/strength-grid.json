@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-20T03:38:54.068Z",
+  "generatedAt": "2026-06-20T08:55:54.712Z",
   "season": 2026,
   "round": 16,
-  "ladderFetchedAt": "2026-06-20T03:38:45.590Z",
-  "resultsFetchedAt": "2026-06-20T03:38:52.936Z",
-  "matchesConsidered": 114,
+  "ladderFetchedAt": "2026-06-20T08:55:42.367Z",
+  "resultsFetchedAt": "2026-06-20T08:55:53.965Z",
+  "matchesConsidered": 115,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
+    "dolphins",
     "knights",
     "sea-eagles",
-    "dolphins",
     "sharks",
     "roosters",
     "cowboys"
@@ -81,14 +81,40 @@
       }
     },
     {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "officialPosition": 3,
+      "realPosition": 3,
+      "pool": "top",
+      "logo": "assets/logos/dolphins.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 3,
+        "played": 6,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "played": 8,
+        "winPct": 0.75
+      }
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 3,
-      "realPosition": 3,
+      "officialPosition": 4,
+      "realPosition": 4,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
@@ -113,8 +139,8 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 4,
-      "realPosition": 4,
+      "officialPosition": 5,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
@@ -130,32 +156,6 @@
         "losses": 1,
         "played": 7,
         "winPct": 0.8571428571428571
-      }
-    },
-    {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "officialPosition": 5,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 3,
-        "played": 6,
-        "winPct": 0.5
-      },
-      "vsBottom": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 2,
-        "played": 7,
-        "winPct": 0.7142857142857143
       }
     },
     {
@@ -276,9 +276,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 3,
-        "played": 6,
-        "winPct": 0.5
+        "losses": 4,
+        "played": 7,
+        "winPct": 0.42857142857142855
       },
       "vsBottom": {
         "wins": 4,
