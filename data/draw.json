@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 16,
   "toRound": 27,
-  "fetchedAt": "2026-06-20T19:25:49.859Z",
+  "fetchedAt": "2026-06-21T04:11:44.267Z",
   "matches": [
-    {
-      "round": 16,
-      "roundTitle": "Round 16",
-      "home": "warriors",
-      "away": "cowboys",
-      "venue": "One NZ Stadium",
-      "venueCity": "Christchurch",
-      "kickOff": "2026-06-21T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 16,
       "roundTitle": "Round 16",
