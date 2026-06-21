@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 16,
-  "fetchedAt": "2026-06-21T04:11:49.856Z",
+  "fetchedAt": "2026-06-21T09:49:52.711Z",
   "matches": [
     {
       "round": 1,
@@ -1642,6 +1642,34 @@
       "draw": false,
       "venue": "Accor Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "date": "2026-06-21",
+      "kickOff": "2026-06-21T04:00:00Z",
+      "home": "warriors",
+      "away": "cowboys",
+      "homeScore": 38,
+      "awayScore": 20,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "One NZ Stadium",
+      "venueCity": "Christchurch"
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "date": "2026-06-21",
+      "kickOff": "2026-06-21T06:05:00Z",
+      "home": "storm",
+      "away": "raiders",
+      "homeScore": 42,
+      "awayScore": 20,
+      "winner": "storm",
+      "draw": false,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne"
     }
   ]
 }
