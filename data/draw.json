@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 16,
+  "fromRound": 17,
   "toRound": 27,
-  "fetchedAt": "2026-06-21T14:10:20.878Z",
+  "fetchedAt": "2026-06-21T19:40:25.155Z",
   "matches": [
     {
       "round": 17,
@@ -931,18 +931,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 16,
-      "team": "broncos"
-    },
-    {
-      "round": 16,
-      "team": "eels"
-    },
-    {
-      "round": 16,
-      "team": "rabbitohs"
-    },
     {
       "round": 17,
       "team": "sharks"
