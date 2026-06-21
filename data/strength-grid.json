@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-06-21T09:49:53.722Z",
+  "generatedAt": "2026-06-21T14:10:24.999Z",
   "season": 2026,
   "round": 16,
-  "ladderFetchedAt": "2026-06-21T09:49:45.123Z",
-  "resultsFetchedAt": "2026-06-21T09:49:52.711Z",
-  "matchesConsidered": 119,
+  "ladderFetchedAt": "2026-06-21T14:10:18.298Z",
+  "resultsFetchedAt": "2026-06-21T14:10:23.853Z",
+  "matchesConsidered": 120,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
     "dolphins",
-    "knights",
-    "sharks",
     "roosters",
+    "knights",
     "sea-eagles",
+    "sharks",
     "rabbitohs"
   ],
   "bottomSlugs": [
@@ -107,14 +107,40 @@
       }
     },
     {
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
+      "officialPosition": 4,
+      "realPosition": 4,
+      "pool": "top",
+      "logo": "assets/logos/roosters.svg",
+      "vsTop": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 3,
+        "played": 8,
+        "winPct": 0.625
+      },
+      "vsBottom": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 2,
+        "played": 6,
+        "winPct": 0.6666666666666666
+      }
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 4,
-      "realPosition": 4,
+      "officialPosition": 5,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
@@ -133,66 +159,14 @@
       }
     },
     {
-      "slug": "sharks",
-      "shortName": "Sharks",
-      "fullName": "Cronulla-Sutherland Sharks",
-      "initials": "CS",
-      "primary": "#00A6CE",
-      "secondary": "#000000",
-      "officialPosition": 7,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/sharks.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 4,
-        "played": 7,
-        "winPct": 0.42857142857142855
-      },
-      "vsBottom": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 1,
-        "played": 6,
-        "winPct": 0.8333333333333334
-      }
-    },
-    {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
-      "officialPosition": 8,
-      "realPosition": 6,
-      "pool": "top",
-      "logo": "assets/logos/roosters.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 3,
-        "played": 7,
-        "winPct": 0.5714285714285714
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 2,
-        "played": 6,
-        "winPct": 0.6666666666666666
-      }
-    },
-    {
       "slug": "sea-eagles",
       "shortName": "Sea Eagles",
       "fullName": "Manly Sea Eagles",
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 5,
-      "realPosition": 7,
+      "officialPosition": 6,
+      "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
@@ -211,13 +185,39 @@
       }
     },
     {
+      "slug": "sharks",
+      "shortName": "Sharks",
+      "fullName": "Cronulla-Sutherland Sharks",
+      "initials": "CS",
+      "primary": "#00A6CE",
+      "secondary": "#000000",
+      "officialPosition": 8,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/sharks.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
+      },
+      "vsBottom": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 1,
+        "played": 6,
+        "winPct": 0.8333333333333334
+      }
+    },
+    {
       "slug": "rabbitohs",
       "shortName": "Rabbitohs",
       "fullName": "South Sydney Rabbitohs",
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",

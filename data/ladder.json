@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 16,
   "competitionId": 111,
-  "fetchedAt": "2026-06-21T09:49:45.123Z",
+  "fetchedAt": "2026-06-21T14:10:18.298Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -66,6 +66,26 @@
       "officialPosition": 3
     },
     {
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
+      "played": 14,
+      "wins": 9,
+      "losses": 5,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 360,
+      "pointsAgainst": 306,
+      "pointsDiff": 54,
+      "compPoints": 22,
+      "streak": "1W",
+      "form": "2 - 2",
+      "officialPosition": 4
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
@@ -83,7 +103,7 @@
       "compPoints": 22,
       "streak": "1W",
       "form": "2 - 1",
-      "officialPosition": 4
+      "officialPosition": 5
     },
     {
       "slug": "sea-eagles",
@@ -103,7 +123,7 @@
       "compPoints": 20,
       "streak": "1L",
       "form": "2 - 2",
-      "officialPosition": 5
+      "officialPosition": 6
     },
     {
       "slug": "rabbitohs",
@@ -122,8 +142,8 @@
       "pointsDiff": 86,
       "compPoints": 20,
       "streak": "1W",
-      "form": "1 - 3",
-      "officialPosition": 6
+      "form": "1 - 2",
+      "officialPosition": 7
     },
     {
       "slug": "sharks",
@@ -132,37 +152,17 @@
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "played": 13,
+      "played": 14,
       "wins": 8,
-      "losses": 5,
+      "losses": 6,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 366,
-      "pointsAgainst": 302,
-      "pointsDiff": 64,
-      "compPoints": 20,
-      "streak": "4W",
-      "form": "4 - 0",
-      "officialPosition": 7
-    },
-    {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
-      "played": 13,
-      "wins": 8,
-      "losses": 5,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 333,
-      "pointsAgainst": 298,
-      "pointsDiff": 35,
+      "pointsFor": 374,
+      "pointsAgainst": 329,
+      "pointsDiff": 45,
       "compPoints": 20,
       "streak": "1L",
-      "form": "1 - 3",
+      "form": "3 - 1",
       "officialPosition": 8
     },
     {
@@ -261,8 +261,8 @@
       "pointsAgainst": 389,
       "pointsDiff": -108,
       "compPoints": 14,
-      "streak": "4L",
-      "form": "0 - 4",
+      "streak": "3L",
+      "form": "0 - 3",
       "officialPosition": 13
     },
     {
@@ -282,7 +282,7 @@
       "pointsDiff": -149,
       "compPoints": 14,
       "streak": "1W",
-      "form": "1 - 3",
+      "form": "1 - 2",
       "officialPosition": 14
     },
     {
