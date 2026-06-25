@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 17,
-  "fetchedAt": "2026-06-25T09:20:56.661Z",
+  "fetchedAt": "2026-06-25T14:32:33.205Z",
   "matches": [
     {
       "round": 1,
@@ -1683,6 +1683,20 @@
       "winner": "roosters",
       "draw": false,
       "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-25",
+      "kickOff": "2026-06-25T09:50:00Z",
+      "home": "eels",
+      "away": "rabbitohs",
+      "homeScore": 12,
+      "awayScore": 32,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "CommBank Stadium",
       "venueCity": "Sydney"
     }
   ]

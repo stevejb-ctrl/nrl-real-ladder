@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 17,
   "toRound": 27,
-  "fetchedAt": "2026-06-25T09:20:51.722Z",
+  "fetchedAt": "2026-06-25T14:32:28.889Z",
   "matches": [
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "eels",
-      "away": "rabbitohs",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-06-25T09:50:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 17,
       "roundTitle": "Round 17",
