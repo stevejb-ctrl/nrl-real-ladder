@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 17,
   "toRound": 27,
-  "fetchedAt": "2026-06-26T09:26:21.727Z",
+  "fetchedAt": "2026-06-26T14:23:49.917Z",
   "matches": [
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "broncos",
-      "away": "roosters",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-06-26T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 17,
       "roundTitle": "Round 17",

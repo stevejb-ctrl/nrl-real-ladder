@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 17,
-  "fetchedAt": "2026-06-26T09:26:26.278Z",
+  "fetchedAt": "2026-06-26T14:23:54.234Z",
   "matches": [
     {
       "round": 1,
@@ -1698,6 +1698,34 @@
       "draw": false,
       "venue": "CommBank Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-26",
+      "kickOff": "2026-06-26T08:00:00Z",
+      "home": "titans",
+      "away": "bulldogs",
+      "homeScore": 12,
+      "awayScore": 30,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-26",
+      "kickOff": "2026-06-26T10:00:00Z",
+      "home": "broncos",
+      "away": "roosters",
+      "homeScore": 18,
+      "awayScore": 24,
+      "winner": "roosters",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }

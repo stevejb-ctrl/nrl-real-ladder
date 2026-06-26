@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 17,
   "competitionId": 111,
-  "fetchedAt": "2026-06-26T09:26:18.346Z",
+  "fetchedAt": "2026-06-26T14:23:46.915Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -46,6 +46,26 @@
       "officialPosition": 2
     },
     {
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
+      "played": 15,
+      "wins": 10,
+      "losses": 5,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 384,
+      "pointsAgainst": 324,
+      "pointsDiff": 60,
+      "compPoints": 24,
+      "streak": "2W",
+      "form": "3 - 2",
+      "officialPosition": 3
+    },
+    {
       "slug": "dolphins",
       "shortName": "Dolphins",
       "fullName": "Dolphins",
@@ -63,7 +83,7 @@
       "compPoints": 22,
       "streak": "4W",
       "form": "4 - 0",
-      "officialPosition": 3
+      "officialPosition": 4
     },
     {
       "slug": "rabbitohs",
@@ -83,26 +103,6 @@
       "compPoints": 22,
       "streak": "2W",
       "form": "2 - 1",
-      "officialPosition": 4
-    },
-    {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
-      "played": 14,
-      "wins": 9,
-      "losses": 5,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 360,
-      "pointsAgainst": 306,
-      "pointsDiff": 54,
-      "compPoints": 22,
-      "streak": "1W",
-      "form": "2 - 2",
       "officialPosition": 5
     },
     {
@@ -186,6 +186,26 @@
       "officialPosition": 9
     },
     {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "played": 15,
+      "wins": 7,
+      "losses": 8,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 276,
+      "pointsAgainst": 354,
+      "pointsDiff": -78,
+      "compPoints": 18,
+      "streak": "3W",
+      "form": "3 - 1",
+      "officialPosition": 10
+    },
+    {
       "slug": "wests-tigers",
       "shortName": "Tigers",
       "fullName": "Wests Tigers",
@@ -203,7 +223,7 @@
       "compPoints": 18,
       "streak": "1L",
       "form": "2 - 2",
-      "officialPosition": 10
+      "officialPosition": 11
     },
     {
       "slug": "storm",
@@ -223,26 +243,6 @@
       "compPoints": 16,
       "streak": "3W",
       "form": "3 - 1",
-      "officialPosition": 11
-    },
-    {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "played": 14,
-      "wins": 6,
-      "losses": 8,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 246,
-      "pointsAgainst": 342,
-      "pointsDiff": -96,
-      "compPoints": 16,
-      "streak": "2W",
-      "form": "3 - 1",
       "officialPosition": 12
     },
     {
@@ -252,17 +252,17 @@
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "played": 14,
+      "played": 15,
       "wins": 5,
-      "losses": 9,
+      "losses": 10,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 281,
-      "pointsAgainst": 389,
-      "pointsDiff": -108,
+      "pointsFor": 299,
+      "pointsAgainst": 413,
+      "pointsDiff": -114,
       "compPoints": 14,
-      "streak": "3L",
-      "form": "0 - 3",
+      "streak": "4L",
+      "form": "0 - 4",
       "officialPosition": 13
     },
     {
@@ -292,16 +292,16 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "played": 14,
+      "played": 15,
       "wins": 4,
-      "losses": 10,
+      "losses": 11,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 267,
-      "pointsAgainst": 357,
-      "pointsDiff": -90,
+      "pointsFor": 279,
+      "pointsAgainst": 387,
+      "pointsDiff": -108,
       "compPoints": 12,
-      "streak": "1W",
+      "streak": "1L",
       "form": "2 - 2",
       "officialPosition": 15
     },
