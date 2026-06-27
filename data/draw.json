@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 17,
   "toRound": 27,
-  "fetchedAt": "2026-06-27T03:26:02.642Z",
+  "fetchedAt": "2026-06-27T08:35:17.684Z",
   "matches": [
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "dolphins",
-      "away": "warriors",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-06-27T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "cowboys",
-      "away": "panthers",
-      "venue": "Queensland Country Bank Stadium",
-      "venueCity": "Townsville",
-      "kickOff": "2026-06-27T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 17,
       "roundTitle": "Round 17",

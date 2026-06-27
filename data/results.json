@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 17,
-  "fetchedAt": "2026-06-27T03:26:08.335Z",
+  "fetchedAt": "2026-06-27T08:35:24.946Z",
   "matches": [
     {
       "round": 1,
@@ -1723,6 +1723,20 @@
       "homeScore": 18,
       "awayScore": 24,
       "winner": "roosters",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-27",
+      "kickOff": "2026-06-27T05:00:00Z",
+      "home": "dolphins",
+      "away": "warriors",
+      "homeScore": 26,
+      "awayScore": 24,
+      "winner": "dolphins",
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"

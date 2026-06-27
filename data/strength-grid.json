@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-27T03:26:09.620Z",
+  "generatedAt": "2026-06-27T08:35:26.049Z",
   "season": 2026,
   "round": 17,
-  "ladderFetchedAt": "2026-06-27T03:25:59.342Z",
-  "resultsFetchedAt": "2026-06-27T03:26:08.335Z",
-  "matchesConsidered": 123,
+  "ladderFetchedAt": "2026-06-27T08:35:13.221Z",
+  "resultsFetchedAt": "2026-06-27T08:35:24.946Z",
+  "matchesConsidered": 124,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
-    "roosters",
     "dolphins",
+    "roosters",
     "knights",
     "sea-eagles",
     "rabbitohs",
@@ -68,9 +68,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 3,
-        "played": 6,
-        "winPct": 0.5
+        "losses": 4,
+        "played": 7,
+        "winPct": 0.42857142857142855
       },
       "vsBottom": {
         "wins": 7,
@@ -81,14 +81,40 @@
       }
     },
     {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "officialPosition": 3,
+      "realPosition": 3,
+      "pool": "top",
+      "logo": "assets/logos/dolphins.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 1,
+        "played": 7,
+        "winPct": 0.8571428571428571
+      }
+    },
+    {
       "slug": "roosters",
       "shortName": "Roosters",
       "fullName": "Sydney Roosters",
       "initials": "SR",
       "primary": "#06316F",
       "secondary": "#E2231B",
-      "officialPosition": 3,
-      "realPosition": 3,
+      "officialPosition": 4,
+      "realPosition": 4,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
@@ -104,32 +130,6 @@
         "losses": 2,
         "played": 7,
         "winPct": 0.7142857142857143
-      }
-    },
-    {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "officialPosition": 4,
-      "realPosition": 4,
-      "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 4,
-        "played": 7,
-        "winPct": 0.42857142857142855
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 1,
-        "played": 7,
-        "winPct": 0.8571428571428571
       }
     },
     {
