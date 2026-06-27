@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-27T08:35:26.049Z",
+  "generatedAt": "2026-06-27T13:42:22.024Z",
   "season": 2026,
   "round": 17,
-  "ladderFetchedAt": "2026-06-27T08:35:13.221Z",
-  "resultsFetchedAt": "2026-06-27T08:35:24.946Z",
-  "matchesConsidered": 124,
+  "ladderFetchedAt": "2026-06-27T13:42:08.948Z",
+  "resultsFetchedAt": "2026-06-27T13:42:21.205Z",
+  "matchesConsidered": 126,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -19,8 +19,8 @@
   "bottomSlugs": [
     "cowboys",
     "wests-tigers",
-    "storm",
     "bulldogs",
+    "storm",
     "broncos",
     "raiders",
     "eels",
@@ -49,9 +49,9 @@
       "vsBottom": {
         "wins": 6,
         "draws": 0,
-        "losses": 2,
-        "played": 8,
-        "winPct": 0.75
+        "losses": 3,
+        "played": 9,
+        "winPct": 0.6666666666666666
       }
     },
     {
@@ -139,7 +139,7 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 7,
+      "officialPosition": 8,
       "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -165,7 +165,7 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 8,
+      "officialPosition": 5,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/sea-eagles.svg",
@@ -177,11 +177,11 @@
         "winPct": 0.3333333333333333
       },
       "vsBottom": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
         "losses": 2,
-        "played": 8,
-        "winPct": 0.75
+        "played": 9,
+        "winPct": 0.7777777777777778
       }
     },
     {
@@ -191,7 +191,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 5,
+      "officialPosition": 6,
       "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",
@@ -217,7 +217,7 @@
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
@@ -248,11 +248,11 @@
       "pool": "bottom",
       "logo": "assets/logos/cowboys.svg",
       "vsTop": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 4,
-        "played": 7,
-        "winPct": 0.42857142857142855
+        "played": 8,
+        "winPct": 0.5
       },
       "vsBottom": {
         "wins": 5,
@@ -289,16 +289,16 @@
       }
     },
     {
-      "slug": "storm",
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "initials": "MS",
-      "primary": "#552E91",
-      "secondary": "#FFC72C",
-      "officialPosition": 12,
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "officialPosition": 10,
       "realPosition": 11,
       "pool": "bottom",
-      "logo": "assets/logos/storm.svg",
+      "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
         "wins": 2,
         "draws": 0,
@@ -315,22 +315,22 @@
       }
     },
     {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "officialPosition": 10,
+      "slug": "storm",
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "initials": "MS",
+      "primary": "#552E91",
+      "secondary": "#FFC72C",
+      "officialPosition": 12,
       "realPosition": 12,
       "pool": "bottom",
-      "logo": "assets/logos/bulldogs.svg",
+      "logo": "assets/logos/storm.svg",
       "vsTop": {
         "wins": 2,
         "draws": 0,
-        "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
+        "losses": 5,
+        "played": 7,
+        "winPct": 0.2857142857142857
       },
       "vsBottom": {
         "wins": 5,

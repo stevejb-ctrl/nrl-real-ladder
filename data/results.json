@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 17,
-  "fetchedAt": "2026-06-27T08:35:24.946Z",
+  "fetchedAt": "2026-06-27T13:42:21.205Z",
   "matches": [
     {
       "round": 1,
@@ -1740,6 +1740,34 @@
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-27",
+      "kickOff": "2026-06-27T07:30:00Z",
+      "home": "cowboys",
+      "away": "panthers",
+      "homeScore": 26,
+      "awayScore": 12,
+      "winner": "cowboys",
+      "draw": false,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville"
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "date": "2026-06-27",
+      "kickOff": "2026-06-27T09:35:00Z",
+      "home": "sea-eagles",
+      "away": "storm",
+      "homeScore": 30,
+      "awayScore": 4,
+      "winner": "sea-eagles",
+      "draw": false,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney"
     }
   ]
 }
