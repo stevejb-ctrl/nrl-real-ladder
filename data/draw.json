@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 17,
   "toRound": 27,
-  "fetchedAt": "2026-06-28T03:47:49.509Z",
+  "fetchedAt": "2026-06-28T08:50:49.433Z",
   "matches": [
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "raiders",
-      "away": "dragons",
-      "venue": "GIO Stadium",
-      "venueCity": "Canberra",
-      "kickOff": "2026-06-28T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 17,
-      "roundTitle": "Round 17",
-      "home": "knights",
-      "away": "wests-tigers",
-      "venue": "McDonald Jones Stadium",
-      "venueCity": "Newcastle",
-      "kickOff": "2026-06-28T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 18,
       "roundTitle": "Round 18",
