@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 18,
-  "fetchedAt": "2026-07-03T09:17:12.841Z",
+  "fetchedAt": "2026-07-03T14:03:03.907Z",
   "matches": [
     {
       "round": 1,
@@ -1796,6 +1796,20 @@
       "draw": false,
       "venue": "McDonald Jones Stadium",
       "venueCity": "Newcastle"
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "date": "2026-07-03",
+      "kickOff": "2026-07-03T10:00:00Z",
+      "home": "panthers",
+      "away": "rabbitohs",
+      "homeScore": 36,
+      "awayScore": 14,
+      "winner": "panthers",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }

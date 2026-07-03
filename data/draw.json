@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 18,
   "toRound": 27,
-  "fetchedAt": "2026-07-03T09:17:09.222Z",
+  "fetchedAt": "2026-07-03T14:02:56.809Z",
   "matches": [
-    {
-      "round": 18,
-      "roundTitle": "Round 18",
-      "home": "panthers",
-      "away": "rabbitohs",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-03T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 18,
       "roundTitle": "Round 18",
