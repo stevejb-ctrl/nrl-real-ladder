@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-04T08:36:13.775Z",
+  "generatedAt": "2026-07-04T13:24:43.525Z",
   "season": 2026,
   "round": 18,
-  "ladderFetchedAt": "2026-07-04T08:36:07.013Z",
-  "resultsFetchedAt": "2026-07-04T08:36:12.969Z",
-  "matchesConsidered": 129,
+  "ladderFetchedAt": "2026-07-04T13:24:27.542Z",
+  "resultsFetchedAt": "2026-07-04T13:24:42.646Z",
+  "matchesConsidered": 131,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -19,11 +19,11 @@
   "bottomSlugs": [
     "rabbitohs",
     "bulldogs",
-    "wests-tigers",
     "storm",
+    "wests-tigers",
     "raiders",
-    "broncos",
     "eels",
+    "broncos",
     "titans",
     "dragons"
   ],
@@ -139,7 +139,7 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 5,
+      "officialPosition": 6,
       "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -165,7 +165,7 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/sea-eagles.svg",
@@ -191,7 +191,7 @@
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "officialPosition": 8,
+      "officialPosition": 5,
       "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
@@ -203,11 +203,11 @@
         "winPct": 0.375
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 1,
-        "played": 6,
-        "winPct": 0.8333333333333334
+        "played": 7,
+        "winPct": 0.8571428571428571
       }
     },
     {
@@ -243,7 +243,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 7,
+      "officialPosition": 8,
       "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/rabbitohs.svg",
@@ -289,32 +289,6 @@
       }
     },
     {
-      "slug": "wests-tigers",
-      "shortName": "Tigers",
-      "fullName": "Wests Tigers",
-      "initials": "WT",
-      "primary": "#F37021",
-      "secondary": "#000000",
-      "officialPosition": 12,
-      "realPosition": 11,
-      "pool": "bottom",
-      "logo": "assets/logos/wests-tigers.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 3,
-        "played": 7,
-        "winPct": 0.5714285714285714
-      }
-    },
-    {
       "slug": "storm",
       "shortName": "Storm",
       "fullName": "Melbourne Storm",
@@ -322,7 +296,7 @@
       "primary": "#552E91",
       "secondary": "#FFC72C",
       "officialPosition": 11,
-      "realPosition": 12,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
       "vsTop": {
@@ -338,6 +312,32 @@
         "losses": 4,
         "played": 9,
         "winPct": 0.5555555555555556
+      }
+    },
+    {
+      "slug": "wests-tigers",
+      "shortName": "Tigers",
+      "fullName": "Wests Tigers",
+      "initials": "WT",
+      "primary": "#F37021",
+      "secondary": "#000000",
+      "officialPosition": 12,
+      "realPosition": 12,
+      "pool": "bottom",
+      "logo": "assets/logos/wests-tigers.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
+      },
+      "vsBottom": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
       }
     },
     {
@@ -367,32 +367,6 @@
       }
     },
     {
-      "slug": "broncos",
-      "shortName": "Broncos",
-      "fullName": "Brisbane Broncos",
-      "initials": "BB",
-      "primary": "#7C0044",
-      "secondary": "#FFB81C",
-      "officialPosition": 15,
-      "realPosition": 14,
-      "pool": "bottom",
-      "logo": "assets/logos/broncos.svg",
-      "vsTop": {
-        "wins": 1,
-        "draws": 0,
-        "losses": 6,
-        "played": 7,
-        "winPct": 0.14285714285714285
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
-      }
-    },
-    {
       "slug": "eels",
       "shortName": "Eels",
       "fullName": "Parramatta Eels",
@@ -400,7 +374,7 @@
       "primary": "#006EB5",
       "secondary": "#FFCC00",
       "officialPosition": 16,
-      "realPosition": 15,
+      "realPosition": 14,
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
@@ -416,6 +390,32 @@
         "losses": 6,
         "played": 10,
         "winPct": 0.4
+      }
+    },
+    {
+      "slug": "broncos",
+      "shortName": "Broncos",
+      "fullName": "Brisbane Broncos",
+      "initials": "BB",
+      "primary": "#7C0044",
+      "secondary": "#FFB81C",
+      "officialPosition": 15,
+      "realPosition": 15,
+      "pool": "bottom",
+      "logo": "assets/logos/broncos.svg",
+      "vsTop": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 7,
+        "played": 8,
+        "winPct": 0.125
+      },
+      "vsBottom": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
       }
     },
     {
@@ -463,11 +463,11 @@
         "winPct": 0
       },
       "vsBottom": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 6,
-        "played": 7,
-        "winPct": 0.14285714285714285
+        "played": 8,
+        "winPct": 0.25
       }
     }
   ],

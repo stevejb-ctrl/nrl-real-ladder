@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 18,
   "toRound": 27,
-  "fetchedAt": "2026-07-04T08:36:09.459Z",
+  "fetchedAt": "2026-07-04T13:24:34.534Z",
   "matches": [
-    {
-      "round": 18,
-      "roundTitle": "Round 18",
-      "home": "broncos",
-      "away": "sharks",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-07-04T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 18,
       "roundTitle": "Round 18",

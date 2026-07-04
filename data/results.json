@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 18,
-  "fetchedAt": "2026-07-04T08:36:12.969Z",
+  "fetchedAt": "2026-07-04T13:24:42.646Z",
   "matches": [
     {
       "round": 1,
@@ -1810,6 +1810,34 @@
       "draw": false,
       "venue": "CommBank Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "date": "2026-07-04",
+      "kickOff": "2026-07-04T07:30:00Z",
+      "home": "dragons",
+      "away": "wests-tigers",
+      "homeScore": 24,
+      "awayScore": 10,
+      "winner": "dragons",
+      "draw": false,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah"
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "date": "2026-07-04",
+      "kickOff": "2026-07-04T09:35:00Z",
+      "home": "broncos",
+      "away": "sharks",
+      "homeScore": 16,
+      "awayScore": 28,
+      "winner": "sharks",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }
