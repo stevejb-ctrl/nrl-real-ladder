@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 18,
-  "fetchedAt": "2026-07-05T03:22:16.922Z",
+  "fetchedAt": "2026-07-05T08:51:57.356Z",
   "matches": [
     {
       "round": 1,
@@ -1838,6 +1838,34 @@
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "date": "2026-07-05",
+      "kickOff": "2026-07-05T04:00:00Z",
+      "home": "eels",
+      "away": "sea-eagles",
+      "homeScore": 23,
+      "awayScore": 14,
+      "winner": "eels",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "date": "2026-07-05",
+      "kickOff": "2026-07-05T06:05:00Z",
+      "home": "knights",
+      "away": "dolphins",
+      "homeScore": 13,
+      "awayScore": 12,
+      "winner": "knights",
+      "draw": false,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle"
     }
   ]
 }

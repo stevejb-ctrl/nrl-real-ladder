@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 18,
   "competitionId": 111,
-  "fetchedAt": "2026-07-05T03:22:09.544Z",
+  "fetchedAt": "2026-07-05T08:51:51.304Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -42,7 +42,7 @@
       "pointsDiff": 168,
       "compPoints": 26,
       "streak": "1L",
-      "form": "1 - 2",
+      "form": "1 - 3",
       "officialPosition": 2
     },
     {
@@ -62,8 +62,28 @@
       "pointsDiff": 60,
       "compPoints": 26,
       "streak": "2W",
-      "form": "3 - 1",
+      "form": "3 - 2",
       "officialPosition": 3
+    },
+    {
+      "slug": "knights",
+      "shortName": "Knights",
+      "fullName": "Newcastle Knights",
+      "initials": "NK",
+      "primary": "#EE3524",
+      "secondary": "#003A70",
+      "played": 16,
+      "wins": 11,
+      "losses": 5,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 417,
+      "pointsAgainst": 376,
+      "pointsDiff": 41,
+      "compPoints": 26,
+      "streak": "3W",
+      "form": "3 - 1",
+      "officialPosition": 4
     },
     {
       "slug": "dolphins",
@@ -72,18 +92,18 @@
       "initials": "DO",
       "primary": "#CC0033",
       "secondary": "#FFD200",
-      "played": 15,
+      "played": 16,
       "wins": 10,
-      "losses": 5,
+      "losses": 6,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 440,
-      "pointsAgainst": 309,
-      "pointsDiff": 131,
+      "pointsFor": 452,
+      "pointsAgainst": 322,
+      "pointsDiff": 130,
       "compPoints": 24,
-      "streak": "4W",
-      "form": "4 - 0",
-      "officialPosition": 4
+      "streak": "1L",
+      "form": "4 - 1",
+      "officialPosition": 5
     },
     {
       "slug": "sharks",
@@ -103,26 +123,6 @@
       "compPoints": 24,
       "streak": "1W",
       "form": "3 - 1",
-      "officialPosition": 5
-    },
-    {
-      "slug": "knights",
-      "shortName": "Knights",
-      "fullName": "Newcastle Knights",
-      "initials": "NK",
-      "primary": "#EE3524",
-      "secondary": "#003A70",
-      "played": 15,
-      "wins": 10,
-      "losses": 5,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 404,
-      "pointsAgainst": 364,
-      "pointsDiff": 40,
-      "compPoints": 24,
-      "streak": "2W",
-      "form": "3 - 1",
       "officialPosition": 6
     },
     {
@@ -132,16 +132,16 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "played": 15,
+      "played": 16,
       "wins": 9,
-      "losses": 6,
+      "losses": 7,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 409,
-      "pointsAgainst": 267,
-      "pointsDiff": 142,
+      "pointsFor": 423,
+      "pointsAgainst": 290,
+      "pointsDiff": 133,
       "compPoints": 22,
-      "streak": "1W",
+      "streak": "1L",
       "form": "2 - 2",
       "officialPosition": 7
     },
@@ -182,7 +182,7 @@
       "pointsDiff": -17,
       "compPoints": 22,
       "streak": "1W",
-      "form": "1 - 2",
+      "form": "1 - 3",
       "officialPosition": 9
     },
     {
@@ -202,7 +202,7 @@
       "pointsDiff": -78,
       "compPoints": 20,
       "streak": "3W",
-      "form": "3 - 0",
+      "form": "3 - 1",
       "officialPosition": 10
     },
     {
@@ -222,7 +222,7 @@
       "pointsDiff": -6,
       "compPoints": 18,
       "streak": "1L",
-      "form": "2 - 1",
+      "form": "3 - 1",
       "officialPosition": 11
     },
     {
@@ -262,8 +262,28 @@
       "pointsDiff": -115,
       "compPoints": 16,
       "streak": "1W",
-      "form": "1 - 3",
+      "form": "2 - 3",
       "officialPosition": 13
+    },
+    {
+      "slug": "eels",
+      "shortName": "Eels",
+      "fullName": "Parramatta Eels",
+      "initials": "PE",
+      "primary": "#006EB5",
+      "secondary": "#FFCC00",
+      "played": 16,
+      "wins": 6,
+      "losses": 10,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 319,
+      "pointsAgainst": 479,
+      "pointsDiff": -160,
+      "compPoints": 16,
+      "streak": "1W",
+      "form": "2 - 2",
+      "officialPosition": 14
     },
     {
       "slug": "titans",
@@ -283,7 +303,7 @@
       "compPoints": 14,
       "streak": "1L",
       "form": "2 - 2",
-      "officialPosition": 14
+      "officialPosition": 15
     },
     {
       "slug": "broncos",
@@ -303,26 +323,6 @@
       "compPoints": 14,
       "streak": "4L",
       "form": "0 - 4",
-      "officialPosition": 15
-    },
-    {
-      "slug": "eels",
-      "shortName": "Eels",
-      "fullName": "Parramatta Eels",
-      "initials": "PE",
-      "primary": "#006EB5",
-      "secondary": "#FFCC00",
-      "played": 15,
-      "wins": 5,
-      "losses": 10,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 296,
-      "pointsAgainst": 465,
-      "pointsDiff": -169,
-      "compPoints": 14,
-      "streak": "1L",
-      "form": "1 - 3",
       "officialPosition": 16
     },
     {

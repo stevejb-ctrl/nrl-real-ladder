@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-07-05T03:22:18.035Z",
+  "generatedAt": "2026-07-05T08:51:58.334Z",
   "season": 2026,
   "round": 18,
-  "ladderFetchedAt": "2026-07-05T03:22:09.544Z",
-  "resultsFetchedAt": "2026-07-05T03:22:16.922Z",
-  "matchesConsidered": 131,
+  "ladderFetchedAt": "2026-07-05T08:51:51.304Z",
+  "resultsFetchedAt": "2026-07-05T08:51:57.356Z",
+  "matchesConsidered": 133,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
-    "warriors",
-    "dolphins",
-    "roosters",
     "knights",
-    "sea-eagles",
+    "warriors",
+    "roosters",
+    "dolphins",
     "sharks",
+    "sea-eagles",
     "cowboys"
   ],
   "bottomSlugs": [
@@ -55,6 +55,32 @@
       }
     },
     {
+      "slug": "knights",
+      "shortName": "Knights",
+      "fullName": "Newcastle Knights",
+      "initials": "NK",
+      "primary": "#EE3524",
+      "secondary": "#003A70",
+      "officialPosition": 4,
+      "realPosition": 2,
+      "pool": "top",
+      "logo": "assets/logos/knights.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 3,
+        "played": 6,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 2,
+        "played": 10,
+        "winPct": 0.8
+      }
+    },
+    {
       "slug": "warriors",
       "shortName": "Warriors",
       "fullName": "New Zealand Warriors",
@@ -62,7 +88,7 @@
       "primary": "#1D5E36",
       "secondary": "#000000",
       "officialPosition": 2,
-      "realPosition": 2,
+      "realPosition": 3,
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
@@ -78,32 +104,6 @@
         "losses": 1,
         "played": 7,
         "winPct": 0.8571428571428571
-      }
-    },
-    {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "officialPosition": 4,
-      "realPosition": 3,
-      "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 3,
-        "played": 7,
-        "winPct": 0.5714285714285714
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 2,
-        "played": 8,
-        "winPct": 0.75
       }
     },
     {
@@ -133,55 +133,29 @@
       }
     },
     {
-      "slug": "knights",
-      "shortName": "Knights",
-      "fullName": "Newcastle Knights",
-      "initials": "NK",
-      "primary": "#EE3524",
-      "secondary": "#003A70",
-      "officialPosition": 6,
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "officialPosition": 5,
       "realPosition": 5,
       "pool": "top",
-      "logo": "assets/logos/knights.svg",
+      "logo": "assets/logos/dolphins.svg",
       "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 3,
-        "played": 5,
-        "winPct": 0.4
-      },
-      "vsBottom": {
-        "wins": 8,
-        "draws": 0,
-        "losses": 2,
-        "played": 10,
-        "winPct": 0.8
-      }
-    },
-    {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "officialPosition": 7,
-      "realPosition": 6,
-      "pool": "top",
-      "logo": "assets/logos/sea-eagles.svg",
-      "vsTop": {
-        "wins": 2,
+        "wins": 4,
         "draws": 0,
         "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
+        "played": 8,
+        "winPct": 0.5
       },
       "vsBottom": {
-        "wins": 7,
+        "wins": 6,
         "draws": 0,
         "losses": 2,
-        "played": 9,
-        "winPct": 0.7777777777777778
+        "played": 8,
+        "winPct": 0.75
       }
     },
     {
@@ -191,8 +165,8 @@
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "officialPosition": 5,
-      "realPosition": 7,
+      "officialPosition": 6,
+      "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
@@ -208,6 +182,32 @@
         "losses": 1,
         "played": 7,
         "winPct": 0.8571428571428571
+      }
+    },
+    {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
+      "officialPosition": 7,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/sea-eagles.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 4,
+        "played": 6,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 3,
+        "played": 10,
+        "winPct": 0.7
       }
     },
     {
@@ -373,16 +373,16 @@
       "initials": "PE",
       "primary": "#006EB5",
       "secondary": "#FFCC00",
-      "officialPosition": 16,
+      "officialPosition": 14,
       "realPosition": 14,
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 4,
-        "played": 5,
-        "winPct": 0.2
+        "played": 6,
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
         "wins": 4,
@@ -399,7 +399,7 @@
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "officialPosition": 15,
+      "officialPosition": 16,
       "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/broncos.svg",
@@ -425,7 +425,7 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "officialPosition": 14,
+      "officialPosition": 15,
       "realPosition": 16,
       "pool": "bottom",
       "logo": "assets/logos/titans.svg",
