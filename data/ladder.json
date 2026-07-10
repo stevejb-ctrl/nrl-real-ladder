@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 19,
   "competitionId": 111,
-  "fetchedAt": "2026-07-10T14:25:15.254Z",
+  "fetchedAt": "2026-07-10T19:26:02.934Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -22,7 +22,7 @@
       "pointsDiff": 280,
       "compPoints": 32,
       "streak": "1W",
-      "form": "2 - 2",
+      "form": "1 - 2",
       "officialPosition": 1
     },
     {
@@ -33,16 +33,16 @@
       "primary": "#1D5E36",
       "secondary": "#000000",
       "played": 16,
-      "wins": 10,
+      "wins": 11,
       "losses": 5,
-      "draws": 1,
+      "draws": 0,
       "byes": 3,
-      "pointsFor": 438,
-      "pointsAgainst": 270,
-      "pointsDiff": 168,
-      "compPoints": 27,
-      "streak": "2L",
-      "form": "1 - 3",
+      "pointsFor": 470,
+      "pointsAgainst": 276,
+      "pointsDiff": 194,
+      "compPoints": 28,
+      "streak": "1W",
+      "form": "2 - 2",
       "officialPosition": 2
     },
     {
@@ -206,26 +206,6 @@
       "officialPosition": 10
     },
     {
-      "slug": "wests-tigers",
-      "shortName": "Tigers",
-      "fullName": "Wests Tigers",
-      "initials": "WT",
-      "primary": "#F37021",
-      "secondary": "#000000",
-      "played": 17,
-      "wins": 7,
-      "losses": 9,
-      "draws": 1,
-      "byes": 2,
-      "pointsFor": 349,
-      "pointsAgainst": 453,
-      "pointsDiff": -104,
-      "compPoints": 19,
-      "streak": "4L",
-      "form": "1 - 4",
-      "officialPosition": 11
-    },
-    {
       "slug": "storm",
       "shortName": "Storm",
       "fullName": "Melbourne Storm",
@@ -243,6 +223,26 @@
       "compPoints": 18,
       "streak": "1L",
       "form": "2 - 1",
+      "officialPosition": 11
+    },
+    {
+      "slug": "wests-tigers",
+      "shortName": "Tigers",
+      "fullName": "Wests Tigers",
+      "initials": "WT",
+      "primary": "#F37021",
+      "secondary": "#000000",
+      "played": 17,
+      "wins": 7,
+      "losses": 10,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 355,
+      "pointsAgainst": 485,
+      "pointsDiff": -130,
+      "compPoints": 18,
+      "streak": "4L",
+      "form": "1 - 4",
       "officialPosition": 12
     },
     {
@@ -281,8 +281,8 @@
       "pointsAgainst": 441,
       "pointsDiff": -126,
       "compPoints": 16,
-      "streak": "4L",
-      "form": "0 - 4",
+      "streak": "3L",
+      "form": "0 - 3",
       "officialPosition": 14
     },
     {
@@ -342,7 +342,7 @@
       "pointsDiff": -239,
       "compPoints": 10,
       "streak": "1W",
-      "form": "1 - 3",
+      "form": "1 - 2",
       "officialPosition": 17
     }
   ]

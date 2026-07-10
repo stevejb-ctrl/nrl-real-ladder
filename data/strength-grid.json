@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-10T14:25:27.293Z",
+  "generatedAt": "2026-07-10T19:26:12.393Z",
   "season": 2026,
   "round": 19,
-  "ladderFetchedAt": "2026-07-10T14:25:15.254Z",
-  "resultsFetchedAt": "2026-07-10T14:25:26.016Z",
+  "ladderFetchedAt": "2026-07-10T19:26:02.934Z",
+  "resultsFetchedAt": "2026-07-10T19:26:11.697Z",
   "matchesConsidered": 134,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
+    "warriors",
     "knights",
     "roosters",
-    "warriors",
     "dolphins",
     "sharks",
     "sea-eagles",
@@ -19,8 +19,8 @@
   "bottomSlugs": [
     "rabbitohs",
     "bulldogs",
-    "wests-tigers",
     "storm",
+    "wests-tigers",
     "raiders",
     "eels",
     "broncos",
@@ -55,6 +55,32 @@
       }
     },
     {
+      "slug": "warriors",
+      "shortName": "Warriors",
+      "fullName": "New Zealand Warriors",
+      "initials": "NZ",
+      "primary": "#1D5E36",
+      "secondary": "#000000",
+      "officialPosition": 2,
+      "realPosition": 2,
+      "pool": "top",
+      "logo": "assets/logos/warriors.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 1,
+        "played": 8,
+        "winPct": 0.875
+      }
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
@@ -62,7 +88,7 @@
       "primary": "#EE3524",
       "secondary": "#003A70",
       "officialPosition": 4,
-      "realPosition": 2,
+      "realPosition": 3,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
@@ -88,7 +114,7 @@
       "primary": "#06316F",
       "secondary": "#E2231B",
       "officialPosition": 3,
-      "realPosition": 3,
+      "realPosition": 4,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
@@ -104,32 +130,6 @@
         "losses": 1,
         "played": 7,
         "winPct": 0.8571428571428571
-      }
-    },
-    {
-      "slug": "warriors",
-      "shortName": "Warriors",
-      "fullName": "New Zealand Warriors",
-      "initials": "NZ",
-      "primary": "#1D5E36",
-      "secondary": "#000000",
-      "officialPosition": 2,
-      "realPosition": 4,
-      "pool": "top",
-      "logo": "assets/logos/warriors.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 1,
-        "played": 8,
-        "winPct": 0.875
       }
     },
     {
@@ -289,40 +289,14 @@
       }
     },
     {
-      "slug": "wests-tigers",
-      "shortName": "Tigers",
-      "fullName": "Wests Tigers",
-      "initials": "WT",
-      "primary": "#F37021",
-      "secondary": "#000000",
-      "officialPosition": 11,
-      "realPosition": 11,
-      "pool": "bottom",
-      "logo": "assets/logos/wests-tigers.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
-      }
-    },
-    {
       "slug": "storm",
       "shortName": "Storm",
       "fullName": "Melbourne Storm",
       "initials": "MS",
       "primary": "#552E91",
       "secondary": "#FFC72C",
-      "officialPosition": 12,
-      "realPosition": 12,
+      "officialPosition": 11,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
       "vsTop": {
@@ -338,6 +312,32 @@
         "losses": 4,
         "played": 9,
         "winPct": 0.5555555555555556
+      }
+    },
+    {
+      "slug": "wests-tigers",
+      "shortName": "Tigers",
+      "fullName": "Wests Tigers",
+      "initials": "WT",
+      "primary": "#F37021",
+      "secondary": "#000000",
+      "officialPosition": 12,
+      "realPosition": 12,
+      "pool": "bottom",
+      "logo": "assets/logos/wests-tigers.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
       }
     },
     {
