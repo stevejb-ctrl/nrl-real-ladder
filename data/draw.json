@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 19,
   "toRound": 27,
-  "fetchedAt": "2026-07-10T09:33:53.623Z",
+  "fetchedAt": "2026-07-10T14:25:19.293Z",
   "matches": [
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "wests-tigers",
-      "away": "warriors",
-      "venue": "Campbelltown Sports Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-10T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 19,
       "roundTitle": "Round 19",
