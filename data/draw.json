@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 19,
   "toRound": 27,
-  "fetchedAt": "2026-07-11T02:35:38.720Z",
+  "fetchedAt": "2026-07-11T07:54:49.722Z",
   "matches": [
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "dolphins",
-      "away": "sharks",
-      "venue": "Kayo Stadium",
-      "venueCity": "Redcliffe",
-      "kickOff": "2026-07-11T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "bulldogs",
-      "away": "raiders",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-11T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 19,
       "roundTitle": "Round 19",

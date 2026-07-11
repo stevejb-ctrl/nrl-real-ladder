@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 19,
   "competitionId": 111,
-  "fetchedAt": "2026-07-11T02:35:35.099Z",
+  "fetchedAt": "2026-07-11T07:54:47.130Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -46,6 +46,26 @@
       "officialPosition": 2
     },
     {
+      "slug": "sharks",
+      "shortName": "Sharks",
+      "fullName": "Cronulla-Sutherland Sharks",
+      "initials": "CS",
+      "primary": "#00A6CE",
+      "secondary": "#000000",
+      "played": 16,
+      "wins": 10,
+      "losses": 6,
+      "draws": 0,
+      "byes": 3,
+      "pointsFor": 468,
+      "pointsAgainst": 345,
+      "pointsDiff": 123,
+      "compPoints": 26,
+      "streak": "1L",
+      "form": "2 - 2",
+      "officialPosition": 3
+    },
+    {
       "slug": "roosters",
       "shortName": "Roosters",
       "fullName": "Sydney Roosters",
@@ -63,7 +83,7 @@
       "compPoints": 26,
       "streak": "2W",
       "form": "3 - 1",
-      "officialPosition": 3
+      "officialPosition": 4
     },
     {
       "slug": "knights",
@@ -83,7 +103,7 @@
       "compPoints": 26,
       "streak": "3W",
       "form": "3 - 1",
-      "officialPosition": 4
+      "officialPosition": 5
     },
     {
       "slug": "dolphins",
@@ -92,37 +112,17 @@
       "initials": "DO",
       "primary": "#CC0033",
       "secondary": "#FFD200",
-      "played": 16,
+      "played": 17,
       "wins": 10,
-      "losses": 6,
+      "losses": 7,
       "draws": 0,
       "byes": 2,
       "pointsFor": 452,
-      "pointsAgainst": 322,
-      "pointsDiff": 130,
+      "pointsAgainst": 388,
+      "pointsDiff": 64,
       "compPoints": 24,
-      "streak": "1L",
-      "form": "4 - 1",
-      "officialPosition": 5
-    },
-    {
-      "slug": "sharks",
-      "shortName": "Sharks",
-      "fullName": "Cronulla-Sutherland Sharks",
-      "initials": "CS",
-      "primary": "#00A6CE",
-      "secondary": "#000000",
-      "played": 15,
-      "wins": 9,
-      "losses": 6,
-      "draws": 0,
-      "byes": 3,
-      "pointsFor": 402,
-      "pointsAgainst": 345,
-      "pointsDiff": 57,
-      "compPoints": 24,
-      "streak": "1W",
-      "form": "3 - 1",
+      "streak": "2L",
+      "form": "3 - 2",
       "officialPosition": 6
     },
     {

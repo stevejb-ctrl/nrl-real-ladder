@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-07-11T02:35:47.553Z",
+  "generatedAt": "2026-07-11T07:54:55.914Z",
   "season": 2026,
   "round": 19,
-  "ladderFetchedAt": "2026-07-11T02:35:35.099Z",
-  "resultsFetchedAt": "2026-07-11T02:35:46.698Z",
-  "matchesConsidered": 134,
+  "ladderFetchedAt": "2026-07-11T07:54:47.130Z",
+  "resultsFetchedAt": "2026-07-11T07:54:55.061Z",
+  "matchesConsidered": 135,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
     "knights",
     "roosters",
-    "dolphins",
     "sharks",
+    "dolphins",
     "sea-eagles",
     "cowboys"
   ],
@@ -87,7 +87,7 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 4,
+      "officialPosition": 5,
       "realPosition": 3,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -113,7 +113,7 @@
       "initials": "SR",
       "primary": "#06316F",
       "secondary": "#E2231B",
-      "officialPosition": 3,
+      "officialPosition": 4,
       "realPosition": 4,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
@@ -133,48 +133,22 @@
       }
     },
     {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "officialPosition": 5,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 2,
-        "played": 8,
-        "winPct": 0.75
-      }
-    },
-    {
       "slug": "sharks",
       "shortName": "Sharks",
       "fullName": "Cronulla-Sutherland Sharks",
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "officialPosition": 6,
-      "realPosition": 6,
+      "officialPosition": 3,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 5,
-        "played": 8,
-        "winPct": 0.375
+        "played": 9,
+        "winPct": 0.4444444444444444
       },
       "vsBottom": {
         "wins": 6,
@@ -182,6 +156,32 @@
         "losses": 1,
         "played": 7,
         "winPct": 0.8571428571428571
+      }
+    },
+    {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "officialPosition": 6,
+      "realPosition": 6,
+      "pool": "top",
+      "logo": "assets/logos/dolphins.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 5,
+        "played": 9,
+        "winPct": 0.4444444444444444
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 2,
+        "played": 8,
+        "winPct": 0.75
       }
     },
     {
