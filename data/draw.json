@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 19,
   "toRound": 27,
-  "fetchedAt": "2026-07-11T07:54:49.722Z",
+  "fetchedAt": "2026-07-11T13:17:42.167Z",
   "matches": [
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "roosters",
-      "away": "eels",
-      "venue": "Allianz Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-11T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 19,
       "roundTitle": "Round 19",
