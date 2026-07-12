@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 19,
-  "fetchedAt": "2026-07-12T02:43:19.605Z",
+  "fetchedAt": "2026-07-12T08:15:59.393Z",
   "matches": [
     {
       "round": 1,
@@ -1921,6 +1921,34 @@
       "winner": "roosters",
       "draw": false,
       "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "date": "2026-07-12",
+      "kickOff": "2026-07-12T04:00:00Z",
+      "home": "rabbitohs",
+      "away": "knights",
+      "homeScore": 26,
+      "awayScore": 24,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "date": "2026-07-12",
+      "kickOff": "2026-07-12T06:05:00Z",
+      "home": "sea-eagles",
+      "away": "cowboys",
+      "homeScore": 18,
+      "awayScore": 19,
+      "winner": "cowboys",
+      "draw": false,
+      "venue": "4 Pines Park",
       "venueCity": "Sydney"
     }
   ]

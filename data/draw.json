@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 19,
   "toRound": 27,
-  "fetchedAt": "2026-07-12T02:43:13.581Z",
+  "fetchedAt": "2026-07-12T08:15:54.090Z",
   "matches": [
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "rabbitohs",
-      "away": "knights",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-12T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "sea-eagles",
-      "away": "cowboys",
-      "venue": "4 Pines Park",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-12T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 19,
       "roundTitle": "Round 19",
