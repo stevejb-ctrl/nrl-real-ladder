@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 19,
   "toRound": 27,
-  "fetchedAt": "2026-07-12T08:15:54.090Z",
+  "fetchedAt": "2026-07-12T13:18:09.767Z",
   "matches": [
-    {
-      "round": 19,
-      "roundTitle": "Round 19",
-      "home": "storm",
-      "away": "titans",
-      "venue": "AAMI Park",
-      "venueCity": "Melbourne",
-      "kickOff": "2026-07-12T08:15:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 20,
       "roundTitle": "Round 20",

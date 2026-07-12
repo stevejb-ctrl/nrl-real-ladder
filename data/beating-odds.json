@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-12T08:16:00.332Z",
+  "generatedAt": "2026-07-12T13:18:18.721Z",
   "season": 2026,
   "ladderRound": 19,
   "oddsSource": "https://www.aussportsbetting.com/historical_data/nrl.xlsx",
   "oddsFetchedAt": "2026-06-01T11:44:49.853Z",
-  "resultsFetchedAt": "2026-07-12T08:15:59.393Z",
+  "resultsFetchedAt": "2026-07-12T13:18:17.947Z",
   "matchesWithOddsAndResult": 100,
   "matchesWithOddsButNoResult": 0,
   "fuzzyDays": 3,
@@ -1474,222 +1474,6 @@
       ],
       "wins_above_expected": 0.585
     },
-    "sea-eagles": {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "initials": "MS",
-      "logo": "assets/logos/sea-eagles.svg",
-      "games_with_odds": 12,
-      "actual_wins": 7,
-      "actual_losses": 5,
-      "actual_draws": 0,
-      "expected_wins": 5.8968,
-      "units_total": 1.05,
-      "games": [
-        {
-          "round": 1,
-          "date": "2026-03-07",
-          "side": "home",
-          "opponent": "raiders",
-          "score": "28-29",
-          "outcome": "L",
-          "closeOdds": 1.8,
-          "impliedProb": 0.5046,
-          "units": -1,
-          "cumulative": -1
-        },
-        {
-          "round": 2,
-          "date": "2026-03-15",
-          "side": "home",
-          "opponent": "knights",
-          "score": "16-36",
-          "outcome": "L",
-          "closeOdds": 1.6,
-          "impliedProb": 0.5739,
-          "units": -1,
-          "cumulative": -2
-        },
-        {
-          "round": 4,
-          "date": "2026-03-26",
-          "side": "home",
-          "opponent": "roosters",
-          "score": "16-33",
-          "outcome": "L",
-          "closeOdds": 2.7,
-          "impliedProb": 0.3405,
-          "units": -1,
-          "cumulative": -3
-        },
-        {
-          "round": 5,
-          "date": "2026-04-02",
-          "side": "away",
-          "opponent": "dolphins",
-          "score": "52-18",
-          "outcome": "W",
-          "closeOdds": 3.3,
-          "impliedProb": 0.2811,
-          "units": 2.3,
-          "cumulative": -0.7
-        },
-        {
-          "round": 6,
-          "date": "2026-04-10",
-          "side": "away",
-          "opponent": "dragons",
-          "score": "28-18",
-          "outcome": "W",
-          "closeOdds": 1.44,
-          "impliedProb": 0.6401,
-          "units": 0.44,
-          "cumulative": -0.26
-        },
-        {
-          "round": 7,
-          "date": "2026-04-16",
-          "side": "away",
-          "opponent": "cowboys",
-          "score": "38-6",
-          "outcome": "W",
-          "closeOdds": 2.35,
-          "impliedProb": 0.389,
-          "units": 1.35,
-          "cumulative": 1.09
-        },
-        {
-          "round": 8,
-          "date": "2026-04-26",
-          "side": "home",
-          "opponent": "eels",
-          "score": "33-18",
-          "outcome": "W",
-          "closeOdds": 1.4,
-          "impliedProb": 0.658,
-          "units": 0.4,
-          "cumulative": 1.49
-        },
-        {
-          "round": 9,
-          "date": "2026-05-03",
-          "side": "away",
-          "opponent": "panthers",
-          "score": "16-18",
-          "outcome": "L",
-          "closeOdds": 5.25,
-          "impliedProb": 0.1763,
-          "units": -1,
-          "cumulative": 0.49
-        },
-        {
-          "round": 10,
-          "date": "2026-05-09",
-          "side": "home",
-          "opponent": "broncos",
-          "score": "32-4",
-          "outcome": "W",
-          "closeOdds": 1.95,
-          "impliedProb": 0.4683,
-          "units": 0.95,
-          "cumulative": 1.44
-        },
-        {
-          "round": 11,
-          "date": "2026-05-16",
-          "side": "away",
-          "opponent": "wests-tigers",
-          "score": "46-18",
-          "outcome": "W",
-          "closeOdds": 1.33,
-          "impliedProb": 0.6902,
-          "units": 0.33,
-          "cumulative": 1.77
-        },
-        {
-          "round": 12,
-          "date": "2026-05-23",
-          "side": "home",
-          "opponent": "titans",
-          "score": "12-10",
-          "outcome": "W",
-          "closeOdds": 1.28,
-          "impliedProb": 0.7177,
-          "units": 0.28,
-          "cumulative": 2.05
-        },
-        {
-          "round": 13,
-          "date": "2026-05-29",
-          "side": "away",
-          "opponent": "sharks",
-          "score": "22-28",
-          "outcome": "L",
-          "closeOdds": 2,
-          "impliedProb": 0.457,
-          "units": -1,
-          "cumulative": 1.05
-        }
-      ],
-      "units_series": [
-        {
-          "round": 1,
-          "cumulative": -1
-        },
-        {
-          "round": 2,
-          "cumulative": -2
-        },
-        {
-          "round": 3,
-          "cumulative": -2
-        },
-        {
-          "round": 4,
-          "cumulative": -3
-        },
-        {
-          "round": 5,
-          "cumulative": -0.7
-        },
-        {
-          "round": 6,
-          "cumulative": -0.26
-        },
-        {
-          "round": 7,
-          "cumulative": 1.09
-        },
-        {
-          "round": 8,
-          "cumulative": 1.49
-        },
-        {
-          "round": 9,
-          "cumulative": 0.49
-        },
-        {
-          "round": 10,
-          "cumulative": 1.44
-        },
-        {
-          "round": 11,
-          "cumulative": 1.77
-        },
-        {
-          "round": 12,
-          "cumulative": 2.05
-        },
-        {
-          "round": 13,
-          "cumulative": 1.05
-        }
-      ],
-      "wins_above_expected": 1.1032
-    },
     "cowboys": {
       "slug": "cowboys",
       "shortName": "Cowboys",
@@ -1918,221 +1702,221 @@
       ],
       "wins_above_expected": 1.8889
     },
-    "bulldogs": {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "primary": "#00529B",
+    "sea-eagles": {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "initials": "CB",
-      "logo": "assets/logos/bulldogs.svg",
+      "initials": "MS",
+      "logo": "assets/logos/sea-eagles.svg",
       "games_with_odds": 12,
-      "actual_wins": 4,
-      "actual_losses": 8,
+      "actual_wins": 7,
+      "actual_losses": 5,
       "actual_draws": 0,
-      "expected_wins": 5.9507,
-      "units_total": -0.85,
+      "expected_wins": 5.8968,
+      "units_total": 1.05,
       "games": [
         {
           "round": 1,
-          "date": "2026-03-01",
+          "date": "2026-03-07",
           "side": "home",
-          "opponent": "dragons",
-          "score": "15-14",
-          "outcome": "W",
-          "closeOdds": 1.5,
-          "impliedProb": 0.6076,
-          "units": 0.5,
-          "cumulative": 0.5
+          "opponent": "raiders",
+          "score": "28-29",
+          "outcome": "L",
+          "closeOdds": 1.8,
+          "impliedProb": 0.5046,
+          "units": -1,
+          "cumulative": -1
         },
         {
-          "round": 3,
-          "date": "2026-03-19",
-          "side": "away",
-          "opponent": "raiders",
-          "score": "14-10",
-          "outcome": "W",
-          "closeOdds": 1.95,
-          "impliedProb": 0.4667,
-          "units": 0.95,
-          "cumulative": 1.45
+          "round": 2,
+          "date": "2026-03-15",
+          "side": "home",
+          "opponent": "knights",
+          "score": "16-36",
+          "outcome": "L",
+          "closeOdds": 1.6,
+          "impliedProb": 0.5739,
+          "units": -1,
+          "cumulative": -2
         },
         {
           "round": 4,
-          "date": "2026-03-28",
+          "date": "2026-03-26",
           "side": "home",
-          "opponent": "knights",
-          "score": "16-24",
+          "opponent": "roosters",
+          "score": "16-33",
           "outcome": "L",
-          "closeOdds": 1.24,
-          "impliedProb": 0.7442,
+          "closeOdds": 2.7,
+          "impliedProb": 0.3405,
           "units": -1,
-          "cumulative": 0.45
+          "cumulative": -3
         },
         {
           "round": 5,
-          "date": "2026-04-03",
+          "date": "2026-04-02",
           "side": "away",
-          "opponent": "rabbitohs",
-          "score": "24-32",
-          "outcome": "L",
-          "closeOdds": 1.95,
-          "impliedProb": 0.4668,
-          "units": -1,
-          "cumulative": -0.55
+          "opponent": "dolphins",
+          "score": "52-18",
+          "outcome": "W",
+          "closeOdds": 3.3,
+          "impliedProb": 0.2811,
+          "units": 2.3,
+          "cumulative": -0.7
         },
         {
           "round": 6,
-          "date": "2026-04-09",
-          "side": "home",
-          "opponent": "panthers",
-          "score": "32-16",
+          "date": "2026-04-10",
+          "side": "away",
+          "opponent": "dragons",
+          "score": "28-18",
           "outcome": "W",
-          "closeOdds": 6,
-          "impliedProb": 0.1542,
-          "units": 5,
-          "cumulative": 4.45
+          "closeOdds": 1.44,
+          "impliedProb": 0.6401,
+          "units": 0.44,
+          "cumulative": -0.26
         },
         {
           "round": 7,
-          "date": "2026-04-19",
+          "date": "2026-04-16",
           "side": "away",
-          "opponent": "eels",
-          "score": "20-38",
-          "outcome": "L",
-          "closeOdds": 1.23,
-          "impliedProb": 0.7524,
-          "units": -1,
-          "cumulative": 3.45
+          "opponent": "cowboys",
+          "score": "38-6",
+          "outcome": "W",
+          "closeOdds": 2.35,
+          "impliedProb": 0.389,
+          "units": 1.35,
+          "cumulative": 1.09
         },
         {
           "round": 8,
-          "date": "2026-04-24",
-          "side": "away",
-          "opponent": "broncos",
-          "score": "12-32",
-          "outcome": "L",
-          "closeOdds": 1.62,
-          "impliedProb": 0.566,
-          "units": -1,
-          "cumulative": 2.45
+          "date": "2026-04-26",
+          "side": "home",
+          "opponent": "eels",
+          "score": "33-18",
+          "outcome": "W",
+          "closeOdds": 1.4,
+          "impliedProb": 0.658,
+          "units": 0.4,
+          "cumulative": 1.49
         },
         {
           "round": 9,
-          "date": "2026-05-01",
-          "side": "home",
-          "opponent": "cowboys",
-          "score": "12-28",
+          "date": "2026-05-03",
+          "side": "away",
+          "opponent": "panthers",
+          "score": "16-18",
           "outcome": "L",
-          "closeOdds": 1.8,
-          "impliedProb": 0.5078,
+          "closeOdds": 5.25,
+          "impliedProb": 0.1763,
           "units": -1,
-          "cumulative": 1.45
+          "cumulative": 0.49
         },
         {
           "round": 10,
-          "date": "2026-05-07",
-          "side": "away",
-          "opponent": "dolphins",
-          "score": "12-44",
-          "outcome": "L",
-          "closeOdds": 2.75,
-          "impliedProb": 0.3353,
-          "units": -1,
-          "cumulative": 0.45
+          "date": "2026-05-09",
+          "side": "home",
+          "opponent": "broncos",
+          "score": "32-4",
+          "outcome": "W",
+          "closeOdds": 1.95,
+          "impliedProb": 0.4683,
+          "units": 0.95,
+          "cumulative": 1.44
         },
         {
           "round": 11,
-          "date": "2026-05-15",
+          "date": "2026-05-16",
           "side": "away",
-          "opponent": "sharks",
-          "score": "16-38",
-          "outcome": "L",
-          "closeOdds": 2.45,
-          "impliedProb": 0.3738,
-          "units": -1,
-          "cumulative": -0.55
+          "opponent": "wests-tigers",
+          "score": "46-18",
+          "outcome": "W",
+          "closeOdds": 1.33,
+          "impliedProb": 0.6902,
+          "units": 0.33,
+          "cumulative": 1.77
         },
         {
           "round": 12,
-          "date": "2026-05-22",
+          "date": "2026-05-23",
           "side": "home",
-          "opponent": "storm",
-          "score": "30-20",
+          "opponent": "titans",
+          "score": "12-10",
           "outcome": "W",
-          "closeOdds": 1.7,
-          "impliedProb": 0.5388,
-          "units": 0.7,
-          "cumulative": 0.15
+          "closeOdds": 1.28,
+          "impliedProb": 0.7177,
+          "units": 0.28,
+          "cumulative": 2.05
         },
         {
           "round": 13,
-          "date": "2026-05-30",
+          "date": "2026-05-29",
           "side": "away",
-          "opponent": "wests-tigers",
-          "score": "16-22",
+          "opponent": "sharks",
+          "score": "22-28",
           "outcome": "L",
-          "closeOdds": 2.1,
-          "impliedProb": 0.4371,
+          "closeOdds": 2,
+          "impliedProb": 0.457,
           "units": -1,
-          "cumulative": -0.85
+          "cumulative": 1.05
         }
       ],
       "units_series": [
         {
           "round": 1,
-          "cumulative": 0.5
+          "cumulative": -1
         },
         {
           "round": 2,
-          "cumulative": 0.5
+          "cumulative": -2
         },
         {
           "round": 3,
-          "cumulative": 1.45
+          "cumulative": -2
         },
         {
           "round": 4,
-          "cumulative": 0.45
+          "cumulative": -3
         },
         {
           "round": 5,
-          "cumulative": -0.55
+          "cumulative": -0.7
         },
         {
           "round": 6,
-          "cumulative": 4.45
+          "cumulative": -0.26
         },
         {
           "round": 7,
-          "cumulative": 3.45
+          "cumulative": 1.09
         },
         {
           "round": 8,
-          "cumulative": 2.45
+          "cumulative": 1.49
         },
         {
           "round": 9,
-          "cumulative": 1.45
+          "cumulative": 0.49
         },
         {
           "round": 10,
-          "cumulative": 0.45
+          "cumulative": 1.44
         },
         {
           "round": 11,
-          "cumulative": -0.55
+          "cumulative": 1.77
         },
         {
           "round": 12,
-          "cumulative": 0.15
+          "cumulative": 2.05
         },
         {
           "round": 13,
-          "cumulative": -0.85
+          "cumulative": 1.05
         }
       ],
-      "wins_above_expected": -1.9507
+      "wins_above_expected": 1.1032
     },
     "storm": {
       "slug": "storm",
@@ -2361,6 +2145,222 @@
         }
       ],
       "wins_above_expected": -2.4032
+    },
+    "bulldogs": {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "initials": "CB",
+      "logo": "assets/logos/bulldogs.svg",
+      "games_with_odds": 12,
+      "actual_wins": 4,
+      "actual_losses": 8,
+      "actual_draws": 0,
+      "expected_wins": 5.9507,
+      "units_total": -0.85,
+      "games": [
+        {
+          "round": 1,
+          "date": "2026-03-01",
+          "side": "home",
+          "opponent": "dragons",
+          "score": "15-14",
+          "outcome": "W",
+          "closeOdds": 1.5,
+          "impliedProb": 0.6076,
+          "units": 0.5,
+          "cumulative": 0.5
+        },
+        {
+          "round": 3,
+          "date": "2026-03-19",
+          "side": "away",
+          "opponent": "raiders",
+          "score": "14-10",
+          "outcome": "W",
+          "closeOdds": 1.95,
+          "impliedProb": 0.4667,
+          "units": 0.95,
+          "cumulative": 1.45
+        },
+        {
+          "round": 4,
+          "date": "2026-03-28",
+          "side": "home",
+          "opponent": "knights",
+          "score": "16-24",
+          "outcome": "L",
+          "closeOdds": 1.24,
+          "impliedProb": 0.7442,
+          "units": -1,
+          "cumulative": 0.45
+        },
+        {
+          "round": 5,
+          "date": "2026-04-03",
+          "side": "away",
+          "opponent": "rabbitohs",
+          "score": "24-32",
+          "outcome": "L",
+          "closeOdds": 1.95,
+          "impliedProb": 0.4668,
+          "units": -1,
+          "cumulative": -0.55
+        },
+        {
+          "round": 6,
+          "date": "2026-04-09",
+          "side": "home",
+          "opponent": "panthers",
+          "score": "32-16",
+          "outcome": "W",
+          "closeOdds": 6,
+          "impliedProb": 0.1542,
+          "units": 5,
+          "cumulative": 4.45
+        },
+        {
+          "round": 7,
+          "date": "2026-04-19",
+          "side": "away",
+          "opponent": "eels",
+          "score": "20-38",
+          "outcome": "L",
+          "closeOdds": 1.23,
+          "impliedProb": 0.7524,
+          "units": -1,
+          "cumulative": 3.45
+        },
+        {
+          "round": 8,
+          "date": "2026-04-24",
+          "side": "away",
+          "opponent": "broncos",
+          "score": "12-32",
+          "outcome": "L",
+          "closeOdds": 1.62,
+          "impliedProb": 0.566,
+          "units": -1,
+          "cumulative": 2.45
+        },
+        {
+          "round": 9,
+          "date": "2026-05-01",
+          "side": "home",
+          "opponent": "cowboys",
+          "score": "12-28",
+          "outcome": "L",
+          "closeOdds": 1.8,
+          "impliedProb": 0.5078,
+          "units": -1,
+          "cumulative": 1.45
+        },
+        {
+          "round": 10,
+          "date": "2026-05-07",
+          "side": "away",
+          "opponent": "dolphins",
+          "score": "12-44",
+          "outcome": "L",
+          "closeOdds": 2.75,
+          "impliedProb": 0.3353,
+          "units": -1,
+          "cumulative": 0.45
+        },
+        {
+          "round": 11,
+          "date": "2026-05-15",
+          "side": "away",
+          "opponent": "sharks",
+          "score": "16-38",
+          "outcome": "L",
+          "closeOdds": 2.45,
+          "impliedProb": 0.3738,
+          "units": -1,
+          "cumulative": -0.55
+        },
+        {
+          "round": 12,
+          "date": "2026-05-22",
+          "side": "home",
+          "opponent": "storm",
+          "score": "30-20",
+          "outcome": "W",
+          "closeOdds": 1.7,
+          "impliedProb": 0.5388,
+          "units": 0.7,
+          "cumulative": 0.15
+        },
+        {
+          "round": 13,
+          "date": "2026-05-30",
+          "side": "away",
+          "opponent": "wests-tigers",
+          "score": "16-22",
+          "outcome": "L",
+          "closeOdds": 2.1,
+          "impliedProb": 0.4371,
+          "units": -1,
+          "cumulative": -0.85
+        }
+      ],
+      "units_series": [
+        {
+          "round": 1,
+          "cumulative": 0.5
+        },
+        {
+          "round": 2,
+          "cumulative": 0.5
+        },
+        {
+          "round": 3,
+          "cumulative": 1.45
+        },
+        {
+          "round": 4,
+          "cumulative": 0.45
+        },
+        {
+          "round": 5,
+          "cumulative": -0.55
+        },
+        {
+          "round": 6,
+          "cumulative": 4.45
+        },
+        {
+          "round": 7,
+          "cumulative": 3.45
+        },
+        {
+          "round": 8,
+          "cumulative": 2.45
+        },
+        {
+          "round": 9,
+          "cumulative": 1.45
+        },
+        {
+          "round": 10,
+          "cumulative": 0.45
+        },
+        {
+          "round": 11,
+          "cumulative": -0.55
+        },
+        {
+          "round": 12,
+          "cumulative": 0.15
+        },
+        {
+          "round": 13,
+          "cumulative": -0.85
+        }
+      ],
+      "wins_above_expected": -1.9507
     },
     "raiders": {
       "slug": "raiders",

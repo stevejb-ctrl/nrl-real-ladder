@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-12T08:16:00.274Z",
+  "generatedAt": "2026-07-12T13:18:18.672Z",
   "season": 2026,
   "round": 19,
-  "ladderFetchedAt": "2026-07-12T08:15:51.581Z",
-  "resultsFetchedAt": "2026-07-12T08:15:59.393Z",
-  "matchesConsidered": 139,
+  "ladderFetchedAt": "2026-07-12T13:18:06.788Z",
+  "resultsFetchedAt": "2026-07-12T13:18:17.947Z",
+  "matchesConsidered": 140,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -13,11 +13,11 @@
     "knights",
     "sharks",
     "dolphins",
-    "sea-eagles",
+    "cowboys",
     "rabbitohs"
   ],
   "bottomSlugs": [
-    "cowboys",
+    "sea-eagles",
     "storm",
     "bulldogs",
     "raiders",
@@ -40,18 +40,18 @@
       "pool": "top",
       "logo": "assets/logos/panthers.svg",
       "vsTop": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 0,
-        "played": 7,
-        "winPct": 1
-      },
-      "vsBottom": {
         "wins": 6,
         "draws": 0,
-        "losses": 3,
+        "losses": 1,
+        "played": 7,
+        "winPct": 0.8571428571428571
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 2,
         "played": 9,
-        "winPct": 0.6666666666666666
+        "winPct": 0.7777777777777778
       }
     },
     {
@@ -66,18 +66,18 @@
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 4,
-        "played": 7,
-        "winPct": 0.42857142857142855
+        "played": 8,
+        "winPct": 0.5
       },
       "vsBottom": {
-        "wins": 8,
+        "wins": 7,
         "draws": 0,
         "losses": 1,
-        "played": 9,
-        "winPct": 0.8888888888888888
+        "played": 8,
+        "winPct": 0.875
       }
     },
     {
@@ -92,18 +92,18 @@
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
-        "wins": 5,
+        "wins": 4,
         "draws": 0,
-        "losses": 3,
+        "losses": 4,
         "played": 8,
-        "winPct": 0.625
+        "winPct": 0.5
       },
       "vsBottom": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
-        "losses": 2,
+        "losses": 1,
         "played": 8,
-        "winPct": 0.75
+        "winPct": 0.875
       }
     },
     {
@@ -144,18 +144,18 @@
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
-        "wins": 4,
+        "wins": 3,
         "draws": 0,
-        "losses": 5,
+        "losses": 6,
         "played": 9,
-        "winPct": 0.4444444444444444
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
-        "losses": 1,
+        "losses": 0,
         "played": 7,
-        "winPct": 0.8571428571428571
+        "winPct": 1
       }
     },
     {
@@ -170,44 +170,44 @@
       "pool": "top",
       "logo": "assets/logos/dolphins.svg",
       "vsTop": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 5,
+        "played": 10,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 2,
+        "played": 7,
+        "winPct": 0.7142857142857143
+      }
+    },
+    {
+      "slug": "cowboys",
+      "shortName": "Cowboys",
+      "fullName": "North Queensland Cowboys",
+      "initials": "NQ",
+      "primary": "#002B5C",
+      "secondary": "#FFD600",
+      "officialPosition": 8,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/cowboys.svg",
+      "vsTop": {
         "wins": 4,
         "draws": 0,
-        "losses": 6,
-        "played": 10,
-        "winPct": 0.4
+        "losses": 3,
+        "played": 7,
+        "winPct": 0.5714285714285714
       },
       "vsBottom": {
         "wins": 6,
         "draws": 0,
-        "losses": 1,
-        "played": 7,
-        "winPct": 0.8571428571428571
-      }
-    },
-    {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "officialPosition": 8,
-      "realPosition": 7,
-      "pool": "top",
-      "logo": "assets/logos/sea-eagles.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
         "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 4,
-        "played": 11,
-        "winPct": 0.6363636363636364
+        "played": 10,
+        "winPct": 0.6
       }
     },
     {
@@ -237,29 +237,29 @@
       }
     },
     {
-      "slug": "cowboys",
-      "shortName": "Cowboys",
-      "fullName": "North Queensland Cowboys",
-      "initials": "NQ",
-      "primary": "#002B5C",
-      "secondary": "#FFD600",
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
       "officialPosition": 9,
       "realPosition": 9,
       "pool": "bottom",
-      "logo": "assets/logos/cowboys.svg",
+      "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
-        "wins": 5,
+        "wins": 3,
         "draws": 0,
-        "losses": 4,
-        "played": 9,
-        "winPct": 0.5555555555555556
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 3,
-        "played": 8,
-        "winPct": 0.625
+        "played": 9,
+        "winPct": 0.6666666666666666
       }
     },
     {
@@ -269,7 +269,7 @@
       "initials": "MS",
       "primary": "#552E91",
       "secondary": "#FFC72C",
-      "officialPosition": 11,
+      "officialPosition": 10,
       "realPosition": 10,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
@@ -281,11 +281,11 @@
         "winPct": 0.2857142857142857
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 4,
-        "played": 9,
-        "winPct": 0.5555555555555556
+        "played": 10,
+        "winPct": 0.6
       }
     },
     {
@@ -295,23 +295,23 @@
       "initials": "CB",
       "primary": "#00529B",
       "secondary": "#FFFFFF",
-      "officialPosition": 10,
+      "officialPosition": 11,
       "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 5,
+        "wins": 1,
         "draws": 0,
         "losses": 5,
+        "played": 6,
+        "winPct": 0.16666666666666666
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 4,
         "played": 10,
-        "winPct": 0.5
+        "winPct": 0.6
       }
     },
     {
@@ -352,18 +352,18 @@
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
       "vsTop": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
-        "losses": 7,
+        "losses": 6,
         "played": 9,
-        "winPct": 0.2222222222222222
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 4,
         "draws": 0,
-        "losses": 3,
+        "losses": 4,
         "played": 8,
-        "winPct": 0.625
+        "winPct": 0.5
       }
     },
     {
@@ -380,16 +380,16 @@
       "vsTop": {
         "wins": 1,
         "draws": 0,
-        "losses": 6,
-        "played": 7,
-        "winPct": 0.14285714285714285
+        "losses": 5,
+        "played": 6,
+        "winPct": 0.16666666666666666
       },
       "vsBottom": {
         "wins": 5,
         "draws": 0,
-        "losses": 5,
-        "played": 10,
-        "winPct": 0.5
+        "losses": 6,
+        "played": 11,
+        "winPct": 0.45454545454545453
       }
     },
     {
@@ -439,9 +439,9 @@
       "vsBottom": {
         "wins": 3,
         "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
       }
     },
     {
