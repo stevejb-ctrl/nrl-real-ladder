@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 20,
-  "fetchedAt": "2026-07-16T08:12:06.813Z",
+  "fetchedAt": "2026-07-16T13:48:43.087Z",
   "matches": [
     {
       "round": 1,
@@ -1964,6 +1964,20 @@
       "draw": false,
       "venue": "AAMI Park",
       "venueCity": "Melbourne"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-16",
+      "kickOff": "2026-07-16T09:50:00Z",
+      "home": "panthers",
+      "away": "broncos",
+      "homeScore": 12,
+      "awayScore": 14,
+      "winner": "broncos",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }

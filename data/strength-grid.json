@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-16T08:12:07.840Z",
+  "generatedAt": "2026-07-16T13:48:43.904Z",
   "season": 2026,
-  "round": 19,
-  "ladderFetchedAt": "2026-07-16T08:11:46.556Z",
-  "resultsFetchedAt": "2026-07-16T08:12:06.813Z",
-  "matchesConsidered": 140,
+  "round": 20,
+  "ladderFetchedAt": "2026-07-16T13:48:32.204Z",
+  "resultsFetchedAt": "2026-07-16T13:48:43.087Z",
+  "matchesConsidered": 141,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -22,8 +22,8 @@
     "bulldogs",
     "raiders",
     "wests-tigers",
-    "eels",
     "broncos",
+    "eels",
     "titans",
     "dragons"
   ],
@@ -49,9 +49,9 @@
       "vsBottom": {
         "wins": 7,
         "draws": 0,
-        "losses": 2,
-        "played": 9,
-        "winPct": 0.7777777777777778
+        "losses": 3,
+        "played": 10,
+        "winPct": 0.7
       }
     },
     {
@@ -347,7 +347,7 @@
       "initials": "WT",
       "primary": "#F37021",
       "secondary": "#000000",
-      "officialPosition": 13,
+      "officialPosition": 14,
       "realPosition": 13,
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
@@ -367,6 +367,32 @@
       }
     },
     {
+      "slug": "broncos",
+      "shortName": "Broncos",
+      "fullName": "Brisbane Broncos",
+      "initials": "BB",
+      "primary": "#7C0044",
+      "secondary": "#FFB81C",
+      "officialPosition": 13,
+      "realPosition": 14,
+      "pool": "bottom",
+      "logo": "assets/logos/broncos.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 7,
+        "played": 9,
+        "winPct": 0.2222222222222222
+      },
+      "vsBottom": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
+      }
+    },
+    {
       "slug": "eels",
       "shortName": "Eels",
       "fullName": "Parramatta Eels",
@@ -374,7 +400,7 @@
       "primary": "#006EB5",
       "secondary": "#FFCC00",
       "officialPosition": 15,
-      "realPosition": 14,
+      "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
@@ -390,32 +416,6 @@
         "losses": 6,
         "played": 11,
         "winPct": 0.45454545454545453
-      }
-    },
-    {
-      "slug": "broncos",
-      "shortName": "Broncos",
-      "fullName": "Brisbane Broncos",
-      "initials": "BB",
-      "primary": "#7C0044",
-      "secondary": "#FFB81C",
-      "officialPosition": 14,
-      "realPosition": 15,
-      "pool": "bottom",
-      "logo": "assets/logos/broncos.svg",
-      "vsTop": {
-        "wins": 1,
-        "draws": 0,
-        "losses": 7,
-        "played": 8,
-        "winPct": 0.125
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
       }
     },
     {
