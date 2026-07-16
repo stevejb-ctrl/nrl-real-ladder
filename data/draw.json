@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 20,
   "toRound": 27,
-  "fetchedAt": "2026-07-16T02:32:59.875Z",
+  "fetchedAt": "2026-07-16T08:12:01.703Z",
   "matches": [
     {
       "round": 20,
@@ -56,7 +56,7 @@
       "away": "dragons",
       "venue": "Go Media Stadium",
       "venueCity": "Auckland",
-      "kickOff": "2026-07-18T07:35:00Z",
+      "kickOff": "2026-07-18T07:30:00Z",
       "homeOdds": null,
       "awayOdds": null
     },
