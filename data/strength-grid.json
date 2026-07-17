@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-17T08:08:59.763Z",
+  "generatedAt": "2026-07-17T13:26:53.007Z",
   "season": 2026,
   "round": 20,
-  "ladderFetchedAt": "2026-07-17T08:08:52.530Z",
-  "resultsFetchedAt": "2026-07-17T08:08:58.736Z",
-  "matchesConsidered": 141,
+  "ladderFetchedAt": "2026-07-17T13:26:34.175Z",
+  "resultsFetchedAt": "2026-07-17T13:26:51.837Z",
+  "matchesConsidered": 143,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
-    "warriors",
     "roosters",
-    "knights",
+    "warriors",
     "sharks",
+    "knights",
     "dolphins",
     "cowboys",
     "rabbitohs"
@@ -55,14 +55,40 @@
       }
     },
     {
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
+      "officialPosition": 2,
+      "realPosition": 2,
+      "pool": "top",
+      "logo": "assets/logos/roosters.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 4,
+        "played": 8,
+        "winPct": 0.5
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 1,
+        "played": 9,
+        "winPct": 0.8888888888888888
+      }
+    },
+    {
       "slug": "warriors",
       "shortName": "Warriors",
       "fullName": "New Zealand Warriors",
       "initials": "NZ",
       "primary": "#1D5E36",
       "secondary": "#000000",
-      "officialPosition": 2,
-      "realPosition": 2,
+      "officialPosition": 3,
+      "realPosition": 3,
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
@@ -81,29 +107,29 @@
       }
     },
     {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
-      "officialPosition": 3,
-      "realPosition": 3,
+      "slug": "sharks",
+      "shortName": "Sharks",
+      "fullName": "Cronulla-Sutherland Sharks",
+      "initials": "CS",
+      "primary": "#00A6CE",
+      "secondary": "#000000",
+      "officialPosition": 4,
+      "realPosition": 4,
       "pool": "top",
-      "logo": "assets/logos/roosters.svg",
+      "logo": "assets/logos/sharks.svg",
       "vsTop": {
         "wins": 4,
         "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
+        "losses": 6,
+        "played": 10,
+        "winPct": 0.4
       },
       "vsBottom": {
         "wins": 7,
         "draws": 0,
-        "losses": 1,
-        "played": 8,
-        "winPct": 0.875
+        "losses": 0,
+        "played": 7,
+        "winPct": 1
       }
     },
     {
@@ -114,15 +140,15 @@
       "primary": "#EE3524",
       "secondary": "#003A70",
       "officialPosition": 5,
-      "realPosition": 4,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 4,
-        "played": 7,
-        "winPct": 0.42857142857142855
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
       },
       "vsBottom": {
         "wins": 8,
@@ -130,32 +156,6 @@
         "losses": 2,
         "played": 10,
         "winPct": 0.8
-      }
-    },
-    {
-      "slug": "sharks",
-      "shortName": "Sharks",
-      "fullName": "Cronulla-Sutherland Sharks",
-      "initials": "CS",
-      "primary": "#00A6CE",
-      "secondary": "#000000",
-      "officialPosition": 4,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/sharks.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 0,
-        "played": 7,
-        "winPct": 1
       }
     },
     {
@@ -276,9 +276,9 @@
       "vsTop": {
         "wins": 2,
         "draws": 0,
-        "losses": 5,
-        "played": 7,
-        "winPct": 0.2857142857142857
+        "losses": 6,
+        "played": 8,
+        "winPct": 0.25
       },
       "vsBottom": {
         "wins": 6,

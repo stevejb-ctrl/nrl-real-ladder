@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 20,
-  "fetchedAt": "2026-07-17T08:08:58.736Z",
+  "fetchedAt": "2026-07-17T13:26:51.837Z",
   "matches": [
     {
       "round": 1,
@@ -1977,6 +1977,34 @@
       "winner": "broncos",
       "draw": false,
       "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-17",
+      "kickOff": "2026-07-17T08:00:00Z",
+      "home": "sharks",
+      "away": "knights",
+      "homeScore": 20,
+      "awayScore": 18,
+      "winner": "sharks",
+      "draw": false,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-17",
+      "kickOff": "2026-07-17T10:00:00Z",
+      "home": "roosters",
+      "away": "storm",
+      "homeScore": 14,
+      "awayScore": 6,
+      "winner": "roosters",
+      "draw": false,
+      "venue": "Allianz Stadium",
       "venueCity": "Sydney"
     }
   ]
