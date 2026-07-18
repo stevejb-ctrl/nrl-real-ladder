@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 20,
   "competitionId": 111,
-  "fetchedAt": "2026-07-18T13:13:28.581Z",
+  "fetchedAt": "2026-07-18T19:02:17.474Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -201,8 +201,8 @@
       "pointsAgainst": 394,
       "pointsDiff": -70,
       "compPoints": 22,
-      "streak": "2L",
-      "form": "2 - 2",
+      "streak": "1W",
+      "form": "3 - 1",
       "officialPosition": 10
     },
     {
