@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 20,
-  "fetchedAt": "2026-07-18T07:48:46.112Z",
+  "fetchedAt": "2026-07-18T13:13:40.311Z",
   "matches": [
     {
       "round": 1,
@@ -2020,6 +2020,34 @@
       "draw": false,
       "venue": "GIO Stadium",
       "venueCity": "Canberra"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-18",
+      "kickOff": "2026-07-18T07:35:00Z",
+      "home": "warriors",
+      "away": "dragons",
+      "homeScore": 20,
+      "awayScore": 12,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-18",
+      "kickOff": "2026-07-18T09:35:00Z",
+      "home": "bulldogs",
+      "away": "wests-tigers",
+      "homeScore": 32,
+      "awayScore": 0,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }

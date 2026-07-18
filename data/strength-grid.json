@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-18T07:48:46.880Z",
+  "generatedAt": "2026-07-18T13:13:41.215Z",
   "season": 2026,
   "round": 20,
-  "ladderFetchedAt": "2026-07-18T07:48:34.562Z",
-  "resultsFetchedAt": "2026-07-18T07:48:46.112Z",
-  "matchesConsidered": 144,
+  "ladderFetchedAt": "2026-07-18T13:13:28.581Z",
+  "resultsFetchedAt": "2026-07-18T13:13:40.311Z",
+  "matchesConsidered": 146,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
-    "roosters",
     "warriors",
+    "roosters",
     "sharks",
     "knights",
     "dolphins",
@@ -18,9 +18,9 @@
   ],
   "bottomSlugs": [
     "rabbitohs",
+    "bulldogs",
     "storm",
     "raiders",
-    "bulldogs",
     "wests-tigers",
     "broncos",
     "eels",
@@ -55,16 +55,16 @@
       }
     },
     {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
+      "slug": "warriors",
+      "shortName": "Warriors",
+      "fullName": "New Zealand Warriors",
+      "initials": "NZ",
+      "primary": "#1D5E36",
+      "secondary": "#000000",
       "officialPosition": 2,
       "realPosition": 2,
       "pool": "top",
-      "logo": "assets/logos/roosters.svg",
+      "logo": "assets/logos/warriors.svg",
       "vsTop": {
         "wins": 4,
         "draws": 0,
@@ -81,16 +81,16 @@
       }
     },
     {
-      "slug": "warriors",
-      "shortName": "Warriors",
-      "fullName": "New Zealand Warriors",
-      "initials": "NZ",
-      "primary": "#1D5E36",
-      "secondary": "#000000",
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
       "officialPosition": 3,
       "realPosition": 3,
       "pool": "top",
-      "logo": "assets/logos/warriors.svg",
+      "logo": "assets/logos/roosters.svg",
       "vsTop": {
         "wins": 4,
         "draws": 0,
@@ -99,11 +99,11 @@
         "winPct": 0.5
       },
       "vsBottom": {
-        "wins": 7,
+        "wins": 8,
         "draws": 0,
         "losses": 1,
-        "played": 8,
-        "winPct": 0.875
+        "played": 9,
+        "winPct": 0.8888888888888888
       }
     },
     {
@@ -263,14 +263,40 @@
       }
     },
     {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "officialPosition": 10,
+      "realPosition": 10,
+      "pool": "bottom",
+      "logo": "assets/logos/bulldogs.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 4,
+        "played": 6,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 5,
+        "played": 11,
+        "winPct": 0.5454545454545454
+      }
+    },
+    {
       "slug": "storm",
       "shortName": "Storm",
       "fullName": "Melbourne Storm",
       "initials": "MS",
       "primary": "#552E91",
       "secondary": "#FFC72C",
-      "officialPosition": 10,
-      "realPosition": 10,
+      "officialPosition": 11,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
       "vsTop": {
@@ -295,8 +321,8 @@
       "initials": "CR",
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
-      "officialPosition": 11,
-      "realPosition": 11,
+      "officialPosition": 12,
+      "realPosition": 12,
       "pool": "bottom",
       "logo": "assets/logos/raiders.svg",
       "vsTop": {
@@ -312,32 +338,6 @@
         "losses": 4,
         "played": 10,
         "winPct": 0.6
-      }
-    },
-    {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "officialPosition": 12,
-      "realPosition": 12,
-      "pool": "bottom",
-      "logo": "assets/logos/bulldogs.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 4,
-        "played": 6,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 5,
-        "played": 10,
-        "winPct": 0.5
       }
     },
     {
@@ -361,9 +361,9 @@
       "vsBottom": {
         "wins": 4,
         "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
+        "losses": 5,
+        "played": 9,
+        "winPct": 0.4444444444444444
       }
     },
     {
@@ -458,8 +458,8 @@
       "vsTop": {
         "wins": 0,
         "draws": 0,
-        "losses": 8,
-        "played": 8,
+        "losses": 9,
+        "played": 9,
         "winPct": 0
       },
       "vsBottom": {

@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 20,
   "toRound": 27,
-  "fetchedAt": "2026-07-18T07:48:38.428Z",
+  "fetchedAt": "2026-07-18T13:13:32.074Z",
   "matches": [
-    {
-      "round": 20,
-      "roundTitle": "Round 20",
-      "home": "bulldogs",
-      "away": "wests-tigers",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-18T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 20,
       "roundTitle": "Round 20",
