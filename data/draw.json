@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 20,
   "toRound": 27,
-  "fetchedAt": "2026-07-18T02:26:41.174Z",
+  "fetchedAt": "2026-07-18T07:48:38.428Z",
   "matches": [
-    {
-      "round": 20,
-      "roundTitle": "Round 20",
-      "home": "raiders",
-      "away": "rabbitohs",
-      "venue": "GIO Stadium",
-      "venueCity": "Canberra",
-      "kickOff": "2026-07-18T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 20,
-      "roundTitle": "Round 20",
-      "home": "warriors",
-      "away": "dragons",
-      "venue": "Go Media Stadium",
-      "venueCity": "Auckland",
-      "kickOff": "2026-07-18T07:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 20,
       "roundTitle": "Round 20",

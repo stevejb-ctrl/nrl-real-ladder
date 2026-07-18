@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 20,
-  "fetchedAt": "2026-07-18T02:26:52.541Z",
+  "fetchedAt": "2026-07-18T07:48:46.112Z",
   "matches": [
     {
       "round": 1,
@@ -2006,6 +2006,20 @@
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-18",
+      "kickOff": "2026-07-18T05:00:00Z",
+      "home": "raiders",
+      "away": "rabbitohs",
+      "homeScore": 34,
+      "awayScore": 24,
+      "winner": "raiders",
+      "draw": false,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra"
     }
   ]
 }
