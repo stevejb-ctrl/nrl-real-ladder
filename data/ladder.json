@@ -2,7 +2,7 @@
   "season": 2026,
   "round": 20,
   "competitionId": 111,
-  "fetchedAt": "2026-07-19T08:16:31.777Z",
+  "fetchedAt": "2026-07-19T13:16:08.912Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -86,6 +86,26 @@
       "officialPosition": 4
     },
     {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "played": 18,
+      "wins": 11,
+      "losses": 7,
+      "draws": 0,
+      "byes": 2,
+      "pointsFor": 488,
+      "pointsAgainst": 404,
+      "pointsDiff": 84,
+      "compPoints": 26,
+      "streak": "1W",
+      "form": "3 - 2",
+      "officialPosition": 5
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
@@ -103,7 +123,7 @@
       "compPoints": 26,
       "streak": "2L",
       "form": "3 - 2",
-      "officialPosition": 5
+      "officialPosition": 6
     },
     {
       "slug": "rabbitohs",
@@ -123,26 +143,6 @@
       "compPoints": 24,
       "streak": "1L",
       "form": "2 - 2",
-      "officialPosition": 6
-    },
-    {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "played": 17,
-      "wins": 10,
-      "losses": 7,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 452,
-      "pointsAgainst": 388,
-      "pointsDiff": 64,
-      "compPoints": 24,
-      "streak": "2L",
-      "form": "3 - 2",
       "officialPosition": 7
     },
     {
@@ -152,17 +152,17 @@
       "initials": "NQ",
       "primary": "#002B5C",
       "secondary": "#FFD600",
-      "played": 17,
+      "played": 18,
       "wins": 10,
-      "losses": 7,
+      "losses": 8,
       "draws": 0,
       "byes": 2,
-      "pointsFor": 408,
-      "pointsAgainst": 424,
-      "pointsDiff": -16,
+      "pointsFor": 424,
+      "pointsAgainst": 460,
+      "pointsDiff": -36,
       "compPoints": 24,
-      "streak": "2W",
-      "form": "2 - 1",
+      "streak": "1L",
+      "form": "2 - 2",
       "officialPosition": 8
     },
     {
@@ -302,7 +302,7 @@
       "pointsDiff": -176,
       "compPoints": 18,
       "streak": "1L",
-      "form": "2 - 2",
+      "form": "1 - 2",
       "officialPosition": 15
     },
     {

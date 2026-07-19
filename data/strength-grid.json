@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-19T08:16:47.742Z",
+  "generatedAt": "2026-07-19T13:16:25.601Z",
   "season": 2026,
   "round": 20,
-  "ladderFetchedAt": "2026-07-19T08:16:31.777Z",
-  "resultsFetchedAt": "2026-07-19T08:16:46.548Z",
+  "ladderFetchedAt": "2026-07-19T13:16:08.912Z",
+  "resultsFetchedAt": "2026-07-19T13:16:24.444Z",
   "matchesConsidered": 148,
   "topCutoff": 8,
   "topSlugs": [
@@ -11,8 +11,8 @@
     "warriors",
     "roosters",
     "sharks",
-    "knights",
     "dolphins",
+    "knights",
     "cowboys",
     "rabbitohs"
   ],
@@ -133,40 +133,14 @@
       }
     },
     {
-      "slug": "knights",
-      "shortName": "Knights",
-      "fullName": "Newcastle Knights",
-      "initials": "NK",
-      "primary": "#EE3524",
-      "secondary": "#003A70",
-      "officialPosition": 5,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/knights.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
-      },
-      "vsBottom": {
-        "wins": 8,
-        "draws": 0,
-        "losses": 2,
-        "played": 10,
-        "winPct": 0.8
-      }
-    },
-    {
       "slug": "dolphins",
       "shortName": "Dolphins",
       "fullName": "Dolphins",
       "initials": "DO",
       "primary": "#CC0033",
       "secondary": "#FFD200",
-      "officialPosition": 7,
-      "realPosition": 6,
+      "officialPosition": 5,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/dolphins.svg",
       "vsTop": {
@@ -182,6 +156,32 @@
         "losses": 2,
         "played": 7,
         "winPct": 0.7142857142857143
+      }
+    },
+    {
+      "slug": "knights",
+      "shortName": "Knights",
+      "fullName": "Newcastle Knights",
+      "initials": "NK",
+      "primary": "#EE3524",
+      "secondary": "#003A70",
+      "officialPosition": 6,
+      "realPosition": 6,
+      "pool": "top",
+      "logo": "assets/logos/knights.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 2,
+        "played": 10,
+        "winPct": 0.8
       }
     },
     {
@@ -217,7 +217,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",
