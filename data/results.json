@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 20,
-  "fetchedAt": "2026-07-19T02:40:10.398Z",
+  "fetchedAt": "2026-07-19T08:16:46.548Z",
   "matches": [
     {
       "round": 1,
@@ -2048,6 +2048,34 @@
       "draw": false,
       "venue": "Accor Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-19",
+      "kickOff": "2026-07-19T04:00:00Z",
+      "home": "titans",
+      "away": "sea-eagles",
+      "homeScore": 38,
+      "awayScore": 32,
+      "winner": "titans",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "date": "2026-07-19",
+      "kickOff": "2026-07-19T06:05:00Z",
+      "home": "dolphins",
+      "away": "cowboys",
+      "homeScore": 36,
+      "awayScore": 16,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }
