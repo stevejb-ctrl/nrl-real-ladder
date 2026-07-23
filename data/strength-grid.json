@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-23T08:28:44.446Z",
+  "generatedAt": "2026-07-23T13:57:40.863Z",
   "season": 2026,
-  "round": 20,
-  "ladderFetchedAt": "2026-07-23T08:28:32.578Z",
-  "resultsFetchedAt": "2026-07-23T08:28:43.404Z",
-  "matchesConsidered": 148,
+  "round": 21,
+  "ladderFetchedAt": "2026-07-23T13:57:24.592Z",
+  "resultsFetchedAt": "2026-07-23T13:57:40.020Z",
+  "matchesConsidered": 149,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -47,11 +47,11 @@
         "winPct": 0.8571428571428571
       },
       "vsBottom": {
-        "wins": 7,
+        "wins": 8,
         "draws": 0,
         "losses": 3,
-        "played": 10,
-        "winPct": 0.7
+        "played": 11,
+        "winPct": 0.7272727272727273
       }
     },
     {
@@ -406,9 +406,9 @@
       "vsTop": {
         "wins": 1,
         "draws": 0,
-        "losses": 5,
-        "played": 6,
-        "winPct": 0.16666666666666666
+        "losses": 6,
+        "played": 7,
+        "winPct": 0.14285714285714285
       },
       "vsBottom": {
         "wins": 5,
