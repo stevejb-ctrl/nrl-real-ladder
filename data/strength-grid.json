@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-07-24T08:26:21.401Z",
+  "generatedAt": "2026-07-24T13:43:54.158Z",
   "season": 2026,
   "round": 21,
-  "ladderFetchedAt": "2026-07-24T08:26:14.884Z",
-  "resultsFetchedAt": "2026-07-24T08:26:20.642Z",
-  "matchesConsidered": 149,
+  "ladderFetchedAt": "2026-07-24T13:43:47.119Z",
+  "resultsFetchedAt": "2026-07-24T13:43:53.075Z",
+  "matchesConsidered": 151,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
-    "warriors",
     "roosters",
+    "warriors",
     "sharks",
     "dolphins",
     "knights",
-    "cowboys",
-    "rabbitohs"
+    "rabbitohs",
+    "cowboys"
   ],
   "bottomSlugs": [
     "sea-eagles",
     "bulldogs",
-    "storm",
     "raiders",
+    "storm",
     "wests-tigers",
     "broncos",
     "eels",
@@ -55,22 +55,22 @@
       }
     },
     {
-      "slug": "warriors",
-      "shortName": "Warriors",
-      "fullName": "New Zealand Warriors",
-      "initials": "NZ",
-      "primary": "#1D5E36",
-      "secondary": "#000000",
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
       "officialPosition": 2,
       "realPosition": 2,
       "pool": "top",
-      "logo": "assets/logos/warriors.svg",
+      "logo": "assets/logos/roosters.svg",
       "vsTop": {
-        "wins": 4,
+        "wins": 5,
         "draws": 0,
         "losses": 4,
-        "played": 8,
-        "winPct": 0.5
+        "played": 9,
+        "winPct": 0.5555555555555556
       },
       "vsBottom": {
         "wins": 8,
@@ -81,16 +81,16 @@
       }
     },
     {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
+      "slug": "warriors",
+      "shortName": "Warriors",
+      "fullName": "New Zealand Warriors",
+      "initials": "NZ",
+      "primary": "#1D5E36",
+      "secondary": "#000000",
       "officialPosition": 3,
       "realPosition": 3,
       "pool": "top",
-      "logo": "assets/logos/roosters.svg",
+      "logo": "assets/logos/warriors.svg",
       "vsTop": {
         "wins": 4,
         "draws": 0,
@@ -165,16 +165,16 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
         "wins": 8,
@@ -185,6 +185,32 @@
       }
     },
     {
+      "slug": "rabbitohs",
+      "shortName": "Rabbitohs",
+      "fullName": "South Sydney Rabbitohs",
+      "initials": "SS",
+      "primary": "#0A6240",
+      "secondary": "#E30613",
+      "officialPosition": 6,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/rabbitohs.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 5,
+        "played": 8,
+        "winPct": 0.375
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 3,
+        "played": 10,
+        "winPct": 0.7
+      }
+    },
+    {
       "slug": "cowboys",
       "shortName": "Cowboys",
       "fullName": "North Queensland Cowboys",
@@ -192,7 +218,7 @@
       "primary": "#002B5C",
       "secondary": "#FFD600",
       "officialPosition": 8,
-      "realPosition": 7,
+      "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/cowboys.svg",
       "vsTop": {
@@ -208,32 +234,6 @@
         "losses": 4,
         "played": 10,
         "winPct": 0.6
-      }
-    },
-    {
-      "slug": "rabbitohs",
-      "shortName": "Rabbitohs",
-      "fullName": "South Sydney Rabbitohs",
-      "initials": "SS",
-      "primary": "#0A6240",
-      "secondary": "#E30613",
-      "officialPosition": 7,
-      "realPosition": 8,
-      "pool": "top",
-      "logo": "assets/logos/rabbitohs.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 3,
-        "played": 9,
-        "winPct": 0.6666666666666666
       }
     },
     {
@@ -289,32 +289,6 @@
       }
     },
     {
-      "slug": "storm",
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "initials": "MS",
-      "primary": "#552E91",
-      "secondary": "#FFC72C",
-      "officialPosition": 11,
-      "realPosition": 11,
-      "pool": "bottom",
-      "logo": "assets/logos/storm.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 6,
-        "played": 8,
-        "winPct": 0.25
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 4,
-        "played": 10,
-        "winPct": 0.6
-      }
-    },
-    {
       "slug": "raiders",
       "shortName": "Raiders",
       "fullName": "Canberra Raiders",
@@ -322,7 +296,7 @@
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
       "officialPosition": 12,
-      "realPosition": 12,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/raiders.svg",
       "vsTop": {
@@ -338,6 +312,32 @@
         "losses": 4,
         "played": 9,
         "winPct": 0.5555555555555556
+      }
+    },
+    {
+      "slug": "storm",
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "initials": "MS",
+      "primary": "#552E91",
+      "secondary": "#FFC72C",
+      "officialPosition": 11,
+      "realPosition": 12,
+      "pool": "bottom",
+      "logo": "assets/logos/storm.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 7,
+        "played": 9,
+        "winPct": 0.2222222222222222
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 4,
+        "played": 10,
+        "winPct": 0.6
       }
     },
     {

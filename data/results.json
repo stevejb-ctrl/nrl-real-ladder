@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 21,
-  "fetchedAt": "2026-07-24T08:26:20.642Z",
+  "fetchedAt": "2026-07-24T13:43:53.075Z",
   "matches": [
     {
       "round": 1,
@@ -2089,6 +2089,34 @@
       "winner": "panthers",
       "draw": false,
       "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-24",
+      "kickOff": "2026-07-24T08:00:00Z",
+      "home": "knights",
+      "away": "roosters",
+      "homeScore": 22,
+      "awayScore": 23,
+      "winner": "roosters",
+      "draw": false,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-24",
+      "kickOff": "2026-07-24T10:00:00Z",
+      "home": "rabbitohs",
+      "away": "storm",
+      "homeScore": 28,
+      "awayScore": 26,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "Accor Stadium",
       "venueCity": "Sydney"
     }
   ]

@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 21,
   "toRound": 27,
-  "fetchedAt": "2026-07-24T08:26:16.515Z",
+  "fetchedAt": "2026-07-24T13:43:48.649Z",
   "matches": [
-    {
-      "round": 21,
-      "roundTitle": "Round 21",
-      "home": "rabbitohs",
-      "away": "storm",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-24T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 21,
       "roundTitle": "Round 21",
