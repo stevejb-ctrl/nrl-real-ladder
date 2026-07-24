@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 21,
   "toRound": 27,
-  "fetchedAt": "2026-07-24T02:37:38.944Z",
+  "fetchedAt": "2026-07-24T08:26:16.515Z",
   "matches": [
-    {
-      "round": 21,
-      "roundTitle": "Round 21",
-      "home": "knights",
-      "away": "roosters",
-      "venue": "McDonald Jones Stadium",
-      "venueCity": "Newcastle",
-      "kickOff": "2026-07-24T08:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 21,
       "roundTitle": "Round 21",
