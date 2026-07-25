@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 21,
-  "fetchedAt": "2026-07-25T08:05:14.007Z",
+  "fetchedAt": "2026-07-25T13:24:28.557Z",
   "matches": [
     {
       "round": 1,
@@ -2132,6 +2132,34 @@
       "draw": false,
       "venue": "GIO Stadium",
       "venueCity": "Canberra"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-25",
+      "kickOff": "2026-07-25T07:30:00Z",
+      "home": "bulldogs",
+      "away": "warriors",
+      "homeScore": 18,
+      "awayScore": 6,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-25",
+      "kickOff": "2026-07-25T09:35:00Z",
+      "home": "cowboys",
+      "away": "broncos",
+      "homeScore": 18,
+      "awayScore": 10,
+      "winner": "cowboys",
+      "draw": false,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville"
     }
   ]
 }
