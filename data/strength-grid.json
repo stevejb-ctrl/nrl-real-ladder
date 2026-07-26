@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T08:25:00.411Z",
+  "generatedAt": "2026-07-26T13:20:21.394Z",
   "season": 2026,
   "round": 21,
-  "ladderFetchedAt": "2026-07-26T08:24:53.400Z",
-  "resultsFetchedAt": "2026-07-26T08:24:59.412Z",
+  "ladderFetchedAt": "2026-07-26T13:20:07.104Z",
+  "resultsFetchedAt": "2026-07-26T13:20:20.631Z",
   "matchesConsidered": 156,
   "topCutoff": 8,
   "topSlugs": [
@@ -17,8 +17,8 @@
     "rabbitohs"
   ],
   "bottomSlugs": [
-    "sea-eagles",
     "bulldogs",
+    "sea-eagles",
     "raiders",
     "storm",
     "wests-tigers",
@@ -237,32 +237,6 @@
       }
     },
     {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "officialPosition": 10,
-      "realPosition": 9,
-      "pool": "bottom",
-      "logo": "assets/logos/sea-eagles.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 4,
-        "played": 10,
-        "winPct": 0.6
-      }
-    },
-    {
       "slug": "bulldogs",
       "shortName": "Bulldogs",
       "fullName": "Canterbury Bulldogs",
@@ -270,7 +244,7 @@
       "primary": "#00529B",
       "secondary": "#FFFFFF",
       "officialPosition": 9,
-      "realPosition": 10,
+      "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
@@ -286,6 +260,32 @@
         "losses": 4,
         "played": 11,
         "winPct": 0.6363636363636364
+      }
+    },
+    {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
+      "officialPosition": 10,
+      "realPosition": 10,
+      "pool": "bottom",
+      "logo": "assets/logos/sea-eagles.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 4,
+        "played": 10,
+        "winPct": 0.6
       }
     },
     {
