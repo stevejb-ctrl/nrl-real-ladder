@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 21,
-  "fetchedAt": "2026-07-26T02:44:17.732Z",
+  "fetchedAt": "2026-07-26T08:24:59.412Z",
   "matches": [
     {
       "round": 1,
@@ -2160,6 +2160,34 @@
       "draw": false,
       "venue": "Queensland Country Bank Stadium",
       "venueCity": "Townsville"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-26",
+      "kickOff": "2026-07-26T04:00:00Z",
+      "home": "dragons",
+      "away": "titans",
+      "homeScore": 18,
+      "awayScore": 38,
+      "winner": "titans",
+      "draw": false,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah"
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "date": "2026-07-26",
+      "kickOff": "2026-07-26T06:05:00Z",
+      "home": "sea-eagles",
+      "away": "sharks",
+      "homeScore": 12,
+      "awayScore": 48,
+      "winner": "sharks",
+      "draw": false,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney"
     }
   ]
 }

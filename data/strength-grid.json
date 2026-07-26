@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-26T02:44:18.912Z",
+  "generatedAt": "2026-07-26T08:25:00.411Z",
   "season": 2026,
   "round": 21,
-  "ladderFetchedAt": "2026-07-26T02:44:03.160Z",
-  "resultsFetchedAt": "2026-07-26T02:44:17.732Z",
-  "matchesConsidered": 154,
+  "ladderFetchedAt": "2026-07-26T08:24:53.400Z",
+  "resultsFetchedAt": "2026-07-26T08:24:59.412Z",
+  "matchesConsidered": 156,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -22,9 +22,9 @@
     "raiders",
     "storm",
     "wests-tigers",
+    "titans",
     "broncos",
     "eels",
-    "titans",
     "dragons"
   ],
   "teams": [
@@ -125,10 +125,10 @@
         "winPct": 0.4
       },
       "vsBottom": {
-        "wins": 7,
+        "wins": 8,
         "draws": 0,
         "losses": 0,
-        "played": 7,
+        "played": 8,
         "winPct": 1
       }
     },
@@ -250,9 +250,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
         "wins": 6,
@@ -347,7 +347,7 @@
       "initials": "WT",
       "primary": "#F37021",
       "secondary": "#000000",
-      "officialPosition": 15,
+      "officialPosition": 16,
       "realPosition": 13,
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
@@ -367,14 +367,40 @@
       }
     },
     {
+      "slug": "titans",
+      "shortName": "Titans",
+      "fullName": "Gold Coast Titans",
+      "initials": "GC",
+      "primary": "#03A1DC",
+      "secondary": "#FBB040",
+      "officialPosition": 13,
+      "realPosition": 14,
+      "pool": "bottom",
+      "logo": "assets/logos/titans.svg",
+      "vsTop": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 6,
+        "played": 7,
+        "winPct": 0.14285714285714285
+      },
+      "vsBottom": {
+        "wins": 5,
+        "draws": 0,
+        "losses": 6,
+        "played": 11,
+        "winPct": 0.45454545454545453
+      }
+    },
+    {
       "slug": "broncos",
       "shortName": "Broncos",
       "fullName": "Brisbane Broncos",
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "officialPosition": 13,
-      "realPosition": 14,
+      "officialPosition": 14,
+      "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/broncos.svg",
       "vsTop": {
@@ -399,8 +425,8 @@
       "initials": "PE",
       "primary": "#006EB5",
       "secondary": "#FFCC00",
-      "officialPosition": 14,
-      "realPosition": 15,
+      "officialPosition": 15,
+      "realPosition": 16,
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
@@ -416,32 +442,6 @@
         "losses": 6,
         "played": 11,
         "winPct": 0.45454545454545453
-      }
-    },
-    {
-      "slug": "titans",
-      "shortName": "Titans",
-      "fullName": "Gold Coast Titans",
-      "initials": "GC",
-      "primary": "#03A1DC",
-      "secondary": "#FBB040",
-      "officialPosition": 16,
-      "realPosition": 16,
-      "pool": "bottom",
-      "logo": "assets/logos/titans.svg",
-      "vsTop": {
-        "wins": 1,
-        "draws": 0,
-        "losses": 6,
-        "played": 7,
-        "winPct": 0.14285714285714285
-      },
-      "vsBottom": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 6,
-        "played": 10,
-        "winPct": 0.4
       }
     },
     {
@@ -465,9 +465,9 @@
       "vsBottom": {
         "wins": 2,
         "draws": 0,
-        "losses": 6,
-        "played": 8,
-        "winPct": 0.25
+        "losses": 7,
+        "played": 9,
+        "winPct": 0.2222222222222222
       }
     }
   ],

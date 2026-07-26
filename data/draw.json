@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 21,
   "toRound": 27,
-  "fetchedAt": "2026-07-26T02:44:07.969Z",
+  "fetchedAt": "2026-07-26T08:24:55.043Z",
   "matches": [
-    {
-      "round": 21,
-      "roundTitle": "Round 21",
-      "home": "dragons",
-      "away": "titans",
-      "venue": "St George Venues Jubilee Stadium",
-      "venueCity": "Kogarah",
-      "kickOff": "2026-07-26T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 21,
-      "roundTitle": "Round 21",
-      "home": "sea-eagles",
-      "away": "sharks",
-      "venue": "4 Pines Park",
-      "venueCity": "Sydney",
-      "kickOff": "2026-07-26T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 22,
       "roundTitle": "Round 22",
