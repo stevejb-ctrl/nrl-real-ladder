@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 22,
-  "fetchedAt": "2026-07-30T08:25:25.304Z",
+  "fetchedAt": "2026-07-30T13:59:12.580Z",
   "matches": [
     {
       "round": 1,
@@ -2188,6 +2188,20 @@
       "draw": false,
       "venue": "4 Pines Park",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-07-30",
+      "kickOff": "2026-07-30T09:50:00Z",
+      "home": "cowboys",
+      "away": "roosters",
+      "homeScore": 12,
+      "awayScore": 82,
+      "winner": "roosters",
+      "draw": false,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville"
     }
   ]
 }

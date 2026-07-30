@@ -1,8 +1,8 @@
 {
   "season": 2026,
-  "round": 21,
+  "round": 22,
   "competitionId": 111,
-  "fetchedAt": "2026-07-30T08:25:14.274Z",
+  "fetchedAt": "2026-07-30T13:59:03.197Z",
   "source": "https://www.nrl.com/ladder/data/",
   "teams": [
     {
@@ -166,6 +166,26 @@
       "officialPosition": 8
     },
     {
+      "slug": "sea-eagles",
+      "shortName": "Sea Eagles",
+      "fullName": "Manly Sea Eagles",
+      "initials": "MS",
+      "primary": "#6F1A37",
+      "secondary": "#FFFFFF",
+      "played": 19,
+      "wins": 9,
+      "losses": 10,
+      "draws": 0,
+      "byes": 3,
+      "pointsFor": 485,
+      "pointsAgainst": 395,
+      "pointsDiff": 90,
+      "compPoints": 24,
+      "streak": "4L",
+      "form": "0 - 4",
+      "officialPosition": 9
+    },
+    {
       "slug": "bulldogs",
       "shortName": "Bulldogs",
       "fullName": "Canterbury Bulldogs",
@@ -183,26 +203,6 @@
       "compPoints": 24,
       "streak": "2W",
       "form": "3 - 1",
-      "officialPosition": 9
-    },
-    {
-      "slug": "sea-eagles",
-      "shortName": "Sea Eagles",
-      "fullName": "Manly Sea Eagles",
-      "initials": "MS",
-      "primary": "#6F1A37",
-      "secondary": "#FFFFFF",
-      "played": 19,
-      "wins": 9,
-      "losses": 10,
-      "draws": 0,
-      "byes": 2,
-      "pointsFor": 485,
-      "pointsAgainst": 395,
-      "pointsDiff": 90,
-      "compPoints": 22,
-      "streak": "4L",
-      "form": "1 - 4",
       "officialPosition": 10
     },
     {

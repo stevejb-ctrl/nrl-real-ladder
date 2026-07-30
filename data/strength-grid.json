@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-30T08:25:26.154Z",
+  "generatedAt": "2026-07-30T13:59:13.634Z",
   "season": 2026,
-  "round": 21,
-  "ladderFetchedAt": "2026-07-30T08:25:14.274Z",
-  "resultsFetchedAt": "2026-07-30T08:25:25.304Z",
-  "matchesConsidered": 156,
+  "round": 22,
+  "ladderFetchedAt": "2026-07-30T13:59:03.197Z",
+  "resultsFetchedAt": "2026-07-30T13:59:12.580Z",
+  "matchesConsidered": 157,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -66,11 +66,11 @@
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 4,
-        "played": 9,
-        "winPct": 0.5555555555555556
+        "played": 10,
+        "winPct": 0.6
       },
       "vsBottom": {
         "wins": 8,
@@ -198,9 +198,9 @@
       "vsTop": {
         "wins": 4,
         "draws": 0,
-        "losses": 4,
-        "played": 8,
-        "winPct": 0.5
+        "losses": 5,
+        "played": 9,
+        "winPct": 0.4444444444444444
       },
       "vsBottom": {
         "wins": 7,
@@ -243,7 +243,7 @@
       "initials": "CB",
       "primary": "#00529B",
       "secondary": "#FFFFFF",
-      "officialPosition": 9,
+      "officialPosition": 10,
       "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
@@ -269,7 +269,7 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 10,
+      "officialPosition": 9,
       "realPosition": 10,
       "pool": "bottom",
       "logo": "assets/logos/sea-eagles.svg",
