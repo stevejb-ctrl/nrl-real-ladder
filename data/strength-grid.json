@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-30T13:59:13.634Z",
+  "generatedAt": "2026-07-30T19:24:53.739Z",
   "season": 2026,
   "round": 22,
-  "ladderFetchedAt": "2026-07-30T13:59:03.197Z",
-  "resultsFetchedAt": "2026-07-30T13:59:12.580Z",
+  "ladderFetchedAt": "2026-07-30T19:24:40.348Z",
+  "resultsFetchedAt": "2026-07-30T19:24:52.934Z",
   "matchesConsidered": 157,
   "topCutoff": 8,
   "topSlugs": [
@@ -13,8 +13,8 @@
     "sharks",
     "dolphins",
     "knights",
-    "cowboys",
-    "rabbitohs"
+    "rabbitohs",
+    "cowboys"
   ],
   "bottomSlugs": [
     "bulldogs",
@@ -185,32 +185,6 @@
       }
     },
     {
-      "slug": "cowboys",
-      "shortName": "Cowboys",
-      "fullName": "North Queensland Cowboys",
-      "initials": "NQ",
-      "primary": "#002B5C",
-      "secondary": "#FFD600",
-      "officialPosition": 8,
-      "realPosition": 7,
-      "pool": "top",
-      "logo": "assets/logos/cowboys.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 5,
-        "played": 9,
-        "winPct": 0.4444444444444444
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 4,
-        "played": 11,
-        "winPct": 0.6363636363636364
-      }
-    },
-    {
       "slug": "rabbitohs",
       "shortName": "Rabbitohs",
       "fullName": "South Sydney Rabbitohs",
@@ -218,7 +192,7 @@
       "primary": "#0A6240",
       "secondary": "#E30613",
       "officialPosition": 6,
-      "realPosition": 8,
+      "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",
       "vsTop": {
@@ -234,6 +208,32 @@
         "losses": 3,
         "played": 10,
         "winPct": 0.7
+      }
+    },
+    {
+      "slug": "cowboys",
+      "shortName": "Cowboys",
+      "fullName": "North Queensland Cowboys",
+      "initials": "NQ",
+      "primary": "#002B5C",
+      "secondary": "#FFD600",
+      "officialPosition": 8,
+      "realPosition": 8,
+      "pool": "top",
+      "logo": "assets/logos/cowboys.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 5,
+        "played": 9,
+        "winPct": 0.4444444444444444
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 4,
+        "played": 11,
+        "winPct": 0.6363636363636364
       }
     },
     {
