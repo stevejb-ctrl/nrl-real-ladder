@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 22,
   "toRound": 27,
-  "fetchedAt": "2026-07-31T08:48:14.520Z",
+  "fetchedAt": "2026-07-31T14:04:14.348Z",
   "matches": [
-    {
-      "round": 22,
-      "roundTitle": "Round 22",
-      "home": "storm",
-      "away": "bulldogs",
-      "venue": "AAMI Park",
-      "venueCity": "Melbourne",
-      "kickOff": "2026-07-31T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 22,
       "roundTitle": "Round 22",

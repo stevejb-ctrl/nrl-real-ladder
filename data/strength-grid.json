@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-31T08:48:21.431Z",
+  "generatedAt": "2026-07-31T14:04:21.479Z",
   "season": 2026,
   "round": 22,
-  "ladderFetchedAt": "2026-07-31T08:48:12.907Z",
-  "resultsFetchedAt": "2026-07-31T08:48:20.676Z",
-  "matchesConsidered": 157,
+  "ladderFetchedAt": "2026-07-31T14:04:12.997Z",
+  "resultsFetchedAt": "2026-07-31T14:04:20.434Z",
+  "matchesConsidered": 159,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -151,11 +151,11 @@
         "winPct": 0.5454545454545454
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 2,
-        "played": 7,
-        "winPct": 0.7142857142857143
+        "played": 8,
+        "winPct": 0.75
       }
     },
     {
@@ -217,7 +217,7 @@
       "initials": "NQ",
       "primary": "#002B5C",
       "secondary": "#FFD600",
-      "officialPosition": 8,
+      "officialPosition": 9,
       "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/cowboys.svg",
@@ -243,7 +243,7 @@
       "initials": "CB",
       "primary": "#00529B",
       "secondary": "#FFFFFF",
-      "officialPosition": 10,
+      "officialPosition": 8,
       "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
@@ -255,11 +255,11 @@
         "winPct": 0.2857142857142857
       },
       "vsBottom": {
-        "wins": 7,
+        "wins": 8,
         "draws": 0,
         "losses": 4,
-        "played": 11,
-        "winPct": 0.6363636363636364
+        "played": 12,
+        "winPct": 0.6666666666666666
       }
     },
     {
@@ -269,7 +269,7 @@
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 9,
+      "officialPosition": 10,
       "realPosition": 10,
       "pool": "bottom",
       "logo": "assets/logos/sea-eagles.svg",
@@ -335,9 +335,9 @@
       "vsBottom": {
         "wins": 6,
         "draws": 0,
-        "losses": 4,
-        "played": 10,
-        "winPct": 0.6
+        "losses": 5,
+        "played": 11,
+        "winPct": 0.5454545454545454
       }
     },
     {
@@ -458,8 +458,8 @@
       "vsTop": {
         "wins": 0,
         "draws": 0,
-        "losses": 9,
-        "played": 9,
+        "losses": 10,
+        "played": 10,
         "winPct": 0
       },
       "vsBottom": {

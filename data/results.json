@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 22,
-  "fetchedAt": "2026-07-31T08:48:20.676Z",
+  "fetchedAt": "2026-07-31T14:04:20.434Z",
   "matches": [
     {
       "round": 1,
@@ -2202,6 +2202,34 @@
       "draw": false,
       "venue": "Queensland Country Bank Stadium",
       "venueCity": "Townsville"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-07-31",
+      "kickOff": "2026-07-31T08:00:00Z",
+      "home": "dragons",
+      "away": "dolphins",
+      "homeScore": 22,
+      "awayScore": 28,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-07-31",
+      "kickOff": "2026-07-31T10:00:00Z",
+      "home": "storm",
+      "away": "bulldogs",
+      "homeScore": 22,
+      "awayScore": 36,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne"
     }
   ]
 }
