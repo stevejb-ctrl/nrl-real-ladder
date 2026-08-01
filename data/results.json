@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 22,
-  "fetchedAt": "2026-08-01T02:44:16.124Z",
+  "fetchedAt": "2026-08-01T08:19:40.268Z",
   "matches": [
     {
       "round": 1,
@@ -2230,6 +2230,20 @@
       "draw": false,
       "venue": "AAMI Park",
       "venueCity": "Melbourne"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-08-01",
+      "kickOff": "2026-08-01T05:00:00Z",
+      "home": "titans",
+      "away": "warriors",
+      "homeScore": 6,
+      "awayScore": 42,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
     }
   ]
 }
