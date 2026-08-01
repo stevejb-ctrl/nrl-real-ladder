@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 22,
-  "fetchedAt": "2026-08-01T08:19:40.268Z",
+  "fetchedAt": "2026-08-01T13:18:36.864Z",
   "matches": [
     {
       "round": 1,
@@ -2244,6 +2244,34 @@
       "draw": false,
       "venue": "Cbus Super Stadium",
       "venueCity": "Gold Coast"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-08-01",
+      "kickOff": "2026-08-01T07:30:00Z",
+      "home": "panthers",
+      "away": "raiders",
+      "homeScore": 42,
+      "awayScore": 18,
+      "winner": "panthers",
+      "draw": false,
+      "venue": "Glen Willow Oval",
+      "venueCity": "Mudgee"
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "date": "2026-08-01",
+      "kickOff": "2026-08-01T09:35:00Z",
+      "home": "broncos",
+      "away": "knights",
+      "homeScore": 6,
+      "awayScore": 30,
+      "winner": "knights",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }
