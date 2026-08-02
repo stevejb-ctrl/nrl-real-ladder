@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-02T02:43:38.472Z",
+  "generatedAt": "2026-08-02T08:22:58.989Z",
   "season": 2026,
   "round": 22,
-  "ladderFetchedAt": "2026-08-02T02:43:29.878Z",
-  "resultsFetchedAt": "2026-08-02T02:43:37.412Z",
-  "matchesConsidered": 162,
+  "ladderFetchedAt": "2026-08-02T08:22:46.161Z",
+  "resultsFetchedAt": "2026-08-02T08:22:57.486Z",
+  "matchesConsidered": 164,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -13,16 +13,16 @@
     "sharks",
     "dolphins",
     "knights",
-    "rabbitohs",
-    "cowboys"
+    "cowboys",
+    "rabbitohs"
   ],
   "bottomSlugs": [
     "bulldogs",
     "sea-eagles",
     "raiders",
     "storm",
-    "wests-tigers",
     "eels",
+    "wests-tigers",
     "titans",
     "broncos",
     "dragons"
@@ -118,11 +118,11 @@
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
-        "wins": 4,
+        "wins": 5,
         "draws": 0,
         "losses": 6,
-        "played": 10,
-        "winPct": 0.4
+        "played": 11,
+        "winPct": 0.45454545454545453
       },
       "vsBottom": {
         "wins": 8,
@@ -185,32 +185,6 @@
       }
     },
     {
-      "slug": "rabbitohs",
-      "shortName": "Rabbitohs",
-      "fullName": "South Sydney Rabbitohs",
-      "initials": "SS",
-      "primary": "#0A6240",
-      "secondary": "#E30613",
-      "officialPosition": 7,
-      "realPosition": 7,
-      "pool": "top",
-      "logo": "assets/logos/rabbitohs.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 5,
-        "played": 8,
-        "winPct": 0.375
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 3,
-        "played": 10,
-        "winPct": 0.7
-      }
-    },
-    {
       "slug": "cowboys",
       "shortName": "Cowboys",
       "fullName": "North Queensland Cowboys",
@@ -218,7 +192,7 @@
       "primary": "#002B5C",
       "secondary": "#FFD600",
       "officialPosition": 9,
-      "realPosition": 8,
+      "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/cowboys.svg",
       "vsTop": {
@@ -234,6 +208,32 @@
         "losses": 4,
         "played": 11,
         "winPct": 0.6363636363636364
+      }
+    },
+    {
+      "slug": "rabbitohs",
+      "shortName": "Rabbitohs",
+      "fullName": "South Sydney Rabbitohs",
+      "initials": "SS",
+      "primary": "#0A6240",
+      "secondary": "#E30613",
+      "officialPosition": 7,
+      "realPosition": 8,
+      "pool": "top",
+      "logo": "assets/logos/rabbitohs.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 3,
+        "played": 10,
+        "winPct": 0.7
       }
     },
     {
@@ -341,6 +341,32 @@
       }
     },
     {
+      "slug": "eels",
+      "shortName": "Eels",
+      "fullName": "Parramatta Eels",
+      "initials": "PE",
+      "primary": "#006EB5",
+      "secondary": "#FFCC00",
+      "officialPosition": 13,
+      "realPosition": 13,
+      "pool": "bottom",
+      "logo": "assets/logos/eels.svg",
+      "vsTop": {
+        "wins": 1,
+        "draws": 0,
+        "losses": 6,
+        "played": 7,
+        "winPct": 0.14285714285714285
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 6,
+        "played": 12,
+        "winPct": 0.5
+      }
+    },
+    {
       "slug": "wests-tigers",
       "shortName": "Tigers",
       "fullName": "Wests Tigers",
@@ -348,7 +374,7 @@
       "primary": "#F37021",
       "secondary": "#000000",
       "officialPosition": 16,
-      "realPosition": 13,
+      "realPosition": 14,
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
       "vsTop": {
@@ -361,35 +387,9 @@
       "vsBottom": {
         "wins": 4,
         "draws": 0,
-        "losses": 6,
-        "played": 10,
-        "winPct": 0.4
-      }
-    },
-    {
-      "slug": "eels",
-      "shortName": "Eels",
-      "fullName": "Parramatta Eels",
-      "initials": "PE",
-      "primary": "#006EB5",
-      "secondary": "#FFCC00",
-      "officialPosition": 15,
-      "realPosition": 14,
-      "pool": "bottom",
-      "logo": "assets/logos/eels.svg",
-      "vsTop": {
-        "wins": 1,
-        "draws": 0,
-        "losses": 6,
-        "played": 7,
-        "winPct": 0.14285714285714285
-      },
-      "vsBottom": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 6,
+        "losses": 7,
         "played": 11,
-        "winPct": 0.45454545454545453
+        "winPct": 0.36363636363636365
       }
     },
     {
@@ -399,7 +399,7 @@
       "initials": "GC",
       "primary": "#03A1DC",
       "secondary": "#FBB040",
-      "officialPosition": 13,
+      "officialPosition": 14,
       "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/titans.svg",
@@ -425,7 +425,7 @@
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "officialPosition": 14,
+      "officialPosition": 15,
       "realPosition": 16,
       "pool": "bottom",
       "logo": "assets/logos/broncos.svg",

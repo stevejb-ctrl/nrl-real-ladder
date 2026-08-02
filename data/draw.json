@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 22,
   "toRound": 27,
-  "fetchedAt": "2026-08-02T02:43:31.681Z",
+  "fetchedAt": "2026-08-02T08:22:48.997Z",
   "matches": [
-    {
-      "round": 22,
-      "roundTitle": "Round 22",
-      "home": "sharks",
-      "away": "rabbitohs",
-      "venue": "Ocean Protect Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-02T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 22,
-      "roundTitle": "Round 22",
-      "home": "wests-tigers",
-      "away": "eels",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-02T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 23,
       "roundTitle": "Round 23",
