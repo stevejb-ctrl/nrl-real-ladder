@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 23,
-  "fetchedAt": "2026-08-06T08:34:37.836Z",
+  "fetchedAt": "2026-08-06T14:07:21.941Z",
   "matches": [
     {
       "round": 1,
@@ -2300,6 +2300,20 @@
       "draw": false,
       "venue": "CommBank Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-06",
+      "kickOff": "2026-08-06T09:50:00Z",
+      "home": "titans",
+      "away": "cowboys",
+      "homeScore": 8,
+      "awayScore": 30,
+      "winner": "cowboys",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
     }
   ]
 }

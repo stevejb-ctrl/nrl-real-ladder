@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 23,
   "toRound": 27,
-  "fetchedAt": "2026-08-06T08:34:32.596Z",
+  "fetchedAt": "2026-08-06T14:07:17.054Z",
   "matches": [
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "titans",
-      "away": "cowboys",
-      "venue": "Cbus Super Stadium",
-      "venueCity": "Gold Coast",
-      "kickOff": "2026-08-06T09:50:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 23,
       "roundTitle": "Round 23",
