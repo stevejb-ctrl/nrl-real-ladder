@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-07T07:13:55.538Z",
+  "generatedAt": "2026-08-07T13:01:09.574Z",
   "season": 2026,
   "round": 23,
-  "ladderFetchedAt": "2026-08-07T07:13:48.348Z",
-  "resultsFetchedAt": "2026-08-07T07:13:54.811Z",
-  "matchesConsidered": 165,
+  "ladderFetchedAt": "2026-08-07T13:00:52.415Z",
+  "resultsFetchedAt": "2026-08-07T13:01:08.800Z",
+  "matchesConsidered": 167,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -42,9 +42,9 @@
       "vsTop": {
         "wins": 6,
         "draws": 0,
-        "losses": 1,
-        "played": 7,
-        "winPct": 0.8571428571428571
+        "losses": 2,
+        "played": 8,
+        "winPct": 0.75
       },
       "vsBottom": {
         "wins": 9,
@@ -73,11 +73,11 @@
         "winPct": 0.6
       },
       "vsBottom": {
-        "wins": 8,
+        "wins": 9,
         "draws": 0,
         "losses": 1,
-        "played": 9,
-        "winPct": 0.8888888888888888
+        "played": 10,
+        "winPct": 0.9
       }
     },
     {
@@ -92,11 +92,11 @@
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
-        "wins": 4,
+        "wins": 5,
         "draws": 0,
         "losses": 4,
-        "played": 8,
-        "winPct": 0.5
+        "played": 9,
+        "winPct": 0.5555555555555556
       },
       "vsBottom": {
         "wins": 9,
@@ -250,9 +250,9 @@
       "vsTop": {
         "wins": 2,
         "draws": 0,
-        "losses": 5,
-        "played": 7,
-        "winPct": 0.2857142857142857
+        "losses": 6,
+        "played": 8,
+        "winPct": 0.25
       },
       "vsBottom": {
         "wins": 8,

@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 23,
   "toRound": 27,
-  "fetchedAt": "2026-08-07T07:13:49.501Z",
+  "fetchedAt": "2026-08-07T13:00:56.640Z",
   "matches": [
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "warriors",
-      "away": "panthers",
-      "venue": "Go Media Stadium",
-      "venueCity": "Auckland",
-      "kickOff": "2026-08-07T08:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "roosters",
-      "away": "bulldogs",
-      "venue": "Allianz Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-07T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 23,
       "roundTitle": "Round 23",
