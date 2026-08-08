@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 23,
   "toRound": 27,
-  "fetchedAt": "2026-08-08T01:35:54.016Z",
+  "fetchedAt": "2026-08-08T06:51:07.089Z",
   "matches": [
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "storm",
-      "away": "sea-eagles",
-      "venue": "HBF Park",
-      "venueCity": "Perth",
-      "kickOff": "2026-08-08T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 23,
       "roundTitle": "Round 23",
