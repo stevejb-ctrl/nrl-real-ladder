@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 23,
-  "fetchedAt": "2026-08-08T06:51:13.887Z",
+  "fetchedAt": "2026-08-08T12:46:02.838Z",
   "matches": [
     {
       "round": 1,
@@ -2339,6 +2339,48 @@
       "homeScore": 20,
       "awayScore": 18,
       "winner": "roosters",
+      "draw": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-08",
+      "kickOff": "2026-08-08T05:00:00Z",
+      "home": "storm",
+      "away": "sea-eagles",
+      "homeScore": 42,
+      "awayScore": 20,
+      "winner": "storm",
+      "draw": false,
+      "venue": "HBF Park",
+      "venueCity": "Perth"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-08",
+      "kickOff": "2026-08-08T07:30:00Z",
+      "home": "dolphins",
+      "away": "broncos",
+      "homeScore": 40,
+      "awayScore": 32,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-08",
+      "kickOff": "2026-08-08T09:35:00Z",
+      "home": "rabbitohs",
+      "away": "eels",
+      "homeScore": 28,
+      "awayScore": 24,
+      "winner": "rabbitohs",
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"

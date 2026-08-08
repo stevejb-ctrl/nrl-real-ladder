@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 23,
   "toRound": 27,
-  "fetchedAt": "2026-08-08T06:51:07.089Z",
+  "fetchedAt": "2026-08-08T12:45:55.645Z",
   "matches": [
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "dolphins",
-      "away": "broncos",
-      "venue": "Suncorp Stadium",
-      "venueCity": "Brisbane",
-      "kickOff": "2026-08-08T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 23,
-      "roundTitle": "Round 23",
-      "home": "rabbitohs",
-      "away": "eels",
-      "venue": "Allianz Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-08T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 23,
       "roundTitle": "Round 23",
