@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-09T06:54:55.862Z",
+  "generatedAt": "2026-08-09T12:48:34.467Z",
   "season": 2026,
   "round": 23,
-  "ladderFetchedAt": "2026-08-09T06:54:46.971Z",
-  "resultsFetchedAt": "2026-08-09T06:54:55.154Z",
-  "matchesConsidered": 171,
+  "ladderFetchedAt": "2026-08-09T12:48:27.560Z",
+  "resultsFetchedAt": "2026-08-09T12:48:33.614Z",
+  "matchesConsidered": 172,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
@@ -127,9 +127,9 @@
       "vsBottom": {
         "wins": 8,
         "draws": 0,
-        "losses": 0,
-        "played": 8,
-        "winPct": 1
+        "losses": 1,
+        "played": 9,
+        "winPct": 0.8888888888888888
       }
     },
     {
@@ -456,11 +456,11 @@
       "pool": "bottom",
       "logo": "assets/logos/dragons.svg",
       "vsTop": {
-        "wins": 0,
+        "wins": 1,
         "draws": 0,
         "losses": 10,
-        "played": 10,
-        "winPct": 0
+        "played": 11,
+        "winPct": 0.09090909090909091
       },
       "vsBottom": {
         "wins": 2,

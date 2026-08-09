@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 23,
-  "fetchedAt": "2026-08-09T06:54:55.154Z",
+  "fetchedAt": "2026-08-09T12:48:33.614Z",
   "matches": [
     {
       "round": 1,
@@ -2398,6 +2398,20 @@
       "draw": false,
       "venue": "GIO Stadium",
       "venueCity": "Canberra"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-09",
+      "kickOff": "2026-08-09T06:05:00Z",
+      "home": "dragons",
+      "away": "sharks",
+      "homeScore": 24,
+      "awayScore": 16,
+      "winner": "dragons",
+      "draw": false,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah"
     }
   ]
 }
