@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 23,
-  "fetchedAt": "2026-08-09T01:41:14.845Z",
+  "fetchedAt": "2026-08-09T06:54:55.154Z",
   "matches": [
     {
       "round": 1,
@@ -2384,6 +2384,20 @@
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "date": "2026-08-09",
+      "kickOff": "2026-08-09T04:00:00Z",
+      "home": "raiders",
+      "away": "knights",
+      "homeScore": 24,
+      "awayScore": 30,
+      "winner": "knights",
+      "draw": false,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra"
     }
   ]
 }
