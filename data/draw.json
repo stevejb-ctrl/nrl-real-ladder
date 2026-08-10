@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 23,
+  "fromRound": 24,
   "toRound": 27,
-  "fetchedAt": "2026-08-09T18:38:42.806Z",
+  "fetchedAt": "2026-08-10T01:44:16.186Z",
   "matches": [
     {
       "round": 24,
@@ -359,10 +359,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 23,
-      "team": "wests-tigers"
-    },
     {
       "round": 24,
       "team": "storm"
