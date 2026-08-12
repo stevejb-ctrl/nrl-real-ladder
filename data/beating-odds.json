@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-12T01:53:01.905Z",
+  "generatedAt": "2026-08-12T07:23:00.878Z",
   "season": 2026,
   "ladderRound": 23,
   "oddsSource": "https://www.aussportsbetting.com/historical_data/nrl.xlsx",
   "oddsFetchedAt": "2026-06-01T11:44:49.853Z",
-  "resultsFetchedAt": "2026-08-12T01:53:00.828Z",
+  "resultsFetchedAt": "2026-08-12T07:22:59.715Z",
   "matchesWithOddsAndResult": 100,
   "matchesWithOddsButNoResult": 0,
   "fuzzyDays": 3,
