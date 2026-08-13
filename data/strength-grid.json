@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-13T07:25:08.055Z",
+  "generatedAt": "2026-08-13T13:08:06.064Z",
   "season": 2026,
-  "round": 23,
-  "ladderFetchedAt": "2026-08-13T07:25:00.457Z",
-  "resultsFetchedAt": "2026-08-13T07:25:07.489Z",
-  "matchesConsidered": 172,
+  "round": 24,
+  "ladderFetchedAt": "2026-08-13T13:07:51.014Z",
+  "resultsFetchedAt": "2026-08-13T13:08:05.316Z",
+  "matchesConsidered": 173,
   "topCutoff": 8,
   "topSlugs": [
-    "panthers",
     "roosters",
+    "panthers",
     "warriors",
     "sharks",
     "dolphins",
@@ -29,48 +29,22 @@
   ],
   "teams": [
     {
-      "slug": "panthers",
-      "shortName": "Panthers",
-      "fullName": "Penrith Panthers",
-      "initials": "PP",
-      "primary": "#231F20",
-      "secondary": "#000000",
-      "officialPosition": 1,
-      "realPosition": 1,
-      "pool": "top",
-      "logo": "assets/logos/panthers.svg",
-      "vsTop": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 2,
-        "played": 8,
-        "winPct": 0.75
-      },
-      "vsBottom": {
-        "wins": 9,
-        "draws": 0,
-        "losses": 3,
-        "played": 12,
-        "winPct": 0.75
-      }
-    },
-    {
       "slug": "roosters",
       "shortName": "Roosters",
       "fullName": "Sydney Roosters",
       "initials": "SR",
       "primary": "#06316F",
       "secondary": "#E2231B",
-      "officialPosition": 2,
-      "realPosition": 2,
+      "officialPosition": 1,
+      "realPosition": 1,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
       "vsTop": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
         "losses": 4,
-        "played": 10,
-        "winPct": 0.6
+        "played": 11,
+        "winPct": 0.6363636363636364
       },
       "vsBottom": {
         "wins": 9,
@@ -78,6 +52,32 @@
         "losses": 1,
         "played": 10,
         "winPct": 0.9
+      }
+    },
+    {
+      "slug": "panthers",
+      "shortName": "Panthers",
+      "fullName": "Penrith Panthers",
+      "initials": "PP",
+      "primary": "#231F20",
+      "secondary": "#000000",
+      "officialPosition": 2,
+      "realPosition": 2,
+      "pool": "top",
+      "logo": "assets/logos/panthers.svg",
+      "vsTop": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 3,
+        "played": 9,
+        "winPct": 0.6666666666666666
+      },
+      "vsBottom": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 3,
+        "played": 12,
+        "winPct": 0.75
       }
     },
     {

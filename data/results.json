@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 24,
-  "fetchedAt": "2026-08-13T07:25:07.489Z",
+  "fetchedAt": "2026-08-13T13:08:05.316Z",
   "matches": [
     {
       "round": 1,
@@ -2412,6 +2412,20 @@
       "draw": false,
       "venue": "St George Venues Jubilee Stadium",
       "venueCity": "Kogarah"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-13",
+      "kickOff": "2026-08-13T09:50:00Z",
+      "home": "panthers",
+      "away": "roosters",
+      "homeScore": 6,
+      "awayScore": 12,
+      "winner": "roosters",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }
