@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 24,
-  "fetchedAt": "2026-08-14T07:23:16.111Z",
+  "fetchedAt": "2026-08-14T13:04:09.546Z",
   "matches": [
     {
       "round": 1,
@@ -2425,6 +2425,34 @@
       "winner": "roosters",
       "draw": false,
       "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-14",
+      "kickOff": "2026-08-14T08:00:00Z",
+      "home": "sea-eagles",
+      "away": "dolphins",
+      "homeScore": 0,
+      "awayScore": 22,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-14",
+      "kickOff": "2026-08-14T10:00:00Z",
+      "home": "bulldogs",
+      "away": "rabbitohs",
+      "homeScore": 6,
+      "awayScore": 22,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "Accor Stadium",
       "venueCity": "Sydney"
     }
   ]

@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-14T07:23:16.825Z",
+  "generatedAt": "2026-08-14T13:04:10.465Z",
   "season": 2026,
   "round": 24,
-  "ladderFetchedAt": "2026-08-14T07:23:07.655Z",
-  "resultsFetchedAt": "2026-08-14T07:23:16.111Z",
-  "matchesConsidered": 173,
+  "ladderFetchedAt": "2026-08-14T13:03:44.351Z",
+  "resultsFetchedAt": "2026-08-14T13:04:09.546Z",
+  "matchesConsidered": 175,
   "topCutoff": 8,
   "topSlugs": [
     "roosters",
     "panthers",
     "warriors",
-    "sharks",
     "dolphins",
+    "sharks",
     "knights",
-    "cowboys",
-    "rabbitohs"
+    "rabbitohs",
+    "cowboys"
   ],
   "bottomSlugs": [
     "bulldogs",
@@ -107,14 +107,40 @@
       }
     },
     {
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
+      "officialPosition": 4,
+      "realPosition": 4,
+      "pool": "top",
+      "logo": "assets/logos/dolphins.svg",
+      "vsTop": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 5,
+        "played": 11,
+        "winPct": 0.5454545454545454
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 2,
+        "played": 10,
+        "winPct": 0.8
+      }
+    },
+    {
       "slug": "sharks",
       "shortName": "Sharks",
       "fullName": "Cronulla-Sutherland Sharks",
       "initials": "CS",
       "primary": "#00A6CE",
       "secondary": "#000000",
-      "officialPosition": 4,
-      "realPosition": 4,
+      "officialPosition": 5,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
@@ -133,39 +159,13 @@
       }
     },
     {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
-      "officialPosition": 5,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
-      "vsTop": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 5,
-        "played": 11,
-        "winPct": 0.5454545454545454
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 2,
-        "played": 9,
-        "winPct": 0.7777777777777778
-      }
-    },
-    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -185,6 +185,32 @@
       }
     },
     {
+      "slug": "rabbitohs",
+      "shortName": "Rabbitohs",
+      "fullName": "South Sydney Rabbitohs",
+      "initials": "SS",
+      "primary": "#0A6240",
+      "secondary": "#E30613",
+      "officialPosition": 6,
+      "realPosition": 7,
+      "pool": "top",
+      "logo": "assets/logos/rabbitohs.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 3,
+        "played": 12,
+        "winPct": 0.75
+      }
+    },
+    {
       "slug": "cowboys",
       "shortName": "Cowboys",
       "fullName": "North Queensland Cowboys",
@@ -192,7 +218,7 @@
       "primary": "#002B5C",
       "secondary": "#FFD600",
       "officialPosition": 8,
-      "realPosition": 7,
+      "realPosition": 8,
       "pool": "top",
       "logo": "assets/logos/cowboys.svg",
       "vsTop": {
@@ -211,32 +237,6 @@
       }
     },
     {
-      "slug": "rabbitohs",
-      "shortName": "Rabbitohs",
-      "fullName": "South Sydney Rabbitohs",
-      "initials": "SS",
-      "primary": "#0A6240",
-      "secondary": "#E30613",
-      "officialPosition": 7,
-      "realPosition": 8,
-      "pool": "top",
-      "logo": "assets/logos/rabbitohs.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 8,
-        "draws": 0,
-        "losses": 3,
-        "played": 11,
-        "winPct": 0.7272727272727273
-      }
-    },
-    {
       "slug": "bulldogs",
       "shortName": "Bulldogs",
       "fullName": "Canterbury Bulldogs",
@@ -250,9 +250,9 @@
       "vsTop": {
         "wins": 2,
         "draws": 0,
-        "losses": 6,
-        "played": 8,
-        "winPct": 0.25
+        "losses": 7,
+        "played": 9,
+        "winPct": 0.2222222222222222
       },
       "vsBottom": {
         "wins": 8,
@@ -276,9 +276,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
+        "losses": 7,
+        "played": 10,
+        "winPct": 0.3
       },
       "vsBottom": {
         "wins": 6,
