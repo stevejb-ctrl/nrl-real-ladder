@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 24,
   "toRound": 27,
-  "fetchedAt": "2026-08-15T01:10:57.023Z",
+  "fetchedAt": "2026-08-15T06:35:57.909Z",
   "matches": [
-    {
-      "round": 24,
-      "roundTitle": "Round 24",
-      "home": "sharks",
-      "away": "raiders",
-      "venue": "Ocean Protect Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-15T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 24,
       "roundTitle": "Round 24",
