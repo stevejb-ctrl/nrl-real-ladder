@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 24,
-  "fetchedAt": "2026-08-15T06:36:07.285Z",
+  "fetchedAt": "2026-08-15T12:35:03.718Z",
   "matches": [
     {
       "round": 1,
@@ -2454,6 +2454,48 @@
       "draw": false,
       "venue": "Accor Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-15",
+      "kickOff": "2026-08-15T05:00:00Z",
+      "home": "sharks",
+      "away": "raiders",
+      "homeScore": 20,
+      "awayScore": 24,
+      "winner": "raiders",
+      "draw": false,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-15",
+      "kickOff": "2026-08-15T07:30:00Z",
+      "home": "eels",
+      "away": "cowboys",
+      "homeScore": 32,
+      "awayScore": 30,
+      "winner": "eels",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-15",
+      "kickOff": "2026-08-15T09:35:00Z",
+      "home": "broncos",
+      "away": "warriors",
+      "homeScore": 6,
+      "awayScore": 40,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }

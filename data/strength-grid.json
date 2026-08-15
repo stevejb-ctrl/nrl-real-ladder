@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T06:36:08.454Z",
+  "generatedAt": "2026-08-15T12:35:04.333Z",
   "season": 2026,
   "round": 24,
-  "ladderFetchedAt": "2026-08-15T06:35:56.985Z",
-  "resultsFetchedAt": "2026-08-15T06:36:07.285Z",
-  "matchesConsidered": 175,
+  "ladderFetchedAt": "2026-08-15T12:34:55.003Z",
+  "resultsFetchedAt": "2026-08-15T12:35:03.718Z",
+  "matchesConsidered": 178,
   "topCutoff": 8,
   "topSlugs": [
     "roosters",
@@ -18,9 +18,9 @@
   ],
   "bottomSlugs": [
     "bulldogs",
+    "raiders",
     "sea-eagles",
     "storm",
-    "raiders",
     "eels",
     "wests-tigers",
     "titans",
@@ -99,11 +99,11 @@
         "winPct": 0.5555555555555556
       },
       "vsBottom": {
-        "wins": 9,
+        "wins": 10,
         "draws": 0,
         "losses": 2,
-        "played": 11,
-        "winPct": 0.8181818181818182
+        "played": 12,
+        "winPct": 0.8333333333333334
       }
     },
     {
@@ -153,9 +153,9 @@
       "vsBottom": {
         "wins": 8,
         "draws": 0,
-        "losses": 1,
-        "played": 9,
-        "winPct": 0.8888888888888888
+        "losses": 2,
+        "played": 10,
+        "winPct": 0.8
       }
     },
     {
@@ -231,9 +231,9 @@
       "vsBottom": {
         "wins": 8,
         "draws": 0,
-        "losses": 4,
-        "played": 12,
-        "winPct": 0.6666666666666666
+        "losses": 5,
+        "played": 13,
+        "winPct": 0.6153846153846154
       }
     },
     {
@@ -263,6 +263,32 @@
       }
     },
     {
+      "slug": "raiders",
+      "shortName": "Raiders",
+      "fullName": "Canberra Raiders",
+      "initials": "CR",
+      "primary": "#9DCB3B",
+      "secondary": "#1B1F23",
+      "officialPosition": 12,
+      "realPosition": 10,
+      "pool": "bottom",
+      "logo": "assets/logos/raiders.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 8,
+        "played": 12,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 4,
+        "played": 10,
+        "winPct": 0.6
+      }
+    },
+    {
       "slug": "sea-eagles",
       "shortName": "Sea Eagles",
       "fullName": "Manly Sea Eagles",
@@ -270,7 +296,7 @@
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
       "officialPosition": 10,
-      "realPosition": 10,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
@@ -296,7 +322,7 @@
       "primary": "#552E91",
       "secondary": "#FFC72C",
       "officialPosition": 11,
-      "realPosition": 11,
+      "realPosition": 12,
       "pool": "bottom",
       "logo": "assets/logos/storm.svg",
       "vsTop": {
@@ -315,32 +341,6 @@
       }
     },
     {
-      "slug": "raiders",
-      "shortName": "Raiders",
-      "fullName": "Canberra Raiders",
-      "initials": "CR",
-      "primary": "#9DCB3B",
-      "secondary": "#1B1F23",
-      "officialPosition": 12,
-      "realPosition": 12,
-      "pool": "bottom",
-      "logo": "assets/logos/raiders.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 8,
-        "played": 11,
-        "winPct": 0.2727272727272727
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 4,
-        "played": 10,
-        "winPct": 0.6
-      }
-    },
-    {
       "slug": "eels",
       "shortName": "Eels",
       "fullName": "Parramatta Eels",
@@ -352,11 +352,11 @@
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
-        "wins": 1,
+        "wins": 2,
         "draws": 0,
         "losses": 7,
-        "played": 8,
-        "winPct": 0.125
+        "played": 9,
+        "winPct": 0.2222222222222222
       },
       "vsBottom": {
         "wins": 6,
@@ -432,9 +432,9 @@
       "vsTop": {
         "wins": 2,
         "draws": 0,
-        "losses": 10,
-        "played": 12,
-        "winPct": 0.16666666666666666
+        "losses": 11,
+        "played": 13,
+        "winPct": 0.15384615384615385
       },
       "vsBottom": {
         "wins": 4,
