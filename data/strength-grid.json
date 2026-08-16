@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-16T06:38:15.272Z",
+  "generatedAt": "2026-08-16T12:36:45.318Z",
   "season": 2026,
   "round": 24,
-  "ladderFetchedAt": "2026-08-16T06:38:07.893Z",
-  "resultsFetchedAt": "2026-08-16T06:38:14.686Z",
-  "matchesConsidered": 179,
+  "ladderFetchedAt": "2026-08-16T12:36:36.382Z",
+  "resultsFetchedAt": "2026-08-16T12:36:44.600Z",
+  "matchesConsidered": 180,
   "topCutoff": 8,
   "topSlugs": [
     "roosters",
@@ -387,9 +387,9 @@
       "vsBottom": {
         "wins": 4,
         "draws": 0,
-        "losses": 7,
-        "played": 11,
-        "winPct": 0.36363636363636365
+        "losses": 8,
+        "played": 12,
+        "winPct": 0.3333333333333333
       }
     },
     {
@@ -463,11 +463,11 @@
         "winPct": 0.09090909090909091
       },
       "vsBottom": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
         "losses": 7,
-        "played": 9,
-        "winPct": 0.2222222222222222
+        "played": 10,
+        "winPct": 0.3
       }
     }
   ],
