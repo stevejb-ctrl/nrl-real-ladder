@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 24,
-  "fetchedAt": "2026-08-16T01:14:55.026Z",
+  "fetchedAt": "2026-08-16T06:38:14.686Z",
   "matches": [
     {
       "round": 1,
@@ -2496,6 +2496,20 @@
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"
+    },
+    {
+      "round": 24,
+      "roundTitle": "Round 24",
+      "date": "2026-08-16",
+      "kickOff": "2026-08-16T04:00:00Z",
+      "home": "knights",
+      "away": "titans",
+      "homeScore": 36,
+      "awayScore": 26,
+      "winner": "knights",
+      "draw": false,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle"
     }
   ]
 }
