@@ -1,9 +1,9 @@
 {
   "season": 2026,
   "competitionId": 111,
-  "fromRound": 24,
+  "fromRound": 25,
   "toRound": 27,
-  "fetchedAt": "2026-08-16T18:26:52.311Z",
+  "fetchedAt": "2026-08-17T01:12:22.116Z",
   "matches": [
     {
       "round": 25,
@@ -271,10 +271,6 @@
     }
   ],
   "byes": [
-    {
-      "round": 24,
-      "team": "storm"
-    },
     {
       "round": 25,
       "team": "cowboys"
