@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 25,
-  "fetchedAt": "2026-08-20T06:43:18.709Z",
+  "fetchedAt": "2026-08-20T12:47:35.697Z",
   "matches": [
     {
       "round": 1,
@@ -2524,6 +2524,20 @@
       "draw": false,
       "venue": "CommBank Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-20",
+      "kickOff": "2026-08-20T09:50:00Z",
+      "home": "storm",
+      "away": "panthers",
+      "homeScore": 14,
+      "awayScore": 22,
+      "winner": "panthers",
+      "draw": false,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne"
     }
   ]
 }
