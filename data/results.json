@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 25,
-  "fetchedAt": "2026-08-21T06:43:31.648Z",
+  "fetchedAt": "2026-08-21T12:44:21.148Z",
   "matches": [
     {
       "round": 1,
@@ -2538,6 +2538,34 @@
       "draw": false,
       "venue": "AAMI Park",
       "venueCity": "Melbourne"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-21",
+      "kickOff": "2026-08-21T08:00:00Z",
+      "home": "raiders",
+      "away": "broncos",
+      "homeScore": 30,
+      "awayScore": 34,
+      "winner": "broncos",
+      "draw": false,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-21",
+      "kickOff": "2026-08-21T10:00:00Z",
+      "home": "dolphins",
+      "away": "eels",
+      "homeScore": 34,
+      "awayScore": 16,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }
