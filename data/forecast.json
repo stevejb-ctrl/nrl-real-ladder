@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-20T18:37:30.775Z",
+  "generatedAt": "2026-08-21T01:14:30.161Z",
   "ladderRound": 25,
-  "ladderFetchedAt": "2026-08-20T18:37:24.499Z",
-  "drawFetchedAt": "2026-08-20T18:37:25.248Z",
+  "ladderFetchedAt": "2026-08-21T01:14:20.120Z",
+  "drawFetchedAt": "2026-08-21T01:14:21.739Z",
   "remainingMatches": 23,
   "nSims": 10000,
   "modelVersion": "1.2",
@@ -15,7 +15,7 @@
     "skillScale": 4,
     "hfaLogit": 0.25
   },
-  "durationMs": 113,
+  "durationMs": 144,
   "teams": {
     "panthers": {
       "shortName": "Panthers",
@@ -33,13 +33,13 @@
       "skill": 0.6333,
       "finalsPct": 1,
       "top4Pct": 1,
-      "minorPremPct": 0.4069,
+      "minorPremPct": 0.401,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 18,
         "p10": 17,
         "p90": 18,
-        "mean": 17.51
+        "mean": 17.52
       },
       "projectedPosition": {
         "median": 2,
@@ -47,10 +47,10 @@
         "p90": 3
       },
       "distribution": [
-        0.4069,
-        0.4481,
-        0.133,
-        0.012,
+        0.401,
+        0.457,
+        0.1299,
+        0.0121,
         0,
         0,
         0,
@@ -81,14 +81,14 @@
       "regressedFormWp": 0.9167,
       "skill": 0.7805,
       "finalsPct": 1,
-      "top4Pct": 0.9962,
-      "minorPremPct": 0.5048,
+      "top4Pct": 0.9961,
+      "minorPremPct": 0.5138,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 18,
         "p10": 17,
         "p90": 19,
-        "mean": 18.17
+        "mean": 18.18
       },
       "projectedPosition": {
         "median": 1,
@@ -96,11 +96,11 @@
         "p90": 3
       },
       "distribution": [
-        0.5048,
-        0.2794,
-        0.201,
-        0.011,
-        0.0038,
+        0.5138,
+        0.2787,
+        0.1922,
+        0.0114,
+        0.0039,
         0,
         0,
         0,
@@ -130,8 +130,8 @@
       "regressedFormWp": 0.75,
       "skill": 0.6931,
       "finalsPct": 1,
-      "top4Pct": 0.9704,
-      "minorPremPct": 0.0881,
+      "top4Pct": 0.9666,
+      "minorPremPct": 0.0848,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 17,
@@ -142,15 +142,15 @@
       "projectedPosition": {
         "median": 3,
         "p10": 2,
-        "p90": 4
+        "p90": 3
       },
       "distribution": [
-        0.0881,
-        0.2642,
-        0.5472,
-        0.0709,
-        0.0232,
-        0.0064,
+        0.0848,
+        0.2568,
+        0.5617,
+        0.0633,
+        0.0252,
+        0.0082,
         0,
         0,
         0,
@@ -179,14 +179,14 @@
       "regressedFormWp": 0.9,
       "skill": 0.7324,
       "finalsPct": 1,
-      "top4Pct": 0.6749,
-      "minorPremPct": 0.0002,
+      "top4Pct": 0.6734,
+      "minorPremPct": 0.0004,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 16,
         "p10": 15,
         "p90": 17,
-        "mean": 16
+        "mean": 15.98
       },
       "projectedPosition": {
         "median": 4,
@@ -194,13 +194,13 @@
         "p90": 5
       },
       "distribution": [
-        0.0002,
-        0.0083,
-        0.1032,
-        0.5632,
-        0.2585,
-        0.0644,
-        0.0022,
+        0.0004,
+        0.0075,
+        0.0973,
+        0.5682,
+        0.255,
+        0.0687,
+        0.0029,
         0,
         0,
         0,
@@ -228,14 +228,14 @@
       "regressedFormWp": 0.5833,
       "skill": 0.5851,
       "finalsPct": 1,
-      "top4Pct": 0.2748,
+      "top4Pct": 0.2781,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 15,
         "p10": 14,
         "p90": 16,
-        "mean": 14.89
+        "mean": 14.9
       },
       "projectedPosition": {
         "median": 5,
@@ -245,12 +245,12 @@
       "distribution": [
         0,
         0,
-        0.0096,
-        0.2652,
-        0.3518,
+        0.0123,
+        0.2658,
+        0.3515,
         0.3055,
-        0.0547,
-        0.0132,
+        0.0535,
+        0.0114,
         0,
         0,
         0,
@@ -277,14 +277,14 @@
       "regressedFormWp": 0.5833,
       "skill": 0.5933,
       "finalsPct": 1,
-      "top4Pct": 0.0829,
+      "top4Pct": 0.0851,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 15,
         "p10": 14,
         "p90": 16,
-        "mean": 15.15
+        "mean": 15.16
       },
       "projectedPosition": {
         "median": 6,
@@ -294,11 +294,11 @@
       "distribution": [
         0,
         0,
-        0.006,
-        0.0769,
-        0.3379,
-        0.484,
-        0.0952,
+        0.0066,
+        0.0785,
+        0.3371,
+        0.4801,
+        0.0977,
         0,
         0,
         0,
@@ -325,15 +325,15 @@
       "rawFormWp": 0.6,
       "regressedFormWp": 0.5833,
       "skill": 0.5644,
-      "finalsPct": 0.9774,
-      "top4Pct": 0.0008,
+      "finalsPct": 0.9792,
+      "top4Pct": 0.0007,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 13,
         "p10": 12,
         "p90": 15,
-        "mean": 13.39
+        "mean": 13.4
       },
       "projectedPosition": {
         "median": 7,
@@ -344,12 +344,12 @@
         0,
         0,
         0,
-        0.0008,
-        0.0248,
-        0.1239,
-        0.5368,
-        0.2911,
-        0.0226,
+        0.0007,
+        0.0273,
+        0.1207,
+        0.5413,
+        0.2892,
+        0.0208,
         0,
         0,
         0,
@@ -374,7 +374,7 @@
       "rawFormWp": 0.4,
       "regressedFormWp": 0.4167,
       "skill": 0.4867,
-      "finalsPct": 0.8179,
+      "finalsPct": 0.8301,
       "top4Pct": 0,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
@@ -382,7 +382,7 @@
         "median": 13,
         "p10": 12,
         "p90": 14,
-        "mean": 13.29
+        "mean": 13.3
       },
       "projectedPosition": {
         "median": 8,
@@ -395,12 +395,12 @@
         0,
         0,
         0,
-        0.0158,
-        0.2968,
-        0.5053,
-        0.1231,
-        0.0569,
-        0.0021,
+        0.0168,
+        0.2908,
+        0.5225,
+        0.114,
+        0.0537,
+        0.0022,
         0,
         0,
         0,
@@ -423,7 +423,7 @@
       "rawFormWp": 0.6,
       "regressedFormWp": 0.5833,
       "skill": 0.523,
-      "finalsPct": 0.1199,
+      "finalsPct": 0.1147,
       "top4Pct": 0,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
@@ -431,7 +431,7 @@
         "median": 12,
         "p10": 11,
         "p90": 13,
-        "mean": 11.64
+        "mean": 11.66
       },
       "projectedPosition": {
         "median": 10,
@@ -445,13 +445,13 @@
         0,
         0,
         0,
-        0.0143,
-        0.1056,
-        0.3687,
-        0.3127,
-        0.1397,
-        0.0561,
-        0.0029,
+        0.0138,
+        0.1009,
+        0.3792,
+        0.3148,
+        0.1366,
+        0.0523,
+        0.0024,
         0,
         0,
         0,
@@ -472,7 +472,7 @@
       "rawFormWp": 0,
       "regressedFormWp": 0.1,
       "skill": 0.309,
-      "finalsPct": 0.0027,
+      "finalsPct": 0.0028,
       "top4Pct": 0,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
@@ -495,13 +495,13 @@
         0,
         0,
         0,
-        0.0027,
-        0.0875,
-        0.1906,
-        0.3991,
-        0.2443,
+        0.0028,
+        0.0866,
+        0.1944,
+        0.398,
+        0.2423,
         0.0753,
-        0.0005,
+        0.0006,
         0,
         0,
         0
@@ -545,11 +545,11 @@
         0,
         0,
         0,
-        0.0414,
-        0.1193,
-        0.2345,
-        0.4814,
-        0.1226,
+        0.0395,
+        0.1186,
+        0.2339,
+        0.4812,
+        0.126,
         0.0008,
         0,
         0,
@@ -570,7 +570,7 @@
       "rawFormWp": 0.6,
       "regressedFormWp": 0.5833,
       "skill": 0.5133,
-      "finalsPct": 0.0821,
+      "finalsPct": 0.0732,
       "top4Pct": 0,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
@@ -578,7 +578,7 @@
         "median": 11,
         "p10": 10,
         "p90": 12,
-        "mean": 11.21
+        "mean": 11.2
       },
       "projectedPosition": {
         "median": 10,
@@ -593,12 +593,12 @@
         0,
         0,
         0,
-        0.0821,
-        0.3559,
-        0.3119,
-        0.1697,
-        0.0763,
-        0.0041,
+        0.0732,
+        0.3594,
+        0.3107,
+        0.1728,
+        0.0795,
+        0.0044,
         0,
         0,
         0,
@@ -627,7 +627,7 @@
         "median": 9,
         "p10": 8,
         "p90": 10,
-        "mean": 9.21
+        "mean": 9.22
       },
       "projectedPosition": {
         "median": 13,
@@ -643,14 +643,14 @@
         0,
         0,
         0,
-        0.0008,
-        0.0086,
-        0.0544,
-        0.1405,
-        0.704,
-        0.0844,
-        0.0069,
-        0.0004,
+        0.0005,
+        0.0078,
+        0.0559,
+        0.1433,
+        0.7112,
+        0.0755,
+        0.0057,
+        0.0001,
         0
       ]
     },
@@ -676,7 +676,7 @@
         "median": 7,
         "p10": 7,
         "p90": 8,
-        "mean": 7.51
+        "mean": 7.5
       },
       "projectedPosition": {
         "median": 15,
@@ -694,12 +694,12 @@
         0,
         0,
         0,
-        0.0005,
+        0.0006,
         0.0014,
-        0.016,
-        0.3129,
-        0.3923,
-        0.2769,
+        0.0154,
+        0.3182,
+        0.3892,
+        0.2752,
         0
       ]
     },
@@ -720,12 +720,12 @@
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
-      "woodenSpoonPct": 0.0204,
+      "woodenSpoonPct": 0.0186,
       "projectedWins": {
         "median": 7,
         "p10": 6,
         "p90": 8,
-        "mean": 6.94
+        "mean": 6.92
       },
       "projectedPosition": {
         "median": 15,
@@ -745,11 +745,11 @@
         0,
         0,
         0,
-        0.0642,
-        0.3323,
-        0.3152,
-        0.2679,
-        0.0204
+        0.0569,
+        0.34,
+        0.315,
+        0.2695,
+        0.0186
       ]
     },
     "broncos": {
@@ -769,12 +769,12 @@
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
-      "woodenSpoonPct": 0.0273,
+      "woodenSpoonPct": 0.0255,
       "projectedWins": {
         "median": 7,
         "p10": 6,
         "p90": 8,
-        "mean": 6.99
+        "mean": 6.97
       },
       "projectedPosition": {
         "median": 15,
@@ -794,11 +794,11 @@
         0,
         0,
         0,
-        0.0109,
-        0.2691,
-        0.2752,
-        0.4175,
-        0.0273
+        0.0084,
+        0.2649,
+        0.2811,
+        0.4201,
+        0.0255
       ]
     },
     "dragons": {
@@ -818,12 +818,12 @@
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
-      "woodenSpoonPct": 0.9523,
+      "woodenSpoonPct": 0.9559,
       "projectedWins": {
         "median": 5,
         "p10": 4,
         "p90": 6,
-        "mean": 5.23
+        "mean": 5.19
       },
       "projectedPosition": {
         "median": 17,
@@ -845,9 +845,9 @@
         0,
         0,
         0,
-        0.0104,
-        0.0373,
-        0.9523
+        0.009,
+        0.0351,
+        0.9559
       ]
     }
   }
