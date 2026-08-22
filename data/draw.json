@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 25,
   "toRound": 27,
-  "fetchedAt": "2026-08-22T01:10:16.487Z",
+  "fetchedAt": "2026-08-22T06:37:38.526Z",
   "matches": [
-    {
-      "round": 25,
-      "roundTitle": "Round 25",
-      "home": "knights",
-      "away": "sea-eagles",
-      "venue": "McDonald Jones Stadium",
-      "venueCity": "Newcastle",
-      "kickOff": "2026-08-22T05:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 25,
       "roundTitle": "Round 25",
