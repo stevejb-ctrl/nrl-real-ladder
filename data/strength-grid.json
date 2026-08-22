@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-08-22T06:37:45.486Z",
+  "generatedAt": "2026-08-22T12:36:42.468Z",
   "season": 2026,
   "round": 25,
-  "ladderFetchedAt": "2026-08-22T06:37:36.808Z",
-  "resultsFetchedAt": "2026-08-22T06:37:44.763Z",
-  "matchesConsidered": 183,
+  "ladderFetchedAt": "2026-08-22T12:36:33.596Z",
+  "resultsFetchedAt": "2026-08-22T12:36:41.877Z",
+  "matchesConsidered": 186,
   "topCutoff": 8,
   "topSlugs": [
     "roosters",
-    "panthers",
     "warriors",
+    "panthers",
     "dolphins",
-    "knights",
     "sharks",
+    "knights",
     "rabbitohs",
     "cowboys"
   ],
   "bottomSlugs": [
     "bulldogs",
-    "raiders",
     "sea-eagles",
+    "raiders",
     "storm",
     "eels",
     "wests-tigers",
@@ -35,7 +35,7 @@
       "initials": "SR",
       "primary": "#06316F",
       "secondary": "#E2231B",
-      "officialPosition": 2,
+      "officialPosition": 3,
       "realPosition": 1,
       "pool": "top",
       "logo": "assets/logos/roosters.svg",
@@ -55,14 +55,40 @@
       }
     },
     {
+      "slug": "warriors",
+      "shortName": "Warriors",
+      "fullName": "New Zealand Warriors",
+      "initials": "NZ",
+      "primary": "#1D5E36",
+      "secondary": "#000000",
+      "officialPosition": 1,
+      "realPosition": 2,
+      "pool": "top",
+      "logo": "assets/logos/warriors.svg",
+      "vsTop": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 4,
+        "played": 10,
+        "winPct": 0.6
+      },
+      "vsBottom": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "played": 12,
+        "winPct": 0.8333333333333334
+      }
+    },
+    {
       "slug": "panthers",
       "shortName": "Panthers",
       "fullName": "Penrith Panthers",
       "initials": "PP",
       "primary": "#231F20",
       "secondary": "#000000",
-      "officialPosition": 1,
-      "realPosition": 2,
+      "officialPosition": 2,
+      "realPosition": 3,
       "pool": "top",
       "logo": "assets/logos/panthers.svg",
       "vsTop": {
@@ -78,32 +104,6 @@
         "losses": 3,
         "played": 13,
         "winPct": 0.7692307692307693
-      }
-    },
-    {
-      "slug": "warriors",
-      "shortName": "Warriors",
-      "fullName": "New Zealand Warriors",
-      "initials": "NZ",
-      "primary": "#1D5E36",
-      "secondary": "#000000",
-      "officialPosition": 3,
-      "realPosition": 3,
-      "pool": "top",
-      "logo": "assets/logos/warriors.svg",
-      "vsTop": {
-        "wins": 5,
-        "draws": 0,
-        "losses": 4,
-        "played": 9,
-        "winPct": 0.5555555555555556
-      },
-      "vsBottom": {
-        "wins": 10,
-        "draws": 0,
-        "losses": 2,
-        "played": 12,
-        "winPct": 0.8333333333333334
       }
     },
     {
@@ -133,32 +133,6 @@
       }
     },
     {
-      "slug": "knights",
-      "shortName": "Knights",
-      "fullName": "Newcastle Knights",
-      "initials": "NK",
-      "primary": "#EE3524",
-      "secondary": "#003A70",
-      "officialPosition": 6,
-      "realPosition": 5,
-      "pool": "top",
-      "logo": "assets/logos/knights.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 11,
-        "draws": 0,
-        "losses": 2,
-        "played": 13,
-        "winPct": 0.8461538461538461
-      }
-    },
-    {
       "slug": "sharks",
       "shortName": "Sharks",
       "fullName": "Cronulla-Sutherland Sharks",
@@ -166,7 +140,7 @@
       "primary": "#00A6CE",
       "secondary": "#000000",
       "officialPosition": 5,
-      "realPosition": 6,
+      "realPosition": 5,
       "pool": "top",
       "logo": "assets/logos/sharks.svg",
       "vsTop": {
@@ -185,6 +159,32 @@
       }
     },
     {
+      "slug": "knights",
+      "shortName": "Knights",
+      "fullName": "Newcastle Knights",
+      "initials": "NK",
+      "primary": "#EE3524",
+      "secondary": "#003A70",
+      "officialPosition": 6,
+      "realPosition": 6,
+      "pool": "top",
+      "logo": "assets/logos/knights.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 6,
+        "played": 9,
+        "winPct": 0.3333333333333333
+      },
+      "vsBottom": {
+        "wins": 11,
+        "draws": 0,
+        "losses": 3,
+        "played": 14,
+        "winPct": 0.7857142857142857
+      }
+    },
+    {
       "slug": "rabbitohs",
       "shortName": "Rabbitohs",
       "fullName": "South Sydney Rabbitohs",
@@ -198,9 +198,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
+        "losses": 7,
+        "played": 10,
+        "winPct": 0.3
       },
       "vsBottom": {
         "wins": 9,
@@ -255,37 +255,11 @@
         "winPct": 0.2222222222222222
       },
       "vsBottom": {
-        "wins": 8,
+        "wins": 9,
         "draws": 0,
         "losses": 4,
-        "played": 12,
-        "winPct": 0.6666666666666666
-      }
-    },
-    {
-      "slug": "raiders",
-      "shortName": "Raiders",
-      "fullName": "Canberra Raiders",
-      "initials": "CR",
-      "primary": "#9DCB3B",
-      "secondary": "#1B1F23",
-      "officialPosition": 12,
-      "realPosition": 10,
-      "pool": "bottom",
-      "logo": "assets/logos/raiders.svg",
-      "vsTop": {
-        "wins": 4,
-        "draws": 0,
-        "losses": 8,
-        "played": 12,
-        "winPct": 0.3333333333333333
-      },
-      "vsBottom": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 5,
-        "played": 11,
-        "winPct": 0.5454545454545454
+        "played": 13,
+        "winPct": 0.6923076923076923
       }
     },
     {
@@ -296,15 +270,41 @@
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
       "officialPosition": 10,
-      "realPosition": 11,
+      "realPosition": 10,
       "pool": "bottom",
       "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 7,
-        "played": 10,
-        "winPct": 0.3
+        "played": 11,
+        "winPct": 0.36363636363636365
+      },
+      "vsBottom": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 5,
+        "played": 11,
+        "winPct": 0.5454545454545454
+      }
+    },
+    {
+      "slug": "raiders",
+      "shortName": "Raiders",
+      "fullName": "Canberra Raiders",
+      "initials": "CR",
+      "primary": "#9DCB3B",
+      "secondary": "#1B1F23",
+      "officialPosition": 12,
+      "realPosition": 11,
+      "pool": "bottom",
+      "logo": "assets/logos/raiders.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 8,
+        "played": 12,
+        "winPct": 0.3333333333333333
       },
       "vsBottom": {
         "wins": 6,
@@ -465,9 +465,9 @@
       "vsBottom": {
         "wins": 3,
         "draws": 0,
-        "losses": 7,
-        "played": 10,
-        "winPct": 0.3
+        "losses": 8,
+        "played": 11,
+        "winPct": 0.2727272727272727
       }
     }
   ],

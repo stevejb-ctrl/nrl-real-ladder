@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 25,
   "toRound": 27,
-  "fetchedAt": "2026-08-22T06:37:38.526Z",
+  "fetchedAt": "2026-08-22T12:36:34.462Z",
   "matches": [
-    {
-      "round": 25,
-      "roundTitle": "Round 25",
-      "home": "rabbitohs",
-      "away": "warriors",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-22T07:30:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 25,
-      "roundTitle": "Round 25",
-      "home": "dragons",
-      "away": "bulldogs",
-      "venue": "Allianz Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-22T09:35:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 25,
       "roundTitle": "Round 25",

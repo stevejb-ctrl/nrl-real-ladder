@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 25,
-  "fetchedAt": "2026-08-22T06:37:44.763Z",
+  "fetchedAt": "2026-08-22T12:36:41.877Z",
   "matches": [
     {
       "round": 1,
@@ -2566,6 +2566,48 @@
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-22",
+      "kickOff": "2026-08-22T05:00:00Z",
+      "home": "knights",
+      "away": "sea-eagles",
+      "homeScore": 24,
+      "awayScore": 44,
+      "winner": "sea-eagles",
+      "draw": false,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-22",
+      "kickOff": "2026-08-22T07:30:00Z",
+      "home": "rabbitohs",
+      "away": "warriors",
+      "homeScore": 26,
+      "awayScore": 45,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-22",
+      "kickOff": "2026-08-22T09:35:00Z",
+      "home": "dragons",
+      "away": "bulldogs",
+      "homeScore": 14,
+      "awayScore": 44,
+      "winner": "bulldogs",
+      "draw": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }
