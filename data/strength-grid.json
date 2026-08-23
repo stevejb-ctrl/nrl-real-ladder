@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-23T06:39:08.821Z",
+  "generatedAt": "2026-08-23T12:37:30.171Z",
   "season": 2026,
   "round": 25,
-  "ladderFetchedAt": "2026-08-23T06:39:00.524Z",
-  "resultsFetchedAt": "2026-08-23T06:39:07.870Z",
-  "matchesConsidered": 187,
+  "ladderFetchedAt": "2026-08-23T12:37:22.236Z",
+  "resultsFetchedAt": "2026-08-23T12:37:29.173Z",
+  "matchesConsidered": 188,
   "topCutoff": 8,
   "topSlugs": [
-    "roosters",
     "warriors",
     "panthers",
+    "roosters",
     "dolphins",
     "sharks",
     "knights",
@@ -29,32 +29,6 @@
   ],
   "teams": [
     {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
-      "officialPosition": 3,
-      "realPosition": 1,
-      "pool": "top",
-      "logo": "assets/logos/roosters.svg",
-      "vsTop": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 4,
-        "played": 11,
-        "winPct": 0.6363636363636364
-      },
-      "vsBottom": {
-        "wins": 9,
-        "draws": 0,
-        "losses": 1,
-        "played": 10,
-        "winPct": 0.9
-      }
-    },
-    {
       "slug": "warriors",
       "shortName": "Warriors",
       "fullName": "New Zealand Warriors",
@@ -62,7 +36,7 @@
       "primary": "#1D5E36",
       "secondary": "#000000",
       "officialPosition": 1,
-      "realPosition": 2,
+      "realPosition": 1,
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
@@ -88,7 +62,7 @@
       "primary": "#231F20",
       "secondary": "#000000",
       "officialPosition": 2,
-      "realPosition": 3,
+      "realPosition": 2,
       "pool": "top",
       "logo": "assets/logos/panthers.svg",
       "vsTop": {
@@ -104,6 +78,32 @@
         "losses": 3,
         "played": 13,
         "winPct": 0.7692307692307693
+      }
+    },
+    {
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
+      "officialPosition": 3,
+      "realPosition": 3,
+      "pool": "top",
+      "logo": "assets/logos/roosters.svg",
+      "vsTop": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 4,
+        "played": 11,
+        "winPct": 0.6363636363636364
+      },
+      "vsBottom": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 2,
+        "played": 11,
+        "winPct": 0.8181818181818182
       }
     },
     {
@@ -373,16 +373,16 @@
       "initials": "WT",
       "primary": "#F37021",
       "secondary": "#000000",
-      "officialPosition": 15,
+      "officialPosition": 14,
       "realPosition": 14,
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
       "vsTop": {
-        "wins": 3,
+        "wins": 4,
         "draws": 0,
         "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
+        "played": 10,
+        "winPct": 0.4
       },
       "vsBottom": {
         "wins": 4,
@@ -399,7 +399,7 @@
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "officialPosition": 14,
+      "officialPosition": 15,
       "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/broncos.svg",
