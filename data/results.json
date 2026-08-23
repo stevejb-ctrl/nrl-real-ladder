@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 25,
-  "fetchedAt": "2026-08-23T01:16:20.291Z",
+  "fetchedAt": "2026-08-23T06:39:07.870Z",
   "matches": [
     {
       "round": 1,
@@ -2608,6 +2608,20 @@
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 25,
+      "roundTitle": "Round 25",
+      "date": "2026-08-23",
+      "kickOff": "2026-08-23T04:00:00Z",
+      "home": "titans",
+      "away": "sharks",
+      "homeScore": 22,
+      "awayScore": 30,
+      "winner": "sharks",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
     }
   ]
 }
