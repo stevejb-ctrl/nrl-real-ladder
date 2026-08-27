@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-27T07:44:23.310Z",
+  "generatedAt": "2026-08-27T21:50:11.604Z",
   "season": 2026,
-  "round": 25,
-  "ladderFetchedAt": "2026-08-27T07:44:13.071Z",
-  "resultsFetchedAt": "2026-08-27T07:44:22.630Z",
-  "matchesConsidered": 188,
+  "round": 26,
+  "ladderFetchedAt": "2026-08-27T21:50:01.422Z",
+  "resultsFetchedAt": "2026-08-27T21:50:10.495Z",
+  "matchesConsidered": 189,
   "topCutoff": 8,
   "topSlugs": [
     "warriors",
@@ -19,8 +19,8 @@
   "bottomSlugs": [
     "bulldogs",
     "sea-eagles",
-    "raiders",
     "storm",
+    "raiders",
     "eels",
     "wests-tigers",
     "broncos",
@@ -289,6 +289,32 @@
       }
     },
     {
+      "slug": "storm",
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "initials": "MS",
+      "primary": "#552E91",
+      "secondary": "#FFC72C",
+      "officialPosition": 11,
+      "realPosition": 11,
+      "pool": "bottom",
+      "logo": "assets/logos/storm.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 8,
+        "played": 10,
+        "winPct": 0.2
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 5,
+        "played": 13,
+        "winPct": 0.6153846153846154
+      }
+    },
+    {
       "slug": "raiders",
       "shortName": "Raiders",
       "fullName": "Canberra Raiders",
@@ -296,7 +322,7 @@
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
       "officialPosition": 12,
-      "realPosition": 11,
+      "realPosition": 12,
       "pool": "bottom",
       "logo": "assets/logos/raiders.svg",
       "vsTop": {
@@ -312,32 +338,6 @@
         "losses": 5,
         "played": 11,
         "winPct": 0.5454545454545454
-      }
-    },
-    {
-      "slug": "storm",
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "initials": "MS",
-      "primary": "#552E91",
-      "secondary": "#FFC72C",
-      "officialPosition": 11,
-      "realPosition": 12,
-      "pool": "bottom",
-      "logo": "assets/logos/storm.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 8,
-        "played": 10,
-        "winPct": 0.2
-      },
-      "vsBottom": {
-        "wins": 7,
-        "draws": 0,
-        "losses": 5,
-        "played": 12,
-        "winPct": 0.5833333333333334
       }
     },
     {
@@ -413,9 +413,9 @@
       "vsBottom": {
         "wins": 5,
         "draws": 0,
-        "losses": 4,
-        "played": 9,
-        "winPct": 0.5555555555555556
+        "losses": 5,
+        "played": 10,
+        "winPct": 0.5
       }
     },
     {

@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 26,
-  "fetchedAt": "2026-08-27T07:44:22.630Z",
+  "fetchedAt": "2026-08-27T21:50:10.495Z",
   "matches": [
     {
       "round": 1,
@@ -2636,6 +2636,20 @@
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-27",
+      "kickOff": "2026-08-27T09:50:00Z",
+      "home": "broncos",
+      "away": "storm",
+      "homeScore": 20,
+      "awayScore": 46,
+      "winner": "storm",
+      "draw": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane"
     }
   ]
 }
