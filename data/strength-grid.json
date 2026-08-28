@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-28T09:49:00.498Z",
+  "generatedAt": "2026-08-28T21:44:48.638Z",
   "season": 2026,
   "round": 26,
-  "ladderFetchedAt": "2026-08-28T09:48:49.269Z",
-  "resultsFetchedAt": "2026-08-28T09:48:59.740Z",
-  "matchesConsidered": 189,
+  "ladderFetchedAt": "2026-08-28T21:44:42.420Z",
+  "resultsFetchedAt": "2026-08-28T21:44:47.967Z",
+  "matchesConsidered": 191,
   "topCutoff": 8,
   "topSlugs": [
-    "warriors",
     "panthers",
+    "warriors",
     "roosters",
     "dolphins",
     "sharks",
@@ -17,8 +17,8 @@
     "cowboys"
   ],
   "bottomSlugs": [
-    "bulldogs",
     "sea-eagles",
+    "bulldogs",
     "storm",
     "raiders",
     "eels",
@@ -29,14 +29,40 @@
   ],
   "teams": [
     {
+      "slug": "panthers",
+      "shortName": "Panthers",
+      "fullName": "Penrith Panthers",
+      "initials": "PP",
+      "primary": "#231F20",
+      "secondary": "#000000",
+      "officialPosition": 1,
+      "realPosition": 1,
+      "pool": "top",
+      "logo": "assets/logos/panthers.svg",
+      "vsTop": {
+        "wins": 6,
+        "draws": 0,
+        "losses": 3,
+        "played": 9,
+        "winPct": 0.6666666666666666
+      },
+      "vsBottom": {
+        "wins": 11,
+        "draws": 0,
+        "losses": 3,
+        "played": 14,
+        "winPct": 0.7857142857142857
+      }
+    },
+    {
       "slug": "warriors",
       "shortName": "Warriors",
       "fullName": "New Zealand Warriors",
       "initials": "NZ",
       "primary": "#1D5E36",
       "secondary": "#000000",
-      "officialPosition": 1,
-      "realPosition": 1,
+      "officialPosition": 2,
+      "realPosition": 2,
       "pool": "top",
       "logo": "assets/logos/warriors.svg",
       "vsTop": {
@@ -52,32 +78,6 @@
         "losses": 2,
         "played": 12,
         "winPct": 0.8333333333333334
-      }
-    },
-    {
-      "slug": "panthers",
-      "shortName": "Panthers",
-      "fullName": "Penrith Panthers",
-      "initials": "PP",
-      "primary": "#231F20",
-      "secondary": "#000000",
-      "officialPosition": 2,
-      "realPosition": 2,
-      "pool": "top",
-      "logo": "assets/logos/panthers.svg",
-      "vsTop": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 3,
-        "played": 9,
-        "winPct": 0.6666666666666666
-      },
-      "vsBottom": {
-        "wins": 10,
-        "draws": 0,
-        "losses": 3,
-        "played": 13,
-        "winPct": 0.7692307692307693
       }
     },
     {
@@ -237,40 +237,14 @@
       }
     },
     {
-      "slug": "bulldogs",
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "initials": "CB",
-      "primary": "#00529B",
-      "secondary": "#FFFFFF",
-      "officialPosition": 9,
-      "realPosition": 9,
-      "pool": "bottom",
-      "logo": "assets/logos/bulldogs.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 7,
-        "played": 9,
-        "winPct": 0.2222222222222222
-      },
-      "vsBottom": {
-        "wins": 9,
-        "draws": 0,
-        "losses": 4,
-        "played": 13,
-        "winPct": 0.6923076923076923
-      }
-    },
-    {
       "slug": "sea-eagles",
       "shortName": "Sea Eagles",
       "fullName": "Manly Sea Eagles",
       "initials": "MS",
       "primary": "#6F1A37",
       "secondary": "#FFFFFF",
-      "officialPosition": 10,
-      "realPosition": 10,
+      "officialPosition": 9,
+      "realPosition": 9,
       "pool": "bottom",
       "logo": "assets/logos/sea-eagles.svg",
       "vsTop": {
@@ -281,11 +255,37 @@
         "winPct": 0.36363636363636365
       },
       "vsBottom": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
         "losses": 5,
-        "played": 11,
-        "winPct": 0.5454545454545454
+        "played": 12,
+        "winPct": 0.5833333333333334
+      }
+    },
+    {
+      "slug": "bulldogs",
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "initials": "CB",
+      "primary": "#00529B",
+      "secondary": "#FFFFFF",
+      "officialPosition": 10,
+      "realPosition": 10,
+      "pool": "bottom",
+      "logo": "assets/logos/bulldogs.svg",
+      "vsTop": {
+        "wins": 2,
+        "draws": 0,
+        "losses": 8,
+        "played": 10,
+        "winPct": 0.2
+      },
+      "vsBottom": {
+        "wins": 9,
+        "draws": 0,
+        "losses": 4,
+        "played": 13,
+        "winPct": 0.6923076923076923
       }
     },
     {
@@ -465,9 +465,9 @@
       "vsBottom": {
         "wins": 3,
         "draws": 0,
-        "losses": 8,
-        "played": 11,
-        "winPct": 0.2727272727272727
+        "losses": 9,
+        "played": 12,
+        "winPct": 0.25
       }
     }
   ],

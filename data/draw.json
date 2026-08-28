@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 26,
   "toRound": 27,
-  "fetchedAt": "2026-08-28T09:48:49.987Z",
+  "fetchedAt": "2026-08-28T21:44:42.960Z",
   "matches": [
-    {
-      "round": 26,
-      "roundTitle": "Round 26",
-      "home": "panthers",
-      "away": "bulldogs",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-08-28T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 26,
       "roundTitle": "Round 26",

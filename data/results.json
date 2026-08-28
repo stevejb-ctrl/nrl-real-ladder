@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 26,
-  "fetchedAt": "2026-08-28T09:48:59.740Z",
+  "fetchedAt": "2026-08-28T21:44:47.967Z",
   "matches": [
     {
       "round": 1,
@@ -2650,6 +2650,34 @@
       "draw": false,
       "venue": "Suncorp Stadium",
       "venueCity": "Brisbane"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-28",
+      "kickOff": "2026-08-28T08:00:00Z",
+      "home": "sea-eagles",
+      "away": "dragons",
+      "homeScore": 44,
+      "awayScore": 10,
+      "winner": "sea-eagles",
+      "draw": false,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-28",
+      "kickOff": "2026-08-28T10:00:00Z",
+      "home": "panthers",
+      "away": "bulldogs",
+      "homeScore": 24,
+      "awayScore": 10,
+      "winner": "panthers",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }
