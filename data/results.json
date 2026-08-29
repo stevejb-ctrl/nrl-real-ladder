@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 26,
-  "fetchedAt": "2026-08-29T05:49:32.518Z",
+  "fetchedAt": "2026-08-29T12:21:55.547Z",
   "matches": [
     {
       "round": 1,
@@ -2678,6 +2678,48 @@
       "draw": false,
       "venue": "CommBank Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-29",
+      "kickOff": "2026-08-29T05:00:00Z",
+      "home": "titans",
+      "away": "rabbitohs",
+      "homeScore": 22,
+      "awayScore": 42,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-29",
+      "kickOff": "2026-08-29T07:30:00Z",
+      "home": "roosters",
+      "away": "dolphins",
+      "homeScore": 12,
+      "awayScore": 26,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-29",
+      "kickOff": "2026-08-29T09:35:00Z",
+      "home": "cowboys",
+      "away": "wests-tigers",
+      "homeScore": 24,
+      "awayScore": 10,
+      "winner": "cowboys",
+      "draw": false,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville"
     }
   ]
 }

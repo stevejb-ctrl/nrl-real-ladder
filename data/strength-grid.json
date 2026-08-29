@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-29T05:49:33.432Z",
+  "generatedAt": "2026-08-29T12:21:56.534Z",
   "season": 2026,
   "round": 26,
-  "ladderFetchedAt": "2026-08-29T05:49:19.572Z",
-  "resultsFetchedAt": "2026-08-29T05:49:32.518Z",
-  "matchesConsidered": 191,
+  "ladderFetchedAt": "2026-08-29T12:21:48.191Z",
+  "resultsFetchedAt": "2026-08-29T12:21:55.547Z",
+  "matchesConsidered": 194,
   "topCutoff": 8,
   "topSlugs": [
     "panthers",
     "warriors",
-    "roosters",
     "dolphins",
+    "roosters",
     "sharks",
     "knights",
     "rabbitohs",
@@ -81,22 +81,22 @@
       }
     },
     {
-      "slug": "roosters",
-      "shortName": "Roosters",
-      "fullName": "Sydney Roosters",
-      "initials": "SR",
-      "primary": "#06316F",
-      "secondary": "#E2231B",
+      "slug": "dolphins",
+      "shortName": "Dolphins",
+      "fullName": "Dolphins",
+      "initials": "DO",
+      "primary": "#CC0033",
+      "secondary": "#FFD200",
       "officialPosition": 3,
       "realPosition": 3,
       "pool": "top",
-      "logo": "assets/logos/roosters.svg",
+      "logo": "assets/logos/dolphins.svg",
       "vsTop": {
         "wins": 7,
         "draws": 0,
-        "losses": 4,
-        "played": 11,
-        "winPct": 0.6363636363636364
+        "losses": 5,
+        "played": 12,
+        "winPct": 0.5833333333333334
       },
       "vsBottom": {
         "wins": 9,
@@ -107,22 +107,22 @@
       }
     },
     {
-      "slug": "dolphins",
-      "shortName": "Dolphins",
-      "fullName": "Dolphins",
-      "initials": "DO",
-      "primary": "#CC0033",
-      "secondary": "#FFD200",
+      "slug": "roosters",
+      "shortName": "Roosters",
+      "fullName": "Sydney Roosters",
+      "initials": "SR",
+      "primary": "#06316F",
+      "secondary": "#E2231B",
       "officialPosition": 4,
       "realPosition": 4,
       "pool": "top",
-      "logo": "assets/logos/dolphins.svg",
+      "logo": "assets/logos/roosters.svg",
       "vsTop": {
-        "wins": 6,
+        "wins": 7,
         "draws": 0,
         "losses": 5,
-        "played": 11,
-        "winPct": 0.5454545454545454
+        "played": 12,
+        "winPct": 0.5833333333333334
       },
       "vsBottom": {
         "wins": 9,
@@ -165,7 +165,7 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -191,7 +191,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 7,
+      "officialPosition": 6,
       "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",
@@ -203,11 +203,11 @@
         "winPct": 0.3
       },
       "vsBottom": {
-        "wins": 9,
+        "wins": 10,
         "draws": 0,
         "losses": 3,
-        "played": 12,
-        "winPct": 0.75
+        "played": 13,
+        "winPct": 0.7692307692307693
       }
     },
     {
@@ -229,11 +229,11 @@
         "winPct": 0.4444444444444444
       },
       "vsBottom": {
-        "wins": 8,
+        "wins": 9,
         "draws": 0,
         "losses": 5,
-        "played": 13,
-        "winPct": 0.6153846153846154
+        "played": 14,
+        "winPct": 0.6428571428571429
       }
     },
     {
@@ -380,9 +380,9 @@
       "vsTop": {
         "wins": 4,
         "draws": 0,
-        "losses": 6,
-        "played": 10,
-        "winPct": 0.4
+        "losses": 7,
+        "played": 11,
+        "winPct": 0.36363636363636365
       },
       "vsBottom": {
         "wins": 4,
@@ -432,9 +432,9 @@
       "vsTop": {
         "wins": 1,
         "draws": 0,
-        "losses": 10,
-        "played": 11,
-        "winPct": 0.09090909090909091
+        "losses": 11,
+        "played": 12,
+        "winPct": 0.08333333333333333
       },
       "vsBottom": {
         "wins": 5,
