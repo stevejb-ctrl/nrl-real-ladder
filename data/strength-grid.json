@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-30T03:52:58.375Z",
+  "generatedAt": "2026-08-30T11:20:31.405Z",
   "season": 2026,
   "round": 26,
-  "ladderFetchedAt": "2026-08-30T03:52:50.708Z",
-  "resultsFetchedAt": "2026-08-30T03:52:57.669Z",
-  "matchesConsidered": 194,
+  "ladderFetchedAt": "2026-08-30T11:20:23.126Z",
+  "resultsFetchedAt": "2026-08-30T11:20:30.788Z",
+  "matchesConsidered": 196,
   "topCutoff": 8,
   "topSlugs": [
-    "panthers",
     "warriors",
+    "panthers",
     "dolphins",
     "roosters",
     "sharks",
@@ -29,14 +29,40 @@
   ],
   "teams": [
     {
+      "slug": "warriors",
+      "shortName": "Warriors",
+      "fullName": "New Zealand Warriors",
+      "initials": "NZ",
+      "primary": "#1D5E36",
+      "secondary": "#000000",
+      "officialPosition": 1,
+      "realPosition": 1,
+      "pool": "top",
+      "logo": "assets/logos/warriors.svg",
+      "vsTop": {
+        "wins": 7,
+        "draws": 0,
+        "losses": 4,
+        "played": 11,
+        "winPct": 0.6363636363636364
+      },
+      "vsBottom": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 2,
+        "played": 12,
+        "winPct": 0.8333333333333334
+      }
+    },
+    {
       "slug": "panthers",
       "shortName": "Panthers",
       "fullName": "Penrith Panthers",
       "initials": "PP",
       "primary": "#231F20",
       "secondary": "#000000",
-      "officialPosition": 1,
-      "realPosition": 1,
+      "officialPosition": 2,
+      "realPosition": 2,
       "pool": "top",
       "logo": "assets/logos/panthers.svg",
       "vsTop": {
@@ -52,32 +78,6 @@
         "losses": 3,
         "played": 14,
         "winPct": 0.7857142857142857
-      }
-    },
-    {
-      "slug": "warriors",
-      "shortName": "Warriors",
-      "fullName": "New Zealand Warriors",
-      "initials": "NZ",
-      "primary": "#1D5E36",
-      "secondary": "#000000",
-      "officialPosition": 2,
-      "realPosition": 2,
-      "pool": "top",
-      "logo": "assets/logos/warriors.svg",
-      "vsTop": {
-        "wins": 6,
-        "draws": 0,
-        "losses": 4,
-        "played": 10,
-        "winPct": 0.6
-      },
-      "vsBottom": {
-        "wins": 10,
-        "draws": 0,
-        "losses": 2,
-        "played": 12,
-        "winPct": 0.8333333333333334
       }
     },
     {
@@ -153,9 +153,9 @@
       "vsBottom": {
         "wins": 9,
         "draws": 0,
-        "losses": 2,
-        "played": 11,
-        "winPct": 0.8181818181818182
+        "losses": 3,
+        "played": 12,
+        "winPct": 0.75
       }
     },
     {
@@ -172,9 +172,9 @@
       "vsTop": {
         "wins": 3,
         "draws": 0,
-        "losses": 6,
-        "played": 9,
-        "winPct": 0.3333333333333333
+        "losses": 7,
+        "played": 10,
+        "winPct": 0.3
       },
       "vsBottom": {
         "wins": 11,
@@ -352,11 +352,11 @@
       "pool": "bottom",
       "logo": "assets/logos/eels.svg",
       "vsTop": {
-        "wins": 2,
+        "wins": 3,
         "draws": 0,
         "losses": 8,
-        "played": 10,
-        "winPct": 0.2
+        "played": 11,
+        "winPct": 0.2727272727272727
       },
       "vsBottom": {
         "wins": 6,

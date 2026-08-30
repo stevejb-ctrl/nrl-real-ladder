@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 26,
-  "fetchedAt": "2026-08-30T03:52:57.669Z",
+  "fetchedAt": "2026-08-30T11:20:30.788Z",
   "matches": [
     {
       "round": 1,
@@ -2720,6 +2720,34 @@
       "draw": false,
       "venue": "Queensland Country Bank Stadium",
       "venueCity": "Townsville"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-30",
+      "kickOff": "2026-08-30T04:00:00Z",
+      "home": "warriors",
+      "away": "knights",
+      "homeScore": 46,
+      "awayScore": 32,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland"
+    },
+    {
+      "round": 26,
+      "roundTitle": "Round 26",
+      "date": "2026-08-30",
+      "kickOff": "2026-08-30T06:05:00Z",
+      "home": "eels",
+      "away": "sharks",
+      "homeScore": 38,
+      "awayScore": 18,
+      "winner": "eels",
+      "draw": false,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }
