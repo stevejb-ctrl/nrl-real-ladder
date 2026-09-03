@@ -3,19 +3,8 @@
   "competitionId": 111,
   "fromRound": 27,
   "toRound": 27,
-  "fetchedAt": "2026-09-03T03:09:04.278Z",
+  "fetchedAt": "2026-09-03T10:44:24.986Z",
   "matches": [
-    {
-      "round": 27,
-      "roundTitle": "Round 27",
-      "home": "bulldogs",
-      "away": "broncos",
-      "venue": "Accor Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-09-03T09:50:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 27,
       "roundTitle": "Round 27",
