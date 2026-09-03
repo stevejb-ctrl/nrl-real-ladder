@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-03T10:44:33.056Z",
+  "fetchedAt": "2026-09-03T15:51:27.809Z",
   "matches": [
     {
       "round": 1,
@@ -2747,6 +2747,20 @@
       "winner": "eels",
       "draw": false,
       "venue": "CommBank Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-03",
+      "kickOff": "2026-09-03T09:50:00Z",
+      "home": "bulldogs",
+      "away": "broncos",
+      "homeScore": 20,
+      "awayScore": 34,
+      "winner": "broncos",
+      "draw": false,
+      "venue": "Accor Stadium",
       "venueCity": "Sydney"
     }
   ]

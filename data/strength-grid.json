@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T10:44:33.803Z",
+  "generatedAt": "2026-09-03T15:51:28.909Z",
   "season": 2026,
   "round": 27,
-  "ladderFetchedAt": "2026-09-03T10:44:24.498Z",
-  "resultsFetchedAt": "2026-09-03T10:44:33.056Z",
-  "matchesConsidered": 196,
+  "ladderFetchedAt": "2026-09-03T15:51:17.475Z",
+  "resultsFetchedAt": "2026-09-03T15:51:27.809Z",
+  "matchesConsidered": 197,
   "topCutoff": 8,
   "topSlugs": [
     "warriors",
@@ -165,7 +165,7 @@
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 7,
+      "officialPosition": 6,
       "realPosition": 6,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
@@ -191,7 +191,7 @@
       "initials": "SS",
       "primary": "#0A6240",
       "secondary": "#E30613",
-      "officialPosition": 6,
+      "officialPosition": 7,
       "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/rabbitohs.svg",
@@ -283,9 +283,9 @@
       "vsBottom": {
         "wins": 9,
         "draws": 0,
-        "losses": 4,
-        "played": 13,
-        "winPct": 0.6923076923076923
+        "losses": 5,
+        "played": 14,
+        "winPct": 0.6428571428571429
       }
     },
     {
@@ -373,7 +373,7 @@
       "initials": "WT",
       "primary": "#F37021",
       "secondary": "#000000",
-      "officialPosition": 14,
+      "officialPosition": 15,
       "realPosition": 14,
       "pool": "bottom",
       "logo": "assets/logos/wests-tigers.svg",
@@ -399,7 +399,7 @@
       "initials": "BB",
       "primary": "#7C0044",
       "secondary": "#FFB81C",
-      "officialPosition": 15,
+      "officialPosition": 14,
       "realPosition": 15,
       "pool": "bottom",
       "logo": "assets/logos/broncos.svg",
@@ -411,11 +411,11 @@
         "winPct": 0.15384615384615385
       },
       "vsBottom": {
-        "wins": 5,
+        "wins": 6,
         "draws": 0,
         "losses": 5,
-        "played": 10,
-        "winPct": 0.5
+        "played": 11,
+        "winPct": 0.5454545454545454
       }
     },
     {

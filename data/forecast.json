@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-03T10:44:33.712Z",
+  "generatedAt": "2026-09-03T15:51:28.820Z",
   "ladderRound": 27,
-  "ladderFetchedAt": "2026-09-03T10:44:24.498Z",
-  "drawFetchedAt": "2026-09-03T10:44:24.986Z",
+  "ladderFetchedAt": "2026-09-03T15:51:17.475Z",
+  "drawFetchedAt": "2026-09-03T15:51:17.933Z",
   "remainingMatches": 7,
   "nSims": 10000,
   "modelVersion": "1.2",
@@ -15,7 +15,7 @@
     "skillScale": 4,
     "hfaLogit": 0.25
   },
-  "durationMs": 111,
+  "durationMs": 102,
   "teams": {
     "warriors": {
       "shortName": "Warriors",
@@ -33,13 +33,13 @@
       "skill": 0.7731,
       "finalsPct": 1,
       "top4Pct": 1,
-      "minorPremPct": 0.8387,
+      "minorPremPct": 0.8345,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 18,
         "p10": 17,
         "p90": 18,
-        "mean": 17.8
+        "mean": 17.79
       },
       "projectedPosition": {
         "median": 1,
@@ -47,8 +47,8 @@
         "p90": 2
       },
       "distribution": [
-        0.8387,
-        0.1613,
+        0.8345,
+        0.1655,
         0,
         0,
         0,
@@ -82,7 +82,7 @@
       "skill": 0.6398,
       "finalsPct": 1,
       "top4Pct": 1,
-      "minorPremPct": 0.1613,
+      "minorPremPct": 0.1655,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 18,
@@ -96,8 +96,8 @@
         "p90": 2
       },
       "distribution": [
-        0.1613,
-        0.8387,
+        0.1655,
+        0.8345,
         0,
         0,
         0,
@@ -137,7 +137,7 @@
         "median": 17,
         "p10": 16,
         "p90": 17,
-        "mean": 16.87
+        "mean": 16.86
       },
       "projectedPosition": {
         "median": 3,
@@ -147,8 +147,8 @@
       "distribution": [
         0,
         0,
-        0.9336,
-        0.0664,
+        0.9299,
+        0.0701,
         0,
         0,
         0,
@@ -186,7 +186,7 @@
         "median": 16,
         "p10": 16,
         "p90": 17,
-        "mean": 16.5
+        "mean": 16.49
       },
       "projectedPosition": {
         "median": 4,
@@ -196,8 +196,8 @@
       "distribution": [
         0,
         0,
-        0.0664,
-        0.9336,
+        0.0701,
+        0.9299,
         0,
         0,
         0,
@@ -235,7 +235,7 @@
         "median": 15,
         "p10": 14,
         "p90": 15,
-        "mean": 14.61
+        "mean": 14.6
       },
       "projectedPosition": {
         "median": 5,
@@ -262,60 +262,11 @@
         0
       ]
     },
-    "rabbitohs": {
-      "shortName": "Rabbitohs",
-      "fullName": "South Sydney Rabbitohs",
-      "primary": "#0A6240",
-      "officialPosition": 6,
-      "currentWins": 13,
-      "currentLosses": 10,
-      "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.5652,
-      "regressedSeasonWp": 0.5484,
-      "rawFormWp": 0.6,
-      "regressedFormWp": 0.5833,
-      "skill": 0.5624,
-      "finalsPct": 1,
-      "top4Pct": 0,
-      "minorPremPct": 0,
-      "woodenSpoonPct": 0,
-      "projectedWins": {
-        "median": 14,
-        "p10": 13,
-        "p90": 14,
-        "mean": 13.5
-      },
-      "projectedPosition": {
-        "median": 6,
-        "p10": 6,
-        "p90": 8
-      },
-      "distribution": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0.5041,
-        0.1551,
-        0.3408,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ]
-    },
     "knights": {
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
       "primary": "#EE3524",
-      "officialPosition": 7,
+      "officialPosition": 6,
       "currentWins": 14,
       "currentLosses": 10,
       "currentDraws": 0,
@@ -346,9 +297,58 @@
         0,
         0,
         0,
-        0.4959,
-        0.5041,
+        0.4937,
+        0.5063,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "rabbitohs": {
+      "shortName": "Rabbitohs",
+      "fullName": "South Sydney Rabbitohs",
+      "primary": "#0A6240",
+      "officialPosition": 7,
+      "currentWins": 13,
+      "currentLosses": 10,
+      "currentDraws": 0,
+      "currentPlayed": 23,
+      "rawSeasonWp": 0.5652,
+      "regressedSeasonWp": 0.5484,
+      "rawFormWp": 0.6,
+      "regressedFormWp": 0.5833,
+      "skill": 0.5624,
+      "finalsPct": 1,
+      "top4Pct": 0,
+      "minorPremPct": 0,
+      "woodenSpoonPct": 0,
+      "projectedWins": {
+        "median": 14,
+        "p10": 13,
+        "p90": 14,
+        "mean": 13.51
+      },
+      "projectedPosition": {
+        "median": 6,
+        "p10": 6,
+        "p90": 8
+      },
+      "distribution": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.5063,
+        0.1529,
+        0.3408,
         0,
         0,
         0,
@@ -382,7 +382,7 @@
         "median": 14,
         "p10": 13,
         "p90": 14,
-        "mean": 13.68
+        "mean": 13.69
       },
       "projectedPosition": {
         "median": 8,
@@ -431,12 +431,12 @@
         "median": 11,
         "p10": 11,
         "p90": 12,
-        "mean": 11.2
+        "mean": 11.21
       },
       "projectedPosition": {
-        "median": 10,
+        "median": 9,
         "p10": 9,
-        "p90": 10
+        "p90": 9
       },
       "distribution": [
         0,
@@ -447,8 +447,8 @@
         0,
         0,
         0,
-        0.2006,
-        0.7994,
+        1,
+        0,
         0,
         0,
         0,
@@ -464,14 +464,14 @@
       "primary": "#00529B",
       "officialPosition": 10,
       "currentWins": 11,
-      "currentLosses": 12,
+      "currentLosses": 13,
       "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.4783,
-      "regressedSeasonWp": 0.4839,
-      "rawFormWp": 0.4,
-      "regressedFormWp": 0.4167,
-      "skill": 0.457,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.4583,
+      "regressedSeasonWp": 0.4688,
+      "rawFormWp": 0.2,
+      "regressedFormWp": 0.25,
+      "skill": 0.3812,
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
@@ -483,9 +483,9 @@
         "mean": 11
       },
       "projectedPosition": {
-        "median": 9,
-        "p10": 9,
-        "p90": 10
+        "median": 10,
+        "p10": 10,
+        "p90": 11
       },
       "distribution": [
         0,
@@ -496,9 +496,9 @@
         0,
         0,
         0,
-        0.7994,
-        0.2006,
         0,
+        0.6009,
+        0.3991,
         0,
         0,
         0,
@@ -529,11 +529,11 @@
         "median": 10,
         "p10": 10,
         "p90": 11,
-        "mean": 10.39
+        "mean": 10.4
       },
       "projectedPosition": {
         "median": 11,
-        "p10": 11,
+        "p10": 10,
         "p90": 12
       },
       "distribution": [
@@ -546,9 +546,9 @@
         0,
         0,
         0,
-        0,
-        0.8093,
-        0.1907,
+        0.3991,
+        0.4169,
+        0.184,
         0,
         0,
         0,
@@ -578,7 +578,7 @@
         "median": 10,
         "p10": 10,
         "p90": 11,
-        "mean": 10.32
+        "mean": 10.31
       },
       "projectedPosition": {
         "median": 12,
@@ -596,8 +596,8 @@
         0,
         0,
         0,
-        0.1907,
-        0.8093,
+        0.184,
+        0.816,
         0,
         0,
         0,
@@ -654,11 +654,60 @@
         0
       ]
     },
+    "broncos": {
+      "shortName": "Broncos",
+      "fullName": "Brisbane Broncos",
+      "primary": "#7C0044",
+      "officialPosition": 14,
+      "currentWins": 8,
+      "currentLosses": 16,
+      "currentDraws": 0,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.3333,
+      "regressedSeasonWp": 0.375,
+      "rawFormWp": 0.4,
+      "regressedFormWp": 0.4167,
+      "skill": 0.3917,
+      "finalsPct": 0,
+      "top4Pct": 0,
+      "minorPremPct": 0,
+      "woodenSpoonPct": 0,
+      "projectedWins": {
+        "median": 8,
+        "p10": 8,
+        "p90": 8,
+        "mean": 8
+      },
+      "projectedPosition": {
+        "median": 14,
+        "p10": 14,
+        "p90": 15
+      },
+      "distribution": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.8048,
+        0.1952,
+        0,
+        0
+      ]
+    },
     "wests-tigers": {
       "shortName": "Tigers",
       "fullName": "Wests Tigers",
       "primary": "#F37021",
-      "officialPosition": 14,
+      "officialPosition": 15,
       "currentWins": 8,
       "currentLosses": 15,
       "currentDraws": 0,
@@ -679,57 +728,8 @@
         "mean": 8.2
       },
       "projectedPosition": {
-        "median": 14,
-        "p10": 14,
-        "p90": 14
-      },
-      "distribution": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        0,
-        0,
-        0
-      ]
-    },
-    "broncos": {
-      "shortName": "Broncos",
-      "fullName": "Brisbane Broncos",
-      "primary": "#7C0044",
-      "officialPosition": 15,
-      "currentWins": 7,
-      "currentLosses": 16,
-      "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.3043,
-      "regressedSeasonWp": 0.3548,
-      "rawFormWp": 0.2,
-      "regressedFormWp": 0.25,
-      "skill": 0.3129,
-      "finalsPct": 0,
-      "top4Pct": 0,
-      "minorPremPct": 0,
-      "woodenSpoonPct": 0,
-      "projectedWins": {
-        "median": 7,
-        "p10": 7,
-        "p90": 7,
-        "mean": 7
-      },
-      "projectedPosition": {
         "median": 15,
-        "p10": 15,
+        "p10": 14,
         "p90": 15
       },
       "distribution": [
@@ -746,8 +746,8 @@
         0,
         0,
         0,
-        0,
-        1,
+        0.1952,
+        0.8048,
         0,
         0
       ]
@@ -774,7 +774,7 @@
         "median": 6,
         "p10": 6,
         "p90": 7,
-        "mean": 6.13
+        "mean": 6.14
       },
       "projectedPosition": {
         "median": 16,
