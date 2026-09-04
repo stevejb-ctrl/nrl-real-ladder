@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-04T10:40:56.409Z",
+  "fetchedAt": "2026-09-04T15:49:38.141Z",
   "matches": [
     {
       "round": 1,
@@ -2776,6 +2776,20 @@
       "draw": false,
       "venue": "Cbus Super Stadium",
       "venueCity": "Gold Coast"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-04",
+      "kickOff": "2026-09-04T10:00:00Z",
+      "home": "rabbitohs",
+      "away": "roosters",
+      "homeScore": 50,
+      "awayScore": 20,
+      "winner": "rabbitohs",
+      "draw": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }

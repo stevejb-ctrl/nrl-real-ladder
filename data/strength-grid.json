@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T10:40:57.074Z",
+  "generatedAt": "2026-09-04T15:49:38.850Z",
   "season": 2026,
   "round": 27,
-  "ladderFetchedAt": "2026-09-04T10:40:49.383Z",
-  "resultsFetchedAt": "2026-09-04T10:40:56.409Z",
-  "matchesConsidered": 198,
+  "ladderFetchedAt": "2026-09-04T15:49:30.191Z",
+  "resultsFetchedAt": "2026-09-04T15:49:38.141Z",
+  "matchesConsidered": 199,
   "topCutoff": 8,
   "topSlugs": [
     "warriors",
@@ -12,8 +12,8 @@
     "dolphins",
     "roosters",
     "sharks",
-    "knights",
     "rabbitohs",
+    "knights",
     "cowboys"
   ],
   "bottomSlugs": [
@@ -120,9 +120,9 @@
       "vsTop": {
         "wins": 7,
         "draws": 0,
-        "losses": 5,
-        "played": 12,
-        "winPct": 0.5833333333333334
+        "losses": 6,
+        "played": 13,
+        "winPct": 0.5384615384615384
       },
       "vsBottom": {
         "wins": 9,
@@ -159,14 +159,40 @@
       }
     },
     {
+      "slug": "rabbitohs",
+      "shortName": "Rabbitohs",
+      "fullName": "South Sydney Rabbitohs",
+      "initials": "SS",
+      "primary": "#0A6240",
+      "secondary": "#E30613",
+      "officialPosition": 6,
+      "realPosition": 6,
+      "pool": "top",
+      "logo": "assets/logos/rabbitohs.svg",
+      "vsTop": {
+        "wins": 4,
+        "draws": 0,
+        "losses": 7,
+        "played": 11,
+        "winPct": 0.36363636363636365
+      },
+      "vsBottom": {
+        "wins": 10,
+        "draws": 0,
+        "losses": 3,
+        "played": 13,
+        "winPct": 0.7692307692307693
+      }
+    },
+    {
       "slug": "knights",
       "shortName": "Knights",
       "fullName": "Newcastle Knights",
       "initials": "NK",
       "primary": "#EE3524",
       "secondary": "#003A70",
-      "officialPosition": 6,
-      "realPosition": 6,
+      "officialPosition": 7,
+      "realPosition": 7,
       "pool": "top",
       "logo": "assets/logos/knights.svg",
       "vsTop": {
@@ -182,32 +208,6 @@
         "losses": 3,
         "played": 14,
         "winPct": 0.7857142857142857
-      }
-    },
-    {
-      "slug": "rabbitohs",
-      "shortName": "Rabbitohs",
-      "fullName": "South Sydney Rabbitohs",
-      "initials": "SS",
-      "primary": "#0A6240",
-      "secondary": "#E30613",
-      "officialPosition": 7,
-      "realPosition": 7,
-      "pool": "top",
-      "logo": "assets/logos/rabbitohs.svg",
-      "vsTop": {
-        "wins": 3,
-        "draws": 0,
-        "losses": 7,
-        "played": 10,
-        "winPct": 0.3
-      },
-      "vsBottom": {
-        "wins": 10,
-        "draws": 0,
-        "losses": 3,
-        "played": 13,
-        "winPct": 0.7692307692307693
       }
     },
     {
