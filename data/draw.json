@@ -3,30 +3,8 @@
   "competitionId": 111,
   "fromRound": 27,
   "toRound": 27,
-  "fetchedAt": "2026-09-04T03:07:05.292Z",
+  "fetchedAt": "2026-09-04T10:40:49.766Z",
   "matches": [
-    {
-      "round": 27,
-      "roundTitle": "Round 27",
-      "home": "titans",
-      "away": "dolphins",
-      "venue": "Cbus Super Stadium",
-      "venueCity": "Gold Coast",
-      "kickOff": "2026-09-04T08:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 27,
-      "roundTitle": "Round 27",
-      "home": "rabbitohs",
-      "away": "roosters",
-      "venue": "Allianz Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-09-04T10:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
     {
       "round": 27,
       "roundTitle": "Round 27",

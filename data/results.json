@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-04T03:07:15.961Z",
+  "fetchedAt": "2026-09-04T10:40:56.409Z",
   "matches": [
     {
       "round": 1,
@@ -2762,6 +2762,20 @@
       "draw": false,
       "venue": "Accor Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-04",
+      "kickOff": "2026-09-04T08:00:00Z",
+      "home": "titans",
+      "away": "dolphins",
+      "homeScore": 20,
+      "awayScore": 24,
+      "winner": "dolphins",
+      "draw": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast"
     }
   ]
 }

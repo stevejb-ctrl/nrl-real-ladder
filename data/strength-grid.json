@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T03:07:16.941Z",
+  "generatedAt": "2026-09-04T10:40:57.074Z",
   "season": 2026,
   "round": 27,
-  "ladderFetchedAt": "2026-09-04T03:07:04.809Z",
-  "resultsFetchedAt": "2026-09-04T03:07:15.961Z",
-  "matchesConsidered": 197,
+  "ladderFetchedAt": "2026-09-04T10:40:49.383Z",
+  "resultsFetchedAt": "2026-09-04T10:40:56.409Z",
+  "matchesConsidered": 198,
   "topCutoff": 8,
   "topSlugs": [
     "warriors",
@@ -99,11 +99,11 @@
         "winPct": 0.5833333333333334
       },
       "vsBottom": {
-        "wins": 9,
+        "wins": 10,
         "draws": 0,
         "losses": 2,
-        "played": 11,
-        "winPct": 0.8181818181818182
+        "played": 12,
+        "winPct": 0.8333333333333334
       }
     },
     {
@@ -432,9 +432,9 @@
       "vsTop": {
         "wins": 1,
         "draws": 0,
-        "losses": 11,
-        "played": 12,
-        "winPct": 0.08333333333333333
+        "losses": 12,
+        "played": 13,
+        "winPct": 0.07692307692307693
       },
       "vsBottom": {
         "wins": 5,
