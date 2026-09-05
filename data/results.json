@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-05T03:09:14.713Z",
+  "fetchedAt": "2026-09-05T10:00:48.132Z",
   "matches": [
     {
       "round": 1,
@@ -2790,6 +2790,34 @@
       "draw": false,
       "venue": "Allianz Stadium",
       "venueCity": "Sydney"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-05",
+      "kickOff": "2026-09-05T05:00:00Z",
+      "home": "warriors",
+      "away": "sea-eagles",
+      "homeScore": 31,
+      "awayScore": 30,
+      "winner": "warriors",
+      "draw": false,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-05",
+      "kickOff": "2026-09-05T07:30:00Z",
+      "home": "cowboys",
+      "away": "raiders",
+      "homeScore": 30,
+      "awayScore": 50,
+      "winner": "raiders",
+      "draw": false,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville"
     }
   ]
 }
