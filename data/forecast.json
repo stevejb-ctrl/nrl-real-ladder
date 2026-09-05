@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-05T10:00:48.691Z",
+  "generatedAt": "2026-09-05T14:39:55.429Z",
   "ladderRound": 27,
-  "ladderFetchedAt": "2026-09-05T10:00:39.495Z",
-  "drawFetchedAt": "2026-09-05T10:00:39.872Z",
+  "ladderFetchedAt": "2026-09-05T14:39:44.980Z",
+  "drawFetchedAt": "2026-09-05T14:39:45.466Z",
   "remainingMatches": 2,
   "nSims": 10000,
   "modelVersion": "1.2",
@@ -15,40 +15,40 @@
     "skillScale": 4,
     "hfaLogit": 0.25
   },
-  "durationMs": 82,
+  "durationMs": 59,
   "teams": {
     "warriors": {
       "shortName": "Warriors",
       "fullName": "New Zealand Warriors",
       "primary": "#1D5E36",
       "officialPosition": 1,
-      "currentWins": 17,
+      "currentWins": 18,
       "currentLosses": 6,
       "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.7391,
-      "regressedSeasonWp": 0.6774,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.75,
+      "regressedSeasonWp": 0.6875,
       "rawFormWp": 1,
       "regressedFormWp": 0.9167,
-      "skill": 0.7731,
+      "skill": 0.7792,
       "finalsPct": 1,
       "top4Pct": 1,
-      "minorPremPct": 0.1995,
+      "minorPremPct": 1,
       "woodenSpoonPct": 0,
       "projectedWins": {
-        "median": 17,
-        "p10": 17,
-        "p90": 17,
-        "mean": 17
+        "median": 18,
+        "p10": 18,
+        "p90": 18,
+        "mean": 18
       },
       "projectedPosition": {
-        "median": 2,
+        "median": 1,
         "p10": 1,
-        "p90": 2
+        "p90": 1
       },
       "distribution": [
-        0.1995,
-        0.8005,
+        1,
+        0,
         0,
         0,
         0,
@@ -82,22 +82,22 @@
       "skill": 0.6398,
       "finalsPct": 1,
       "top4Pct": 1,
-      "minorPremPct": 0.8005,
+      "minorPremPct": 0,
       "woodenSpoonPct": 0,
       "projectedWins": {
         "median": 18,
         "p10": 17,
         "p90": 18,
-        "mean": 17.8
+        "mean": 17.81
       },
       "projectedPosition": {
-        "median": 1,
-        "p10": 1,
+        "median": 2,
+        "p10": 2,
         "p90": 2
       },
       "distribution": [
-        0.8005,
-        0.1995,
+        0,
+        1,
         0,
         0,
         0,
@@ -219,14 +219,14 @@
       "primary": "#00A6CE",
       "officialPosition": 5,
       "currentWins": 14,
-      "currentLosses": 9,
+      "currentLosses": 10,
       "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.6087,
-      "regressedSeasonWp": 0.5806,
-      "rawFormWp": 0.4,
-      "regressedFormWp": 0.4167,
-      "skill": 0.5151,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.5833,
+      "regressedSeasonWp": 0.5625,
+      "rawFormWp": 0.2,
+      "regressedFormWp": 0.25,
+      "skill": 0.4375,
       "finalsPct": 1,
       "top4Pct": 0,
       "minorPremPct": 0,
@@ -415,14 +415,14 @@
       "primary": "#6F1A37",
       "officialPosition": 9,
       "currentWins": 11,
-      "currentLosses": 12,
+      "currentLosses": 13,
       "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.4783,
-      "regressedSeasonWp": 0.4839,
-      "rawFormWp": 0.5,
-      "regressedFormWp": 0.5,
-      "skill": 0.4903,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.4583,
+      "regressedSeasonWp": 0.4688,
+      "rawFormWp": 0.4,
+      "regressedFormWp": 0.4167,
+      "skill": 0.4479,
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
@@ -458,10 +458,10 @@
         0
       ]
     },
-    "raiders": {
-      "shortName": "Raiders",
-      "fullName": "Canberra Raiders",
-      "primary": "#9DCB3B",
+    "storm": {
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "primary": "#552E91",
       "officialPosition": 10,
       "currentWins": 11,
       "currentLosses": 13,
@@ -469,9 +469,9 @@
       "currentPlayed": 24,
       "rawSeasonWp": 0.4583,
       "regressedSeasonWp": 0.4688,
-      "rawFormWp": 0.5,
-      "regressedFormWp": 0.5,
-      "skill": 0.4813,
+      "rawFormWp": 0.75,
+      "regressedFormWp": 0.7,
+      "skill": 0.5613,
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
@@ -507,10 +507,10 @@
         0
       ]
     },
-    "bulldogs": {
-      "shortName": "Bulldogs",
-      "fullName": "Canterbury Bulldogs",
-      "primary": "#00529B",
+    "raiders": {
+      "shortName": "Raiders",
+      "fullName": "Canberra Raiders",
+      "primary": "#9DCB3B",
       "officialPosition": 11,
       "currentWins": 11,
       "currentLosses": 13,
@@ -518,9 +518,9 @@
       "currentPlayed": 24,
       "rawSeasonWp": 0.4583,
       "regressedSeasonWp": 0.4688,
-      "rawFormWp": 0.2,
-      "regressedFormWp": 0.25,
-      "skill": 0.3812,
+      "rawFormWp": 0.5,
+      "regressedFormWp": 0.5,
+      "skill": 0.4813,
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
@@ -556,29 +556,29 @@
         0
       ]
     },
-    "storm": {
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "primary": "#552E91",
+    "bulldogs": {
+      "shortName": "Bulldogs",
+      "fullName": "Canterbury Bulldogs",
+      "primary": "#00529B",
       "officialPosition": 12,
-      "currentWins": 10,
+      "currentWins": 11,
       "currentLosses": 13,
       "currentDraws": 0,
-      "currentPlayed": 23,
-      "rawSeasonWp": 0.4348,
-      "regressedSeasonWp": 0.4516,
-      "rawFormWp": 0.5,
-      "regressedFormWp": 0.5,
-      "skill": 0.471,
+      "currentPlayed": 24,
+      "rawSeasonWp": 0.4583,
+      "regressedSeasonWp": 0.4688,
+      "rawFormWp": 0.2,
+      "regressedFormWp": 0.25,
+      "skill": 0.3812,
       "finalsPct": 0,
       "top4Pct": 0,
       "minorPremPct": 0,
       "woodenSpoonPct": 0,
       "projectedWins": {
-        "median": 10,
-        "p10": 10,
-        "p90": 10,
-        "mean": 10
+        "median": 11,
+        "p10": 11,
+        "p90": 11,
+        "mean": 11
       },
       "projectedPosition": {
         "median": 12,
@@ -627,7 +627,7 @@
         "median": 10,
         "p10": 9,
         "p90": 10,
-        "mean": 9.61
+        "mean": 9.59
       },
       "projectedPosition": {
         "median": 13,
@@ -697,8 +697,8 @@
         0,
         0,
         0,
-        0.8005,
-        0.1995,
+        0.8119,
+        0.1881,
         0,
         0
       ]
@@ -725,7 +725,7 @@
         "median": 8,
         "p10": 8,
         "p90": 9,
-        "mean": 8.2
+        "mean": 8.19
       },
       "projectedPosition": {
         "median": 15,
@@ -746,8 +746,8 @@
         0,
         0,
         0,
-        0.1995,
-        0.8005,
+        0.1881,
+        0.8119,
         0,
         0
       ]
@@ -823,7 +823,7 @@
         "median": 4,
         "p10": 4,
         "p90": 5,
-        "mean": 4.39
+        "mean": 4.41
       },
       "projectedPosition": {
         "median": 17,

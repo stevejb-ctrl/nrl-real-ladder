@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-05T10:00:48.777Z",
+  "generatedAt": "2026-09-05T14:39:55.500Z",
   "season": 2026,
   "round": 27,
-  "ladderFetchedAt": "2026-09-05T10:00:39.495Z",
-  "resultsFetchedAt": "2026-09-05T10:00:48.132Z",
-  "matchesConsidered": 201,
+  "ladderFetchedAt": "2026-09-05T14:39:44.980Z",
+  "resultsFetchedAt": "2026-09-05T14:39:54.863Z",
+  "matchesConsidered": 202,
   "topCutoff": 8,
   "topSlugs": [
     "warriors",
@@ -18,9 +18,9 @@
   ],
   "bottomSlugs": [
     "sea-eagles",
+    "storm",
     "raiders",
     "bulldogs",
-    "storm",
     "eels",
     "wests-tigers",
     "broncos",
@@ -153,9 +153,9 @@
       "vsBottom": {
         "wins": 9,
         "draws": 0,
-        "losses": 3,
-        "played": 12,
-        "winPct": 0.75
+        "losses": 4,
+        "played": 13,
+        "winPct": 0.6923076923076923
       }
     },
     {
@@ -263,14 +263,40 @@
       }
     },
     {
+      "slug": "storm",
+      "shortName": "Storm",
+      "fullName": "Melbourne Storm",
+      "initials": "MS",
+      "primary": "#552E91",
+      "secondary": "#FFC72C",
+      "officialPosition": 10,
+      "realPosition": 10,
+      "pool": "bottom",
+      "logo": "assets/logos/storm.svg",
+      "vsTop": {
+        "wins": 3,
+        "draws": 0,
+        "losses": 8,
+        "played": 11,
+        "winPct": 0.2727272727272727
+      },
+      "vsBottom": {
+        "wins": 8,
+        "draws": 0,
+        "losses": 5,
+        "played": 13,
+        "winPct": 0.6153846153846154
+      }
+    },
+    {
       "slug": "raiders",
       "shortName": "Raiders",
       "fullName": "Canberra Raiders",
       "initials": "CR",
       "primary": "#9DCB3B",
       "secondary": "#1B1F23",
-      "officialPosition": 10,
-      "realPosition": 10,
+      "officialPosition": 11,
+      "realPosition": 11,
       "pool": "bottom",
       "logo": "assets/logos/raiders.svg",
       "vsTop": {
@@ -295,8 +321,8 @@
       "initials": "CB",
       "primary": "#00529B",
       "secondary": "#FFFFFF",
-      "officialPosition": 11,
-      "realPosition": 11,
+      "officialPosition": 12,
+      "realPosition": 12,
       "pool": "bottom",
       "logo": "assets/logos/bulldogs.svg",
       "vsTop": {
@@ -312,32 +338,6 @@
         "losses": 5,
         "played": 14,
         "winPct": 0.6428571428571429
-      }
-    },
-    {
-      "slug": "storm",
-      "shortName": "Storm",
-      "fullName": "Melbourne Storm",
-      "initials": "MS",
-      "primary": "#552E91",
-      "secondary": "#FFC72C",
-      "officialPosition": 12,
-      "realPosition": 12,
-      "pool": "bottom",
-      "logo": "assets/logos/storm.svg",
-      "vsTop": {
-        "wins": 2,
-        "draws": 0,
-        "losses": 8,
-        "played": 10,
-        "winPct": 0.2
-      },
-      "vsBottom": {
-        "wins": 8,
-        "draws": 0,
-        "losses": 5,
-        "played": 13,
-        "winPct": 0.6153846153846154
       }
     },
     {

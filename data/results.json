@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-05T10:00:48.132Z",
+  "fetchedAt": "2026-09-05T14:39:54.863Z",
   "matches": [
     {
       "round": 1,
@@ -2818,6 +2818,20 @@
       "draw": false,
       "venue": "Queensland Country Bank Stadium",
       "venueCity": "Townsville"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-05",
+      "kickOff": "2026-09-05T09:35:00Z",
+      "home": "sharks",
+      "away": "storm",
+      "homeScore": 20,
+      "awayScore": 24,
+      "winner": "storm",
+      "draw": false,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney"
     }
   ]
 }
