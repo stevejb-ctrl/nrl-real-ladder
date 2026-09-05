@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-05T14:39:55.429Z",
+  "generatedAt": "2026-09-05T19:58:46.396Z",
   "ladderRound": 27,
-  "ladderFetchedAt": "2026-09-05T14:39:44.980Z",
-  "drawFetchedAt": "2026-09-05T14:39:45.466Z",
+  "ladderFetchedAt": "2026-09-05T19:58:39.068Z",
+  "drawFetchedAt": "2026-09-05T19:58:39.486Z",
   "remainingMatches": 2,
   "nSims": 10000,
   "modelVersion": "1.2",
@@ -15,7 +15,7 @@
     "skillScale": 4,
     "hfaLogit": 0.25
   },
-  "durationMs": 59,
+  "durationMs": 73,
   "teams": {
     "warriors": {
       "shortName": "Warriors",
@@ -88,7 +88,7 @@
         "median": 18,
         "p10": 17,
         "p90": 18,
-        "mean": 17.81
+        "mean": 17.79
       },
       "projectedPosition": {
         "median": 2,
@@ -627,7 +627,7 @@
         "median": 10,
         "p10": 9,
         "p90": 10,
-        "mean": 9.59
+        "mean": 9.6
       },
       "projectedPosition": {
         "median": 13,
@@ -697,8 +697,8 @@
         0,
         0,
         0,
-        0.8119,
-        0.1881,
+        0.7935,
+        0.2065,
         0,
         0
       ]
@@ -725,7 +725,7 @@
         "median": 8,
         "p10": 8,
         "p90": 9,
-        "mean": 8.19
+        "mean": 8.21
       },
       "projectedPosition": {
         "median": 15,
@@ -746,8 +746,8 @@
         0,
         0,
         0,
-        0.1881,
-        0.8119,
+        0.2065,
+        0.7935,
         0,
         0
       ]
@@ -823,7 +823,7 @@
         "median": 4,
         "p10": 4,
         "p90": 5,
-        "mean": 4.41
+        "mean": 4.4
       },
       "projectedPosition": {
         "median": 17,
