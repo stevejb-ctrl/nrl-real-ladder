@@ -3,7 +3,7 @@
   "competitionId": 111,
   "fromRound": 1,
   "toRound": 27,
-  "fetchedAt": "2026-09-06T03:09:13.683Z",
+  "fetchedAt": "2026-09-06T10:20:30.364Z",
   "matches": [
     {
       "round": 1,
@@ -2831,6 +2831,34 @@
       "winner": "storm",
       "draw": false,
       "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-06",
+      "kickOff": "2026-09-06T04:00:00Z",
+      "home": "dragons",
+      "away": "eels",
+      "homeScore": 24,
+      "awayScore": 22,
+      "winner": "dragons",
+      "draw": false,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong"
+    },
+    {
+      "round": 27,
+      "roundTitle": "Round 27",
+      "date": "2026-09-06",
+      "kickOff": "2026-09-06T06:05:00Z",
+      "home": "panthers",
+      "away": "wests-tigers",
+      "homeScore": 38,
+      "awayScore": 10,
+      "winner": "panthers",
+      "draw": false,
+      "venue": "CommBank Stadium",
       "venueCity": "Sydney"
     }
   ]

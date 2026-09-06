@@ -3,31 +3,8 @@
   "competitionId": 111,
   "fromRound": 27,
   "toRound": 27,
-  "fetchedAt": "2026-09-06T03:09:02.915Z",
-  "matches": [
-    {
-      "round": 27,
-      "roundTitle": "Round 27",
-      "home": "dragons",
-      "away": "eels",
-      "venue": "WIN Stadium",
-      "venueCity": "Wollongong",
-      "kickOff": "2026-09-06T04:00:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    },
-    {
-      "round": 27,
-      "roundTitle": "Round 27",
-      "home": "panthers",
-      "away": "wests-tigers",
-      "venue": "CommBank Stadium",
-      "venueCity": "Sydney",
-      "kickOff": "2026-09-06T06:05:00Z",
-      "homeOdds": null,
-      "awayOdds": null
-    }
-  ],
+  "fetchedAt": "2026-09-06T10:20:23.311Z",
+  "matches": [],
   "byes": [
     {
       "round": 27,
