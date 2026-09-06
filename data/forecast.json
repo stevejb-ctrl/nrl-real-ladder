@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-06T10:20:30.870Z",
+  "generatedAt": "2026-09-06T14:59:28.192Z",
   "ladderRound": 27,
-  "ladderFetchedAt": "2026-09-06T10:20:22.924Z",
-  "drawFetchedAt": "2026-09-06T10:20:23.311Z",
+  "ladderFetchedAt": "2026-09-06T14:59:16.344Z",
+  "drawFetchedAt": "2026-09-06T14:59:16.803Z",
   "remainingMatches": 0,
   "nSims": 10000,
   "modelVersion": "1.2",
@@ -15,7 +15,7 @@
     "skillScale": 4,
     "hfaLogit": 0.25
   },
-  "durationMs": 67,
+  "durationMs": 63,
   "teams": {
     "panthers": {
       "shortName": "Panthers",
